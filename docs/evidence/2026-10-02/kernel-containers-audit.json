@@ -1,0 +1,118 @@
+{
+  "scope": "Static ROM container root audit; ekern export 251 -> PDD factory -> Manager -> Board -> Context",
+  "e90": {
+    "machine": "E90 (MachineUid 0x20002496)",
+    "modules": {
+      "ekern": {
+        "base": "80013000",
+        "size": 260332,
+        "sha256": "CC81644DD40C19ABFD72FA7B643B409C668C9B3A632C881CC70E07974D76091B"
+      },
+      "pdd": {
+        "base": "803DD788",
+        "size": 110028,
+        "sha256": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4"
+      },
+      "ldd": {
+        "base": "803F8648",
+        "size": 6020,
+        "sha256": "07731D17142D8D45EF29229F00D7856135CE59D2F51935DB1DF96AD742E9A70D"
+      }
+    },
+    "container_root": {
+      "export_ordinal": 251,
+      "export_entry": "80037778",
+      "root_address": "C80019D4",
+      "total_containers": 17,
+      "element_stride_bytes": 4,
+      "total_bytes": 68,
+      "upper_bound_address": "C8001A18",
+      "pdd_container_type_index": 10,
+      "pdd_container_slot_address": "C80019FC",
+      "ldd_container_type_index": 9,
+      "ldd_container_slot_address": "C80019F8"
+    },
+    "dobjectcon_layout": {
+      "operator_square_brackets_export": 12,
+      "operator_square_brackets_entry": "80038290",
+      "count_offset": 16,
+      "objects_array_offset": 20,
+      "mutex_offset": 24,
+      "index_panic_category": "DOBJECT",
+      "index_panic_reason": 8
+    },
+    "factory_identity": {
+      "export_ordinal": 1,
+      "export_entry": "803DD8A4",
+      "allocation_bytes": 120,
+      "constructor_entry": "803DD7D8",
+      "vtable": "803F8380",
+      "container_matching_rule": "*(TUint32*)obj == 0x803F8380 in DObjectCon[10]"
+    },
+    "manager_identity": {
+      "factory_offset_processor0": 48,
+      "factory_offset_processor1": 80,
+      "per_processor_stride": 32,
+      "allocation_bytes": 68,
+      "constructor_entry": "803E32E8",
+      "magic_word0": "434F5250 (PROC)",
+      "factory_backlink_offset": 56,
+      "processor_index_offset": 60,
+      "board_pointer_offset": 44,
+      "board_pointer_type": "board + 8 (common board)"
+    },
+    "board_identity": {
+      "allocation_bytes": 336,
+      "constructor_entry": "803EFFCC",
+      "adjustment_to_base": -8,
+      "reader_offset": 172,
+      "swap_byte_offset": 236,
+      "swap_byte_initial_value": 1,
+      "context_offset": 264,
+      "context_allocation_bytes": 364
+    },
+    "checked_instructions_ekern": 14,
+    "checked_instructions_pdd": 18
+  },
+  "n95": {
+    "machine": "N95 (MachineUid 0x20002D84)",
+    "available": true,
+    "modules": {
+      "ekern": {
+        "base": "8006A000",
+        "size": 227532,
+        "sha256": "11F1383F534AA1774B6AB222E2436B5B64D931292EF580FB5926253838CD9455"
+      },
+      "pdd": {
+        "base": "80199138",
+        "size": 110048,
+        "sha256": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF"
+      },
+      "ldd": {
+        "base": "801B4008",
+        "size": 6020,
+        "sha256": "34EE45B4F1C0F394C1C06B4141709E025FA8205860E0FAAC83510EF8577ECD3A"
+      }
+    },
+    "container_root": {
+      "export_ordinal": 251,
+      "export_entry": "8008CE40",
+      "root_address": "C80019F0",
+      "pdd_container_type_index": 10,
+      "pdd_container_slot_address": "C8001A18"
+    },
+    "factory_vtable": "801B3D44",
+    "manager_magic": "434F5250 (PROC)",
+    "checked_instructions": 8
+  },
+  "summary": {
+    "e90_container_root": "C80019D4",
+    "e90_pdd_container_index": 10,
+    "e90_factory_vtable": "803F8380",
+    "e90_manager_magic": "434F5250 (PROC)",
+    "e90_manager_to_board_offset": 44,
+    "e90_board_adjustment": -8,
+    "n95_container_root": "C80019F0",
+    "n95_factory_vtable": "801B3D44"
+  }
+}

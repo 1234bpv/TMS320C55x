@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-01T10:17:31.428694+00:00",
+  "device": "e90",
+  "host_version": 18,
+  "installed": true,
+  "installer_version_observed": "1.00(18)",
+  "host_readback": {
+    "remote": "C:\\sys\\bin\\c55stream.exe",
+    "bytes": 29760,
+    "sha256": "571C5A6221C7E7815558A2C3AE5F6665D8D7DE0B82D676488869C7BAA260F14F",
+    "expected_equal": true
+  },
+  "runtime_journal": "docs/evidence/2026-10-01/e90-packet-sizes-v18-one-512-01.txt",
+  "runtime_FINAL": 0
+}

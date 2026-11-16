@@ -1,0 +1,24 @@
+{
+  "utc_build": "2026-09-30T16:55:52.0924397Z",
+  "variant": "CREATE_WORKER_ONCE",
+  "host": "existing N95 v15 / E90 v14 info mode, with fresh preparation",
+  "dll_bytes": 3172,
+  "dll_sha256": "0709550CBBE15D361F2DA8EF3E1128B7B08DCC49E0596E5A0CC82A540337336D",
+  "assembly_sha256": "B9C8D3EB39011EB3DA1AC5B60794A3F2F14C35BF1C13FD08298ECB55626A084B",
+  "compiler": "TI cl55 4.4.1, data=large; all bios_task.h offsetof/sizeof assertions passed",
+  "imports_verified_in_base": [
+    "_STRM_allocateBuffer",
+    "_TSK_ATTRS",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_TSK_stat",
+    "_KNL_curtask",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_create",
+    "_TSK_delete",
+    "_TSK_create",
+    "_c_int00"
+  ],
+  "scope": "worker entry, pointer/cookie, terminated mode and TSK_delete all inside create; no RUN, no persistence proof"
+}

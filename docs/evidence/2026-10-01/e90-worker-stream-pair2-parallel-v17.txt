@@ -1,0 +1,120 @@
+C55STREAM v17 command='worker-parallel reps=10000' machine=20002496 fast_counter_hz=32768 firmware_rc=0 firmware='400.34.93
+21-04-2009
+RA-6
+(c)Nokia'
+library load=0
+ordinal 1 = 803faef3
+ordinal 2 = 803fafa9
+ordinal 3 = 803fb0ff
+ordinal 4 = 803fb12b
+ordinal 5 = 803fafd1
+ordinal 6 = 803faff5
+ordinal 7 = 803fb0e7
+ordinal 8 = 803faf4f
+ordinal 9 = 803faeaf
+ordinal 10 = 803fae79
+ordinal 11 = 803fae71
+ordinal 12 = 803fae71
+ordinal 13 = 803faea3
+ordinal 14 = 803faea3
+ordinal 15 = 803fa6e1
+ordinal 16 = 803fa6a7
+ordinal 17 = 803fa74b
+ordinal 18 = 803fa711
+ordinal 19 = 803fa77b
+ordinal 20 = 803fa78b
+ordinal 21 = 803fa69d
+ordinal 22 = 803fa69d
+ordinal 23 = 803fa6a5
+ordinal 24 = 803fa6a5
+ordinal 25 = 803fa551
+ordinal 26 = 803f9fa3
+ordinal 27 = 803fa421
+ordinal 28 = 803fa533
+ordinal 29 = 803fa371
+ordinal 30 = 803fa2ef
+ordinal 31 = 803fa45d
+ordinal 32 = 803fa1c1
+ordinal 33 = 803f9f6d
+ordinal 34 = 803fa513
+ordinal 35 = 803fa3c5
+ordinal 36 = 803f9f39
+ordinal 37 = 803f9f39
+ordinal 38 = 803f9f49
+ordinal 39 = 803f9f49
+profile guard=0 delta=ff99ca70
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=00700110
+BEGIN base load
+base load=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=00701700
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=8453
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN native buffer
+native buffer=0 address=ced41000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ced42000 length=0 max=4096
+BEGIN worker stream no_run=1 frames=8
+ARM CRC baseline bytes=65536 crc=cd837cd0 wall_us=19195
+frame=1 put=0/0 get=0/0 wall_us=21148 crc=cd837cd0
+  issue_us=183 arm_crc_us=20965 wait_us=0 completion_observed_us=21148
+  result=-5480 expected=-5480 ticks=239862 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=4471727
+frame=2 put=0/0 get=0/0 wall_us=19500 crc=cd837cd0
+  issue_us=213 arm_crc_us=19256 wait_us=30 completion_observed_us=19500
+  result=-4416 expected=-4416 ticks=239835 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=5354797
+frame=3 put=0/0 get=0/0 wall_us=19500 crc=cd837cd0
+  issue_us=213 arm_crc_us=19256 wait_us=30 completion_observed_us=19500
+  result=1256 expected=1256 ticks=239835 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=6238507
+frame=4 put=0/0 get=0/0 wall_us=19470 crc=cd837cd0
+  issue_us=183 arm_crc_us=19287 wait_us=0 completion_observed_us=19470
+  result=-1520 expected=-1520 ticks=239835 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=7948031
+frame=5 put=0/0 get=0/0 wall_us=19439 crc=cd837cd0
+  issue_us=183 arm_crc_us=19256 wait_us=0 completion_observed_us=19439
+  result=-2248 expected=-2248 ticks=239835 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=8773398
+frame=6 put=0/0 get=0/0 wall_us=19470 crc=cd837cd0
+  issue_us=183 arm_crc_us=19287 wait_us=0 completion_observed_us=19470
+  result=2144 expected=2144 ticks=239835 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=9638384
+frame=7 put=0/0 get=0/0 wall_us=19470 crc=cd837cd0
+  issue_us=183 arm_crc_us=19226 wait_us=30 completion_observed_us=19470
+  result=1672 expected=1672 ticks=239835 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=10522715
+frame=8 put=0/0 get=0/0 wall_us=19470 crc=cd837cd0
+  issue_us=183 arm_crc_us=19256 wait_us=0 completion_observed_us=19470
+  result=-848 expected=-848 ticks=239835 counts_per_ms=164 errors=0 stop=1
+  dsp_stamp=11386783
+state phase=worker frames complete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+WORKER STREAM PASS frames=8 creates=1 runs=0 useful_arm_crc=8 mode=1 reps=10000 total_us=157467
+state phase=before delete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=152
+delete=0 status=0
+state phase=worker deleted rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+free native out=0
+free native in=0
+BEGIN close
+WORKER CLEANUP PASS no_run=1 delete_free_native_close=0
+FINAL status=0

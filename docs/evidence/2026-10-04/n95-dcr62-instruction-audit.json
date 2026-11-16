@@ -1,0 +1,28 @@
+{
+  "scope": "distinct N95 candidate62/protocol39 diagnostic; no phone I/O",
+  "DSP_sha256": "F090D32D9F1B23DE9B78931B93B8177B62ED621B3B1E00CBBF3A015253E549F8",
+  "helper_section": ".text (linker merged .text:dcr_read)",
+  "helper_symbol_value": "000A6D",
+  "helper_section_byte_offset": 2413,
+  "helper_code_hex": "A45102004804",
+  "helper_code_sha256": "B4F50EC5203A63112C9C2E1FA3A7216A88D0BC23C76F23DF9D0B388C8F319439",
+  "helper_relocations": 0,
+  "instructions": [
+    "MOV port(#00200h),T0",
+    "RET"
+  ],
+  "helper_io_reads": 1,
+  "helper_io_writes": 0,
+  "calls_per_exchange": 2,
+  "call_order": "DCR read -> ring_exchange -> DCR read",
+  "notification_fields": {
+    "marker_word": 13,
+    "before_word": 14,
+    "after_word": 15
+  },
+  "reference": "docs/evidence/2026-10-03/dsp-native-notification-audit.json",
+  "limits": [
+    "DCR reads may affect timing/ordering; diagnostic is separate from candidate61",
+    "helper instruction audit is not a complete external-memory publication contract"
+  ]
+}

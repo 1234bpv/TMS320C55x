@@ -1,0 +1,40 @@
+UTC 2026-09-30T02:04:11.767389+00:00
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 89714688
+< tick 8349306 startTick 7895828 boot 0 by n
+< ap Huawei
+< drive C freekb 65988
+< drive E freekb 1070208
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 89714688
+< tick 8349388 startTick 7895828 boot 0 by n
+< ap Huawei
+< drive C freekb 65988
+< drive E freekb 1070208
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> GET E:\c55stream.dll55l
+< OK 2700 -> work\evidence\n95\stream-rms-after-isolation-before-normal.dll55l
+> PUT E:\c55stream.dll55l 3668
+< OK 3668
+> GET E:\c55stream.dll55l
+< OK 3668 -> work\evidence\n95\stream-normal-v7-after-rms-isolation.dll55l
+NORMAL V7 deployed, not executed 3668 5b6be15b20e73d8d318fdf9c5e5050c16aa28994bc422c891c2b0132ea4ab9f9
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 89714688
+< tick 8349700 startTick 7895828 boot 0 by n
+< ap Huawei
+< drive C freekb 65988
+< drive E freekb 1070208
+< script IDLE

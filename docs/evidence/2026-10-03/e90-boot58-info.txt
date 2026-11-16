@@ -1,0 +1,8 @@
+C55STREAM v44 command='boot-info' machine=20002496 fast_counter_hz=32768 firmware_rc=0 firmware='400.34.93
+21-04-2009
+RA-6
+(c)Nokia'
+BOOT HAL startup_rc=0 startup=0 exception_rc=0 exception=156
+BOOT USER fault_rc=0 fault=-1604135081 id_rc=0 id=156 info_rc=0 code=00000000 data=00000480 extra=000005bc
+BOOT PROBE COMPLETE no_dsp_open=1 no_patcher=1 readonly_HAL=1
+FINAL status=0

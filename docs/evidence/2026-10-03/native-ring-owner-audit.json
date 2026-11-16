@@ -1,0 +1,53 @@
+{
+  "scope": "saved firmware only; no device I/O",
+  "n95": {
+    "pdd_sha256": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF",
+    "baseimage_sha256": "93BD6550FE26DF69C9AA3A1440DAF4DF6BCC118983DB30CE33E2CA3F3A95FB5C",
+    "checked_arm_instructions": 8,
+    "dsp_ranges": {
+      "environment_allocation": {
+        "address": "24B010",
+        "bytes": 52,
+        "sha256": "D0C8BB4E343FFE75A5947D780F66F4910851405D983DF61864E975AD976E8950"
+      },
+      "environment_return_in_reply": {
+        "address": "24B225",
+        "bytes": 19,
+        "sha256": "5385E2CF7382926E5D5196562B681D3A76A020DED196FF91E224F84A29359AEC"
+      }
+    },
+    "env_allocator": "RMS create calls native MEM_valloc(0,18 C55 words,0,0) for task-node environment; AC1 reply carries its pointer",
+    "native_queue_binding": "successful RMS create stores env in retained own node+44 and own queue source+16",
+    "cmm_allocator": "native manager+32 CMM suballocates region; allocation moves from free list+44 to allocated list+48 and returns linear address",
+    "limits": [
+      "uniqueness relies on the native allocator contract and unchanged live base; this is not enumeration of all global queues",
+      "region backing chunk mapping attributes and lifetime are not established by this audit",
+      "runtime page identities before/after exchange are brackets, not continuous pin instrumentation"
+    ]
+  },
+  "e90": {
+    "pdd_sha256": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4",
+    "baseimage_sha256": "180F95602B078111F617F459620C4AECD203ECB730E91803AEF9E591E5D22F35",
+    "checked_arm_instructions": 8,
+    "dsp_ranges": {
+      "environment_allocation": {
+        "address": "24B010",
+        "bytes": 52,
+        "sha256": "D0C8BB4E343FFE75A5947D780F66F4910851405D983DF61864E975AD976E8950"
+      },
+      "environment_return_in_reply": {
+        "address": "24B225",
+        "bytes": 19,
+        "sha256": "5385E2CF7382926E5D5196562B681D3A76A020DED196FF91E224F84A29359AEC"
+      }
+    },
+    "env_allocator": "RMS create calls native MEM_valloc(0,18 C55 words,0,0) for task-node environment; AC1 reply carries its pointer",
+    "native_queue_binding": "successful RMS create stores env in retained own node+44 and own queue source+16",
+    "cmm_allocator": "native manager+32 CMM suballocates region; allocation moves from free list+44 to allocated list+48 and returns linear address",
+    "limits": [
+      "uniqueness relies on the native allocator contract and unchanged live base; this is not enumeration of all global queues",
+      "region backing chunk mapping attributes and lifetime are not established by this audit",
+      "runtime page identities before/after exchange are brackets, not continuous pin instrumentation"
+    ]
+  }
+}

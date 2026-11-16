@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-09-30T01:19:11.684537+00:00",
+  "device": "e90",
+  "ip": "192.168.3.21",
+  "remote_sis": "E:\\c55stream_sha1.sis",
+  "snapshot": "work/evidence/e90/stream-sis-live-v7.sis",
+  "expected_local_sis": "out/sis/c55stream_sha1.sis",
+  "expected_sis_revision": 7,
+  "bytes": 10192,
+  "sha256": "54A214227DFFF6CF0638A007F9980331D1F06888B654AFF28831FA4EAD174AB9",
+  "byte_for_byte_match": true,
+  "latest_confirmed_installed_host_version": 3,
+  "inspect_log": "work/evidence/e90/stream-installed-after-restart-03.log"
+}

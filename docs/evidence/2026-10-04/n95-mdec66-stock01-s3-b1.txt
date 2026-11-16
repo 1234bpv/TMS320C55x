@@ -1,0 +1,596 @@
+C55STREAM v51 command='dmm-ring-mdec batch=1 frames=120' machine=20002d84 fast_counter_hz=32768 firmware_rc=0 firmware='V 35.0.001
+11-11-09
+RM-320
+N95(c)NMP'
+library load=0
+ordinal 1 = 80a5e483
+ordinal 2 = 80a5e539
+ordinal 3 = 80a5e68f
+ordinal 4 = 80a5e6bb
+ordinal 5 = 80a5e561
+ordinal 6 = 80a5e585
+ordinal 7 = 80a5e677
+ordinal 8 = 80a5e4df
+ordinal 9 = 80a5e43f
+ordinal 10 = 80a5e409
+ordinal 11 = 80a5e401
+ordinal 12 = 80a5e401
+ordinal 13 = 80a5e433
+ordinal 14 = 80a5e433
+ordinal 15 = 80a5dc71
+ordinal 16 = 80a5dc37
+ordinal 17 = 80a5dcdb
+ordinal 18 = 80a5dca1
+ordinal 19 = 80a5dd0b
+ordinal 20 = 80a5dd1b
+ordinal 21 = 80a5dc2d
+ordinal 22 = 80a5dc2d
+ordinal 23 = 80a5dc35
+ordinal 24 = 80a5dc35
+ordinal 25 = 80a5dae1
+ordinal 26 = 80a5d533
+ordinal 27 = 80a5d9b1
+ordinal 28 = 80a5dac3
+ordinal 29 = 80a5d901
+ordinal 30 = 80a5d87f
+ordinal 31 = 80a5d9ed
+ordinal 32 = 80a5d751
+ordinal 33 = 80a5d4fd
+ordinal 34 = 80a5daa3
+ordinal 35 = 80a5d955
+ordinal 36 = 80a5d4c9
+ordinal 37 = 80a5d4c9
+ordinal 38 = 80a5d4d9
+ordinal 39 = 80a5d4d9
+profile guard=0 delta=00000000
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=007000f0
+PROCESSOR STATE rc=0 state=1 expected=1 native_ioctl=2 cached=1 no_patcher=1 no_proc_load=1
+BASE attach gate=0 reused_running=1 proc_load_calls=0
+BEGIN native buffer
+native buffer=0 address=ce843000 length=0 max=16384
+NATIVE PAGE phase=0 index=0 linear=ce843000 physical=80f43000
+NATIVE PAGE phase=0 index=1 linear=ce844000 physical=80f44000
+NATIVE PAGE phase=0 index=2 linear=ce845000 physical=80f45000
+NATIVE PAGE phase=0 index=3 linear=ce846000 physical=80f46000
+NATIVE PAGES rc=0 phase=0 pages=4 bytes=16384 no_patcher=1 immutable_compare=0
+RING reserve=0 address=00300000 bytes=16384
+RING map=0 address=00300000 flags=17 setup_us=8636
+node reference_rom=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=00702a00
+node timeout original=00000000
+node timeout modified=ffffffff
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=12420
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+info phase=created rc=0 header=30000068 max=104
+  id_word=00000000 property112=3 inputs=1 outputs=1 node_env=00007654
+BEGIN native buffer
+native buffer=0 address=ce847000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ce848000 length=0 max=4096
+state phase=native pre-RUN rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+NATIVE pre-RUN gate=0 env=00007654 state=1 no_patcher=1 proc_load_calls=0 env_allocator=RMS_MEM_valloc
+BEGIN execute
+execute submitted=0 status=-2147483647
+execute start=0 status=0
+state phase=running rc=0 header=3000010c max=268
+  state=2 detail=00000005 streams=2
+RING SETUP total_us=703765 includes_journaling=1
+RING MDEC CONFIG bytes=16384 frames=120 macroblocks=1 input_slots=4 output_slots=2 coefficient_bits=32 protocol=41 useful_ARM_W=0 performance_reservation=0
+RING MDEC RESULT frame=1 case=0 macroblocks=1 index=65520 slot=0 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=1 arm_iterations=16 arm343_ticks=29 arm463_ticks=30 arm_first=1 pack_ticks=16 transfer_ticks=118 end_to_end_ticks=134 cpu_us=-1 raw_dsp_ticks=27565 counts_per_ms=164
+RING MDEC READY frame=1 notification_ticks=72 result_ticks=92 result_words=192 oracle_outside=1
+DCR READ frame=1 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=2 case=1 macroblocks=1 index=65524 slot=4 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=2 arm_iterations=16 arm343_ticks=30 arm463_ticks=37 arm_first=0 pack_ticks=81 transfer_ticks=181 end_to_end_ticks=262 cpu_us=-1 raw_dsp_ticks=26484 counts_per_ms=164
+RING MDEC READY frame=2 notification_ticks=134 result_ticks=219 result_words=192 oracle_outside=1
+DCR READ frame=2 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=3 case=2 macroblocks=1 index=65528 slot=8 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=3 arm_iterations=16 arm343_ticks=33 arm463_ticks=32 arm_first=1 pack_ticks=14 transfer_ticks=183 end_to_end_ticks=197 cpu_us=-1 raw_dsp_ticks=29140 counts_per_ms=164
+RING MDEC READY frame=3 notification_ticks=137 result_ticks=155 result_words=192 oracle_outside=1
+DCR READ frame=3 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=4 case=3 macroblocks=1 index=65532 slot=12 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=4 arm_iterations=16 arm343_ticks=50 arm463_ticks=55 arm_first=0 pack_ticks=14 transfer_ticks=157 end_to_end_ticks=171 cpu_us=-1 raw_dsp_ticks=29818 counts_per_ms=164
+RING MDEC READY frame=4 notification_ticks=76 result_ticks=94 result_words=192 oracle_outside=1
+DCR READ frame=4 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=5 case=4 macroblocks=1 index=65536 slot=1 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=5 arm_iterations=16 arm343_ticks=57 arm463_ticks=56 arm_first=1 pack_ticks=14 transfer_ticks=159 end_to_end_ticks=173 cpu_us=-1 raw_dsp_ticks=31816 counts_per_ms=164
+RING MDEC READY frame=5 notification_ticks=113 result_ticks=132 result_words=192 oracle_outside=1
+DCR READ frame=5 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=6 case=5 macroblocks=1 index=65540 slot=5 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=6 arm_iterations=16 arm343_ticks=16 arm463_ticks=21 arm_first=0 pack_ticks=14 transfer_ticks=204 end_to_end_ticks=218 cpu_us=-1 raw_dsp_ticks=26244 counts_per_ms=164
+RING MDEC READY frame=6 notification_ticks=79 result_ticks=176 result_words=192 oracle_outside=1
+DCR READ frame=6 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=7 case=6 macroblocks=1 index=65544 slot=9 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=7 arm_iterations=16 arm343_ticks=95 arm463_ticks=59 arm_first=1 pack_ticks=14 transfer_ticks=121 end_to_end_ticks=135 cpu_us=-1 raw_dsp_ticks=29489 counts_per_ms=164
+RING MDEC READY frame=7 notification_ticks=75 result_ticks=93 result_words=192 oracle_outside=1
+DCR READ frame=7 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=8 case=7 macroblocks=1 index=65548 slot=13 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=8 arm_iterations=16 arm343_ticks=44 arm463_ticks=42 arm_first=0 pack_ticks=14 transfer_ticks=113 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=27580 counts_per_ms=164
+RING MDEC READY frame=8 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=8 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=9 case=0 macroblocks=1 index=65552 slot=2 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=9 arm_iterations=16 arm343_ticks=29 arm463_ticks=31 arm_first=1 pack_ticks=15 transfer_ticks=113 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=26480 counts_per_ms=164
+RING MDEC READY frame=9 notification_ticks=68 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=9 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=10 case=1 macroblocks=1 index=65556 slot=6 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=10 arm_iterations=16 arm343_ticks=30 arm463_ticks=35 arm_first=0 pack_ticks=13 transfer_ticks=112 end_to_end_ticks=125 cpu_us=-1 raw_dsp_ticks=26453 counts_per_ms=164
+RING MDEC READY frame=10 notification_ticks=66 result_ticks=84 result_words=192 oracle_outside=1
+DCR READ frame=10 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=11 case=2 macroblocks=1 index=65560 slot=10 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=11 arm_iterations=16 arm343_ticks=34 arm463_ticks=32 arm_first=1 pack_ticks=14 transfer_ticks=113 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=26911 counts_per_ms=164
+RING MDEC READY frame=11 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=11 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=12 case=3 macroblocks=1 index=65564 slot=14 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=12 arm_iterations=16 arm343_ticks=49 arm463_ticks=52 arm_first=0 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28172 counts_per_ms=164
+RING MDEC READY frame=12 notification_ticks=68 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=12 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=13 case=4 macroblocks=1 index=65568 slot=3 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=13 arm_iterations=16 arm343_ticks=57 arm463_ticks=54 arm_first=1 pack_ticks=13 transfer_ticks=121 end_to_end_ticks=134 cpu_us=-1 raw_dsp_ticks=29511 counts_per_ms=164
+RING MDEC READY frame=13 notification_ticks=72 result_ticks=90 result_words=192 oracle_outside=1
+DCR READ frame=13 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=14 case=5 macroblocks=1 index=65572 slot=7 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=14 arm_iterations=16 arm343_ticks=15 arm463_ticks=18 arm_first=0 pack_ticks=14 transfer_ticks=109 end_to_end_ticks=123 cpu_us=-1 raw_dsp_ticks=25041 counts_per_ms=164
+RING MDEC READY frame=14 notification_ticks=63 result_ticks=81 result_words=192 oracle_outside=1
+DCR READ frame=14 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=15 case=6 macroblocks=1 index=65576 slot=11 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=15 arm_iterations=16 arm343_ticks=58 arm463_ticks=58 arm_first=1 pack_ticks=13 transfer_ticks=119 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29497 counts_per_ms=164
+RING MDEC READY frame=15 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=15 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=16 case=7 macroblocks=1 index=65580 slot=0 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=16 arm_iterations=16 arm343_ticks=47 arm463_ticks=41 arm_first=0 pack_ticks=14 transfer_ticks=112 end_to_end_ticks=126 cpu_us=-1 raw_dsp_ticks=27591 counts_per_ms=164
+RING MDEC READY frame=16 notification_ticks=67 result_ticks=85 result_words=192 oracle_outside=1
+DCR READ frame=16 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=17 case=0 macroblocks=1 index=65584 slot=4 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=17 arm_iterations=16 arm343_ticks=29 arm463_ticks=32 arm_first=1 pack_ticks=13 transfer_ticks=114 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26494 counts_per_ms=164
+RING MDEC READY frame=17 notification_ticks=68 result_ticks=85 result_words=192 oracle_outside=1
+DCR READ frame=17 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=18 case=1 macroblocks=1 index=65588 slot=8 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=18 arm_iterations=16 arm343_ticks=29 arm463_ticks=34 arm_first=0 pack_ticks=13 transfer_ticks=111 end_to_end_ticks=125 cpu_us=-1 raw_dsp_ticks=26452 counts_per_ms=164
+RING MDEC READY frame=18 notification_ticks=66 result_ticks=84 result_words=192 oracle_outside=1
+DCR READ frame=18 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=19 case=2 macroblocks=1 index=65592 slot=12 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=19 arm_iterations=16 arm343_ticks=35 arm463_ticks=32 arm_first=1 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=26840 counts_per_ms=164
+RING MDEC READY frame=19 notification_ticks=68 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=19 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=20 case=3 macroblocks=1 index=65596 slot=1 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=20 arm_iterations=16 arm343_ticks=49 arm463_ticks=52 arm_first=0 pack_ticks=13 transfer_ticks=115 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28179 counts_per_ms=164
+RING MDEC READY frame=20 notification_ticks=69 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=20 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=21 case=4 macroblocks=1 index=65600 slot=5 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=21 arm_iterations=16 arm343_ticks=57 arm463_ticks=55 arm_first=1 pack_ticks=14 transfer_ticks=118 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29408 counts_per_ms=164
+RING MDEC READY frame=21 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=21 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=22 case=5 macroblocks=1 index=65604 slot=9 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=22 arm_iterations=16 arm343_ticks=15 arm463_ticks=17 arm_first=0 pack_ticks=13 transfer_ticks=108 end_to_end_ticks=121 cpu_us=-1 raw_dsp_ticks=24615 counts_per_ms=164
+RING MDEC READY frame=22 notification_ticks=63 result_ticks=80 result_words=192 oracle_outside=1
+DCR READ frame=22 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=23 case=6 macroblocks=1 index=65608 slot=13 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=23 arm_iterations=16 arm343_ticks=57 arm463_ticks=58 arm_first=1 pack_ticks=14 transfer_ticks=120 end_to_end_ticks=134 cpu_us=-1 raw_dsp_ticks=30126 counts_per_ms=164
+RING MDEC READY frame=23 notification_ticks=74 result_ticks=93 result_words=192 oracle_outside=1
+DCR READ frame=23 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=24 case=7 macroblocks=1 index=65612 slot=2 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=24 arm_iterations=16 arm343_ticks=44 arm463_ticks=42 arm_first=0 pack_ticks=13 transfer_ticks=114 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=27569 counts_per_ms=164
+RING MDEC READY frame=24 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=24 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=25 case=0 macroblocks=1 index=65616 slot=6 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=25 arm_iterations=16 arm343_ticks=29 arm463_ticks=31 arm_first=1 pack_ticks=14 transfer_ticks=113 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26482 counts_per_ms=164
+RING MDEC READY frame=25 notification_ticks=67 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=25 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=26 case=1 macroblocks=1 index=65620 slot=10 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=26 arm_iterations=16 arm343_ticks=29 arm463_ticks=34 arm_first=0 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=27407 counts_per_ms=164
+RING MDEC READY frame=26 notification_ticks=67 result_ticks=85 result_words=192 oracle_outside=1
+DCR READ frame=26 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=27 case=2 macroblocks=1 index=65624 slot=14 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=27 arm_iterations=16 arm343_ticks=33 arm463_ticks=33 arm_first=1 pack_ticks=13 transfer_ticks=114 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26856 counts_per_ms=164
+RING MDEC READY frame=27 notification_ticks=69 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=27 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=28 case=3 macroblocks=1 index=65628 slot=3 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=28 arm_iterations=16 arm343_ticks=49 arm463_ticks=52 arm_first=0 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28191 counts_per_ms=164
+RING MDEC READY frame=28 notification_ticks=69 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=28 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=29 case=4 macroblocks=1 index=65632 slot=7 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=29 arm_iterations=16 arm343_ticks=57 arm463_ticks=55 arm_first=1 pack_ticks=13 transfer_ticks=118 end_to_end_ticks=131 cpu_us=-1 raw_dsp_ticks=29402 counts_per_ms=164
+RING MDEC READY frame=29 notification_ticks=73 result_ticks=90 result_words=192 oracle_outside=1
+DCR READ frame=29 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=30 case=5 macroblocks=1 index=65636 slot=11 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=30 arm_iterations=16 arm343_ticks=14 arm463_ticks=18 arm_first=0 pack_ticks=13 transfer_ticks=108 end_to_end_ticks=121 cpu_us=-1 raw_dsp_ticks=24631 counts_per_ms=164
+RING MDEC READY frame=30 notification_ticks=63 result_ticks=80 result_words=192 oracle_outside=1
+DCR READ frame=30 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=31 case=6 macroblocks=1 index=65640 slot=0 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=31 arm_iterations=16 arm343_ticks=59 arm463_ticks=57 arm_first=1 pack_ticks=14 transfer_ticks=118 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29458 counts_per_ms=164
+RING MDEC READY frame=31 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=31 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=32 case=7 macroblocks=1 index=65644 slot=4 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=32 arm_iterations=16 arm343_ticks=44 arm463_ticks=41 arm_first=0 pack_ticks=13 transfer_ticks=113 end_to_end_ticks=126 cpu_us=-1 raw_dsp_ticks=27540 counts_per_ms=164
+RING MDEC READY frame=32 notification_ticks=68 result_ticks=85 result_words=192 oracle_outside=1
+DCR READ frame=32 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=33 case=0 macroblocks=1 index=65648 slot=8 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=33 arm_iterations=16 arm343_ticks=29 arm463_ticks=58 arm_first=1 pack_ticks=32 transfer_ticks=114 end_to_end_ticks=146 cpu_us=-1 raw_dsp_ticks=26484 counts_per_ms=164
+RING MDEC READY frame=33 notification_ticks=68 result_ticks=105 result_words=192 oracle_outside=1
+DCR READ frame=33 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=34 case=1 macroblocks=1 index=65652 slot=12 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=34 arm_iterations=16 arm343_ticks=31 arm463_ticks=36 arm_first=0 pack_ticks=13 transfer_ticks=112 end_to_end_ticks=125 cpu_us=-1 raw_dsp_ticks=26469 counts_per_ms=164
+RING MDEC READY frame=34 notification_ticks=67 result_ticks=84 result_words=192 oracle_outside=1
+DCR READ frame=34 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=35 case=2 macroblocks=1 index=65656 slot=1 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=35 arm_iterations=16 arm343_ticks=34 arm463_ticks=33 arm_first=1 pack_ticks=13 transfer_ticks=115 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=27347 counts_per_ms=164
+RING MDEC READY frame=35 notification_ticks=69 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=35 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=36 case=3 macroblocks=1 index=65660 slot=5 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=36 arm_iterations=16 arm343_ticks=50 arm463_ticks=52 arm_first=0 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28169 counts_per_ms=164
+RING MDEC READY frame=36 notification_ticks=69 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=36 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=37 case=4 macroblocks=1 index=65664 slot=9 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=37 arm_iterations=16 arm343_ticks=56 arm463_ticks=55 arm_first=1 pack_ticks=13 transfer_ticks=118 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29409 counts_per_ms=164
+RING MDEC READY frame=37 notification_ticks=72 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=37 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=38 case=5 macroblocks=1 index=65668 slot=13 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=38 arm_iterations=16 arm343_ticks=15 arm463_ticks=18 arm_first=0 pack_ticks=14 transfer_ticks=108 end_to_end_ticks=122 cpu_us=-1 raw_dsp_ticks=24609 counts_per_ms=164
+RING MDEC READY frame=38 notification_ticks=63 result_ticks=81 result_words=192 oracle_outside=1
+DCR READ frame=38 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=39 case=6 macroblocks=1 index=65672 slot=2 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=39 arm_iterations=16 arm343_ticks=59 arm463_ticks=55 arm_first=1 pack_ticks=13 transfer_ticks=118 end_to_end_ticks=131 cpu_us=-1 raw_dsp_ticks=29471 counts_per_ms=164
+RING MDEC READY frame=39 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=39 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=40 case=7 macroblocks=1 index=65676 slot=6 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=40 arm_iterations=16 arm343_ticks=44 arm463_ticks=42 arm_first=0 pack_ticks=13 transfer_ticks=115 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28112 counts_per_ms=164
+RING MDEC READY frame=40 notification_ticks=69 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=40 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=41 case=0 macroblocks=1 index=65680 slot=10 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=41 arm_iterations=16 arm343_ticks=29 arm463_ticks=31 arm_first=1 pack_ticks=13 transfer_ticks=113 end_to_end_ticks=126 cpu_us=-1 raw_dsp_ticks=26518 counts_per_ms=164
+RING MDEC READY frame=41 notification_ticks=68 result_ticks=85 result_words=192 oracle_outside=1
+DCR READ frame=41 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=42 case=1 macroblocks=1 index=65684 slot=14 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=42 arm_iterations=16 arm343_ticks=31 arm463_ticks=34 arm_first=0 pack_ticks=13 transfer_ticks=111 end_to_end_ticks=124 cpu_us=-1 raw_dsp_ticks=26476 counts_per_ms=164
+RING MDEC READY frame=42 notification_ticks=66 result_ticks=83 result_words=192 oracle_outside=1
+DCR READ frame=42 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=43 case=2 macroblocks=1 index=65688 slot=3 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=43 arm_iterations=16 arm343_ticks=33 arm463_ticks=66 arm_first=1 pack_ticks=14 transfer_ticks=115 end_to_end_ticks=129 cpu_us=-1 raw_dsp_ticks=26915 counts_per_ms=164
+RING MDEC READY frame=43 notification_ticks=70 result_ticks=88 result_words=192 oracle_outside=1
+DCR READ frame=43 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=44 case=3 macroblocks=1 index=65692 slot=7 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=44 arm_iterations=16 arm343_ticks=50 arm463_ticks=53 arm_first=0 pack_ticks=13 transfer_ticks=115 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28147 counts_per_ms=164
+RING MDEC READY frame=44 notification_ticks=70 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=44 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=45 case=4 macroblocks=1 index=65696 slot=11 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=45 arm_iterations=16 arm343_ticks=58 arm463_ticks=55 arm_first=1 pack_ticks=14 transfer_ticks=119 end_to_end_ticks=133 cpu_us=-1 raw_dsp_ticks=29395 counts_per_ms=164
+RING MDEC READY frame=45 notification_ticks=73 result_ticks=92 result_words=192 oracle_outside=1
+DCR READ frame=45 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=46 case=5 macroblocks=1 index=65700 slot=0 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=46 arm_iterations=16 arm343_ticks=15 arm463_ticks=18 arm_first=0 pack_ticks=14 transfer_ticks=107 end_to_end_ticks=121 cpu_us=-1 raw_dsp_ticks=24616 counts_per_ms=164
+RING MDEC READY frame=46 notification_ticks=62 result_ticks=81 result_words=192 oracle_outside=1
+DCR READ frame=46 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=47 case=6 macroblocks=1 index=65704 slot=4 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=47 arm_iterations=16 arm343_ticks=60 arm463_ticks=56 arm_first=1 pack_ticks=14 transfer_ticks=118 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29413 counts_per_ms=164
+RING MDEC READY frame=47 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=47 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=48 case=7 macroblocks=1 index=65708 slot=8 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=48 arm_iterations=16 arm343_ticks=45 arm463_ticks=42 arm_first=0 pack_ticks=13 transfer_ticks=112 end_to_end_ticks=126 cpu_us=-1 raw_dsp_ticks=27547 counts_per_ms=164
+RING MDEC READY frame=48 notification_ticks=67 result_ticks=85 result_words=192 oracle_outside=1
+DCR READ frame=48 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=49 case=0 macroblocks=1 index=65712 slot=12 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=49 arm_iterations=16 arm343_ticks=29 arm463_ticks=30 arm_first=1 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=26496 counts_per_ms=164
+RING MDEC READY frame=49 notification_ticks=68 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=49 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=50 case=1 macroblocks=1 index=65716 slot=1 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=50 arm_iterations=16 arm343_ticks=30 arm463_ticks=35 arm_first=0 pack_ticks=13 transfer_ticks=112 end_to_end_ticks=125 cpu_us=-1 raw_dsp_ticks=26431 counts_per_ms=164
+RING MDEC READY frame=50 notification_ticks=66 result_ticks=84 result_words=192 oracle_outside=1
+DCR READ frame=50 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=51 case=2 macroblocks=1 index=65720 slot=5 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=51 arm_iterations=16 arm343_ticks=33 arm463_ticks=33 arm_first=1 pack_ticks=13 transfer_ticks=114 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26846 counts_per_ms=164
+RING MDEC READY frame=51 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=51 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=52 case=3 macroblocks=1 index=65724 slot=9 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=52 arm_iterations=16 arm343_ticks=50 arm463_ticks=52 arm_first=0 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28179 counts_per_ms=164
+RING MDEC READY frame=52 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=52 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=53 case=4 macroblocks=1 index=65728 slot=13 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=53 arm_iterations=16 arm343_ticks=57 arm463_ticks=54 arm_first=1 pack_ticks=14 transfer_ticks=117 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29379 counts_per_ms=164
+RING MDEC READY frame=53 notification_ticks=72 result_ticks=90 result_words=192 oracle_outside=1
+DCR READ frame=53 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=54 case=5 macroblocks=1 index=65732 slot=2 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=54 arm_iterations=16 arm343_ticks=15 arm463_ticks=20 arm_first=0 pack_ticks=27 transfer_ticks=109 end_to_end_ticks=136 cpu_us=-1 raw_dsp_ticks=24677 counts_per_ms=164
+RING MDEC READY frame=54 notification_ticks=64 result_ticks=95 result_words=192 oracle_outside=1
+DCR READ frame=54 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=55 case=6 macroblocks=1 index=65736 slot=6 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=55 arm_iterations=16 arm343_ticks=58 arm463_ticks=58 arm_first=1 pack_ticks=14 transfer_ticks=119 end_to_end_ticks=133 cpu_us=-1 raw_dsp_ticks=29530 counts_per_ms=164
+RING MDEC READY frame=55 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=55 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=56 case=7 macroblocks=1 index=65740 slot=10 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=56 arm_iterations=16 arm343_ticks=44 arm463_ticks=42 arm_first=0 pack_ticks=13 transfer_ticks=114 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=27578 counts_per_ms=164
+RING MDEC READY frame=56 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=56 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=57 case=0 macroblocks=1 index=65744 slot=14 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=57 arm_iterations=16 arm343_ticks=29 arm463_ticks=31 arm_first=1 pack_ticks=14 transfer_ticks=113 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26554 counts_per_ms=164
+RING MDEC READY frame=57 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=57 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=58 case=1 macroblocks=1 index=65748 slot=3 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=58 arm_iterations=16 arm343_ticks=31 arm463_ticks=37 arm_first=0 pack_ticks=14 transfer_ticks=213 end_to_end_ticks=227 cpu_us=-1 raw_dsp_ticks=26829 counts_per_ms=164
+RING MDEC READY frame=58 notification_ticks=119 result_ticks=154 result_words=192 oracle_outside=1
+DCR READ frame=58 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=59 case=2 macroblocks=1 index=65752 slot=7 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=59 arm_iterations=16 arm343_ticks=35 arm463_ticks=34 arm_first=1 pack_ticks=13 transfer_ticks=125 end_to_end_ticks=138 cpu_us=-1 raw_dsp_ticks=29687 counts_per_ms=164
+RING MDEC READY frame=59 notification_ticks=79 result_ticks=97 result_words=192 oracle_outside=1
+DCR READ frame=59 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=60 case=3 macroblocks=1 index=65756 slot=11 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=60 arm_iterations=16 arm343_ticks=50 arm463_ticks=54 arm_first=0 pack_ticks=13 transfer_ticks=116 end_to_end_ticks=130 cpu_us=-1 raw_dsp_ticks=28179 counts_per_ms=164
+RING MDEC READY frame=60 notification_ticks=70 result_ticks=89 result_words=192 oracle_outside=1
+DCR READ frame=60 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=61 case=4 macroblocks=1 index=65760 slot=0 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=61 arm_iterations=16 arm343_ticks=57 arm463_ticks=129 arm_first=1 pack_ticks=14 transfer_ticks=121 end_to_end_ticks=135 cpu_us=-1 raw_dsp_ticks=29447 counts_per_ms=164
+RING MDEC READY frame=61 notification_ticks=75 result_ticks=94 result_words=192 oracle_outside=1
+DCR READ frame=61 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=62 case=5 macroblocks=1 index=65764 slot=4 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=62 arm_iterations=16 arm343_ticks=16 arm463_ticks=21 arm_first=0 pack_ticks=14 transfer_ticks=177 end_to_end_ticks=191 cpu_us=-1 raw_dsp_ticks=25516 counts_per_ms=164
+RING MDEC READY frame=62 notification_ticks=64 result_ticks=83 result_words=192 oracle_outside=1
+DCR READ frame=62 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=63 case=6 macroblocks=1 index=65768 slot=8 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=63 arm_iterations=16 arm343_ticks=59 arm463_ticks=56 arm_first=1 pack_ticks=14 transfer_ticks=182 end_to_end_ticks=196 cpu_us=-1 raw_dsp_ticks=31523 counts_per_ms=164
+RING MDEC READY frame=63 notification_ticks=136 result_ticks=155 result_words=192 oracle_outside=1
+DCR READ frame=63 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=64 case=7 macroblocks=1 index=65772 slot=12 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=64 arm_iterations=16 arm343_ticks=45 arm463_ticks=44 arm_first=0 pack_ticks=13 transfer_ticks=158 end_to_end_ticks=171 cpu_us=-1 raw_dsp_ticks=28840 counts_per_ms=164
+RING MDEC READY frame=64 notification_ticks=74 result_ticks=127 result_words=192 oracle_outside=1
+DCR READ frame=64 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=65 case=0 macroblocks=1 index=65776 slot=1 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=65 arm_iterations=16 arm343_ticks=29 arm463_ticks=31 arm_first=1 pack_ticks=14 transfer_ticks=162 end_to_end_ticks=176 cpu_us=-1 raw_dsp_ticks=28673 counts_per_ms=164
+RING MDEC READY frame=65 notification_ticks=116 result_ticks=134 result_words=192 oracle_outside=1
+DCR READ frame=65 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=66 case=1 macroblocks=1 index=65780 slot=5 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=66 arm_iterations=16 arm343_ticks=31 arm463_ticks=127 arm_first=0 pack_ticks=14 transfer_ticks=118 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=27880 counts_per_ms=164
+RING MDEC READY frame=66 notification_ticks=72 result_ticks=90 result_words=192 oracle_outside=1
+DCR READ frame=66 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=67 case=2 macroblocks=1 index=65784 slot=9 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=67 arm_iterations=16 arm343_ticks=34 arm463_ticks=33 arm_first=1 pack_ticks=14 transfer_ticks=130 end_to_end_ticks=145 cpu_us=-1 raw_dsp_ticks=28088 counts_per_ms=164
+RING MDEC READY frame=67 notification_ticks=85 result_ticks=103 result_words=192 oracle_outside=1
+DCR READ frame=67 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=68 case=3 macroblocks=1 index=65788 slot=13 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=68 arm_iterations=16 arm343_ticks=51 arm463_ticks=54 arm_first=0 pack_ticks=13 transfer_ticks=119 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=28186 counts_per_ms=164
+RING MDEC READY frame=68 notification_ticks=71 result_ticks=89 result_words=192 oracle_outside=1
+DCR READ frame=68 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=69 case=4 macroblocks=1 index=65792 slot=2 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=69 arm_iterations=16 arm343_ticks=57 arm463_ticks=55 arm_first=1 pack_ticks=13 transfer_ticks=119 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29482 counts_per_ms=164
+RING MDEC READY frame=69 notification_ticks=74 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=69 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=70 case=5 macroblocks=1 index=65796 slot=6 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=70 arm_iterations=16 arm343_ticks=15 arm463_ticks=18 arm_first=0 pack_ticks=13 transfer_ticks=108 end_to_end_ticks=121 cpu_us=-1 raw_dsp_ticks=24582 counts_per_ms=164
+RING MDEC READY frame=70 notification_ticks=63 result_ticks=80 result_words=192 oracle_outside=1
+DCR READ frame=70 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=71 case=6 macroblocks=1 index=65800 slot=10 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=71 arm_iterations=16 arm343_ticks=57 arm463_ticks=57 arm_first=1 pack_ticks=14 transfer_ticks=118 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29444 counts_per_ms=164
+RING MDEC READY frame=71 notification_ticks=72 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=71 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=72 case=7 macroblocks=1 index=65804 slot=14 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=72 arm_iterations=16 arm343_ticks=45 arm463_ticks=43 arm_first=0 pack_ticks=14 transfer_ticks=113 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=27531 counts_per_ms=164
+RING MDEC READY frame=72 notification_ticks=67 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=72 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=73 case=0 macroblocks=1 index=65808 slot=3 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=73 arm_iterations=16 arm343_ticks=29 arm463_ticks=31 arm_first=1 pack_ticks=13 transfer_ticks=115 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=27341 counts_per_ms=164
+RING MDEC READY frame=73 notification_ticks=70 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=73 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=74 case=1 macroblocks=1 index=65812 slot=7 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=74 arm_iterations=16 arm343_ticks=30 arm463_ticks=34 arm_first=0 pack_ticks=14 transfer_ticks=111 end_to_end_ticks=125 cpu_us=-1 raw_dsp_ticks=26424 counts_per_ms=164
+RING MDEC READY frame=74 notification_ticks=66 result_ticks=84 result_words=192 oracle_outside=1
+DCR READ frame=74 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=75 case=2 macroblocks=1 index=65816 slot=11 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=75 arm_iterations=16 arm343_ticks=36 arm463_ticks=33 arm_first=1 pack_ticks=13 transfer_ticks=114 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26899 counts_per_ms=164
+RING MDEC READY frame=75 notification_ticks=69 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=75 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=76 case=3 macroblocks=1 index=65820 slot=0 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=76 arm_iterations=16 arm343_ticks=50 arm463_ticks=52 arm_first=0 pack_ticks=14 transfer_ticks=116 end_to_end_ticks=130 cpu_us=-1 raw_dsp_ticks=29551 counts_per_ms=164
+RING MDEC READY frame=76 notification_ticks=70 result_ticks=89 result_words=192 oracle_outside=1
+DCR READ frame=76 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=77 case=4 macroblocks=1 index=65824 slot=4 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=77 arm_iterations=16 arm343_ticks=57 arm463_ticks=57 arm_first=1 pack_ticks=13 transfer_ticks=119 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29448 counts_per_ms=164
+RING MDEC READY frame=77 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=77 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=78 case=5 macroblocks=1 index=65828 slot=8 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=78 arm_iterations=16 arm343_ticks=16 arm463_ticks=18 arm_first=0 pack_ticks=14 transfer_ticks=108 end_to_end_ticks=123 cpu_us=-1 raw_dsp_ticks=25086 counts_per_ms=164
+RING MDEC READY frame=78 notification_ticks=63 result_ticks=81 result_words=192 oracle_outside=1
+DCR READ frame=78 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=79 case=6 macroblocks=1 index=65832 slot=12 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=79 arm_iterations=16 arm343_ticks=57 arm463_ticks=55 arm_first=1 pack_ticks=14 transfer_ticks=118 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29477 counts_per_ms=164
+RING MDEC READY frame=79 notification_ticks=72 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=79 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=80 case=7 macroblocks=1 index=65836 slot=1 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=80 arm_iterations=16 arm343_ticks=45 arm463_ticks=41 arm_first=0 pack_ticks=14 transfer_ticks=113 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=27568 counts_per_ms=164
+RING MDEC READY frame=80 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=80 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=81 case=0 macroblocks=1 index=65840 slot=5 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=81 arm_iterations=16 arm343_ticks=29 arm463_ticks=30 arm_first=1 pack_ticks=14 transfer_ticks=113 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26574 counts_per_ms=164
+RING MDEC READY frame=81 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=81 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=82 case=1 macroblocks=1 index=65844 slot=9 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=82 arm_iterations=16 arm343_ticks=29 arm463_ticks=34 arm_first=0 pack_ticks=14 transfer_ticks=111 end_to_end_ticks=125 cpu_us=-1 raw_dsp_ticks=26421 counts_per_ms=164
+RING MDEC READY frame=82 notification_ticks=66 result_ticks=84 result_words=192 oracle_outside=1
+DCR READ frame=82 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=83 case=2 macroblocks=1 index=65848 slot=13 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=83 arm_iterations=16 arm343_ticks=34 arm463_ticks=32 arm_first=1 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=26923 counts_per_ms=164
+RING MDEC READY frame=83 notification_ticks=68 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=83 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=84 case=3 macroblocks=1 index=65852 slot=2 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=84 arm_iterations=16 arm343_ticks=50 arm463_ticks=52 arm_first=0 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28161 counts_per_ms=164
+RING MDEC READY frame=84 notification_ticks=68 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=84 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=85 case=4 macroblocks=1 index=65856 slot=6 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=85 arm_iterations=16 arm343_ticks=57 arm463_ticks=57 arm_first=1 pack_ticks=13 transfer_ticks=119 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29824 counts_per_ms=164
+RING MDEC READY frame=85 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=85 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=86 case=5 macroblocks=1 index=65860 slot=10 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=86 arm_iterations=16 arm343_ticks=15 arm463_ticks=18 arm_first=0 pack_ticks=14 transfer_ticks=107 end_to_end_ticks=121 cpu_us=-1 raw_dsp_ticks=24582 counts_per_ms=164
+RING MDEC READY frame=86 notification_ticks=62 result_ticks=80 result_words=192 oracle_outside=1
+DCR READ frame=86 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=87 case=6 macroblocks=1 index=65864 slot=14 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=87 arm_iterations=16 arm343_ticks=57 arm463_ticks=55 arm_first=1 pack_ticks=13 transfer_ticks=119 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29483 counts_per_ms=164
+RING MDEC READY frame=87 notification_ticks=73 result_ticks=90 result_words=192 oracle_outside=1
+DCR READ frame=87 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=88 case=7 macroblocks=1 index=65868 slot=3 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=88 arm_iterations=16 arm343_ticks=44 arm463_ticks=42 arm_first=0 pack_ticks=13 transfer_ticks=113 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=27666 counts_per_ms=164
+RING MDEC READY frame=88 notification_ticks=67 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=88 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=89 case=0 macroblocks=1 index=65872 slot=7 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=89 arm_iterations=16 arm343_ticks=28 arm463_ticks=31 arm_first=1 pack_ticks=13 transfer_ticks=113 end_to_end_ticks=126 cpu_us=-1 raw_dsp_ticks=26511 counts_per_ms=164
+RING MDEC READY frame=89 notification_ticks=68 result_ticks=85 result_words=192 oracle_outside=1
+DCR READ frame=89 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=90 case=1 macroblocks=1 index=65876 slot=11 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=90 arm_iterations=16 arm343_ticks=28 arm463_ticks=35 arm_first=0 pack_ticks=13 transfer_ticks=111 end_to_end_ticks=124 cpu_us=-1 raw_dsp_ticks=26431 counts_per_ms=164
+RING MDEC READY frame=90 notification_ticks=66 result_ticks=83 result_words=192 oracle_outside=1
+DCR READ frame=90 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=91 case=2 macroblocks=1 index=65880 slot=0 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=91 arm_iterations=16 arm343_ticks=33 arm463_ticks=33 arm_first=1 pack_ticks=13 transfer_ticks=123 end_to_end_ticks=136 cpu_us=-1 raw_dsp_ticks=28196 counts_per_ms=164
+RING MDEC READY frame=91 notification_ticks=77 result_ticks=94 result_words=192 oracle_outside=1
+DCR READ frame=91 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=92 case=3 macroblocks=1 index=65884 slot=4 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=92 arm_iterations=16 arm343_ticks=51 arm463_ticks=53 arm_first=0 pack_ticks=32 transfer_ticks=116 end_to_end_ticks=149 cpu_us=-1 raw_dsp_ticks=28209 counts_per_ms=164
+RING MDEC READY frame=92 notification_ticks=70 result_ticks=108 result_words=192 oracle_outside=1
+DCR READ frame=92 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=93 case=4 macroblocks=1 index=65888 slot=8 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=93 arm_iterations=16 arm343_ticks=59 arm463_ticks=55 arm_first=1 pack_ticks=14 transfer_ticks=119 end_to_end_ticks=133 cpu_us=-1 raw_dsp_ticks=29454 counts_per_ms=164
+RING MDEC READY frame=93 notification_ticks=73 result_ticks=92 result_words=192 oracle_outside=1
+DCR READ frame=93 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=94 case=5 macroblocks=1 index=65892 slot=12 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=94 arm_iterations=16 arm343_ticks=16 arm463_ticks=18 arm_first=0 pack_ticks=13 transfer_ticks=107 end_to_end_ticks=121 cpu_us=-1 raw_dsp_ticks=24599 counts_per_ms=164
+RING MDEC READY frame=94 notification_ticks=62 result_ticks=80 result_words=192 oracle_outside=1
+DCR READ frame=94 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=95 case=6 macroblocks=1 index=65896 slot=1 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=95 arm_iterations=16 arm343_ticks=57 arm463_ticks=56 arm_first=1 pack_ticks=13 transfer_ticks=119 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29429 counts_per_ms=164
+RING MDEC READY frame=95 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=95 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=96 case=7 macroblocks=1 index=65900 slot=5 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=96 arm_iterations=16 arm343_ticks=44 arm463_ticks=41 arm_first=0 pack_ticks=14 transfer_ticks=112 end_to_end_ticks=126 cpu_us=-1 raw_dsp_ticks=27541 counts_per_ms=164
+RING MDEC READY frame=96 notification_ticks=67 result_ticks=85 result_words=192 oracle_outside=1
+DCR READ frame=96 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=97 case=0 macroblocks=1 index=65904 slot=9 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=97 arm_iterations=16 arm343_ticks=28 arm463_ticks=30 arm_first=1 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=27130 counts_per_ms=164
+RING MDEC READY frame=97 notification_ticks=68 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=97 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=98 case=1 macroblocks=1 index=65908 slot=13 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=98 arm_iterations=16 arm343_ticks=30 arm463_ticks=34 arm_first=0 pack_ticks=14 transfer_ticks=110 end_to_end_ticks=124 cpu_us=-1 raw_dsp_ticks=26408 counts_per_ms=164
+RING MDEC READY frame=98 notification_ticks=65 result_ticks=84 result_words=192 oracle_outside=1
+DCR READ frame=98 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=99 case=2 macroblocks=1 index=65912 slot=2 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=99 arm_iterations=16 arm343_ticks=34 arm463_ticks=32 arm_first=1 pack_ticks=14 transfer_ticks=113 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26873 counts_per_ms=164
+RING MDEC READY frame=99 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=99 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=100 case=3 macroblocks=1 index=65916 slot=6 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=100 arm_iterations=16 arm343_ticks=50 arm463_ticks=52 arm_first=0 pack_ticks=13 transfer_ticks=115 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28647 counts_per_ms=164
+RING MDEC READY frame=100 notification_ticks=70 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=100 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=101 case=4 macroblocks=1 index=65920 slot=10 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=101 arm_iterations=16 arm343_ticks=56 arm463_ticks=57 arm_first=1 pack_ticks=14 transfer_ticks=118 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29441 counts_per_ms=164
+RING MDEC READY frame=101 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=101 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=102 case=5 macroblocks=1 index=65924 slot=14 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=102 arm_iterations=16 arm343_ticks=14 arm463_ticks=18 arm_first=0 pack_ticks=13 transfer_ticks=109 end_to_end_ticks=123 cpu_us=-1 raw_dsp_ticks=25308 counts_per_ms=164
+RING MDEC READY frame=102 notification_ticks=64 result_ticks=81 result_words=192 oracle_outside=1
+DCR READ frame=102 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=103 case=6 macroblocks=1 index=65928 slot=3 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=103 arm_iterations=16 arm343_ticks=58 arm463_ticks=55 arm_first=1 pack_ticks=13 transfer_ticks=118 end_to_end_ticks=131 cpu_us=-1 raw_dsp_ticks=29471 counts_per_ms=164
+RING MDEC READY frame=103 notification_ticks=73 result_ticks=90 result_words=192 oracle_outside=1
+DCR READ frame=103 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=104 case=7 macroblocks=1 index=65932 slot=7 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=104 arm_iterations=16 arm343_ticks=45 arm463_ticks=41 arm_first=0 pack_ticks=13 transfer_ticks=113 end_to_end_ticks=126 cpu_us=-1 raw_dsp_ticks=27529 counts_per_ms=164
+RING MDEC READY frame=104 notification_ticks=68 result_ticks=85 result_words=192 oracle_outside=1
+DCR READ frame=104 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=105 case=0 macroblocks=1 index=65936 slot=11 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=105 arm_iterations=16 arm343_ticks=29 arm463_ticks=30 arm_first=1 pack_ticks=14 transfer_ticks=113 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26499 counts_per_ms=164
+RING MDEC READY frame=105 notification_ticks=67 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=105 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=106 case=1 macroblocks=1 index=65940 slot=0 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=106 arm_iterations=16 arm343_ticks=29 arm463_ticks=34 arm_first=0 pack_ticks=14 transfer_ticks=111 end_to_end_ticks=125 cpu_us=-1 raw_dsp_ticks=26443 counts_per_ms=164
+RING MDEC READY frame=106 notification_ticks=66 result_ticks=84 result_words=192 oracle_outside=1
+DCR READ frame=106 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=107 case=2 macroblocks=1 index=65944 slot=4 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=107 arm_iterations=16 arm343_ticks=33 arm463_ticks=33 arm_first=1 pack_ticks=13 transfer_ticks=115 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=26916 counts_per_ms=164
+RING MDEC READY frame=107 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=107 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=108 case=3 macroblocks=1 index=65948 slot=8 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=108 arm_iterations=16 arm343_ticks=50 arm463_ticks=52 arm_first=0 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28152 counts_per_ms=164
+RING MDEC READY frame=108 notification_ticks=68 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=108 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=109 case=4 macroblocks=1 index=65952 slot=12 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=109 arm_iterations=16 arm343_ticks=57 arm463_ticks=57 arm_first=1 pack_ticks=13 transfer_ticks=119 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29899 counts_per_ms=164
+RING MDEC READY frame=109 notification_ticks=74 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=109 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=110 case=5 macroblocks=1 index=65956 slot=1 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=110 arm_iterations=16 arm343_ticks=16 arm463_ticks=18 arm_first=0 pack_ticks=13 transfer_ticks=108 end_to_end_ticks=121 cpu_us=-1 raw_dsp_ticks=24583 counts_per_ms=164
+RING MDEC READY frame=110 notification_ticks=63 result_ticks=80 result_words=192 oracle_outside=1
+DCR READ frame=110 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=111 case=6 macroblocks=1 index=65960 slot=5 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=111 arm_iterations=16 arm343_ticks=57 arm463_ticks=56 arm_first=1 pack_ticks=13 transfer_ticks=118 end_to_end_ticks=132 cpu_us=-1 raw_dsp_ticks=29443 counts_per_ms=164
+RING MDEC READY frame=111 notification_ticks=73 result_ticks=91 result_words=192 oracle_outside=1
+DCR READ frame=111 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=112 case=7 macroblocks=1 index=65964 slot=9 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=112 arm_iterations=16 arm343_ticks=45 arm463_ticks=42 arm_first=0 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=27535 counts_per_ms=164
+RING MDEC READY frame=112 notification_ticks=68 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=112 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=113 case=0 macroblocks=1 index=65968 slot=13 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=113 arm_iterations=16 arm343_ticks=29 arm463_ticks=31 arm_first=1 pack_ticks=13 transfer_ticks=114 end_to_end_ticks=127 cpu_us=-1 raw_dsp_ticks=26507 counts_per_ms=164
+RING MDEC READY frame=113 notification_ticks=68 result_ticks=86 result_words=192 oracle_outside=1
+DCR READ frame=113 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=114 case=1 macroblocks=1 index=65972 slot=2 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=114 arm_iterations=16 arm343_ticks=45 arm463_ticks=34 arm_first=0 pack_ticks=13 transfer_ticks=112 end_to_end_ticks=125 cpu_us=-1 raw_dsp_ticks=26424 counts_per_ms=164
+RING MDEC READY frame=114 notification_ticks=66 result_ticks=83 result_words=192 oracle_outside=1
+DCR READ frame=114 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=115 case=2 macroblocks=1 index=65976 slot=6 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=115 arm_iterations=16 arm343_ticks=35 arm463_ticks=33 arm_first=1 pack_ticks=13 transfer_ticks=115 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=26908 counts_per_ms=164
+RING MDEC READY frame=115 notification_ticks=69 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=115 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=116 case=3 macroblocks=1 index=65980 slot=10 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=116 arm_iterations=16 arm343_ticks=50 arm463_ticks=51 arm_first=0 pack_ticks=14 transfer_ticks=114 end_to_end_ticks=128 cpu_us=-1 raw_dsp_ticks=28151 counts_per_ms=164
+RING MDEC READY frame=116 notification_ticks=69 result_ticks=87 result_words=192 oracle_outside=1
+DCR READ frame=116 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=117 case=4 macroblocks=1 index=65984 slot=14 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=117 arm_iterations=16 arm343_ticks=150 arm463_ticks=59 arm_first=1 pack_ticks=13 transfer_ticks=130 end_to_end_ticks=144 cpu_us=-1 raw_dsp_ticks=32220 counts_per_ms=164
+RING MDEC READY frame=117 notification_ticks=85 result_ticks=103 result_words=192 oracle_outside=1
+DCR READ frame=117 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=118 case=5 macroblocks=1 index=65988 slot=3 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=118 arm_iterations=16 arm343_ticks=16 arm463_ticks=22 arm_first=0 pack_ticks=13 transfer_ticks=110 end_to_end_ticks=123 cpu_us=-1 raw_dsp_ticks=24660 counts_per_ms=164
+RING MDEC READY frame=118 notification_ticks=65 result_ticks=82 result_words=192 oracle_outside=1
+DCR READ frame=118 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=119 case=6 macroblocks=1 index=65992 slot=7 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=119 arm_iterations=16 arm343_ticks=58 arm463_ticks=56 arm_first=1 pack_ticks=14 transfer_ticks=256 end_to_end_ticks=270 cpu_us=-1 raw_dsp_ticks=29473 counts_per_ms=164
+RING MDEC READY frame=119 notification_ticks=144 result_ticks=163 result_words=192 oracle_outside=1
+DCR READ frame=119 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC RESULT frame=120 case=7 macroblocks=1 index=65996 slot=11 errors=0 checked_words=1536 arm343_oracle=0 arm463_oracle=0
+RING MDEC TIMING frame=120 arm_iterations=16 arm343_ticks=45 arm463_ticks=44 arm_first=0 pack_ticks=14 transfer_ticks=180 end_to_end_ticks=194 cpu_us=-1 raw_dsp_ticks=29499 counts_per_ms=164
+RING MDEC READY frame=120 notification_ticks=134 result_ticks=153 result_words=192 oracle_outside=1
+DCR READ frame=120 protocol=41 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING MDEC PASS jobs=120 macroblocks_per_job=1 input_slots_per_job=4 output_slots_per_job=2 checked_words_per_job=1536 protocol=41 ownership=whole_region useful_ARM_W=0
+NATIVE PAGE phase=1 index=0 linear=ce843000 physical=80f43000
+NATIVE PAGE phase=1 index=1 linear=ce844000 physical=80f44000
+NATIVE PAGE phase=1 index=2 linear=ce845000 physical=80f45000
+NATIVE PAGE phase=1 index=3 linear=ce846000 physical=80f46000
+NATIVE PAGES rc=0 phase=1 pages=4 bytes=16384 no_patcher=1 immutable_compare=1
+state phase=before delete rc=0 header=3000010c max=268
+  state=2 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=183
+delete=0 status=0
+state phase=after delete rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+RING unmap=0
+RING unreserve=0
+RING free native=0
+free native out=0
+free native in=0
+BEGIN close
+RING LIFECYCLE setup_us=703765 teardown_us=136413 includes_journaling=1 status=0
+FINAL status=0

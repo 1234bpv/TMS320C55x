@@ -1,0 +1,59 @@
+C55STREAM v7 command='buffers' machine=20002496 fast_counter_hz=32768 firmware_rc=0 firmware='400.34.93
+21-04-2009
+RA-6
+(c)Nokia'
+library load=0
+ordinal 1 = 803faef3
+ordinal 2 = 803fafa9
+ordinal 3 = 803fb0ff
+ordinal 4 = 803fb12b
+ordinal 5 = 803fafd1
+ordinal 6 = 803faff5
+ordinal 7 = 803fb0e7
+ordinal 8 = 803faf4f
+ordinal 9 = 803faeaf
+ordinal 10 = 803fae79
+ordinal 11 = 803fae71
+ordinal 12 = 803fae71
+ordinal 13 = 803faea3
+ordinal 14 = 803faea3
+ordinal 15 = 803fa6e1
+ordinal 16 = 803fa6a7
+ordinal 17 = 803fa74b
+ordinal 18 = 803fa711
+ordinal 19 = 803fa77b
+ordinal 20 = 803fa78b
+ordinal 21 = 803fa69d
+ordinal 22 = 803fa69d
+ordinal 23 = 803fa6a5
+ordinal 24 = 803fa6a5
+ordinal 25 = 803fa551
+ordinal 26 = 803f9fa3
+ordinal 27 = 803fa421
+ordinal 28 = 803fa533
+ordinal 29 = 803fa371
+ordinal 30 = 803fa2ef
+ordinal 31 = 803fa45d
+ordinal 32 = 803fa1c1
+ordinal 33 = 803f9f6d
+ordinal 34 = 803fa513
+ordinal 35 = 803fa3c5
+ordinal 36 = 803f9f39
+ordinal 37 = 803f9f39
+ordinal 38 = 803f9f49
+ordinal 39 = 803f9f49
+profile guard=0 delta=ff99ca70
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=00700110
+BEGIN base load
+base load=0
+BEGIN native buffer
+native buffer=0 address=ced41000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ced42000 length=0 max=4096
+free native out=0
+free native in=0
+BEGIN close
+FINAL status=0

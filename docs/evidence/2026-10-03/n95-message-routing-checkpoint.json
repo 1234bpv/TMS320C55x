@@ -1,0 +1,90 @@
+{
+  "scope": "one diagnostic official RUN on N95; not an accepted D0 cycle",
+  "session": "work/evidence/n95/d0-20261003-codex-routing",
+  "journal_sha256": "54A7C76FBA288734A931E112D22C7265BC6DE1298CE2243A4443F5F50907057C",
+  "diagnostic_only": true,
+  "accepted_d0_runs": 0,
+  "frames": 8,
+  "duplicate_sources_before_delete": [
+    "000077e0"
+  ],
+  "snapshots": {
+    "before-delete": {
+      "record": {
+        "cmd": "40000000",
+        "arg1": "00008000",
+        "arg2": "00000000",
+        "source": "0000732c"
+      },
+      "queues": [
+        {
+          "index": "0",
+          "address": "c81d0b78",
+          "source": "000077e0",
+          "node": "c81cf8d0"
+        },
+        {
+          "index": "1",
+          "address": "c81ad478",
+          "source": "00007700",
+          "node": "c81ad2b0"
+        },
+        {
+          "index": "2",
+          "address": "c81be0c0",
+          "source": "000077e0",
+          "node": "c81bbde0"
+        }
+      ]
+    },
+    "after-failed-delete": {
+      "record": {
+        "cmd": "40000000",
+        "arg1": "00008000",
+        "arg2": "00000000",
+        "source": "000077e0"
+      },
+      "queues": [
+        {
+          "index": "0",
+          "address": "c81d0b78",
+          "source": "000077e0",
+          "node": "c81cf8d0"
+        },
+        {
+          "index": "1",
+          "address": "c81ad478",
+          "source": "00007700",
+          "node": "c81ad2b0"
+        },
+        {
+          "index": "2",
+          "address": "c81be0c0",
+          "source": "000077e0",
+          "node": "c81bbde0"
+        },
+        {
+          "index": "3",
+          "address": "c82de628",
+          "source": "000077e0",
+          "node": "c82dd380"
+        },
+        {
+          "index": "4",
+          "address": "c82de348",
+          "source": "00007700",
+          "node": "c82ddcd8"
+        }
+      ]
+    }
+  },
+  "inference": "first-match native routing can deliver this ACK to the older duplicate queue; a fresh-device test is still required",
+  "n95_original_files_restored": true,
+  "n95_reboot_required_for_clean_routing_test": true,
+  "e90": "DLL/log/clocklog restored; EXE/hash restoration blocked by ERR open -46 after reboot",
+  "limits": [
+    "snapshots are not atomic",
+    "PS0 is not proof that kernel DSP queues were released",
+    "D1 and D2 remain pending"
+  ]
+}

@@ -1,0 +1,48 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76320768
+< tick 13895903 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55880
+< drive E freekb 1470664
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76320768
+< tick 13895984 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55880
+< drive E freekb 1470664
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> STAT E:\c55stream-v14.sis
+< ERR stat -1
+> GET C:\sys\bin\c55stream.exe
+< OK 18668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v14-sis-delivery-01-before.exe
+> GET C:\sys\hash\c55stream.exe
+< OK 20 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v14-sis-delivery-01-before.hash
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v14-sis-delivery-01-before.dll55l
+> GET E:\c55stream.log
+< OK 2010 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v14-sis-delivery-01-before.log
+> PUT E:\c55stream-v14.sis 13624
+< OK 13624
+> GET E:\c55stream-v14.sis
+< OK 13624 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v14-sis-delivery-01-readback.sis
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76320768
+< tick 13896562 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55880
+< drive E freekb 1470648
+< script IDLE
+> OPEN E:\c55stream-v14.sis
+< OK open

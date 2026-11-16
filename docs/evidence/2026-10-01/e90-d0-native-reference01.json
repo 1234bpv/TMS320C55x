@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-01T20:35:14.168520+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "d0-native-reference",
+  "host_version_expected": 23,
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 76906496",
+    "tick 543988 startTick 61475 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55836",
+    "drive E freekb 1447732",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "31836A0F706999DB89E303F23303F5F55E53BCDB2AD893892CFF99E6B2927EEC",
+  "clock_probes": [
+    {
+      "path": "native-reference01-engine.log",
+      "sha256": "A0741304D6C2039DB6C76AB0826C10ABA71BC085950742E52E993DC4A2541B50"
+    },
+    {
+      "path": "native-reference01-dsp.log",
+      "sha256": "4AA4A16767AB179757CA4D7F1B70C039CA08461B45F3697C9A9C3A66E6618789"
+    }
+  ],
+  "clock_exit": [
+    "EXIT 0 Kill"
+  ],
+  "clock_restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1249,
+    "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+    "equal": true
+  },
+  "steps": [
+    {
+      "label": "inspect",
+      "command": "inspect",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "native-reference01-inspect.log",
+      "sha256": "166C96064F614598535B9A8B153A9767B481092B9001DCE03998BAC1D5E0B05E",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 76898304",
+        "tick 548158 startTick 61475 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55832",
+        "drive E freekb 1447748",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "native-copy",
+      "command": "native-copy",
+      "complete": false,
+      "run_error": "RuntimeError: process exit: ['EXIT -6 Kill']",
+      "journal": "native-reference01-native-copy.log",
+      "sha256": "8D09F7504712B0FD56B7E97E84FF74013B343D768A2E9428D9ED94B219BADB14"
+    }
+  ],
+  "reference_rom_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+  "error": "RuntimeError: process exit: ['EXIT -6 Kill']"
+}

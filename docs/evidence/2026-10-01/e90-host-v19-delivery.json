@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-01T10:56:04.233209+00:00",
+  "device": "e90",
+  "host_version": 19,
+  "installed": false,
+  "files": [
+    {
+      "remote": "C:\\sys\\bin\\c55stream.exe",
+      "backup": "work/evidence/e90/wsola-v19-host-delivery-01-before.exe",
+      "bytes": 29760,
+      "sha256": "571C5A6221C7E7815558A2C3AE5F6665D8D7DE0B82D676488869C7BAA260F14F"
+    },
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "backup": "work/evidence/e90/wsola-v19-host-delivery-01-before.dll55l",
+      "bytes": 3668,
+      "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "backup": "work/evidence/e90/wsola-v19-host-delivery-01-before-ocprobe.log",
+      "bytes": 1249,
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    }
+  ],
+  "info": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79867904",
+    "tick 45605119 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55864",
+    "drive E freekb 1459792",
+    "script IDLE"
+  ],
+  "sis": {
+    "remote": "E:\\c55stream-v19.sis",
+    "bytes": 19976,
+    "sha256": "7B9C971B447C18A368F652FF7471794F0699E2F127DBBB6B81AAB02C96207955",
+    "readback_equal": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "utc": "2026-10-02T18:39:37.057714+00:00",
+  "ip": "192.168.3.22",
+  "device": "n95",
+  "action": "d0-worker-message",
+  "host_version_expected": 28,
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 88010752",
+    "tick 24454162 startTick 22918156 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65848",
+    "drive E freekb 1066048",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "B26270402306AA09E30AF7184443C47336FA582322EF832965CD3BF3C303AB80",
+  "clock_probes": [
+    {
+      "path": "worker-msg01-engine.log",
+      "sha256": "07E21814C8D6BAE1E3E8F8EA28F06BF3D60DD9EE0D7867468A47DDD839408BF9"
+    },
+    {
+      "path": "worker-msg01-dsp.log",
+      "sha256": "B7F10B08D8DCBE0B45E72B1AC8557E256CB9E27AD159AC06BBB4DB7D7E4468A8"
+    }
+  ],
+  "clock_exit": [
+    "EXIT 0 Kill"
+  ],
+  "clock_restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1259,
+    "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF",
+    "equal": true
+  },
+  "error": "RuntimeError: read-only stock DSP clock/profile guard failed; no research RUN"
+}

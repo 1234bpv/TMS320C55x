@@ -1,0 +1,205 @@
+{
+  "utc": "2026-10-04T08:39:08.125727+00:00",
+  "candidate_revision": 67,
+  "host_version": 52,
+  "protocol": 42,
+  "device": "n95",
+  "hardware_verified": false,
+  "scope": "post-ADSR plain mix only, 64 samples/voice, 1/8/24 voices; no full SPU or emulator integration",
+  "imports": [
+    "_NODE_wait",
+    "_STRM_allocateBuffer",
+    "__divul",
+    "_CLK_countspms",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_CLK_gethtime",
+    "_NODE_getMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_STRM_create",
+    "_STRM_idle",
+    "_c_int00"
+  ],
+  "imports_exist_in_saved_n95_baseimage": true,
+  "ARM_instruction_counts": {
+    "smlawb": 2,
+    "smlawt": 2
+  },
+  "ARM_adapter": "global ChanBuf source replaced by fifth pointer argument at sp+24",
+  "DSP_product": "signed32 x signed16 high-product via native MPY/MAC; no 40-bit long-long narrowing",
+  "files": [
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 184624,
+      "sha256": "42B5685B65B9C85D689AB6E84CDB19A412D548B153F6154B9C539527DFD07B7E"
+    },
+    {
+      "path": "out/dsp/c55stream-dmm-ring-spu.dll55l",
+      "bytes": 6140,
+      "sha256": "181D2851F53F3DD155AC0F37DA9288A26CB364865A3336113F0254A76B3B4AE4"
+    },
+    {
+      "path": "out/dsp/stream_node-dmm-ring-spu.asm",
+      "bytes": 66730,
+      "sha256": "911B2E0214F6FB345C8734CCADEADA8BB3D00D34B2A9DA7709599E2A9399B74F"
+    },
+    {
+      "path": "out/spu-kernel/mix_arm.o",
+      "bytes": 732,
+      "sha256": "6C64F19B148580DFE056B3D9F6F43BED82117C8C96EF52C355DBE363FD56C299"
+    },
+    {
+      "path": "out/spu-kernel/mix_job_arm.o",
+      "bytes": 1108,
+      "sha256": "FD7A42F93B8886EE8025F456DF51E8E7BE42D9EE1E534A40C062BD150238D81C"
+    },
+    {
+      "path": "out/spu-kernel/mix_arm-disassembly.txt",
+      "bytes": 996,
+      "sha256": "7F7515AB4A2153CE8316175113B8EE8EE84C6D1C52099FCE174025DE99CA654D"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 91365,
+      "sha256": "09330BC366D340BB188B257F0CFD1E6A65B294966690BFF36559A426C0C97AB1"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 41042,
+      "sha256": "14A8A36E00D6DFAA086D6A9BD74C02F9BA83EA2EC28A2FB62C540DC77CF7482A"
+    },
+    {
+      "path": "src/dsp/spu_mix_ring.inc",
+      "bytes": 3262,
+      "sha256": "5C5F10B6DE4BF2F84E642DDB99A92D6A171614E29C252E304136BD71AE065EDF"
+    },
+    {
+      "path": "src/dsp/dcr_read.s55",
+      "bytes": 302,
+      "sha256": "F2FA8A3EE9F0A6919B991E0B9F137151BAE708734E4031B57F49CC67B6D7C178"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 675,
+      "sha256": "940728EEB3295086E5C31DEF288266779D4C8D919E578A9BBC1D7DA968B8FCE4"
+    },
+    {
+      "path": "tools/build.cmd",
+      "bytes": 5634,
+      "sha256": "F744F079680B948D82C4E3FABDE332D8CF403743E28DA51372D36FD14B7C5E53"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 9163,
+      "sha256": "65CDF6F80F93C32F37566FC0D18029734318C50AFDE74A3C4348937ACE9CF20F"
+    },
+    {
+      "path": "tools/stage_spu_mix.py",
+      "bytes": 5212,
+      "sha256": "C6438D3E1762A5FEB666FFD940F0CC8111BA34E5C3883BD4FD52596E487F6F86"
+    },
+    {
+      "path": "tools/e90_task_session.py",
+      "bytes": 54369,
+      "sha256": "FF2D127632F7AEE0EF990046F84AC9A9B874E0DF2A4B489859BB876CDFFEBF05"
+    },
+    {
+      "path": "tools/spu_session_support.py",
+      "bytes": 3852,
+      "sha256": "65D3EF222D2D681CDA1FCA06FDE527CCEB33835F3121B3C3BB24E2D9219CA5BA"
+    },
+    {
+      "path": "tools/run_spu_ring_series.py",
+      "bytes": 2506,
+      "sha256": "4874A2FA07AAA5C006D83F3BA3AFAEF8E622056FA6E8EE74A5141D3357D2C2D7"
+    },
+    {
+      "path": "tools/rev/audit_dcr_read.py",
+      "bytes": 5868,
+      "sha256": "C86A8593E02CF4EBAA8623D6149C01F329ABF434B4FFD7942871785CFAF04134"
+    },
+    {
+      "path": "tools/record_spu_artifacts.py",
+      "bytes": 4911,
+      "sha256": "60BAF14BBFD134E5E42C9B6D76FA7BC72D5C999543217BAF5387C6CD220A5B23"
+    },
+    {
+      "path": "src/spu/COPYING",
+      "bytes": 19083,
+      "sha256": "A9107FE8417CEEACA41CE17987CDE004CB919789511C0A92FD114D1226A624A5"
+    },
+    {
+      "path": "src/spu/fixtures.h",
+      "bytes": 133265,
+      "sha256": "6959C048C8A53DB159358E1AE369252C636E04C42EE52159305128E0ECD0A8DC"
+    },
+    {
+      "path": "src/spu/mix.h",
+      "bytes": 500,
+      "sha256": "B00BD7201CB0A792FA12D373A96C26887D0ABE2CC0798DDB61CC78F2619AB595"
+    },
+    {
+      "path": "src/spu/mix_arm.s",
+      "bytes": 1155,
+      "sha256": "912B879414EB1906AF0C4E6CD3A568B8BB268AEEF8742899C62C1240CBB00C59"
+    },
+    {
+      "path": "src/spu/mix_job_arm.c",
+      "bytes": 228,
+      "sha256": "A064FCCB094478C7C5254960589318FC51F57FF55B431EDC8A5485FE16422CAC"
+    },
+    {
+      "path": "src/spu/ring_host.inc",
+      "bytes": 7888,
+      "sha256": "28A5CC27F3E968D95AD447506E83FD7FA8B670BFDA151368F0DDC59100FC3D3B"
+    },
+    {
+      "path": "src/spu/snapshot.json",
+      "bytes": 995,
+      "sha256": "7AAA8BC7488AA05F89032529EB43ACAA744E45082F2B3AC617E751BAE56964AB"
+    }
+  ],
+  "builds": [
+    "out/n95-spu67-dsp-build01.log",
+    "out/n95-spu67-host52-build03.log"
+  ],
+  "read_only_DCR_instruction_audit": {
+    "scope": "distinct N95 candidate67/protocol42; no phone I/O",
+    "DSP_sha256": "181D2851F53F3DD155AC0F37DA9288A26CB364865A3336113F0254A76B3B4AE4",
+    "helper_section": ".text (linker merged .text:dcr_read)",
+    "helper_symbol_value": "000F69",
+    "helper_section_byte_offset": 3689,
+    "helper_code_hex": "A45102004804",
+    "helper_code_sha256": "B4F50EC5203A63112C9C2E1FA3A7216A88D0BC23C76F23DF9D0B388C8F319439",
+    "helper_relocations": 0,
+    "instructions": [
+      "MOV port(#00200h),T0",
+      "RET"
+    ],
+    "text_relocation_kinds": {
+      "00050000": 42
+    },
+    "helper_io_reads": 1,
+    "helper_io_writes": 0,
+    "calls_per_exchange": 2,
+    "call_order": "DCR read -> ring_spu_exchange -> DCR read",
+    "notification_fields": {
+      "marker_word": 13,
+      "before_word": 14,
+      "after_word": 15
+    },
+    "reference": "docs/evidence/2026-10-03/dsp-native-notification-audit.json",
+    "limits": [
+      "DCR reads may affect timing/ordering; diagnostic is separate from candidate61",
+      "helper instruction audit is not a complete external-memory publication contract"
+    ]
+  },
+  "limits": [
+    "ARM and DSP must pass all eight fixtures on N95 before full series.",
+    "ARM timer averages 256 repeated additions on warm sums; validates one job and modular 256-job sums outside timing.",
+    "DCR reads are diagnostic only; external-memory publication contract remains open."
+  ]
+}

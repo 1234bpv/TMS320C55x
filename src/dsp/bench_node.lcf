@@ -1,0 +1,27 @@
+/*
+ * bench_node.lcf - linker control for the partial link (lnk55 -r).
+ *
+ * Sole purpose: mark the three dspbridge metadata sections as COPY, i.e.
+ * present in the object file but NOT allocated on the DSP and NOT downloaded.
+ *
+ * Without this they come out of lnk55 as ordinary initialized data, and
+ * DLLcreate stamps them "Needs space allocation on target / Section requires
+ * downloading" (DOFF flags 0x131). Every node in the phone's ROM has 0x101 on
+ * these sections instead - the loader reads them from the file, the DSP never
+ * sees them. Matching that keeps ~0x556 words of ASCII out of DSP memory and
+ * keeps our DOFF structurally identical to a known-good node (pcmdll).
+ *
+ * The UUID section name must track the UUID in bench_dcd.s55.
+ */
+
+SECTIONS
+{
+    /* Naming sections here resets their alignment to the default, so .text
+     * has to be listed too: the ROM nodes carry it at n=2 (4 words) and the
+     * loader honours whatever the DOFF says. */
+    .text                                   : align = 4
+
+    .dcd_register                           : type = COPY
+    .dspbridge_symbols                      : type = COPY
+    .967CBF11_B90E_4B54_A4D3_3C84249EE1DA   : type = COPY
+}

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-02T01:08:51.480052+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "recover-journal",
+  "host_version_expected": 24,
+  "complete": false,
+  "error": "TimeoutError: timed out"
+}

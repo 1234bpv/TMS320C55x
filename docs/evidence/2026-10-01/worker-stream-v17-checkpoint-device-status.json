@@ -1,0 +1,75 @@
+{
+  "utc": "2026-10-01T00:32:05.763289+00:00",
+  "devices": {
+    "n95": {
+      "info": [
+        "OK info",
+        "protocol 2",
+        "screen 320x240",
+        "ramfree 90025984",
+        "tick 25806107 startTick 17620669 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 65968",
+        "drive E freekb 1070176",
+        "script IDLE"
+      ],
+      "ps": [
+        "OK ps 0"
+      ],
+      "host_version": 17,
+      "normal.dll55l": {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 3668,
+        "sha256": "5B6BE15B20E73D8D318FDF9C5E5050C16AA28994BC422C891C2B0132EA4AB9F9",
+        "expected_equal": true
+      },
+      "clock.log": {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1259,
+        "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF",
+        "expected_equal": true
+      },
+      "host.exe": {
+        "remote": "E:\\sys\\bin\\c55stream.exe",
+        "bytes": 28456,
+        "sha256": "C8B08E8C0442F1E58CB07C40B5299E4FE6FD5DE873B3F3536014A72C1B284163",
+        "expected_equal": true
+      }
+    },
+    "e90": {
+      "info": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 79859712",
+        "tick 8176478 startTick 75535 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55876",
+        "drive E freekb 1463956",
+        "script IDLE"
+      ],
+      "ps": [
+        "OK ps 0"
+      ],
+      "host_version": 17,
+      "normal.dll55l": {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 3668,
+        "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+        "expected_equal": true
+      },
+      "clock.log": {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "expected_equal": true
+      },
+      "host.exe": {
+        "remote": "C:\\sys\\bin\\c55stream.exe",
+        "bytes": 28456,
+        "sha256": "C8B08E8C0442F1E58CB07C40B5299E4FE6FD5DE873B3F3536014A72C1B284163",
+        "expected_equal": true
+      }
+    }
+  }
+}

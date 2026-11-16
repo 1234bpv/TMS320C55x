@@ -1,0 +1,102 @@
+{
+  "utc": "2026-10-01T19:50:37.067274+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "d0-sequence",
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79679488",
+    "tick 933648 startTick 61377 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55848",
+    "drive E freekb 1447780",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "8FD9FAE108D1A2D22284FB36F37A9EC7B4235F56FA41DE92070285DB85E4F043",
+  "clock_probes": [
+    {
+      "path": "resume-sequence02-engine.log",
+      "sha256": "4A23FECAFBC3ED0C678FA3074B671876E3A67D768DF21F28B7229C56BF2F5C8E"
+    },
+    {
+      "path": "resume-sequence02-dsp.log",
+      "sha256": "7F6B905BB13C7E7AB273E5C819C25F9F6FEB9B36DF573CF062BF726126A29539"
+    }
+  ],
+  "clock_exit": [
+    "EXIT 0 Kill"
+  ],
+  "clock_restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1249,
+    "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+    "equal": true
+  },
+  "steps": [
+    {
+      "label": "inspect",
+      "command": "inspect",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "resume-sequence02-inspect.log",
+      "sha256": "8948E7566A85FD5C93886103A9A308744F5AE6119D00C23575CDC3078A6B15BA",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 79671296",
+        "tick 937623 startTick 61377 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55844",
+        "drive E freekb 1447800",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "create",
+      "command": "create",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "resume-sequence02-create.log",
+      "sha256": "A1638F093C8494D003E28CEAFC043905F00C8DD79CDA18C086C60D1C806A7818",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 79671296",
+        "tick 938706 startTick 61377 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55844",
+        "drive E freekb 1447800",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "run1",
+      "command": "run-transfer reps=0 bytes=512 frames=8",
+      "complete": false,
+      "run_error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery",
+      "journal_error": "RuntimeError: ERR open -14"
+    }
+  ],
+  "deployed": {
+    "remote": "E:\\c55stream.dll55l",
+    "bytes": 3952,
+    "sha256": "2B97836D039E698094D6256AFE99D8A539F1CA610877B2313196122BC40B6B34",
+    "equal": true
+  },
+  "error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery"
+}

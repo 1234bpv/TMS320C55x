@@ -1,0 +1,112 @@
+{
+  "utc": "2026-10-04T08:54:00.305447+00:00",
+  "candidate_revision": 68,
+  "host_version": 53,
+  "DSP_kernel_candidate_revision": 63,
+  "protocol": 40,
+  "device": "n95",
+  "hardware_verified": false,
+  "scope": "current SMLAD ARM search versus scalar ARM and exact retained DSP63, paired identical inputs; no emulator changes",
+  "current_ARM_SMLAD_instruction_sites": 5,
+  "DSP_reused_exact63": true,
+  "builds": [
+    "out/n95-wsola68-host53-build01.log"
+  ],
+  "files": [
+    {
+      "path": "out/arm/c55stream.exe",
+      "sha256": "C291AB33AE9B914E67A644DDD12CB8F6FC949408680B4C030AEBAE2F2DFAE0E2",
+      "bytes": 190000
+    },
+    {
+      "path": "out/dsp/c55stream-dmm-ring-wsola.dll55l",
+      "sha256": "646231C29251F94B688FD89E2F729553CBF5083D1C734FFC6775FEE7E9470BFF",
+      "bytes": 5644
+    },
+    {
+      "path": "out/wsola-current/kernel.o",
+      "sha256": "986E21AADF1EE97C387799A090D677D952AB83556DF884D90BB99C45523E9859",
+      "bytes": 2080
+    },
+    {
+      "path": "out/wsola-current/kernel-disassembly.txt",
+      "sha256": "D170B19C3ED2F20B60D0CC41DA8DCDBF7705713A3D44242B9D4276431A6C44FD",
+      "bytes": 6457
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "sha256": "7B4E3019749BE01C6234F94B79A0B2C4CA3B59078CC815128AB0B2A32AD3B8B6",
+      "bytes": 91811
+    },
+    {
+      "path": "src/wsola_reference.cpp",
+      "sha256": "03860AC377252C32BB5B5809B7AE7205548821EBC3B4B4501D06B4FAEE966089",
+      "bytes": 3344
+    },
+    {
+      "path": "src/wsola_reference.h",
+      "sha256": "0A7734B13F447BF41FD4FDF29A8E7298DA14E8FFB51047D9C710EEACDAD6A16F",
+      "bytes": 570
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "sha256": "7295A5153578C348AB3D7D017D013D849AF2734808DED74A99890C4142A27778",
+      "bytes": 725
+    },
+    {
+      "path": "tools/build.cmd",
+      "sha256": "61A0FFE93AD66D82A9DBB24215B14C8345A05B07F8FCBD83F8F5C047E891D359",
+      "bytes": 5721
+    },
+    {
+      "path": "tools/e90_task_session.py",
+      "sha256": "C650622EE8104688A9D1A76FBEBF3F429D1FE7125E0444FB4FA0DF009088E0DA",
+      "bytes": 54901
+    },
+    {
+      "path": "tools/stage_wsola_current.py",
+      "sha256": "E97AE5D797CC2ED97EE821F0B2A370CEC4DEE07DC8017CED1B37B4A80E920995",
+      "bytes": 1817
+    },
+    {
+      "path": "tools/wsola_current_session_support.py",
+      "sha256": "3562BF1E3AEF46EFFB3146460AC8542578798A1FEB894D17DE8E1EB24B6309C5",
+      "bytes": 4760
+    },
+    {
+      "path": "tools/run_wsola_current_series.py",
+      "sha256": "B6A5628BEAD05D87F15B230B2D097E4999712CB80F6582F0EF756A04C89DFD19",
+      "bytes": 2270
+    },
+    {
+      "path": "tools/record_wsola_current_artifacts.py",
+      "sha256": "4391660140B40B47A7F9CC0A51C0B3273D9C7D335FA5B30DB58C9B90276044B1",
+      "bytes": 3190
+    },
+    {
+      "path": "src/wsola_current/kernel.cpp",
+      "sha256": "48170B0ACEFBA33427B2F7000E0F1E37183A70CD43D04545180BE68A02797E90",
+      "bytes": 82
+    },
+    {
+      "path": "src/wsola_current/kernel.inc",
+      "sha256": "0C44EF6D1636F7F7E87ED769A90B8302758B75B2398659341068C0A8E90A2B10",
+      "bytes": 2591
+    },
+    {
+      "path": "src/wsola_current/ring_host.inc",
+      "sha256": "74596B88120B5B4C951206EA9E905982FA9FF6F58E2AC2AEC3CC7DCC8C3F2599",
+      "bytes": 7008
+    },
+    {
+      "path": "src/wsola_current/snapshot.json",
+      "sha256": "B1AC37C52AB20836CDED51FE701EB5FF86DEC07AFDF2E64DBDC629A5B4FCD576",
+      "bytes": 607
+    }
+  ],
+  "limits": [
+    "Current ARM snapshot packing and search both inside A; compiler CSL343/O2/ARMv6 matches stage1 shell.",
+    "Warm isolated baselines not complete live audio/gameplay; useful W unmeasured.",
+    "DCR instruction proof remains exact63; external-memory publication contract open."
+  ]
+}

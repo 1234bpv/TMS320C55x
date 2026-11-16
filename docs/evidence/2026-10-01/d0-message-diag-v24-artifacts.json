@@ -1,0 +1,103 @@
+{
+  "utc": "2026-10-01T20:06:51.324577+00:00",
+  "variant": "generic library2, official RUN, three STRM message snapshots; NODE_getMsg(0)/putMsg(0); no timed cleanup claim",
+  "candidate_revision": 24,
+  "host_version": 22,
+  "protocol": 15,
+  "hardware_verified": false,
+  "d0_accepted_runs": 0,
+  "dll_dump_verification": true,
+  "imports_exist_in_saved_e90_baseimage": true,
+  "imports": [
+    "_MSG_ptoDSPBuffer",
+    "_MSG_toGPP",
+    "_MSG_maxMessages",
+    "_STRM_allocateBuffer",
+    "_MSG_pfromDSPBuffer",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_NODE_putMsg",
+    "_NODE_getMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_STRM_create",
+    "_c_int00"
+  ],
+  "files": [
+    {
+      "path": "out/dsp/c55stream-run-message-diag.dll55l",
+      "bytes": 3836,
+      "sha256": "B1CB8409F2E429D8751B35EE595EDD560CF4F330F812B0EB57B05DAA56CD567A"
+    },
+    {
+      "path": "out/dsp/stream_node-run-message-diag.asm",
+      "bytes": 28119,
+      "sha256": "3FA36A16F5F04D06CEC79426D92F54CC6F38307C1A1EC16D31E5B3976A0B3270"
+    },
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 35120,
+      "sha256": "AFF498B8D1FF925B935CDB8736C17C2A7C83835F4DAFF02E01AF435F8DA0BEA6"
+    },
+    {
+      "path": "src/dsp/stream_resident_dcd.s55",
+      "bytes": 738,
+      "sha256": "4220828E5CC6759C8C04560EE352A830AA0EEFBAFD772A7ADBE90F2EE7220D4F"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 43277,
+      "sha256": "ED9320F9588ADDFF9BA4414E0D57E5DB642CEBE89862D23BAF0FBDF6F17ACACD"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 27546,
+      "sha256": "C4499A00ECE8C86DE86E92DA6B8819ADE9B55B11BB5CD960791865FF806B9661"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 5226,
+      "sha256": "B1F2B9AF234D456AE5EEF0099EC6173CA9E51DEBC66D961D292B32AF4ABEE21B"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 534,
+      "sha256": "34B79FF0C08EA0EE2C2D37C6D14C864ABE8561575F26A8F69EAFE6B874835C2C"
+    },
+    {
+      "path": "out/sis/c55stream-livejournal-v22_sha1.sis",
+      "bytes": 20416,
+      "sha256": "0F8577C66D84C0C2C43FC600AFAB0C77736FC4962084DE95DBFEC0C4084E21BA"
+    },
+    {
+      "path": "out/sis/c55stream-restore-v20_sha1.sis",
+      "bytes": 19924,
+      "sha256": "9C2D310E19889C4CAA3CA25F213A39C50B8C6F4FF62596951CE9C183B9B69874"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/d0-host-v22-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-run-message-diag-v24-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-host-v22-sis.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-restore-v20-sis-build.log",
+      "exit_code": 0
+    }
+  ],
+  "limits": [
+    "Assembly/import checks are not proof of RMS EXITACK delivery.",
+    "Fail-stop retains ownership and requires manual recovery; cancel safety is not proven.",
+    "Restore SIS revision22 contains the exact original v20 EXE, not a v22 host."
+  ]
+}

@@ -1,0 +1,68 @@
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 90632192
+< tick 10147598 startTick 7928381 boot 0 by n
+< ap Huawei
+< drive C freekb 65992
+< drive E freekb 1070192
+< script IDLE
+2026-09-30T13:49:36.082499+00:00
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 90632192
+< tick 10147681 startTick 7928381 boot 0 by n
+< ap Huawei
+< drive C freekb 65992
+< drive E freekb 1070192
+< script IDLE
+2026-09-30T13:49:36.154613+00:00
+> PS c55stream*
+< OK ps 0
+2026-09-30T13:49:37.227705+00:00
+> PS ocprobe*
+< OK ps 0
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v9-bare-messages-prepare-01-before.dll55l
+> GET E:\c55stream.log
+< OK 2250 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v9-bare-messages-prepare-01-before.log
+> GET E:\ocprobe.log
+< OK 1259 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v9-bare-messages-prepare-01-before-ocprobe.log
+2026-09-30T13:49:37.492219+00:00
+> START E:\sys\bin\ocprobe.exe patcher dsp 1
+< OK proc 5
+2026-09-30T13:49:37.641774+00:00
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+2026-09-30T13:49:38.207792+00:00
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+2026-09-30T13:49:38.383750+00:00
+> WAIT 5 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1355 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v9-bare-messages-prepare-01-clock.log
+> PUT E:\ocprobe.log 1259
+< OK 1259
+> GET E:\ocprobe.log
+< OK 1259 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v9-bare-messages-prepare-01-ocprobe-restored.log
+> PUT E:\c55stream.dll55l 2136
+< OK 2136
+> GET E:\c55stream.dll55l
+< OK 2136 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v9-bare-messages-prepare-01-dsp-readback.dll55l
+2026-09-30T13:49:40.228333+00:00
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 90632192
+< tick 10151823 startTick 7928381 boot 0 by n
+< ap Huawei
+< drive C freekb 65992
+< drive E freekb 1070192
+< script IDLE

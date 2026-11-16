@@ -1,0 +1,54 @@
+{
+  "scope": "saved firmware only; no device I/O",
+  "n95": {
+    "module_sha256": {
+      "ldd": "34EE45B4F1C0F394C1C06B4141709E025FA8205860E0FAAC83510EF8577ECD3A",
+      "pdd": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF",
+      "kernel": "11F1383F534AA1774B6AB222E2436B5B64D931292EF580FB5926253838CD9455"
+    },
+    "checked_instructions": 25,
+    "ioctl": 2,
+    "argument1": "pointer to caller-owned aligned Uint32",
+    "argument2": "unused/null",
+    "output_bytes": 4,
+    "ldd_handler": "801B530C",
+    "copy_call": "801B5398",
+    "copy_kernel_ordinal": 298,
+    "initializer": "80199BA0",
+    "manager_to_channel_state": {
+      "0": 3,
+      "1": 3,
+      "2": 2,
+      "3": 2,
+      "4": 1
+    },
+    "limit": "channel state is cached native state, initialized at open; it is not a global queue enumeration or DSP fault diagnosis"
+  },
+  "e90": {
+    "module_sha256": {
+      "ldd": "07731D17142D8D45EF29229F00D7856135CE59D2F51935DB1DF96AD742E9A70D",
+      "pdd": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4",
+      "kernel": "CC81644DD40C19ABFD72FA7B643B409C668C9B3A632C881CC70E07974D76091B"
+    },
+    "checked_instructions": 25,
+    "ioctl": 2,
+    "argument1": "pointer to caller-owned aligned Uint32",
+    "argument2": "unused/null",
+    "output_bytes": 4,
+    "ldd_handler": "803F994C",
+    "copy_call": "803F99D8",
+    "copy_kernel_ordinal": 298,
+    "initializer": "803DE1F0",
+    "manager_to_channel_state": {
+      "0": 3,
+      "1": 3,
+      "2": 2,
+      "3": 2,
+      "4": 1
+    },
+    "limit": "channel state is cached native state, initialized at open; it is not a global queue enumeration or DSP fault diagnosis"
+  },
+  "rejected_hypothesis": "bridgeapi ordinal35 subcommand0 is processor control04000007, not a state getter; do not invoke it for observation",
+  "native_query": "channel.Ctl(2, &state, NULL); accept state1 after open; never PROC_Load",
+  "limit": "this replaces the running-base observation only; unique queue routing and native allocation lifetime are separate contracts"
+}

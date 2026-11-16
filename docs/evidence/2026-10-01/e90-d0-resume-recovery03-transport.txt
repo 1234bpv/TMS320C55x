@@ -1,0 +1,38 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80056320
+< tick 152539 startTick 60875 boot 0 by n
+< ap Huawei
+< drive C freekb 55840
+< drive E freekb 1447792
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80056320
+< tick 152607 startTick 60875 boot 0 by n
+< ap Huawei
+< drive C freekb 55840
+< drive E freekb 1447792
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> GET E:\c55stream.log
+< OK 4743 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-recovery03.log
+> GET E:\c55stream.dll55l
+< OK 3952 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-recovery03-dsp.dll55l
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80044032
+< tick 152866 startTick 60875 boot 0 by n
+< ap Huawei
+< drive C freekb 55840
+< drive E freekb 1447792
+< script IDLE

@@ -1,0 +1,287 @@
+C55STREAM v19 command='worker-wsola reps=0 bytes=1792 frames=32' machine=20002d84 fast_counter_hz=32768 firmware_rc=0 firmware='V 35.0.001
+11-11-09
+RM-320
+N95(c)NMP'
+library load=0
+ordinal 1 = 80a5e483
+ordinal 2 = 80a5e539
+ordinal 3 = 80a5e68f
+ordinal 4 = 80a5e6bb
+ordinal 5 = 80a5e561
+ordinal 6 = 80a5e585
+ordinal 7 = 80a5e677
+ordinal 8 = 80a5e4df
+ordinal 9 = 80a5e43f
+ordinal 10 = 80a5e409
+ordinal 11 = 80a5e401
+ordinal 12 = 80a5e401
+ordinal 13 = 80a5e433
+ordinal 14 = 80a5e433
+ordinal 15 = 80a5dc71
+ordinal 16 = 80a5dc37
+ordinal 17 = 80a5dcdb
+ordinal 18 = 80a5dca1
+ordinal 19 = 80a5dd0b
+ordinal 20 = 80a5dd1b
+ordinal 21 = 80a5dc2d
+ordinal 22 = 80a5dc2d
+ordinal 23 = 80a5dc35
+ordinal 24 = 80a5dc35
+ordinal 25 = 80a5dae1
+ordinal 26 = 80a5d533
+ordinal 27 = 80a5d9b1
+ordinal 28 = 80a5dac3
+ordinal 29 = 80a5d901
+ordinal 30 = 80a5d87f
+ordinal 31 = 80a5d9ed
+ordinal 32 = 80a5d751
+ordinal 33 = 80a5d4fd
+ordinal 34 = 80a5daa3
+ordinal 35 = 80a5d955
+ordinal 36 = 80a5d4c9
+ordinal 37 = 80a5d4c9
+ordinal 38 = 80a5d4d9
+ordinal 39 = 80a5d4d9
+profile guard=0 delta=00000000
+PERF guard address=80148410 words=6 fnv=75736a35 expected=75736a35
+PERF guard address=80148460 words=56 fnv=8c9deac3 expected=8c9deac3
+PERF guard address=80148638 words=24 fnv=4c360a14 expected=4c360a14
+PERF guard address=80148334 words=28 fnv=4584a74d expected=4584a74d
+PERF load=-11
+PERF open=0
+PERF reserve=0 status=0 before=50 after=100
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=007000f0
+BEGIN base load
+base load=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=007018f8
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=896 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=24 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=6134
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN native buffer
+native buffer=0 address=ce841000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ce842000 length=0 max=4096
+BEGIN worker stream no_run=1 frames=32 packet_bytes=1792
+WSOLA frame=1 case=0 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=1 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=-5001072 expected_sum=-5001072
+WSOLA reference frame=1 offset=172 score=4364902 scored=117 arm_last=172
+WSOLA timing frame=1 arm_iterations=16 arm_ticks=618 arm_first=1 pack_ticks=2 transfer_ticks=14 end_to_end_ticks=16 issue_us=152 raw_dsp_ticks=19 dsp_stamp=3615079 counts_per_ms=164
+WSOLA size frame=1 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=0
+PERF frame=1 before=100 after=100
+WSOLA frame=2 case=1 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=2 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=0 expected_sum=0
+WSOLA reference frame=2 offset=0 score=0 scored=114 arm_last=0
+WSOLA timing frame=2 arm_iterations=16 arm_ticks=624 arm_first=0 pack_ticks=1 transfer_ticks=15 end_to_end_ticks=16 issue_us=183 raw_dsp_ticks=8 dsp_stamp=4557551 counts_per_ms=164
+WSOLA size frame=2 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=1
+PERF frame=2 before=100 after=100
+WSOLA frame=3 case=2 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=3 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=198084040 expected_sum=198084040
+WSOLA reference frame=3 offset=0 score=57446620 scored=114 arm_last=0
+WSOLA timing frame=3 arm_iterations=16 arm_ticks=604 arm_first=1 pack_ticks=1 transfer_ticks=15 end_to_end_ticks=16 issue_us=183 raw_dsp_ticks=8 dsp_stamp=6082633 counts_per_ms=164
+WSOLA size frame=3 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=2
+PERF frame=3 before=100 after=100
+WSOLA frame=4 case=3 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=4 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=-173602550 expected_sum=-173602550
+WSOLA reference frame=4 offset=0 score=-57559040 scored=114 arm_last=0
+WSOLA timing frame=4 arm_iterations=16 arm_ticks=604 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=9 dsp_stamp=6803788 counts_per_ms=164
+WSOLA size frame=4 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=3
+PERF frame=4 before=100 after=100
+WSOLA frame=5 case=4 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=5 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=226373 expected_sum=226373
+WSOLA reference frame=5 offset=1 score=261121 scored=114 arm_last=1
+WSOLA timing frame=5 arm_iterations=16 arm_ticks=604 arm_first=1 pack_ticks=2 transfer_ticks=16 end_to_end_ticks=18 issue_us=152 raw_dsp_ticks=8 dsp_stamp=8347447 counts_per_ms=164
+WSOLA size frame=5 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=4
+PERF frame=5 before=100 after=100
+WSOLA frame=6 case=5 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=6 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=641941 expected_sum=641941
+WSOLA reference frame=6 offset=439 score=261121 scored=117 arm_last=439
+WSOLA timing frame=6 arm_iterations=16 arm_ticks=620 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=9 dsp_stamp=9031076 counts_per_ms=164
+WSOLA size frame=6 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=5
+PERF frame=6 before=100 after=100
+WSOLA frame=7 case=6 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=7 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=450702 expected_sum=450702
+WSOLA reference frame=7 offset=440 score=261121 scored=114 arm_last=440
+WSOLA timing frame=7 arm_iterations=16 arm_ticks=603 arm_first=1 pack_ticks=2 transfer_ticks=16 end_to_end_ticks=18 issue_us=183 raw_dsp_ticks=9 dsp_stamp=10576383 counts_per_ms=164
+WSOLA size frame=7 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=6
+PERF frame=7 before=100 after=100
+WSOLA frame=8 case=7 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=8 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=397558 expected_sum=397558
+WSOLA reference frame=8 offset=4 score=261121 scored=117 arm_last=4
+WSOLA timing frame=8 arm_iterations=16 arm_ticks=619 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=9 dsp_stamp=11259295 counts_per_ms=164
+WSOLA size frame=8 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=7
+PERF frame=8 before=100 after=100
+WSOLA frame=9 case=0 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=9 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=-4711201 expected_sum=-4711201
+WSOLA reference frame=9 offset=288 score=3471070 scored=117 arm_last=288
+WSOLA timing frame=9 arm_iterations=16 arm_ticks=619 arm_first=1 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=9 dsp_stamp=12812341 counts_per_ms=164
+WSOLA size frame=9 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=0
+PERF frame=9 before=100 after=100
+WSOLA frame=10 case=1 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=10 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=0 expected_sum=0
+WSOLA reference frame=10 offset=0 score=0 scored=114 arm_last=0
+WSOLA timing frame=10 arm_iterations=16 arm_ticks=603 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=9 dsp_stamp=13505711 counts_per_ms=164
+WSOLA size frame=10 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=1
+PERF frame=10 before=100 after=100
+WSOLA frame=11 case=2 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=11 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=198084040 expected_sum=198084040
+WSOLA reference frame=11 offset=0 score=57446620 scored=114 arm_last=0
+WSOLA timing frame=11 arm_iterations=16 arm_ticks=603 arm_first=1 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=8 dsp_stamp=15050174 counts_per_ms=164
+WSOLA size frame=11 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=2
+PERF frame=11 before=100 after=100
+WSOLA frame=12 case=3 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=12 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=-173602550 expected_sum=-173602550
+WSOLA reference frame=12 offset=0 score=-57559040 scored=114 arm_last=0
+WSOLA timing frame=12 arm_iterations=16 arm_ticks=653 arm_first=0 pack_ticks=2 transfer_ticks=16 end_to_end_ticks=18 issue_us=152 raw_dsp_ticks=8 dsp_stamp=15771766 counts_per_ms=164
+WSOLA size frame=12 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=3
+PERF frame=12 before=100 after=100
+WSOLA frame=13 case=4 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=13 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=226373 expected_sum=226373
+WSOLA reference frame=13 offset=1 score=261121 scored=114 arm_last=1
+WSOLA timing frame=13 arm_iterations=16 arm_ticks=604 arm_first=1 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=9 dsp_stamp=17317697 counts_per_ms=164
+WSOLA size frame=13 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=4
+PERF frame=13 before=100 after=100
+WSOLA frame=14 case=5 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=14 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=641941 expected_sum=641941
+WSOLA reference frame=14 offset=439 score=261121 scored=117 arm_last=439
+WSOLA timing frame=14 arm_iterations=16 arm_ticks=640 arm_first=0 pack_ticks=2 transfer_ticks=14 end_to_end_ticks=16 issue_us=152 raw_dsp_ticks=8 dsp_stamp=18077913 counts_per_ms=164
+WSOLA size frame=14 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=5
+PERF frame=14 before=100 after=100
+WSOLA frame=15 case=6 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=15 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=450702 expected_sum=450702
+WSOLA reference frame=15 offset=440 score=261121 scored=114 arm_last=440
+WSOLA timing frame=15 arm_iterations=16 arm_ticks=603 arm_first=1 pack_ticks=1 transfer_ticks=15 end_to_end_ticks=16 issue_us=183 raw_dsp_ticks=8 dsp_stamp=19602479 counts_per_ms=164
+WSOLA size frame=15 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=6
+PERF frame=15 before=100 after=100
+WSOLA frame=16 case=7 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=16 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=397558 expected_sum=397558
+WSOLA reference frame=16 offset=4 score=261121 scored=117 arm_last=4
+WSOLA timing frame=16 arm_iterations=16 arm_ticks=639 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=8 dsp_stamp=20363466 counts_per_ms=164
+WSOLA size frame=16 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=7
+PERF frame=16 before=100 after=100
+WSOLA frame=17 case=0 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=17 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=-4653809 expected_sum=-4653809
+WSOLA reference frame=17 offset=92 score=3337147 scored=117 arm_last=92
+WSOLA timing frame=17 arm_iterations=16 arm_ticks=619 arm_first=1 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=8 dsp_stamp=21897762 counts_per_ms=164
+WSOLA size frame=17 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=0
+PERF frame=17 before=100 after=100
+WSOLA frame=18 case=1 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=18 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=0 expected_sum=0
+WSOLA reference frame=18 offset=0 score=0 scored=114 arm_last=0
+WSOLA timing frame=18 arm_iterations=16 arm_ticks=604 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=9 dsp_stamp=22610464 counts_per_ms=164
+WSOLA size frame=18 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=1
+PERF frame=18 before=100 after=100
+WSOLA frame=19 case=2 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=19 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=198084040 expected_sum=198084040
+WSOLA reference frame=19 offset=0 score=57446620 scored=114 arm_last=0
+WSOLA timing frame=19 arm_iterations=16 arm_ticks=604 arm_first=1 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=9 dsp_stamp=24116373 counts_per_ms=164
+WSOLA size frame=19 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=2
+PERF frame=19 before=100 after=100
+WSOLA frame=20 case=3 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=20 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=-173602550 expected_sum=-173602550
+WSOLA reference frame=20 offset=0 score=-57559040 scored=114 arm_last=0
+WSOLA timing frame=20 arm_iterations=16 arm_ticks=604 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=8 dsp_stamp=24857335 counts_per_ms=164
+WSOLA size frame=20 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=3
+PERF frame=20 before=100 after=100
+WSOLA frame=21 case=4 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=21 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=226373 expected_sum=226373
+WSOLA reference frame=21 offset=1 score=261121 scored=114 arm_last=1
+WSOLA timing frame=21 arm_iterations=16 arm_ticks=602 arm_first=1 pack_ticks=2 transfer_ticks=14 end_to_end_ticks=16 issue_us=152 raw_dsp_ticks=9 dsp_stamp=26668887 counts_per_ms=164
+WSOLA size frame=21 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=4
+PERF frame=21 before=100 after=100
+WSOLA frame=22 case=5 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=22 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=641941 expected_sum=641941
+WSOLA reference frame=22 offset=439 score=261121 scored=117 arm_last=439
+WSOLA timing frame=22 arm_iterations=16 arm_ticks=620 arm_first=0 pack_ticks=1 transfer_ticks=15 end_to_end_ticks=16 issue_us=183 raw_dsp_ticks=9 dsp_stamp=27799323 counts_per_ms=164
+WSOLA size frame=22 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=5
+PERF frame=22 before=100 after=100
+WSOLA frame=23 case=6 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=23 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=450702 expected_sum=450702
+WSOLA reference frame=23 offset=440 score=261121 scored=114 arm_last=440
+WSOLA timing frame=23 arm_iterations=16 arm_ticks=604 arm_first=1 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=8 dsp_stamp=29243147 counts_per_ms=164
+WSOLA size frame=23 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=6
+PERF frame=23 before=100 after=100
+WSOLA frame=24 case=7 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=24 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=397558 expected_sum=397558
+WSOLA reference frame=24 offset=4 score=261121 scored=117 arm_last=4
+WSOLA timing frame=24 arm_iterations=16 arm_ticks=639 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=8 dsp_stamp=30099149 counts_per_ms=164
+WSOLA size frame=24 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=7
+PERF frame=24 before=100 after=100
+WSOLA frame=25 case=0 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=25 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=700777 expected_sum=700777
+WSOLA reference frame=25 offset=56 score=2420656 scored=117 arm_last=56
+WSOLA timing frame=25 arm_iterations=16 arm_ticks=620 arm_first=1 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=8 dsp_stamp=31768501 counts_per_ms=164
+WSOLA size frame=25 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=0
+PERF frame=25 before=100 after=100
+WSOLA frame=26 case=1 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=26 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=0 expected_sum=0
+WSOLA reference frame=26 offset=0 score=0 scored=114 arm_last=0
+WSOLA timing frame=26 arm_iterations=16 arm_ticks=622 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=9 dsp_stamp=32557570 counts_per_ms=164
+WSOLA size frame=26 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=1
+PERF frame=26 before=100 after=100
+WSOLA frame=27 case=2 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=27 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=198084040 expected_sum=198084040
+WSOLA reference frame=27 offset=0 score=57446620 scored=114 arm_last=0
+WSOLA timing frame=27 arm_iterations=16 arm_ticks=604 arm_first=1 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=10 dsp_stamp=34006263 counts_per_ms=164
+WSOLA size frame=27 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=2
+PERF frame=27 before=100 after=100
+WSOLA frame=28 case=3 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=28 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=-173602550 expected_sum=-173602550
+WSOLA reference frame=28 offset=0 score=-57559040 scored=114 arm_last=0
+WSOLA timing frame=28 arm_iterations=16 arm_ticks=604 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=8 dsp_stamp=34804707 counts_per_ms=164
+WSOLA size frame=28 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=3
+PERF frame=28 before=100 after=100
+WSOLA frame=29 case=4 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=29 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=226373 expected_sum=226373
+WSOLA reference frame=29 offset=1 score=261121 scored=114 arm_last=1
+WSOLA timing frame=29 arm_iterations=16 arm_ticks=603 arm_first=1 pack_ticks=2 transfer_ticks=16 end_to_end_ticks=18 issue_us=183 raw_dsp_ticks=8 dsp_stamp=36233071 counts_per_ms=164
+WSOLA size frame=29 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=4
+PERF frame=29 before=100 after=100
+WSOLA frame=30 case=5 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=30 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=641941 expected_sum=641941
+WSOLA reference frame=30 offset=439 score=261121 scored=117 arm_last=439
+WSOLA timing frame=30 arm_iterations=16 arm_ticks=620 arm_first=0 pack_ticks=1 transfer_ticks=16 end_to_end_ticks=17 issue_us=183 raw_dsp_ticks=8 dsp_stamp=37031871 counts_per_ms=164
+WSOLA size frame=30 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=5
+PERF frame=30 before=100 after=100
+WSOLA frame=31 case=6 reps=0 put=0/0 get=0/0 errors=0 stop=0
+WSOLA result frame=31 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=450702 expected_sum=450702
+WSOLA reference frame=31 offset=440 score=261121 scored=114 arm_last=440
+WSOLA timing frame=31 arm_iterations=16 arm_ticks=603 arm_first=1 pack_ticks=2 transfer_ticks=16 end_to_end_ticks=18 issue_us=152 raw_dsp_ticks=9 dsp_stamp=38479389 counts_per_ms=164
+WSOLA size frame=31 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=6
+PERF frame=31 before=100 after=100
+WSOLA frame=32 case=7 reps=0 put=0/0 get=0/0 errors=0 stop=1
+WSOLA result frame=32 offset=0 expected_offset=0 score=0 expected_score=0 scored=0 expected_scored=0 input_sum=397558 expected_sum=397558
+WSOLA reference frame=32 offset=4 score=261121 scored=117 arm_last=4
+WSOLA timing frame=32 arm_iterations=16 arm_ticks=619 arm_first=0 pack_ticks=1 transfer_ticks=15 end_to_end_ticks=16 issue_us=183 raw_dsp_ticks=9 dsp_stamp=39278274 counts_per_ms=164
+WSOLA size frame=32 input_bytes=1792 output_bytes=48 input_words=896 output_words=24 protocol=19 operation=1 case=7
+PERF frame=32 before=100 after=100
+state phase=worker WSOLA complete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+WORKER WSOLA PASS frames=32 creates=1 runs=0 reps=0 input_bytes=1792 output_bytes=48 total_ticks=541 arm_iterations=16 no_crc=1
+state phase=before delete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=122
+delete=0 status=0
+state phase=worker deleted rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+free native out=0
+free native in=0
+BEGIN close
+PERF release=0 status=0 after=100
+WORKER CLEANUP PASS no_run=1 delete_free_native_close=0
+FINAL status=0

@@ -1,0 +1,64 @@
+{
+  "scope": "E90/RA-6 400.34.93 stock-clock snapshot; RDomain copy102/free-shadow104; separate E0001022 UID",
+  "executable_sha256": "95CEE1F7AC3C142D1B3CAEC1F39D921D34883421F12A790B62CB9D7BD83A4560",
+  "files": [
+    {
+      "path": "out/arm/ringclock.exe",
+      "bytes": 25416,
+      "sha256": "95CEE1F7AC3C142D1B3CAEC1F39D921D34883421F12A790B62CB9D7BD83A4560"
+    },
+    {
+      "path": "src/ring_clock_probe.cpp",
+      "bytes": 3450,
+      "sha256": "F580D8980550D43BDA54ABE3DB275FBE2DE531F3F1753A8B8200C32FFFF01ABB"
+    },
+    {
+      "path": "tools/stage_ring_clock.py",
+      "bytes": 2899,
+      "sha256": "5786B2172337581215788CCC34CC8EFB1DDC2A143E185CBF37DB9F378B06B68E"
+    },
+    {
+      "path": "out/ringclock-build/src/ocengine.cpp",
+      "bytes": 99659,
+      "sha256": "12B1C2DD4FAFD578C59E3E818061B660385B8FDA9D589B235DC1846D2E8ED19A"
+    },
+    {
+      "path": "out/ringclock-build/src/ocengine.h",
+      "bytes": 30611,
+      "sha256": "E9887FF5A2B37AE44C4809C9F1CBC69B13A6A2314462FB9B154721816784B1EF"
+    },
+    {
+      "path": "out/ringclock-build/group/ringclock.mmp",
+      "bytes": 526,
+      "sha256": "229D3EC11080591C4FCC54AEF7F48C8D735656E66C9237982DDC6B74B4B0CB67"
+    }
+  ],
+  "staging": {
+    "upstream": "../SymbianOverclock/src",
+    "upstream_sha256": {
+      "ocengine.cpp": "06CD09B34BC1A5060F1A7586F687EF98167D54937DF45AA79FF32C346C8B5267",
+      "ocengine.h": "E9887FF5A2B37AE44C4809C9F1CBC69B13A6A2314462FB9B154721816784B1EF"
+    },
+    "staged_engine_sha256": "12B1C2DD4FAFD578C59E3E818061B660385B8FDA9D589B235DC1846D2E8ED19A",
+    "substitutions": [
+      [
+        "_LIT(KPatcherFile, \"patcher.ldd\");",
+        "_LIT(KPatcherFile, \"RDomain.ldd\");"
+      ],
+      [
+        "return DoControl(105, (TAny*)&aAddress, (TAny*)&aBytes);",
+        "return DoControl(102, (TAny*)&aAddress, (TAny*)&aBytes);"
+      ],
+      [
+        "return DoControl(100, (TAny*)&aAddress, (TAny*)&aLength);",
+        "return DoControl(104, (TAny*)&aAddress, (TAny*)&aLength);"
+      ]
+    ],
+    "scope": "separate executable/UID; E90 firmware guard; stock snapshot only; no upstream edits"
+  },
+  "limits": [
+    "uses existing guarded engine's temporary Usbc READ patch/unshadow; no PRCM writes or DSP open",
+    "own-RAM API self-test must pass before any ROM patch; standard driver control102 produces a different own-RAM result and is rejected",
+    "source SymbianOverclock and original ocprobe files are unchanged; staged copy remains local"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "utc": "2026-09-30T13:32:59.220004+00:00",
+  "device": "e90",
+  "files": [
+    {
+      "remote": "C:\\sys\\bin\\patcher.ldd",
+      "bytes": 1568,
+      "sha256": "423E4FF1405C10C3CED21BD8445D7179A69CACBEF0AA51AA8AB43B679A7F4D23"
+    },
+    {
+      "remote": "E:\\sys\\bin\\patcher.ldd",
+      "bytes": 1568,
+      "sha256": "423E4FF1405C10C3CED21BD8445D7179A69CACBEF0AA51AA8AB43B679A7F4D23"
+    },
+    {
+      "remote": "E:\\sys\\bin\\ocprobe.exe",
+      "bytes": 76052,
+      "sha256": "153562A9D88DC4228E7D383DD11776225630B533156638D2F5838F37BFE0DF08"
+    }
+  ],
+  "info": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 76247040",
+    "tick 9954669 startTick 8770239 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55884",
+    "drive E freekb 1470664",
+    "script IDLE"
+  ]
+}

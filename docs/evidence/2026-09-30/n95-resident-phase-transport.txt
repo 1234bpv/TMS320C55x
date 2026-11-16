@@ -1,0 +1,33 @@
+2026-09-30T17:19:32.711341+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 89845760
+tick 22738101 startTick 7928381 boot 0 by n
+ap Huawei
+drive C freekb 65988
+drive E freekb 1070176
+script IDLE
+2026-09-30T17:19:32.800109+00:00 PS c55stream*
+OK ps 0
+PREPARATION VERIFIED work\evidence\n95\stream-resident-phase-prepare-01-preparation.json
+2026-09-30T17:19:32.951998+00:00 START E:\sys\bin\c55stream.exe inspect
+OK proc 41
+2026-09-30T17:19:33.053592+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T17:19:33.624069+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-09-30T17:19:33.775390+00:00 WAIT 41 1
+EXIT 0 Kill
+2026-09-30T17:19:33.884230+00:00 START E:\sys\bin\c55stream.exe info
+OK proc 42
+2026-09-30T17:19:33.995012+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T17:19:34.566471+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T17:19:35.216036+00:00 PS c55stream*
+REQUEST FAILED timed out

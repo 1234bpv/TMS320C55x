@@ -1,0 +1,27 @@
+{
+  "scope": "WSOLA68 recovery02 host orchestration only; exact host53/DSP63 unchanged",
+  "original_preflight": "docs/evidence/2026-10-04/n95-wsola68-artifacts.json",
+  "change": "OS nonblocking per-device lock held across entire runner, nested session actions reuse same process owner; competing actions fail before connecting",
+  "files": [
+    {
+      "path": "tools/device_work_lock.py",
+      "sha256": "0B48B43DCC2D067437FC13CE16CE30C4FD519DE3A23C7B380D8CDF439878B35B"
+    },
+    {
+      "path": "tools/e90_task_session.py",
+      "sha256": "B2E82AE25B235B8410B777BABD826075B9D6836FD191C77C31298F2186DF007D"
+    },
+    {
+      "path": "tools/run_wsola_current_series.py",
+      "sha256": "30759EDA73F99DB20F5186A0A991387EB377A2876F76C5AA00DCE2D65D145D37"
+    },
+    {
+      "path": "tools/test_wsola_current_session.py",
+      "sha256": "C4B8EE30D282F2CD43710E32265CA5441F1D6EACE94829644713F76253096D47"
+    },
+    {
+      "path": "tools/record_wsola_recovery.py",
+      "sha256": "522D2D291D17F485D89C5BB5F7FDF39EFDE72A46B5BC773EBE6174721C00C0F3"
+    }
+  ]
+}

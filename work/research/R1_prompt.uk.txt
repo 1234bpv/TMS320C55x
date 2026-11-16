@@ -1,0 +1,16 @@
+Ти дослідник. Лише читаєш, нічого не правиш. Відповідай українською, академічно, з точними посиланнями (файл, розділ §, номер рядка). Розрізняй: «перевірено на апараті» / «виведено з дизасемблера» / «не знайдено». Висновків поза знайденим не роби.
+
+Проєкт: H:\VsCodeProjects\SymbianProjects\TMS320C55x test — власний код на DSP TMS320C55x усередині TI OMAP2420 у Nokia N95 8GB (Symbian 9.2). Через TI DSP/BIOS Bridge (bridgeapi.dll, ядерний LDD Hwa) власний вузол bench.dll55l завантажується на C55x; робота виконується всередині фази create вузла, ARM міряє час навколо DoControl(5). Штатна черга повідомлень (ординали 15-18) — мертвий код. Кожен запуск роботи на DSP коштує ~8-9 мс (порожня фаза create). МЕТА наступного етапу: знайти в межах штатного API мосту шлях до ПОТОКОВОЇ обробки — постійно живий код на DSP, що обмінюється даними з ARM без 9-мс накладних на кожну порцію, і паралельна робота ARM і DSP.
+
+Джерела: docs/findings.md (великий, шукай за розділами §9, §10, §16-§20), docs/DSP_GUIDE.md, docs/CHARACTERIZATION.md, docs/bridgeapi_fns.txt, docs/base_syms.txt, docs/ehwaomap.strings.txt, src/dsptest.cpp, src/dsp/bench_node.c, src/dsp/bench_dcd.s55.
+
+Питання:
+1. Карта 39 ординалів bridgeapi.dll (findings §17.4 і суміжні). Які з них відповідають API TI Bridge для ПОТОКІВ (DSPStream_Open/Close/AllocateBuffers/FreeBuffers/Issue/Reclaim/Idle/GetInfo/RegisterNotify/Select), для DMM (DSPProcessor_ReserveMemory/UnReserveMemory/Map/UnMap/FlushMemory/InvalidateMemory), для сповіщень (DSPNode_RegisterNotify, DSPProcessor_RegisterNotify), для DSPNode_Run/Pause/Terminate/GetMessage/PutMessage? Для кожного: ординал, ioctl-код, чи викликають його клієнти в ROM (bal.dll, ivapolicyserver.exe, gwc), чи пробували на апараті і з яким результатом.
+2. Як саме ARM запускає роботу вузла: семантика DoControl(5) — синхронна чи асинхронна (TRequestStatus)? Що саме чекає ARM? Чи може ARM паралельно робити іншу роботу, поки DSP у create? Чи пробували фазу execute (Run) і чому робота в create, а не в execute?
+3. Склад базової вартості ~8-9 мс: перелічи кроки послідовності dsptest на один прогін (відкриття каналу, завантаження базового образу, розбір DCD, ord6, ord4, fn4, fn5 тощо), які виконуються щоразу, а які могли б виконуватися один раз. Чи є заміри окремих кроків?
+4. Пам'ять: сегменти DYN_DARAM/SARAM/EXTERNAL/SRAM (адреси DSP); що відомо про те, як ARM-бік передає буфери вузлу штатними засобами мосту (DMM map, аргументи create, буфери потоків); сегмент спільної пам'яті мосту (SHM, _SHM_BEG, DSP_SHM тощо) у docs/base_syms.txt.
+5. Сповіщення: чи є свідчення, що події/notify мосту працюють на цій прошивці?
+6. Функції базового образу DSP (docs/base_syms.txt), які вузол може викликати для вводу-виводу або фонової роботи: STRM_*, SIO_*, NODE_*, MSGQ_*, DSP/BIOS TSK_*, SEM_*, SWI_*, CLK_*, MBX_*, QUE_*, LCK_*. Особливо: чи можна у фазі create створити задачу DSP/BIOS (TSK_create), яка житиме після повернення з create. Наведи точні імена присутніх символів.
+7. src/dsptest.cpp: перелік ВСІХ прошивко-залежних констант (жорстко зашиті адреси на кшталт 0x80A5F0D4, адреси ординалів, зсуви структур, UUID базових вузлів тощо) з номерами рядків — це потрібно для перенесення на Nokia E90 з іншою прошивкою.
+
+Формат: розділи 1-7, у кожному факти з посиланнями, наприкінці короткий перелік «чого в матеріалах немає».

@@ -1,0 +1,86 @@
+{
+  "scope": "Measured N95 DSP63/65/67 compiler output, reused by WSOLA68/MDEC66/SPU67; no hardware I/O",
+  "status": "compiler_order_verified_endpoint_contract_unproven",
+  "claim": "On successful kernel paths, ring result stores precede completion-control stores and return; the caller then reads DCR, obtains timing, writes notification fields and calls STRM_issue.",
+  "limits": [
+    "Compiler listing order is not an OMAP interconnect fence or external-memory acknowledgement proof.",
+    "The binary hashes bind these listings to the recorded builds; this is not a fresh decode of every linked machine instruction.",
+    "Error returns can bypass result/control publication and are reported through the notification result field.",
+    "The DCR helper is read-only; WPE0 evidence does not establish mailbox/SDRAM ordering.",
+    "ARM caller/context cache completion remains a separate open gate."
+  ],
+  "kernels": [
+    {
+      "kernel": "wsola63",
+      "DSP_revision": 63,
+      "measured_cohort": 68,
+      "protocol": 40,
+      "DSP_sha256": "646231C29251F94B688FD89E2F729553CBF5083D1C734FFC6775FEE7E9470BFF",
+      "assembly": {
+        "path": "docs/evidence/2026-10-04/n95-wsola63-compiler-assembly.json",
+        "sha256": "3DAACCB92BFB37C34942C330F2DD54957B520972080E6DCA4BE3FB078156A36E",
+        "wire_sha256": "AB2634B3AE5E94CE59AFDC02F204F18B70DA1D96842B7DB18F17248C19FD2304",
+        "canonical_assembly_sha256": "3F919BA232D5F993BE260FF923B77FEA4045DEE1128AB53DCD52108D001C0198",
+        "wire_line_endings": "CRLF",
+        "original_path": "out/dsp/stream_node-dmm-ring-wsola.asm",
+        "original_bytes": 56914
+      },
+      "build_proof": {
+        "path": "docs/evidence/2026-10-04/n95-wsola63-artifacts.json",
+        "sha256": "B84D7EEDD7879B7BF7D5116EEF9270D34BA8CCEE8BCC4C61452E7EB46FD20655"
+      },
+      "measured_results": {
+        "path": "docs/evidence/2026-10-04/n95-wsola68-results.json",
+        "sha256": "B530B05AAAC21703D17B26F3B50C14F0304EA31AE0CB8EBAEF785FEDDB7F8BCE"
+      }
+    },
+    {
+      "kernel": "mdec65",
+      "DSP_revision": 65,
+      "measured_cohort": 66,
+      "protocol": 41,
+      "DSP_sha256": "EA70403E72E513E868D6BCD4D35ABD3D4552A38AFCC258250B00CD3A5845B534",
+      "assembly": {
+        "path": "docs/evidence/2026-10-04/n95-mdec65-compiler-assembly.json",
+        "sha256": "E029600E3CC97F555EF92CB31BD6DD8E3AF163AAD170A0ED278072791D4F32F3",
+        "wire_sha256": "309A16B90215B17B12B0624EB4917D809E0AC45AF15EBFF62558A661EDDF8BD7",
+        "canonical_assembly_sha256": "782028805033F30602513EA876391BEF5AF999BA1D5F63405F8E71D531ED68C3",
+        "wire_line_endings": "CRLF",
+        "original_path": "out/dsp/stream_node-dmm-ring-mdec.asm",
+        "original_bytes": 64501
+      },
+      "build_proof": {
+        "path": "docs/evidence/2026-10-04/n95-mdec65-artifacts.json",
+        "sha256": "7EA8C2DEB1728F6BE6249FDDC270C4FF6A4B0158FAB0D15CA862662265E9551B"
+      },
+      "measured_results": {
+        "path": "docs/evidence/2026-10-04/n95-mdec66-results.json",
+        "sha256": "BB5C4D40195CAAB654A95D65FAD14BCB08813A3EBDD9D1C20C2C835B7762D9F4"
+      }
+    },
+    {
+      "kernel": "spu67",
+      "DSP_revision": 67,
+      "measured_cohort": 67,
+      "protocol": 42,
+      "DSP_sha256": "181D2851F53F3DD155AC0F37DA9288A26CB364865A3336113F0254A76B3B4AE4",
+      "assembly": {
+        "path": "docs/evidence/2026-10-04/n95-spu67-compiler-assembly.json",
+        "sha256": "45968BB4962214B43A796E94EC0B06735DED7DF7FCBEDEAFDDBACC73A4461F56",
+        "wire_sha256": "911B2E0214F6FB345C8734CCADEADA8BB3D00D34B2A9DA7709599E2A9399B74F",
+        "canonical_assembly_sha256": "2674284BC6022A627CEE9CDCBBDD91F319C2E181F38499ED47AF6C5A00888A0B",
+        "wire_line_endings": "CRLF",
+        "original_path": "out/dsp/stream_node-dmm-ring-spu.asm",
+        "original_bytes": 66730
+      },
+      "build_proof": {
+        "path": "docs/evidence/2026-10-04/n95-spu67-artifacts.json",
+        "sha256": "3AE8B823E92B30FBF505BECF85D24FDE2BD30FCD917C6B8846F619AC4FBC458C"
+      },
+      "measured_results": {
+        "path": "docs/evidence/2026-10-04/n95-spu67-results.json",
+        "sha256": "407873D41A1A2A6F9CEACF0266C3C9AFBAAE5270BF0338A87189EBE334E129C3"
+      }
+    }
+  ]
+}

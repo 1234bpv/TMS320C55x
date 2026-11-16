@@ -1,0 +1,104 @@
+2026-09-30T01:07:47.765326+00:00 CONNECT e90 192.168.3.21
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80560128
+< tick 303079 startTick 35269 boot 1 by t
+< ap Huawei
+< drive C freekb 55940
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:07:50.142968+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80560128
+< tick 305222 startTick 35269 boot 1 by t
+< ap Huawei
+< drive C freekb 55940
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:07:52.285023+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80560128
+< tick 307371 startTick 35269 boot 1 by t
+< ap Huawei
+< drive C freekb 55940
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:07:54.427362+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80560128
+< tick 309520 startTick 35269 boot 1 by t
+< ap Huawei
+< drive C freekb 55940
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:07:56.575256+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80560128
+< tick 311670 startTick 35269 boot 1 by t
+< ap Huawei
+< drive C freekb 55940
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:07:58.731878+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80560128
+< tick 313840 startTick 35269 boot 1 by t
+< ap Huawei
+< drive C freekb 55940
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:08:00.898750+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80560128
+< tick 315970 startTick 35269 boot 1 by t
+< ap Huawei
+< drive C freekb 55940
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:08:03.025992+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80560128
+< tick 318119 startTick 35269 boot 1 by t
+< ap Huawei
+< drive C freekb 55940
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:08:03.234035+00:00 OP {"get": ["E:\\ps1_daemon.log", "work/evidence/e90/daemon-heartbeat-02.log"]}
+> GET E:\ps1_daemon.log
+< OK 216299 -> work\evidence\e90\daemon-heartbeat-02.log
+2026-09-30T01:08:03.804818+00:00 OP {"cmd": "SHOT E:\\c55-install-live.bmp"}
+> SHOT E:\c55-install-live.bmp
+< OK shot 844854 800x352 fb mode11
+2026-09-30T01:08:10.571750+00:00 OP {"get": ["E:\\c55-install-live.bmp", "work/evidence/e90/install-v7-live-03.bmp"]}
+> GET E:\c55-install-live.bmp
+< OK 844854 -> work\evidence\e90\install-v7-live-03.bmp
+2026-09-30T01:08:11.822565+00:00 OP {"cmd": "DEL E:\\c55-install-live.bmp"}
+> DEL E:\c55-install-live.bmp
+< OK 0
+2026-09-30T01:08:13.901098+00:00 HEARTBEAT
+> INFO
+2026-09-30T01:08:33.419216+00:00 FAILED ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-09-30T01:08:33.419216+00:00 CLOSED

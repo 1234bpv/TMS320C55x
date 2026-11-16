@@ -1,0 +1,110 @@
+C55STREAM v17 command='worker-calibrate' machine=20002496 fast_counter_hz=32768 firmware_rc=0 firmware='400.34.93
+21-04-2009
+RA-6
+(c)Nokia'
+library load=0
+ordinal 1 = 803faef3
+ordinal 2 = 803fafa9
+ordinal 3 = 803fb0ff
+ordinal 4 = 803fb12b
+ordinal 5 = 803fafd1
+ordinal 6 = 803faff5
+ordinal 7 = 803fb0e7
+ordinal 8 = 803faf4f
+ordinal 9 = 803faeaf
+ordinal 10 = 803fae79
+ordinal 11 = 803fae71
+ordinal 12 = 803fae71
+ordinal 13 = 803faea3
+ordinal 14 = 803faea3
+ordinal 15 = 803fa6e1
+ordinal 16 = 803fa6a7
+ordinal 17 = 803fa74b
+ordinal 18 = 803fa711
+ordinal 19 = 803fa77b
+ordinal 20 = 803fa78b
+ordinal 21 = 803fa69d
+ordinal 22 = 803fa69d
+ordinal 23 = 803fa6a5
+ordinal 24 = 803fa6a5
+ordinal 25 = 803fa551
+ordinal 26 = 803f9fa3
+ordinal 27 = 803fa421
+ordinal 28 = 803fa533
+ordinal 29 = 803fa371
+ordinal 30 = 803fa2ef
+ordinal 31 = 803fa45d
+ordinal 32 = 803fa1c1
+ordinal 33 = 803f9f6d
+ordinal 34 = 803fa513
+ordinal 35 = 803fa3c5
+ordinal 36 = 803f9f39
+ordinal 37 = 803f9f39
+ordinal 38 = 803f9f49
+ordinal 39 = 803f9f49
+profile guard=0 delta=ff99ca70
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=00700110
+BEGIN base load
+base load=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=00701700
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=8392
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN native buffer
+native buffer=0 address=ced41000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ced42000 length=0 max=4096
+BEGIN worker stream no_run=1 frames=8
+CAL frame=1 delay_ms=0 begin=248076970 done=248076985 dsp_stamp=3859351 put=0/0 get=0/0 errors=0
+CAL conditions frame=1 perf_before=0 perf_after=0 raw_ticks=23 reported_counts_per_ms=164
+CAL frame=2 delay_ms=100 begin=248080829 done=248080842 dsp_stamp=6120507 put=0/0 get=0/0 errors=0
+CAL conditions frame=2 perf_before=0 perf_after=0 raw_ticks=10 reported_counts_per_ms=164
+CAL interval=1 dsp_delta=2261156 arm_min_ticks=3843 arm_max_ticks=3873 hz_min=19130792 hz_max=19280135
+CAL frame=3 delay_ms=200 begin=248088499 done=248088511 dsp_stamp=10614430 put=0/0 get=0/0 errors=0
+CAL conditions frame=3 perf_before=0 perf_after=0 raw_ticks=10 reported_counts_per_ms=164
+CAL interval=2 dsp_delta=4493923 arm_min_ticks=7656 arm_max_ticks=7683 hz_min=19166584 hz_max=19234178
+CAL frame=4 delay_ms=400 begin=248102336 done=248102349 dsp_stamp=18722179 put=0/0 get=0/0 errors=0
+CAL conditions frame=4 perf_before=0 perf_after=0 raw_ticks=9 reported_counts_per_ms=164
+CAL interval=3 dsp_delta=8107749 arm_min_ticks=13824 arm_max_ticks=13851 hz_min=19180905 hz_max=19218368
+CAL frame=5 delay_ms=800 begin=248131021 done=248131036 dsp_stamp=28342437 put=0/0 get=0/0 errors=0
+CAL conditions frame=5 perf_before=0 perf_after=0 raw_ticks=9 reported_counts_per_ms=164
+CAL interval=4 dsp_delta=9620258 arm_min_ticks=28671 arm_max_ticks=28701 hz_min=10983471 hz_max=10994964
+CAL frame=6 delay_ms=100 begin=248135121 done=248135133 dsp_stamp=30743319 put=0/0 get=0/0 errors=0
+CAL conditions frame=6 perf_before=0 perf_after=0 raw_ticks=9 reported_counts_per_ms=164
+CAL interval=5 dsp_delta=2400882 arm_min_ticks=4084 arm_max_ticks=4113 hz_min=19127668 hz_max=19263492
+CAL frame=7 delay_ms=200 begin=248142300 done=248142313 dsp_stamp=34950008 put=0/0 get=0/0 errors=0
+CAL conditions frame=7 perf_before=0 perf_after=0 raw_ticks=10 reported_counts_per_ms=164
+CAL interval=6 dsp_delta=4206689 arm_min_ticks=7166 arm_max_ticks=7193 hz_min=19163740 hz_max=19235945
+CAL frame=8 delay_ms=400 begin=248156139 done=248156152 dsp_stamp=43058664 put=0/0 get=0/0 errors=0
+CAL conditions frame=8 perf_before=0 perf_after=0 raw_ticks=9 reported_counts_per_ms=164
+CAL interval=7 dsp_delta=8108656 arm_min_ticks=13825 arm_max_ticks=13853 hz_min=19180281 hz_max=19219127
+state phase=calibration complete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+WORKER CALIBRATION PASS frames=8 creates=1 runs=0 intervals=7 no_crc=1
+state phase=before delete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=152
+delete=0 status=0
+state phase=worker deleted rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+free native out=0
+free native in=0
+BEGIN close
+WORKER CLEANUP PASS no_run=1 delete_free_native_close=0
+FINAL status=0

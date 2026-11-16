@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-01T21:08:00.448537+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "d0-native-library2",
+  "host_version_expected": 24,
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79212544",
+    "tick 670862 startTick 35185 boot 1 by t",
+    "ap Huawei",
+    "drive C freekb 55836",
+    "drive E freekb 1447704",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "12356F00E0163EF0B0823A0E017D38A2796DCE83F2AB1FA85554DCFFF32A09D8",
+  "clock_probes": [
+    {
+      "path": "native-reference03-engine.log",
+      "sha256": "7420593132153003AE0547D1D434BB697C9E04F5A1DFAFD5B397449005DAEB6C"
+    },
+    {
+      "path": "native-reference03-dsp.log",
+      "sha256": "3BC3656784CF38EAF32E491F1BD703B3D7642CE0DD9508B0DD99D64386289261"
+    }
+  ],
+  "clock_exit": [
+    "EXIT 0 Kill"
+  ],
+  "clock_restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1249,
+    "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+    "equal": true
+  },
+  "steps": [
+    {
+      "label": "inspect",
+      "command": "inspect",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "native-reference03-inspect.log",
+      "sha256": "C965FAE4685B6438327E2023A77792F6A3BE0FFE8E85967EFD6D9F4312832713",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 79212544",
+        "tick 674262 startTick 35185 boot 1 by t",
+        "ap Huawei",
+        "drive C freekb 55836",
+        "drive E freekb 1447724",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "native-copy",
+      "command": "native-copy",
+      "complete": false,
+      "run_error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery",
+      "journal": "native-reference03-native-copy.log",
+      "sha256": "A33A433C6B8555C945A58DB7C12D75A3427A285C7337520F3804CC4C0EC47BF1"
+    }
+  ],
+  "reference_rom_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+  "deployed": {
+    "remote": "E:\\c55stream.dll55l",
+    "bytes": 4476,
+    "sha256": "C75723582115997EF143D23565587E3FA90AB24FB710F1BAB8AD4C69CBDDF8F8",
+    "equal": true
+  },
+  "error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery"
+}

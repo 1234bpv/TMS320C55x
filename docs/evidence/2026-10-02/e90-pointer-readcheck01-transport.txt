@@ -1,0 +1,50 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 77873152
+< tick 6138272 startTick 61087 boot 0 by n
+< ap Huawei
+< drive C freekb 55780
+< drive E freekb 1447668
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 77873152
+< tick 6138300 startTick 61087 boot 0 by n
+< ap Huawei
+< drive C freekb 55780
+< drive E freekb 1447668
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> GET C:\sys\bin\c55stream.exe
+< OK 42732 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261002-pointer\readcheck01-host-readback.exe
+> GET E:\c55stream.log
+< OK 21528 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261002-pointer\readcheck01-prior.log
+> START C:\sys\bin\c55stream.exe patcher-read-check
+< OK proc 13
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 0 c55stream.exe[e0001021]0001
+> WAIT 13 1
+< EXIT 0 Kill
+> GET E:\c55stream.log
+< OK 1613 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261002-pointer\readcheck01.log
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 77873152
+< tick 6139106 startTick 61087 boot 0 by n
+< ap Huawei
+< drive C freekb 55780
+< drive E freekb 1447688
+< script IDLE

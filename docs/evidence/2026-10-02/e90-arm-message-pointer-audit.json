@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-02T20:33:02.563343+00:00",
+  "scope": "Static saved E90 ROM; no device I/O or memory mutation",
+  "pdd_sha256": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4",
+  "checked_instructions": 28,
+  "ranges": {
+    "context_constructor_base": {
+      "address": "803DF228",
+      "bytes": 64,
+      "sha256": "C48EC152A6A0FADD7B8F1764D3056DD6D1EF7E833710CF4C7170D8D1F05AAEB6"
+    },
+    "board_allocation_and_reader_flag": {
+      "address": "803F03BC",
+      "bytes": 36,
+      "sha256": "3D7B49DC4460C90AB0295625EB85F5E7D58D53F04503BEA8FFAD4FD27492D188"
+    },
+    "context_reader_owner": {
+      "address": "803E02CC",
+      "bytes": 12,
+      "sha256": "167E678DB1DD209B0F6D4C12D9E811D039EC5B8A057393E453020558A1D4E1F9"
+    },
+    "embedded_reader_getter": {
+      "address": "803EEFCC",
+      "bytes": 8,
+      "sha256": "3C256551D0B4E2CEB87F626EFB52332B047AF529CCF42D6238BF0EEC56A7ADA9"
+    },
+    "shared_window_pointer_setup": {
+      "address": "803E080C",
+      "bytes": 136,
+      "sha256": "63F8C23CD9132D61EA9B828BCC9E1A7AD6AEEFE4F7CCA1A9DD8969F8044D8AFD"
+    },
+    "consumer": {
+      "address": "803DF6E8",
+      "bytes": 744,
+      "sha256": "404F56881F8CE562530E58364C08A6D115D77BAC01D2148CC806E10B6417A05B"
+    },
+    "word_reader": {
+      "address": "803F7664",
+      "bytes": 24,
+      "sha256": "DE0BD0094DEB6211488752E6F2C271AC930039D451E91D79481840D3B03AE6C7"
+    },
+    "bss_scalar_test": {
+      "address": "803F1D14",
+      "bytes": 16,
+      "sha256": "01D96CF1FD462C82CD9B242A9DD8A848C558E0444535731F63B083ED489060CF"
+    }
+  },
+  "pointer_chain": {
+    "context_bytes": 364,
+    "board_context_offset": 264,
+    "context_common_board_offset": 48,
+    "common_board_adjustment": 8,
+    "context_reader_offset": 24,
+    "reader_common_board_adjustment": 164,
+    "reader_board_offset": 172,
+    "reader_swap_byte": 64,
+    "swap_byte_board_offset": 236,
+    "swap_byte_initial_value": 1,
+    "reader_word0": "shared-memory ARM base, not the fromDSP header",
+    "context_fromDSP_header_offset": 224,
+    "context_record_array_offset": 240,
+    "record_array_header_adjustment": 8,
+    "queue_source_offset": 16,
+    "queue_pending_receive_offset": 40
+  },
+  "copy_check_bss": {
+    "address": "C8010B20",
+    "bytes": 24,
+    "meaning": "six module BSS words; word0 is used as a zero/nonzero flag",
+    "message_context_root": false,
+    "runtime_reader_swap_byte_observed": false
+  },
+  "runtime_gate": {
+    "ready": false,
+    "missing": "verified live board/context root and mapped allocation bounds",
+    "required": [
+      "pin or otherwise prove live object ownership",
+      "verify board/context identity before following fields",
+      "verify mapped shared-memory span before header/record reads",
+      "bounded queue traversal; treat snapshots as non-atomic"
+    ]
+  }
+}

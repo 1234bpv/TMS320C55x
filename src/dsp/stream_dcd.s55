@@ -1,0 +1,15 @@
+; Independent stream node. Same DCD format as the verified benchmark node.
+        .sect ".dcd_register"
+        .string "967CBF12_B90E_4B54_A4D3_3C84249EE1DA:0,"
+        .string "967CBF12_B90E_4B54_A4D3_3C84249EE1DA:3,"
+        .string "967CBF12_B90E_4B54_A4D3_3C84249EE1DA:4,"
+        .string "967CBF12_B90E_4B54_A4D3_3C84249EE1DA:5,"
+        .sect ".967CBF12_B90E_4B54_A4D3_3C84249EE1DA"
+        .string "1024,967CBF12_B90E_4B54_A4D3_3C84249EE1DA,STREAM_DSP,01H,00H,"
+        .string "1024,0200H,080H,0c00H,05H,03H,0ffffffffH,064H,0aH,05H,"
+        .string "0200H,0100H,00H,03H,01H,01H,0ffffffffH,"
+        .string "STREAM_DSP_create,STREAM_DSP_execute,STREAM_DSP_delete,"
+        .string "00H,08000H,iAlgName,1,0ff3f3f00H,0ff3f3f02H,"
+        .sect ".dspbridge_symbols"
+        .string "STREAM_DSP_create,STREAM_DSP_execute,STREAM_DSP_delete,"
+        .end

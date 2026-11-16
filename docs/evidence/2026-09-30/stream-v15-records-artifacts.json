@@ -1,0 +1,38 @@
+{
+  "utc": "2026-09-30T16:21:35.641354+00:00",
+  "scope": "v15 readonly shared-record probe; no successful ARM message/lifecycle",
+  "files": [
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 23032,
+      "sha256": "4514007116FA717887D4458937A84548F6A6E83825EDCC244212A7269E78EEB6"
+    },
+    {
+      "path": "out/dsp/c55stream-message-stages.dll55l",
+      "bytes": 3692,
+      "sha256": "51BF2D8FBDE2EC2B73372615E17D127B1F058E6F0498BBB661B5FC7D29CBE272"
+    },
+    {
+      "path": "out/dsp/c55stream.dll55l",
+      "bytes": 3668,
+      "sha256": "864092C3A786B67F20B3A0A16B8B9A51505115A8A1209297316DB988CAAED4AA"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/arm-build-stream-v15-message-record.log",
+      "exit_code": 0,
+      "sha256": "5983A11B7B0D6A772242A07315B404438F8A5206279ED0444F8F566523FEF4C2"
+    },
+    {
+      "log": "out/dsp-build-stream-message-records-01.log",
+      "exit_code": 0,
+      "sha256": "CD8DB739E79CF05A675920278FA3C6788D4106C8FCCCA689961FA622EACBB213"
+    },
+    {
+      "log": "out/dsp-build-stream-normal-after-records-01.log",
+      "exit_code": 0,
+      "sha256": "2AE4E3515F2E64DC99BB169DC68CA3C3D8593A5F4169A80E004C3525532323EA"
+    }
+  ]
+}

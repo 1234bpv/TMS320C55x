@@ -1,0 +1,50 @@
+{
+  "utc": "2026-09-30T11:48:47.478294+00:00",
+  "device": "e90",
+  "ip": "192.168.3.21",
+  "restore_requested": true,
+  "journal_recovered": true,
+  "dsp_restored": true,
+  "complete": true,
+  "journal": {
+    "path": "work/evidence/e90/stream-v8-info-guard-recovery-01.log",
+    "bytes": 2063,
+    "sha256": "60BB175EF5866CA17417699F20AB133F70718A590FC5A786316FA389FDABAEDB"
+  },
+  "current_dsp": {
+    "path": "work/evidence/e90/stream-v8-info-guard-recovery-01-current.dll55l",
+    "bytes": 3668,
+    "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1"
+  },
+  "info": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79552512",
+    "tick 3705247 startTick 42746 boot 1 by t",
+    "ap Huawei",
+    "drive C freekb 55884",
+    "drive E freekb 1470668",
+    "script IDLE"
+  ],
+  "ps": [
+    "OK ps 0"
+  ],
+  "restored_dsp": {
+    "path": "work/evidence/e90/stream-v8-info-guard-recovery-01-restored.dll55l",
+    "bytes": 3668,
+    "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+    "equal": true
+  },
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79552512",
+    "tick 3705422 startTick 42746 boot 1 by t",
+    "ap Huawei",
+    "drive C freekb 55884",
+    "drive E freekb 1470668",
+    "script IDLE"
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "scope": "Offline prior copy-channel decision; D0 acceptance and DMM measurement pending",
+  "formula": "max(T,W)+S/N < A+W, T=H+D",
+  "equivalent_strict_condition": "S/N < A and W > T+S/N-A",
+  "source_sha256": {
+    "docs/evidence/2026-10-01/n95-wsola-v20-results.json": "32A41D8DB409B7EA9D1B76E7E00064CBA3CFEDF4A81B20C5219451104711E630",
+    "docs/evidence/2026-10-01/n95-packet-sizes-v18-results.json": "4B991109F2AC424D8154A04D7C7D7D09ED227228469D7293580DFAEF4A11BA7C",
+    "docs/evidence/2026-10-01/e90-wsola-v20-results.json": "82DD96323305D53F59576DF6CE56410146DE1C61501443E809626B0C45C363DE",
+    "docs/evidence/2026-10-01/e90-packet-sizes-v18-results.json": "CD9DC980484EAB288BAC21575478058BF11E94124D558500CA40BA76F6B6214A",
+    "../PS1Emulator/plans/reports/perf-dsp-analysis-2026-10-01.md": "59459996FC8A52785911BB3238ECFC83CA6B4975B5859042658DE32447077CC0",
+    "../PS1Emulator/plans/runs/2026-09-28_gemini/n95-spustage-result.md": "A01DB598486178661792BC0A01DFBD5A8248125E7475F1CDDB25F651BD66DDEC"
+  },
+  "echo_e90_repeated_measurements": [
+    {
+      "packet_bytes": 512,
+      "payload_bytes": 480,
+      "round_medians_us": [
+        396.0,
+        396.0,
+        396.0
+      ],
+      "samples": 96,
+      "min_us": 366,
+      "median_us": 396.0,
+      "p95_us": 396,
+      "p99_us": 488,
+      "max_us": 488
+    },
+    {
+      "packet_bytes": 1568,
+      "payload_bytes": 1536,
+      "round_medians_us": [
+        610.0,
+        610.0,
+        610.0
+      ],
+      "samples": 96,
+      "min_us": 579,
+      "median_us": 610.0,
+      "p95_us": 640,
+      "p99_us": 793,
+      "max_us": 793
+    },
+    {
+      "packet_bytes": 1792,
+      "payload_bytes": 1760,
+      "round_medians_us": [
+        640.0,
+        655.5,
+        655.5
+      ],
+      "samples": 96,
+      "min_us": 640,
+      "median_us": 640.0,
+      "p95_us": 701,
+      "p99_us": 7812,
+      "max_us": 7812
+    },
+    {
+      "packet_bytes": 2048,
+      "payload_bytes": 2016,
+      "round_medians_us": [
+        701.0,
+        701.0,
+        701.0
+      ],
+      "samples": 96,
+      "min_us": 671,
+      "median_us": 701.0,
+      "p95_us": 762,
+      "p99_us": 7690,
+      "max_us": 7690
+    },
+    {
+      "packet_bytes": 2304,
+      "payload_bytes": 2272,
+      "round_medians_us": [
+        762.0,
+        762.0,
+        762.0
+      ],
+      "samples": 96,
+      "min_us": 732,
+      "median_us": 762.0,
+      "p95_us": 793,
+      "p99_us": 3234,
+      "max_us": 3234
+    },
+    {
+      "packet_bytes": 4096,
+      "payload_bytes": 4064,
+      "round_medians_us": [
+        1129.0,
+        1129.0,
+        1129.0
+      ],
+      "samples": 96,
+      "min_us": 1098,
+      "median_us": 1129.0,
+      "p95_us": 1220,
+      "p99_us": 2502,
+      "max_us": 2502
+    }
+  ],
+  "wsola": {
+    "n95": {
+      "arm_scalar_us": 999.45068359375,
+      "measured_H_plus_D_us": 640.869140625,
+      "control_us": 518.798828125,
+      "same_packet_saving_us": 385.284423828125,
+      "create_only_S_us": 8102.0,
+      "create_only_N_scalar": 23,
+      "SMLAD_unmeasured_scenarios": [
+        {
+          "A_us": 135,
+          "W_strictly_greater_than_us_at_N1000": 513.971140625,
+          "minimum_N_if_W_ge_T_create_only": 61,
+          "blocking_gain": false
+        },
+        {
+          "A_us": 200,
+          "W_strictly_greater_than_us_at_N1000": 448.971140625,
+          "minimum_N_if_W_ge_T_create_only": 41,
+          "blocking_gain": false
+        }
+      ]
+    },
+    "e90": {
+      "arm_scalar_us": 999.45068359375,
+      "measured_H_plus_D_us": 732.421875,
+      "control_us": 610.3515625,
+      "same_packet_saving_us": 265.1214599609375,
+      "create_only_S_us": 8559.5,
+      "create_only_N_scalar": 33,
+      "SMLAD_unmeasured_scenarios": [
+        {
+          "A_us": 135,
+          "W_strictly_greater_than_us_at_N1000": 605.981375,
+          "minimum_N_if_W_ge_T_create_only": 64,
+          "blocking_gain": false
+        },
+        {
+          "A_us": 200,
+          "W_strictly_greater_than_us_at_N1000": 540.981375,
+          "minimum_N_if_W_ge_T_create_only": 43,
+          "blocking_gain": false
+        }
+      ]
+    }
+  },
+  "mdec_scenarios": [
+    {
+      "capacity_each_direction_bytes": 4096,
+      "blocks": 2,
+      "input_bytes": 3104,
+      "output_bytes": 1056,
+      "A_batch_us_scenario": 100,
+      "H_batch_us_scenario_D0": 962.2222222222222,
+      "H_per_block_us_scenario": 481.1111111111111,
+      "W_strictly_greater_than_us_no_setup_D0": 862.2222222222222
+    },
+    {
+      "capacity_each_direction_bytes": 4096,
+      "blocks": 2,
+      "input_bytes": 3104,
+      "output_bytes": 1568,
+      "A_batch_us_scenario": 100,
+      "H_batch_us_scenario_D0": 1019.1111111111111,
+      "H_per_block_us_scenario": 509.55555555555554,
+      "W_strictly_greater_than_us_no_setup_D0": 919.1111111111111
+    },
+    {
+      "capacity_each_direction_bytes": 16384,
+      "blocks": 10,
+      "input_bytes": 15392,
+      "output_bytes": 5152,
+      "A_batch_us_scenario": 500,
+      "H_batch_us_scenario_D0": 2782.6666666666665,
+      "H_per_block_us_scenario": 278.26666666666665,
+      "W_strictly_greater_than_us_no_setup_D0": 2282.6666666666665
+    },
+    {
+      "capacity_each_direction_bytes": 16384,
+      "blocks": 10,
+      "input_bytes": 15392,
+      "output_bytes": 7712,
+      "A_batch_us_scenario": 500,
+      "H_batch_us_scenario_D0": 3067.1111111111113,
+      "H_per_block_us_scenario": 306.7111111111111,
+      "W_strictly_greater_than_us_no_setup_D0": 2567.1111111111113
+    }
+  ],
+  "mdec_minimum_bandwidth_MB_s_if_L_D_setup_zero": {
+    "RGB15_int32": 40.96,
+    "RGB24_int32": 46.08
+  },
+  "spu": {
+    "whole_doSamples_mean_us_per_call": [
+      1584.5648604269295,
+      1599.3431855500821
+    ],
+    "mix_mean_us_per_call_sampled_estimate": [
+      370.11494252873564,
+      378.1609195402299
+    ],
+    "scene_clocks_kHz": {
+      "ARM": 330240,
+      "bus": 165120
+    },
+    "calls": 609,
+    "total_generated_samples": 446816,
+    "mean_samples_per_call": 733.688013136289,
+    "mean_stereo_pcm_bytes_per_call": 2934.752052545156,
+    "mean_pcm_only_traffic_floor_us_at_9MB_s": 326.0835613939062,
+    "stereo_pcm_only_traffic_floor_us_at_9MB_s": 406.22222222222223,
+    "int32_SSumLR_only_traffic_floor_us_at_9MB_s": 812.4444444444445,
+    "D_kernel_measured": false,
+    "input_dirty_bytes_measured": false
+  },
+  "limits": [
+    "Create-only S omits base/processor load, other startup and cleanup.",
+    "9MB/s and L500us are inherited scenario estimates, not isolated measured bandwidth/latency.",
+    "Full overlap assumes H does not occupy ARM; actual host CPU/cache contention remains unmeasured.",
+    "SPU A is a scene mean; MIX is extrapolated from 1:16 sampling. PCM3656B is maximum capacity, not mean output.",
+    "No new N95 connection and no emulator modification."
+  ]
+}

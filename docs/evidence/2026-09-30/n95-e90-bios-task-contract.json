@@ -1,0 +1,149 @@
+{
+  "utc": "2026-09-30T16:55:51.792606+00:00",
+  "scope": "Static task ABI only; no own worker hardware or resident-code lifetime proof",
+  "primary_reference": "https://www.ti.com/lit/ug/spru404q/spru404q.pdf",
+  "base_sha256": {
+    "n95": "93BD6550FE26DF69C9AA3A1440DAF4DF6BCC118983DB30CE33E2CA3F3A95FB5C",
+    "e90": "180F95602B078111F617F459620C4AECD203ECB730E91803AEF9E591E5D22F35"
+  },
+  "ranges": {
+    "TSK_create": {
+      "start": "25A5B4",
+      "end_exclusive": "25A818",
+      "bytes": 612,
+      "bytes_equal": false,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "7CC2F93C5AC4553F16E11A35F59AC149A82068C9238B059CCB65EE76C3BCFD6D",
+      "e90_sha256": "ED86CAD206301E5E157465D0F767807808282E1FFBCE937C2E98417983DD1EA1"
+    },
+    "TSK_delete": {
+      "start": "25B6FC",
+      "end_exclusive": "25B7E0",
+      "bytes": 228,
+      "bytes_equal": false,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "98CC1C9F5D73817FD4A54B58D0C07AD93E0DBE085984EC857738CDF65A815B9D",
+      "e90_sha256": "F394538E3BF8363EF72525414CB6EBF4EE76F68B65BFCFDB529523FBFBBEFE0B"
+    },
+    "TSK_stat": {
+      "start": "25B7E0",
+      "end_exclusive": "25B8BE",
+      "bytes": 222,
+      "bytes_equal": true,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "417FB1A569F0B2D916CB8E0513F258458090B533B9EEF28C9D930D7FFE03C47E",
+      "e90_sha256": "417FB1A569F0B2D916CB8E0513F258458090B533B9EEF28C9D930D7FFE03C47E"
+    },
+    "TSK_exit": {
+      "start": "25B4F4",
+      "end_exclusive": "25B5FA",
+      "bytes": 262,
+      "bytes_equal": false,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "028E97DF129A116260E89CACB00C193F81DBD61FA34814327E0A63626B7C7C99",
+      "e90_sha256": "560022EE0FB52E8E0F214299F8A66A38E39516A45E8691692417A63659CF2FD5"
+    },
+    "task_startup": {
+      "start": "25CF30",
+      "end_exclusive": "25CF6F",
+      "bytes": 63,
+      "bytes_equal": true,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "DC63E9C18CA16AE96AE0FF62FF6223826AB40D51E3AE09B70AFC2C56BF6ED1AD",
+      "e90_sha256": "DC63E9C18CA16AE96AE0FF62FF6223826AB40D51E3AE09B70AFC2C56BF6ED1AD"
+    },
+    "stack_argument_setup": {
+      "start": "25D373",
+      "end_exclusive": "25D3D0",
+      "bytes": 93,
+      "bytes_equal": true,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "47BFA0B3DD4317F56024B45BB479489940A2838BC7B6FC93327A454A37A893F3",
+      "e90_sha256": "47BFA0B3DD4317F56024B45BB479489940A2838BC7B6FC93327A454A37A893F3"
+    }
+  },
+  "verified_data_references": [
+    {
+      "instruction": "25A780",
+      "symbol": "__HOOK_NUMHOOKS",
+      "n95_word_address": "013202",
+      "e90_word_address": "013212"
+    },
+    {
+      "instruction": "25A7D7",
+      "symbol": "__HOOK_knlId",
+      "n95_word_address": "013200",
+      "e90_word_address": "013210"
+    },
+    {
+      "instruction": "25B6FE",
+      "symbol": "TRC_R_mask",
+      "n95_word_address": "013A16",
+      "e90_word_address": "013A14"
+    },
+    {
+      "instruction": "25B70F",
+      "symbol": "_LOG_D_system",
+      "n95_word_address": "01317E",
+      "e90_word_address": "01318E"
+    },
+    {
+      "instruction": "25B795",
+      "symbol": "__HOOK_NUMHOOKS",
+      "n95_word_address": "013202",
+      "e90_word_address": "013212"
+    },
+    {
+      "instruction": "25B5BF",
+      "symbol": "TRC_R_mask",
+      "n95_word_address": "013A16",
+      "e90_word_address": "013A14"
+    },
+    {
+      "instruction": "25B5D6",
+      "symbol": "_LOG_D_system",
+      "n95_word_address": "01317E",
+      "e90_word_address": "01318E"
+    }
+  ],
+  "symbols_byte_addresses": {
+    "_TSK_create": "25A5B4",
+    "_TSK_delete": "25B6FC",
+    "_TSK_stat": "25B7E0",
+    "_TSK_ATTRS": "255814",
+    "_KNL_curtask": "25540C"
+  },
+  "abi": {
+    "attrs_c55_words": 14,
+    "stat_c55_words": 22,
+    "attr_offsets": {
+      "priority": 0,
+      "stack": 2,
+      "stacksize": 4,
+      "sysstacksize": 5,
+      "stackseg": 6,
+      "environ": 8,
+      "name": 10,
+      "exitflag": 12,
+      "initstackflag": 13
+    },
+    "stat_offsets": {
+      "mode": 14,
+      "sp": 16,
+      "ssp": 18,
+      "used": 20,
+      "sysused": 21
+    },
+    "arg": "eight 32-bit pointer arguments; first five loaded into XAR0..4",
+    "large_data_pointer_bits": 23,
+    "task_entry_register": "AC0",
+    "terminated_mode": 3,
+    "native_exit_after_entry_return": "25CF69..25CF6B -> TSK_exit"
+  },
+  "probe_scope": "finite callback owns no resources; join/delete before create returns",
+  "open": [
+    "persistent worker code/data lifetime across node loader phases",
+    "STRM use in a created node",
+    "hardware task creation/termination/cleanup"
+  ]
+}

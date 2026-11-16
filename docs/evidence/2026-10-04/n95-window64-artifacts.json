@@ -1,0 +1,123 @@
+{
+  "utc": "2026-10-04T07:20:19.827062+00:00",
+  "variant": "Distinct N95 host49 aggregate CPU window: settled boundaries, pack/cache/full checks inside, deferred file I/O, no useful ARM W; protocol38 transport",
+  "candidate_revision": 64,
+  "host_mode": "own DSP candidate",
+  "native_reference": null,
+  "native_library2": null,
+  "host_version": 49,
+  "protocol": 38,
+  "hardware_verified": false,
+  "d0_accepted_runs": 0,
+  "dll_dump_verification": true,
+  "imports_exist_in_saved_e90_baseimage": true,
+  "imports": [
+    "_NODE_wait",
+    "_STRM_allocateBuffer",
+    "__divul",
+    "_CLK_countspms",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_CLK_gethtime",
+    "_NODE_getMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_STRM_create",
+    "_STRM_idle",
+    "_c_int00"
+  ],
+  "files": [
+    {
+      "path": "out/dsp/c55stream-dmm-ring-window.dll55l",
+      "bytes": 4700,
+      "sha256": "00FCD176CEF4334C75C9F662D41B5B84F720CE74A2AE165699F9B591063A18A6"
+    },
+    {
+      "path": "out/dsp/stream_node-dmm-ring-window.asm",
+      "bytes": 42438,
+      "sha256": "F9C85E1B4A4055C526848566663AADF10AAE39A98ECAAD61A2310C40B1044CCB"
+    },
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 65008,
+      "sha256": "D3F75998B446854A4F0C8AE37D43F239C3AF312F52BED5C168BC6292674C852C"
+    },
+    {
+      "path": "src/dsp/stream_resident_dcd.s55",
+      "bytes": 743,
+      "sha256": "E2C47ED94014FCB423F7B513513BE6AC55389ABF28155E47C190B8A727E4AB36"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 90428,
+      "sha256": "88E8D51587C745B64BBE1205703A81425F7EE543982B6AAF43994153CCA5A4EE"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 37120,
+      "sha256": "155B5A6DACB69D371B4E1AFD4797B84218A42F09DAF227CC00C90283690844B7"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 7835,
+      "sha256": "B7E040475AE3F96ADDA73F1476361BE94F8561EF84403761696A17968ABC4A8D"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 534,
+      "sha256": "34B79FF0C08EA0EE2C2D37C6D14C864ABE8561575F26A8F69EAFE6B874835C2C"
+    },
+    {
+      "path": "out/sis/c55stream-window64_sha1.sis",
+      "bytes": 35344,
+      "sha256": "66742EC028EF07F1CE8570B86EEE74326DF75CACABBF9A1EC7114D489395C397"
+    },
+    {
+      "path": "out/sis/c55stream-restore-v20_sha1.sis",
+      "bytes": 19924,
+      "sha256": "9C2D310E19889C4CAA3CA25F213A39C50B8C6F4FF62596951CE9C183B9B69874"
+    },
+    {
+      "path": "tools/e90_task_session.py",
+      "bytes": 52565,
+      "sha256": "86DF3C1CD85ABADEC32EE1C28ABD18C23B48F6B955C941DF78C87B3BE8104EA9"
+    },
+    {
+      "path": "tools/run_ring_series.py",
+      "bytes": 3219,
+      "sha256": "F6050E2C6C385033F8310C6E71D7384E86CA48FD96042AF7952F466A37782893"
+    },
+    {
+      "path": "docs/evidence/2026-10-04/n95-cpu-counter-results.json",
+      "bytes": 58830,
+      "sha256": "A7BE71A8F2F9A435739F0522336C517482D868F064C48EC7281F9747E8908E4C"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/n95-window64-host49-build01.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/n95-window64-dsp-build01.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/n95-window64-host49-sis01.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-restore-v20-sis-build.log",
+      "exit_code": 0
+    }
+  ],
+  "limits": [
+    "Assembly/import checks are not proof of RMS EXITACK delivery.",
+    "Fail-stop retains ownership and requires manual recovery; cancel safety is not proven.",
+    "The restore SIS contains the saved original v20 EXE; its package revision is independent of host version."
+  ],
+  "imports_exist_in_saved_n95_baseimage": true,
+  "CPU_window_limits": "Settling boundary yields; pack/cache/full correctness checks inside; file I/O and ARM baseline outside. CPU qualified only after on-device boundary checks, not retrospective correction of candidate61."
+}

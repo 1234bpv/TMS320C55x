@@ -1,0 +1,220 @@
+{
+  "utc": "2026-10-04T07:57:06.062219+00:00",
+  "candidate_revision": 65,
+  "host_version": 50,
+  "protocol": 41,
+  "device": "n95",
+  "hardware_verified": false,
+  "scope": "six IDCT + RGB24 macroblocks; no emulator writes/RLE/DMA/IRQ integration",
+  "imports": [
+    "_NODE_wait",
+    "_STRM_allocateBuffer",
+    "__divul",
+    "_CLK_countspms",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_CLK_gethtime",
+    "_NODE_getMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_STRM_create",
+    "_STRM_idle",
+    "__mpyli",
+    "_c_int00"
+  ],
+  "imports_exist_in_saved_n95_baseimage": true,
+  "multiply_helper": [
+    2426753,
+    3
+  ],
+  "files": [
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 111256,
+      "sha256": "F198BA0994A2FF604EBC07CED4C0DDEFA056BB0FD73083CDEBF0D3B60565CBD3"
+    },
+    {
+      "path": "out/dsp/c55stream-dmm-ring-mdec.dll55l",
+      "bytes": 9744,
+      "sha256": "EA70403E72E513E868D6BCD4D35ABD3D4552A38AFCC258250B00CD3A5845B534"
+    },
+    {
+      "path": "out/dsp/stream_node-dmm-ring-mdec.asm",
+      "bytes": 64501,
+      "sha256": "309A16B90215B17B12B0624EB4917D809E0AC45AF15EBFF62558A661EDDF8BD7"
+    },
+    {
+      "path": "out/dsp/kernel_c55-mdec.asm",
+      "bytes": 49849,
+      "sha256": "25735576F2059B456444A61BF676C4ACF1C1C72F1AC954FDE68EE71C4F1F4CF7"
+    },
+    {
+      "path": "out/mdec-kernel/kernel_arm463.o",
+      "bytes": 8244,
+      "sha256": "D40E01F5D963885E230483573B43D5E24072EF5A9BF1B271D70527E3E5DA3FBB"
+    },
+    {
+      "path": "out/mdec-kernel/kernel_arm343.o",
+      "bytes": 3364,
+      "sha256": "FFB21FE795454D8197C430F92A9E4564FF2FC61F5F85E8043FCC1DC923EAD334"
+    },
+    {
+      "path": "out/mdec-kernel/mdec_probe463.lib",
+      "bytes": 8408,
+      "sha256": "063F1600232B7D52A07B453477D7488261F4437105CB88B187FDD4DE67426D44"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 90860,
+      "sha256": "0C1CCA8B51E013FE3ABCA59BB4676645C8F8C0744E5FF21170E46F62F659FF7F"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 40593,
+      "sha256": "E74495F14F77C88312C8B495595B20933D5560AC7F85AE34CD141A3866AC3BC1"
+    },
+    {
+      "path": "src/dsp/dcr_read.s55",
+      "bytes": 302,
+      "sha256": "F2FA8A3EE9F0A6919B991E0B9F137151BAE708734E4031B57F49CC67B6D7C178"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 615,
+      "sha256": "D39C3D854A76063DD3949E664CFF927635EB58953BA19079BAB66E23DB35555B"
+    },
+    {
+      "path": "tools/build.cmd",
+      "bytes": 5454,
+      "sha256": "8B87950FECAE5D69D5AE89BE8A5A3B2D0262D95B15FB39FA319B0401BB4F7BB5"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 8581,
+      "sha256": "930477FDE5A0C49F809D9556DB2F755E0307BD107B92BF88C116A54BC8050FE2"
+    },
+    {
+      "path": "tools/build_mdec_kernel.cmd",
+      "bytes": 1683,
+      "sha256": "B535010B0A2A604A0E9DDE833A367DFBBC4FA20D0424B7BF53F4DB78A517232D"
+    },
+    {
+      "path": "tools/install_mdec_library.ps1",
+      "bytes": 1199,
+      "sha256": "E33074D038C24AF08345C3742EF1EF052CE3FBF3EFED8A317045DD0CA1036C63"
+    },
+    {
+      "path": "tools/stage_mdec_kernel.py",
+      "bytes": 3008,
+      "sha256": "47D3A2DDCF88FAA5D1F2E4A67C9228681FEDCD21118896BC3D91829CCDD18789"
+    },
+    {
+      "path": "tools/mdec_reference.py",
+      "bytes": 5401,
+      "sha256": "3D9CD62ED7740673FD9179EB8F54D2C3AD50F117075C2D45592FA223B2FB300B"
+    },
+    {
+      "path": "tools/e90_task_session.py",
+      "bytes": 53467,
+      "sha256": "1103B4142D02B6E25E812E7A15B64226B4D221CEB8796941CD9A5D4DF84B51FF"
+    },
+    {
+      "path": "tools/mdec_session_support.py",
+      "bytes": 3756,
+      "sha256": "8387C02921447FC995ADDCC521A5224FB62921FBC5CD5283F97D8503F2E9571E"
+    },
+    {
+      "path": "tools/rev/audit_dcr_read.py",
+      "bytes": 5708,
+      "sha256": "E0B05D49574A869A78F22D6A876C1DB2F5E4A1D64CA056B0E2D2F26EBDE65679"
+    },
+    {
+      "path": "src/mdec/COPYING",
+      "bytes": 19083,
+      "sha256": "A9107FE8417CEEACA41CE17987CDE004CB919789511C0A92FD114D1226A624A5"
+    },
+    {
+      "path": "src/mdec/fixtures.h",
+      "bytes": 48917,
+      "sha256": "057A1644FDFF057E502B7C5317DE7D68FC7D4092FDEC22E423FF26BA8DFAB177"
+    },
+    {
+      "path": "src/mdec/kernel.h",
+      "bytes": 789,
+      "sha256": "4D3FD958B41D42D9734090E11354397C4CCAEC81C4831DAAEDE03C54F9260E22"
+    },
+    {
+      "path": "src/mdec/kernel_arm.c",
+      "bytes": 520,
+      "sha256": "22D750D0D79F5785EE8817B84C2F4FD29E47E5CB6FBEFB1D3AD8F15357ACE218"
+    },
+    {
+      "path": "src/mdec/kernel_arm.inc",
+      "bytes": 11211,
+      "sha256": "B657AD8846C14178235C85658FFA3321F78476805B0D5CA9342D7159F417DD5C"
+    },
+    {
+      "path": "src/mdec/kernel_c55.c",
+      "bytes": 616,
+      "sha256": "5CB23AE04015FB6806B9ADD4AE8887026D86D1BC3CA53B97AB7D91803D6EB50F"
+    },
+    {
+      "path": "src/mdec/kernel_c55.inc",
+      "bytes": 11251,
+      "sha256": "C9ECC1EE3B1ADB46D24FC9FB0BD8FA278409C9A21BD44EA0E3F19B797AAEE929"
+    },
+    {
+      "path": "src/mdec/ring_host.inc",
+      "bytes": 7976,
+      "sha256": "B3178C84BFD08D8634EC91B35E5E85E1E6CEB8EDC00C3ECDAE292CFC28FB73C9"
+    },
+    {
+      "path": "src/mdec/snapshot.json",
+      "bytes": 1131,
+      "sha256": "231EB8F1B778FAA9DABCF5808688BACAD7F04CCED0E2D4EE0E1C3E174C43DA2D"
+    }
+  ],
+  "builds": [
+    "out/n95-mdec65-dsp-build01.log",
+    "out/n95-mdec65-host50-build02.log"
+  ],
+  "read_only_DCR_instruction_audit": {
+    "scope": "distinct N95 candidate65/protocol41; no phone I/O",
+    "DSP_sha256": "EA70403E72E513E868D6BCD4D35ABD3D4552A38AFCC258250B00CD3A5845B534",
+    "helper_section": ".text (linker merged .text:dcr_read)",
+    "helper_symbol_value": "001B38",
+    "helper_section_byte_offset": 6712,
+    "helper_code_hex": "A45102004804",
+    "helper_code_sha256": "B4F50EC5203A63112C9C2E1FA3A7216A88D0BC23C76F23DF9D0B388C8F319439",
+    "helper_relocations": 0,
+    "instructions": [
+      "MOV port(#00200h),T0",
+      "RET"
+    ],
+    "text_relocation_kinds": {
+      "00050000": 77,
+      "007C0000": 2
+    },
+    "helper_io_reads": 1,
+    "helper_io_writes": 0,
+    "calls_per_exchange": 2,
+    "call_order": "DCR read -> ring_mdec_exchange -> DCR read",
+    "notification_fields": {
+      "marker_word": 13,
+      "before_word": 14,
+      "after_word": 15
+    },
+    "reference": "docs/evidence/2026-10-03/dsp-native-notification-audit.json",
+    "limits": [
+      "DCR reads may affect timing/ordering; diagnostic is separate from candidate61",
+      "helper instruction audit is not a complete external-memory publication contract"
+    ]
+  },
+  "limits": [
+    "Both ARM snapshots and DSP must pass bounded fixtures on the physical N95 before accepting results.",
+    "GCCE463 matches optimization/architecture flags; isolated wrapper/cache/state differs from live emulator.",
+    "DCR is read-only; external-memory publication contract remains unresolved."
+  ]
+}

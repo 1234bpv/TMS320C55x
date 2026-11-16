@@ -1,0 +1,65 @@
+{
+  "utc": "2026-09-30T14:38:41.480607+00:00",
+  "device": "e90",
+  "ip": "192.168.3.21",
+  "complete": true,
+  "files": [
+    {
+      "remote": "C:\\sys\\bin\\c55stream.exe",
+      "backup": "work/evidence/e90/stream-v14-sis-delivery-01-before.exe",
+      "bytes": 18668,
+      "sha256": "0900DFE31E14D915E2DC902C318DC0704A45B42FFF8335FF04ACA34F5C444D5F"
+    },
+    {
+      "remote": "C:\\sys\\hash\\c55stream.exe",
+      "backup": "work/evidence/e90/stream-v14-sis-delivery-01-before.hash",
+      "bytes": 20,
+      "sha256": "718C247C536F104AA7F9DF28BEE8DE29886E27502BB44B26B1AA98D65A18C504"
+    },
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "backup": "work/evidence/e90/stream-v14-sis-delivery-01-before.dll55l",
+      "bytes": 3668,
+      "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1"
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "backup": "work/evidence/e90/stream-v14-sis-delivery-01-before.log",
+      "bytes": 2010,
+      "sha256": "5C995F53C76032DB6507B6A2A946562B7E511A6834C5CCB9652D6AB1D8A4EFF0"
+    },
+    {
+      "remote": "E:\\c55stream-v14.sis",
+      "readback": "work/evidence/e90/stream-v14-sis-delivery-01-readback.sis",
+      "bytes": 13624,
+      "sha256": "1BC4F000E88AB9C1FE42B372AD32B4796E59BE81544FA35B4ADEF25FD55DB898",
+      "equal": true
+    }
+  ],
+  "scope": "Backup and versioned SIS delivery; no DSP or clock probe",
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 76320768",
+    "tick 13895984 startTick 8770239 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55880",
+    "drive E freekb 1470664",
+    "script IDLE"
+  ],
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 76320768",
+    "tick 13896562 startTick 8770239 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55880",
+    "drive E freekb 1470648",
+    "script IDLE"
+  ],
+  "installer_open": [
+    "OK open"
+  ]
+}

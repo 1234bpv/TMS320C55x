@@ -1,0 +1,126 @@
+{
+  "utc": "2026-10-02T12:14:09.327383+00:00",
+  "variant": "generic library2, finite CREATED-state worker; prearmed ARM receive, one outbound MSG and read-only STRM snapshot; no official RUN/EXITACK",
+  "candidate_revision": 33,
+  "host_mode": "own DSP candidate",
+  "native_reference": null,
+  "native_library2": null,
+  "host_version": 26,
+  "protocol": 26,
+  "hardware_verified": false,
+  "d0_accepted_runs": 0,
+  "dll_dump_verification": true,
+  "imports_exist_in_saved_e90_baseimage": true,
+  "imports": [
+    "_MSG_ptoDSPBuffer",
+    "_SEM_post",
+    "_MSG_toGPP",
+    "_SEM_pend",
+    "_NODE_wait",
+    "_MSG_maxMessages",
+    "_STRM_allocateBuffer",
+    "_TSK_ATTRS",
+    "_MSG_pfromDSPBuffer",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_TSK_stat",
+    "_SEM_create",
+    "_KNL_curtask",
+    "_NODE_putMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_SEM_delete",
+    "_STRM_create",
+    "_STRM_idle",
+    "_TSK_delete",
+    "_TSK_create",
+    "_c_int00"
+  ],
+  "files": [
+    {
+      "path": "out/dsp/c55stream-worker-message.dll55l",
+      "bytes": 5616,
+      "sha256": "71B4D893956BEBD2575D0CF6A50706D75FC71AFD69F0D74B8EFBCD78ED0BC265"
+    },
+    {
+      "path": "out/dsp/stream_node-worker-message.asm",
+      "bytes": 49426,
+      "sha256": "F0B290777D96E21AD66028C4608AED4F07F1C88398DC737E9130471B32371AD4"
+    },
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 40920,
+      "sha256": "2EAC917E90CF78F18A6EA1DBD9EE117FF9CB2398C6269414E559B4140758D787"
+    },
+    {
+      "path": "src/dsp/stream_resident_dcd.s55",
+      "bytes": 738,
+      "sha256": "4220828E5CC6759C8C04560EE352A830AA0EEFBAFD772A7ADBE90F2EE7220D4F"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 51024,
+      "sha256": "FF312E4657F2B42DB2ADA402C225DFFB423974F0EAF26C916324B5D4999CD38D"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 31019,
+      "sha256": "DA07F76AD1F795F68B9B6320FBCDF6741165E8090EEF067904FD1E44C6763E37"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 5980,
+      "sha256": "5C051CD794BC0A324FEBBA56E5776F02C7F2B84F4969E53CA1565C4B0B1685BF"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 534,
+      "sha256": "34B79FF0C08EA0EE2C2D37C6D14C864ABE8561575F26A8F69EAFE6B874835C2C"
+    },
+    {
+      "path": "out/sis/c55stream-worker-msg-v26_sha1.sis",
+      "bytes": 23096,
+      "sha256": "54B2C717172A16C00C9F3B0D278BD0E401D818672458185C984AAEAFBC819EB9"
+    },
+    {
+      "path": "out/sis/c55stream-restore-v20-r34_sha1.sis",
+      "bytes": 19924,
+      "sha256": "565FF65941E283897D25CD06F957F4ABCB9E733EA903726038C322F1EC0C1E53"
+    },
+    {
+      "path": "src/dsp/bios_task.h",
+      "bytes": 2653,
+      "sha256": "573CAB20B48776F50EADBD5F09AFDC3F7EAEAFDC276F7382DCDF5C7ED7682193"
+    },
+    {
+      "path": "src/dsp/node.h",
+      "bytes": 2549,
+      "sha256": "EB8D16488C08997371DEC844E082667458F5B988047B52BF6268E96BE5E789AE"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/d0-host-v26-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-worker-message-v33-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-host-v26-sis.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-restore-v20-r34-sis.log",
+      "exit_code": 0
+    }
+  ],
+  "limits": [
+    "Assembly/import checks are not proof of RMS EXITACK delivery.",
+    "Fail-stop retains ownership and requires manual recovery; cancel safety is not proven.",
+    "The restore SIS contains the saved original v20 EXE; its package revision is independent of host version."
+  ]
+}

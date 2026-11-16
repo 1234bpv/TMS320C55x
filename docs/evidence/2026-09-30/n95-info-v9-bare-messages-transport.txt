@@ -1,0 +1,46 @@
+2026-09-30T13:49:40.882364+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 90632192
+tick 10152488 startTick 7928381 boot 0 by n
+ap Huawei
+drive C freekb 65992
+drive E freekb 1070192
+script IDLE
+2026-09-30T13:49:40.973412+00:00 PS c55stream*
+OK ps 0
+PREPARATION VERIFIED work\evidence\n95\stream-v9-bare-messages-prepare-01-preparation.json
+2026-09-30T13:49:42.405519+00:00 START E:\sys\bin\c55stream.exe inspect
+OK proc 6
+2026-09-30T13:49:42.507262+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T13:49:46.176067+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-09-30T13:49:46.806724+00:00 WAIT 6 1
+EXIT 0 Kill
+2026-09-30T13:49:46.952050+00:00 START E:\sys\bin\c55stream.exe info
+OK proc 7
+2026-09-30T13:49:47.059887+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T13:49:47.648405+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T13:49:48.282561+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-09-30T13:49:49.804791+00:00 WAIT 7 1
+EXIT 0 Kill
+2026-09-30T13:49:55.452930+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 90640384
+tick 10167046 startTick 7928381 boot 0 by n
+ap Huawei
+drive C freekb 65992
+drive E freekb 1070192
+script IDLE

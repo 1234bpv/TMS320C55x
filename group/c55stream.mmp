@@ -1,0 +1,24 @@
+TARGET c55stream.exe
+TARGETTYPE exe
+UID 0 0xE0001021
+SECUREID 0xE0001021
+VENDORID 0
+CAPABILITY PowerMgmt WriteDeviceData ReadDeviceData ReadUserData WriteUserData ProtServ MultimediaDD
+ALWAYS_BUILD_AS_ARM
+// Match PS1Emulator stage1 scalar audio codegen. SDK UREL keeps -O2.
+OPTION GCCE -march=armv6 -mtune=arm1136j-s -fomit-frame-pointer
+EPOCSTACKSIZE 0x6000
+EPOCHEAPSIZE 0x10000 0x800000
+SOURCEPATH ..\src
+SOURCE c55stream.cpp
+SOURCE wsola_reference.cpp
+SOURCEPATH ..\src\wsola_current
+SOURCE kernel.cpp
+SOURCEPATH ..\src\mdec
+SOURCE kernel_arm.c
+SOURCEPATH ..\src\spu
+SOURCE mix_job_arm.c
+SOURCE mix_arm.s
+SYSTEMINCLUDE \epoc32\include
+LIBRARY euser.lib efsrv.lib hal.lib sysutil.lib
+STATICLIBRARY c55xmdec463research.lib

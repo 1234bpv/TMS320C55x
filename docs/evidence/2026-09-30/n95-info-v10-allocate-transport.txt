@@ -1,0 +1,46 @@
+2026-09-30T14:06:15.845404+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 90648576
+tick 11147264 startTick 7928381 boot 0 by n
+ap Huawei
+drive C freekb 65988
+drive E freekb 1070192
+script IDLE
+2026-09-30T14:06:15.934832+00:00 PS c55stream*
+OK ps 0
+PREPARATION VERIFIED work\evidence\n95\stream-v10-allocate-prepare-01-preparation.json
+2026-09-30T14:06:16.084831+00:00 START E:\sys\bin\c55stream.exe inspect
+OK proc 12
+2026-09-30T14:06:16.164713+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:06:16.746229+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-09-30T14:06:16.896079+00:00 WAIT 12 1
+EXIT 0 Kill
+2026-09-30T14:06:17.005650+00:00 START E:\sys\bin\c55stream.exe info
+OK proc 13
+2026-09-30T14:06:17.107188+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:06:17.685696+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:06:18.375464+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-09-30T14:06:18.510501+00:00 WAIT 13 1
+EXIT 0 Kill
+2026-09-30T14:06:18.568566+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 90636288
+tick 11149971 startTick 7928381 boot 0 by n
+ap Huawei
+drive C freekb 65988
+drive E freekb 1070192
+script IDLE

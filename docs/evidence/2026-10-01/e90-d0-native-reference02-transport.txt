@@ -1,0 +1,112 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79290368
+< tick 376111 startTick 35185 boot 1 by t
+< ap Huawei
+< drive C freekb 55840
+< drive E freekb 1447704
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79290368
+< tick 376195 startTick 35185 boot 1 by t
+< ap Huawei
+< drive C freekb 55840
+< drive E freekb 1447704
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> GET C:\sys\bin\c55stream.exe
+< OK 36724 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-host-readback.exe
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-dsp-before.dll55l
+> GET E:\c55stream.log
+< OK 21528 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-log-before.log
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-clock-before.log
+> START E:\sys\bin\ocprobe.exe patcher engine e90
+< OK proc 1
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+> WAIT 1 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1245 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-engine.log
+> START E:\sys\bin\ocprobe.exe patcher dsp 1 e90
+< OK proc 2
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+> WAIT 2 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1339 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-dsp.log
+> PUT E:\ocprobe.log 1249
+< OK 1249
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-clock-restored.log
+> START C:\sys\bin\c55stream.exe inspect
+< OK proc 3
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 0 c55stream.exe[e0001021]0001
+> WAIT 3 1
+< EXIT 0 Kill
+> GET E:\c55stream.log
+< OK 1084 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-inspect.log
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79237120
+< tick 380118 startTick 35185 boot 1 by t
+< ap Huawei
+< drive C freekb 55840
+< drive E freekb 1447724
+< script IDLE
+> GET Z:\system\apps\strmcopy\strmcopydyn.dll55l
+< OK 4396 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-reference-rom.dll55l
+> PUT E:\c55stream.dll55l 4396
+< OK 4396
+> GET E:\c55stream.dll55l
+< OK 4396 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-dsp-readback.dll55l
+> START C:\sys\bin\c55stream.exe native-copy
+< OK proc 4
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 0 c55stream.exe[e0001021]0001
+> WAIT 4 1
+< EXIT -6 Kill
+> GET E:\c55stream.log
+< OK 1363 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-reference02-native-copy.log

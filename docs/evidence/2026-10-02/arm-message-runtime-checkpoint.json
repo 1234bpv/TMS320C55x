@@ -1,0 +1,102 @@
+{
+  "utc": "2026-10-02T20:28:55.827727+00:00",
+  "scope": "E90 host29 copy check, static pointer audit, restoration; no new MSG/RUN",
+  "read_copy": {
+    "host": 29,
+    "three_passes": true,
+    "destination": "own process RAM",
+    "sources": [
+      "own RAM",
+      "803F7664 ROM reader code",
+      "C8010B20 module BSS"
+    ],
+    "FINAL_EXIT": 0,
+    "DSP_open": false,
+    "kernel_code_writes": false,
+    "PRCM_writes": false
+  },
+  "runtime_message_reader_observed": false,
+  "runtime_message_context_root_verified": false,
+  "E90_restoration": {
+    "all_five_GET_equal": true,
+    "host": 20,
+    "c55stream_processes": 0,
+    "ocprobe_processes": 0,
+    "daemon_startTick": 61087
+  },
+  "N95": "No commands in this continuation; last verified restored host20/PS0 in worker-message-checkpoint.json",
+  "new_official_RUN_calls": 0,
+  "new_MSG_diagnostics": 0,
+  "phone_KILL_calls": 0,
+  "D0_accepted_cycles": 0,
+  "historical_experimental_RUN_calls": 5,
+  "D1": "pending D0",
+  "D2": "provisional",
+  "next": "Derive a live board/context root through an audited native object lookup, including allocation bounds and lifetime, before following the reader/window/queue pointers.",
+  "proofs": {
+    "snapshot01.json": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-snapshot01.json",
+      "sha256": "F28F43719A09A110E416999541949D57A833C4CD96AB5DA272C6C63C7D642E4B"
+    },
+    "snapshot01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-snapshot01-transport.txt",
+      "sha256": "D8C9CBEB4DC2226F5BD6AECC9E4F2CE224B1F8835B237525C03BE605CBE68F2C"
+    },
+    "host29-deploy01.json": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-host29-deploy01.json",
+      "sha256": "597F0668C5003E07D9C13A4E5381DEBC1BC48D11A96CEE1B8FA6BEF2FAF567E4"
+    },
+    "host29-deploy01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-host29-deploy01-transport.txt",
+      "sha256": "6D39A976C8B77418F80D413D908D8E8C65F429AF3BC4E34A1D937BF8CA665AD7"
+    },
+    "readcheck01.json": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-readcheck01.json",
+      "sha256": "E829D9974429965BB9F3B21462759EB9C2F44969CF789794BF6FA43226B7A181"
+    },
+    "readcheck01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-readcheck01-transport.txt",
+      "sha256": "9C9B729DE324D4D6F371D03F8A6FA9EDF58F37B28B3D6E1516513C3966D0C1AE"
+    },
+    "readcheck01.log": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-readcheck01.txt",
+      "sha256": "56167F767D4B30FF225DA24BFB0F6666FD25F16B9FB22B1398D4DBB911195D76"
+    },
+    "resume-reader01.json": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-resume-reader01.json",
+      "sha256": "317C9FB03DA0BF8B074CE83D946C2ABB484F3E509C6BE7C3EA1627D8A6D367ED"
+    },
+    "resume-reader01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-resume-reader01-transport.txt",
+      "sha256": "8D6CF474C7EE8AD8A61E08CCF0CE2C04F05317656DF6714EBB296AA5513D3DDE"
+    },
+    "resume-reader01.log": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-resume-reader01.txt",
+      "sha256": "56167F767D4B30FF225DA24BFB0F6666FD25F16B9FB22B1398D4DBB911195D76"
+    },
+    "resume-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-resume-restore01.json",
+      "sha256": "9097FEFC3481B2071EFC35D35B205C90FA011F03421EF16C0AD452DC99C169E3"
+    },
+    "resume-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-resume-restore01-transport.txt",
+      "sha256": "42EA9F616045E4063B198043D3D78C56F702B1D3F81A5013BDE439DC7D83FC41"
+    },
+    "resume-hostrestore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-resume-hostrestore01.json",
+      "sha256": "8D0FFEB9882634092A9CF294E42509782F1243DD11608EE55E7E59C5C8A01E77"
+    },
+    "resume-hostrestore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-resume-hostrestore01-transport.txt",
+      "sha256": "9BE6CE4342816D77DDAAD25619C03D47416BDAC19003A17B55C588221D04E5D7"
+    },
+    "resume-finalverify01.json": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-resume-finalverify01.json",
+      "sha256": "F3330B70184F5046AB5687CA241ACAABD5B717D1860624BCCF0CD0545365D2F2"
+    },
+    "resume-finalverify01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-pointer-resume-finalverify01-transport.txt",
+      "sha256": "F930BC89248FF182736A56D5E8D6C9AF42DC448644F1ED9B61699474C406DD91"
+    }
+  }
+}

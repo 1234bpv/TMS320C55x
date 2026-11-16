@@ -1,0 +1,140 @@
+{
+  "utc": "2026-09-30T16:18:44.118089+00:00",
+  "scope": "Static ROM comparison; no kernel calls or phone writes",
+  "pdd_sha256": {
+    "n95": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF",
+    "e90": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4"
+  },
+  "ranges": {
+    "word_reader": {
+      "n95_start": "801B3028",
+      "e90_start": "803F7664",
+      "bytes": 24,
+      "bytes_equal": true,
+      "n95_sha256": "DE0BD0094DEB6211488752E6F2C271AC930039D451E91D79481840D3B03AE6C7",
+      "e90_sha256": "DE0BD0094DEB6211488752E6F2C271AC930039D451E91D79481840D3B03AE6C7"
+    },
+    "window_consumer": {
+      "n95_start": "8019B0A8",
+      "e90_start": "803DF6E8",
+      "bytes": 744,
+      "bytes_equal": false,
+      "n95_sha256": "04F2BA765556969E54A195407A8DA18B0FC6C627FCA84BE698C96CAF8C9A277F",
+      "e90_sha256": "404F56881F8CE562530E58364C08A6D115D77BAC01D2148CC806E10B6417A05B"
+    },
+    "mailbox_dfc": {
+      "n95_start": "8019BA84",
+      "e90_start": "803E00C4",
+      "bytes": 88,
+      "bytes_equal": true,
+      "n95_sha256": "3C517A8B6280FA10BBFD2F17C1B21DFE18228A00197982E518A97875B7ED1B42",
+      "e90_sha256": "3C517A8B6280FA10BBFD2F17C1B21DFE18228A00197982E518A97875B7ED1B42"
+    },
+    "configuration_copy": {
+      "n95_start": "8019EE68",
+      "e90_start": "803E34A8",
+      "bytes": 8,
+      "bytes_equal": true,
+      "n95_sha256": "6C9954F3C93AD21B9C24E6E4C164E8AFD2C33B3E2E4D918A3F8B85CA5BE11280",
+      "e90_sha256": "6C9954F3C93AD21B9C24E6E4C164E8AFD2C33B3E2E4D918A3F8B85CA5BE11280"
+    },
+    "window_pointer_setup": {
+      "n95_start": "8019C214",
+      "e90_start": "803E0854",
+      "bytes": 64,
+      "bytes_equal": true,
+      "n95_sha256": "6A29BE23241805ABCE4F8A4B35B74E2D3EB8474CD5740EE772E6076AB9BF41B9",
+      "e90_sha256": "6A29BE23241805ABCE4F8A4B35B74E2D3EB8474CD5740EE772E6076AB9BF41B9"
+    },
+    "reader_owner_setup": {
+      "n95_start": "8019BC8C",
+      "e90_start": "803E02CC",
+      "bytes": 12,
+      "bytes_equal": true,
+      "n95_sha256": "167E678DB1DD209B0F6D4C12D9E811D039EC5B8A057393E453020558A1D4E1F9",
+      "e90_sha256": "167E678DB1DD209B0F6D4C12D9E811D039EC5B8A057393E453020558A1D4E1F9"
+    },
+    "embedded_interface_getter": {
+      "n95_start": "801AA98C",
+      "e90_start": "803EEFCC",
+      "bytes": 8,
+      "bytes_equal": true,
+      "n95_sha256": "3C256551D0B4E2CEB87F626EFB52332B047AF529CCF42D6238BF0EEC56A7ADA9",
+      "e90_sha256": "3C256551D0B4E2CEB87F626EFB52332B047AF529CCF42D6238BF0EEC56A7ADA9"
+    }
+  },
+  "consumer_relocated_calls": [
+    {
+      "offset": 96,
+      "n95_target": "801B3028",
+      "e90_target": "803F7664"
+    },
+    {
+      "offset": 112,
+      "n95_target": "801B3028",
+      "e90_target": "803F7664"
+    },
+    {
+      "offset": 128,
+      "n95_target": "801B3028",
+      "e90_target": "803F7664"
+    },
+    {
+      "offset": 144,
+      "n95_target": "801B3028",
+      "e90_target": "803F7664"
+    },
+    {
+      "offset": 220,
+      "n95_target": "801B2DC8",
+      "e90_target": "803F7404"
+    },
+    {
+      "offset": 284,
+      "n95_target": "801B2C88",
+      "e90_target": "803F72C4"
+    },
+    {
+      "offset": 476,
+      "n95_target": "801B2DD0",
+      "e90_target": "803F740C"
+    },
+    {
+      "offset": 520,
+      "n95_target": "801B2DE8",
+      "e90_target": "803F7424"
+    },
+    {
+      "offset": 616,
+      "n95_target": "801B2DE0",
+      "e90_target": "803F741C"
+    }
+  ],
+  "record": {
+    "arm_bytes": 16,
+    "c55_words": 8,
+    "cmd_offset": 0,
+    "arg1_offset": 4,
+    "arg2_offset": 8,
+    "source_offset": 12
+  },
+  "consumer": {
+    "window_context_offset": 224,
+    "record_array_context_offset": 240,
+    "queue_source_offset": 16,
+    "pending_receive_offset": 40,
+    "ack_command": "40000000"
+  },
+  "reader": {
+    "condition": "reader object byte+64 nonzero -> ror16",
+    "owner": "context+24 = (context+48 object)+164 via 801AA98C",
+    "processor_exit_flag_is_separate": "processor+64 <- configuration+588; not this reader object",
+    "runtime_value": "not observed"
+  },
+  "open": [
+    "actual message record and word order",
+    "source routing",
+    "IRQ/DFC execution",
+    "runtime shared-window mapping"
+  ]
+}

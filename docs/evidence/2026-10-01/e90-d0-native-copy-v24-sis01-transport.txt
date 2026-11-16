@@ -1,0 +1,40 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76898304
+< tick 928023 startTick 61475 boot 0 by n
+< ap Huawei
+< drive C freekb 55832
+< drive E freekb 1447728
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76898304
+< tick 928095 startTick 61475 boot 0 by n
+< ap Huawei
+< drive C freekb 55832
+< drive E freekb 1447728
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> STAT E:\c55stream-native-copy-v24.sis
+< ERR stat -1
+> PUT E:\c55stream-native-copy-v24.sis 21180
+< OK 21180
+> GET E:\c55stream-native-copy-v24.sis
+< OK 21180 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\native-copy-v24-sis01-sis-readback.sis
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76898304
+< tick 928818 startTick 61475 boot 0 by n
+< ap Huawei
+< drive C freekb 55832
+< drive E freekb 1447704
+< script IDLE

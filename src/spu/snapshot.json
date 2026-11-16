@@ -1,0 +1,14 @@
+{
+  "source_sha256": "5B8051F48FBCD8854B09B8032BB95070A11C8F461721872C93478062842EC355",
+  "source": "PS1Emulator\\pcsx_rearmed\\plugins\\dfsound\\arm_utils.S",
+  "original_ARMV5_body_LF_sha256": "059AE54A78FB2CC0728AE54F57E89DAB0999C6E4D250CE811FD1A309D45B2E23",
+  "snapshot_sha256": "912B879414EB1906AF0C4E6CD3A568B8BB268AEEF8742899C62C1240CBB00C59",
+  "fixtures_sha256": "6959C048C8A53DB159358E1AE369252C636E04C42EE52159305128E0ECD0A8DC",
+  "adaptations": [
+    "symbol renamed to spu_mix_chan_arm",
+    "one global ChanBuf literal-address load replaced by fifth-argument stack load at24B after the same six-register push",
+    "bare ARM assembler directives replace upstream macros/includes; ARMv5 instructions retained under ARMv6 host target"
+  ],
+  "scope": "plain mix only; exact current ARM packed-volume/SMLAW/wrap32 arithmetic; not full SPU or final PCM",
+  "license": "upstream GPL2-or-later or LGPL2.1-or-later; original notice preserved; GPL selected for this research snapshot"
+}

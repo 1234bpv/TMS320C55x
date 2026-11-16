@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-01T21:03:05.705786+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "d0-native-library2",
+  "host_version_expected": 24,
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79290368",
+    "tick 376195 startTick 35185 boot 1 by t",
+    "ap Huawei",
+    "drive C freekb 55840",
+    "drive E freekb 1447704",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "12356F00E0163EF0B0823A0E017D38A2796DCE83F2AB1FA85554DCFFF32A09D8",
+  "clock_probes": [
+    {
+      "path": "native-reference02-engine.log",
+      "sha256": "693722BA7EA7E8E4207095D91852240B166F7DFE3F0F754039B88291AC73C351"
+    },
+    {
+      "path": "native-reference02-dsp.log",
+      "sha256": "9C7B903CA74D9DD9E78091C8051E291711532FFE9BA4733A8416E812E744B7BC"
+    }
+  ],
+  "clock_exit": [
+    "EXIT 0 Kill"
+  ],
+  "clock_restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1249,
+    "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+    "equal": true
+  },
+  "steps": [
+    {
+      "label": "inspect",
+      "command": "inspect",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "native-reference02-inspect.log",
+      "sha256": "C965FAE4685B6438327E2023A77792F6A3BE0FFE8E85967EFD6D9F4312832713",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 79237120",
+        "tick 380118 startTick 35185 boot 1 by t",
+        "ap Huawei",
+        "drive C freekb 55840",
+        "drive E freekb 1447724",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "native-copy",
+      "command": "native-copy",
+      "complete": false,
+      "run_error": "RuntimeError: process exit: ['EXIT -6 Kill']",
+      "journal": "native-reference02-native-copy.log",
+      "sha256": "4A81F1F9121314314FB5C0785B4011BBBA58A006CFDECC636BC5A3CDEDDE0EB7"
+    }
+  ],
+  "reference_rom_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+  "deployed": {
+    "remote": "E:\\c55stream.dll55l",
+    "bytes": 4396,
+    "sha256": "308090D3EF802349EF0F5C234B664903C40418F53CD163F3145F8583A00E968F",
+    "equal": true
+  },
+  "error": "RuntimeError: process exit: ['EXIT -6 Kill']"
+}

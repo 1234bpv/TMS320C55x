@@ -1,0 +1,155 @@
+{
+  "utc": "2026-10-04T01:20:46.295957+00:00",
+  "variant": "Distinct N95 DCR I/O port0x200 read-only diagnostic before/after native 16KiB ring exchange; no DCR writes; not retrospective clock/publication proof for candidate61",
+  "candidate_revision": 62,
+  "host_mode": "own DSP candidate",
+  "native_reference": null,
+  "native_library2": null,
+  "host_version": 47,
+  "protocol": 39,
+  "hardware_verified": false,
+  "d0_accepted_runs": 0,
+  "dll_dump_verification": true,
+  "imports_exist_in_saved_e90_baseimage": true,
+  "imports": [
+    "_NODE_wait",
+    "_STRM_allocateBuffer",
+    "__divul",
+    "_CLK_countspms",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_CLK_gethtime",
+    "_NODE_getMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_STRM_create",
+    "_STRM_idle",
+    "_c_int00"
+  ],
+  "files": [
+    {
+      "path": "out/dsp/c55stream-dmm-ring-dcr.dll55l",
+      "bytes": 4780,
+      "sha256": "F090D32D9F1B23DE9B78931B93B8177B62ED621B3B1E00CBBF3A015253E549F8"
+    },
+    {
+      "path": "out/dsp/stream_node-dmm-ring-dcr.asm",
+      "bytes": 42872,
+      "sha256": "F038263C8597C86E6D4C8617DC712CA7DE2C2EBC9B0809AFCF31B2B86AF56A75"
+    },
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 59672,
+      "sha256": "9C1D6B6304E346F419129C09270ED0E5939918315DF3DDAA5C7448CB892FA5C5"
+    },
+    {
+      "path": "src/dsp/stream_resident_dcd.s55",
+      "bytes": 743,
+      "sha256": "E2C47ED94014FCB423F7B513513BE6AC55389ABF28155E47C190B8A727E4AB36"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 81548,
+      "sha256": "1DEFDB45BA39EB46BC7DED5F7DC7103C3D6BC6CE602CBD7B59FF4AAE289BC3E5"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 34180,
+      "sha256": "A9A6F35D4C035A0BBE2B268823E467D4A4EF3EDBF8E871B3B43690C786EEEF10"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 6902,
+      "sha256": "244D711F0268E7896610AA86ACF345CDA3FC40B8E65080CE2A7C7772BD77F0FB"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 534,
+      "sha256": "34B79FF0C08EA0EE2C2D37C6D14C864ABE8561575F26A8F69EAFE6B874835C2C"
+    },
+    {
+      "path": "out/sis/c55stream-dcr-v47-r62_sha1.sis",
+      "bytes": 32424,
+      "sha256": "573827CA0A66EACE5F54945CA71D5C739A77BE06EF53E4FD8FCDF5CCD64EC1F8"
+    },
+    {
+      "path": "out/sis/c55stream-restore-v20_sha1.sis",
+      "bytes": 19924,
+      "sha256": "9C2D310E19889C4CAA3CA25F213A39C50B8C6F4FF62596951CE9C183B9B69874"
+    },
+    {
+      "path": "tools/e90_task_session.py",
+      "bytes": 46283,
+      "sha256": "5382F65FB112101E9A2889CAC6C2409E0AD35FDD894EE2D201F20FD8F317080F"
+    },
+    {
+      "path": "tools/run_ring_series.py",
+      "bytes": 3219,
+      "sha256": "F6050E2C6C385033F8310C6E71D7384E86CA48FD96042AF7952F466A37782893"
+    },
+    {
+      "path": "src/dsp/dcr_read.s55",
+      "bytes": 302,
+      "sha256": "F2FA8A3EE9F0A6919B991E0B9F137151BAE708734E4031B57F49CC67B6D7C178"
+    },
+    {
+      "path": "tools/rev/audit_dcr_read.py",
+      "bytes": 4600,
+      "sha256": "0FC4680604B2C460B84D8350A6CBD2B5FCBEF37103501D4226E30CBBDB1E9C1D"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/n95-dcr62-host47-build02.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/n95-dcr62-dsp-build02.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/n95-dcr62-host47-sis01.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-restore-v20-sis-build.log",
+      "exit_code": 0
+    }
+  ],
+  "limits": [
+    "Assembly/import checks are not proof of RMS EXITACK delivery.",
+    "Fail-stop retains ownership and requires manual recovery; cancel safety is not proven.",
+    "The restore SIS contains the saved original v20 EXE; its package revision is independent of host version."
+  ],
+  "read_only_DCR_instruction_audit": {
+    "scope": "distinct N95 candidate62/protocol39 diagnostic; no phone I/O",
+    "DSP_sha256": "F090D32D9F1B23DE9B78931B93B8177B62ED621B3B1E00CBBF3A015253E549F8",
+    "helper_section": ".text (linker merged .text:dcr_read)",
+    "helper_symbol_value": "000A6D",
+    "helper_section_byte_offset": 2413,
+    "helper_code_hex": "A45102004804",
+    "helper_code_sha256": "B4F50EC5203A63112C9C2E1FA3A7216A88D0BC23C76F23DF9D0B388C8F319439",
+    "helper_relocations": 0,
+    "instructions": [
+      "MOV port(#00200h),T0",
+      "RET"
+    ],
+    "helper_io_reads": 1,
+    "helper_io_writes": 0,
+    "calls_per_exchange": 2,
+    "call_order": "DCR read -> ring_exchange -> DCR read",
+    "notification_fields": {
+      "marker_word": 13,
+      "before_word": 14,
+      "after_word": 15
+    },
+    "reference": "docs/evidence/2026-10-03/dsp-native-notification-audit.json",
+    "limits": [
+      "DCR reads may affect timing/ordering; diagnostic is separate from candidate61",
+      "helper instruction audit is not a complete external-memory publication contract"
+    ]
+  },
+  "imports_exist_in_saved_n95_baseimage": true
+}

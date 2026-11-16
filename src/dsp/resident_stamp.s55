@@ -1,0 +1,8 @@
+; Initialized downloadable data, not BSS or a C autoinit record. Reloading
+; this section restores the initial value even if its address is reused.
+        .data
+        .align 2
+        .global _resident_cookie
+_resident_cookie:
+        .long 01badb002h
+        .end

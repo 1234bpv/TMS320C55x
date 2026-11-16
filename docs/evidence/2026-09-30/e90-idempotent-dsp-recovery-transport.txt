@@ -1,0 +1,38 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79552512
+< tick 3705104 startTick 42746 boot 1 by t
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470668
+< script IDLE
+> GET E:\c55stream.log
+< OK 2063 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-recovery-01.log
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-recovery-01-current.dll55l
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79552512
+< tick 3705247 startTick 42746 boot 1 by t
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470668
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-recovery-01-restored.dll55l
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79552512
+< tick 3705422 startTick 42746 boot 1 by t
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470668
+< script IDLE

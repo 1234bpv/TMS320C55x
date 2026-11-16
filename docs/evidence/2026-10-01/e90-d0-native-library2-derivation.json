@@ -1,0 +1,17 @@
+{
+  "scope": "Research-file DCD metadata only; no phone writes or code changes",
+  "source_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+  "derived_path": "out/dsp/strmcopy-e90-library2.dll55l",
+  "derived_sha256": "308090D3EF802349EF0F5C234B664903C40418F53CD163F3145F8583A00E968F",
+  "bytes": 4396,
+  "DLLdump_verification": true,
+  "changed_section": ".dcd_register",
+  "changed_offsets": [
+    3807,
+    3883
+  ],
+  "registration_from": ":0,",
+  "registration_to": ":2,",
+  "code_data_relocations_identical": true,
+  "requires": "Parse original Z ROM properties first, then this E research library2 registration; no successful reference RUN yet"
+}

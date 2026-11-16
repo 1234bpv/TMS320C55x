@@ -1,0 +1,70 @@
+{
+  "utc": "2026-10-01T10:59:23.004990+00:00",
+  "device": "e90",
+  "ip": "192.168.3.21",
+  "files": [
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "backup": "work/evidence/e90/wsola-v19-prepare-01-before.dll55l",
+      "bytes": 3668,
+      "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1"
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "backup": "work/evidence/e90/wsola-v19-prepare-01-before.log",
+      "bytes": 5309,
+      "sha256": "C0B40B70C1D65439E663AB21F16B497BF386728703123F7694706B127DD274DD"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "backup": "work/evidence/e90/wsola-v19-prepare-01-before-ocprobe.log",
+      "bytes": 1249,
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "readback": "work/evidence/e90/wsola-v19-prepare-01-ocprobe-restored.log",
+      "bytes": 1249,
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+      "equal": true
+    },
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "readback": "work/evidence/e90/wsola-v19-prepare-01-dsp-readback.dll55l",
+      "bytes": 5384,
+      "sha256": "92733DE1EC00F10833CB930352CCA2D7E14F4D22DA941254BE2ACEB1F5CDB141",
+      "equal": true
+    }
+  ],
+  "clock_log_restored": true,
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79855616",
+    "tick 45803583 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55848",
+    "drive E freekb 1454804",
+    "script IDLE"
+  ],
+  "clock_log": "work/evidence/e90/wsola-v19-prepare-01-clock.log",
+  "clock_profile": {
+    "uid": 536880278,
+    "profile": "RA-6 400.34.93",
+    "restore_code": 1
+  },
+  "stock_clock_guard": true,
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79851520",
+    "tick 45805828 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55848",
+    "drive E freekb 1454800",
+    "script IDLE"
+  ]
+}

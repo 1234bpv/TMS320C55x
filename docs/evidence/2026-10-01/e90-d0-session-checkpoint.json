@@ -1,0 +1,146 @@
+{
+  "last_successful_verification_utc": "2026-10-01T19:02:39.190999+00:00",
+  "device": "e90",
+  "ip": "192.168.3.21",
+  "d0_accepted_runs": 0,
+  "d1_hardware_mapping_runs": 0,
+  "d2": "provisional prior-copy-channel calculation",
+  "clock_registers": {
+    "CM_CLKSEL1_PLL": "00056400",
+    "CM_CLKSEL2_PLL": "00000002",
+    "CM_CLKSEL_MPU": "00000002",
+    "CM_CLKSEL1_CORE": "04360626",
+    "CM_CLKSEL_DSP": "00000343"
+  },
+  "clock_kHz_from_registers": {
+    "ARM": 330240,
+    "bus": 110080,
+    "DSP": 220160
+  },
+  "all_five_original_files_GET_equal": true,
+  "files": [
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "bytes": 3668,
+      "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+      "equal_original": true
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "bytes": 21528,
+      "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D",
+      "equal_original": true
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "bytes": 1249,
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+      "equal_original": true
+    },
+    {
+      "remote": "C:\\sys\\bin\\c55stream.exe",
+      "bytes": 34196,
+      "sha256": "CBB91873639FC226B6DD2E40C6A75CC40E5C01C645C513A9DFA5E8A940890946",
+      "equal_original": true
+    },
+    {
+      "remote": "C:\\sys\\hash\\c55stream.exe",
+      "bytes": 20,
+      "sha256": "B3AB7C72332FF3EF42B059BC24C391D4CD7C1002518EF500BA6E9971EF965614",
+      "equal_original": true
+    }
+  ],
+  "processes": {
+    "c55stream": 0,
+    "ocprobe": 0
+  },
+  "daemon_startTick": 75535,
+  "new_phone_file": {
+    "remote": "E:\\c55stream-d0-v21.sis",
+    "bytes": 20420,
+    "sha256": "A3592773BEB73E75ECBDCE3AD729C97C49F5C5F0A39EA81C1C7EDAEEB0BC1A6D",
+    "equal": true
+  },
+  "sis_first_attempt_error_before_PUT": "RuntimeError: ERR open -1",
+  "later_access_attempt": {
+    "utc": "2026-10-01T19:10:31.633673+00:00",
+    "result": "TimeoutError: timed out during socket.create_connection, timeout3s",
+    "device_commands_sent": 0,
+    "installer_opened": false
+  },
+  "proofs": {
+    "snapshot01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-snapshot01.json",
+      "sha256": "489ABB72B6B828B143EF1288ADA1D5CDBBFF13FD0A0BA85E8C0966D7081C048F"
+    },
+    "clocks01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-clocks01.json",
+      "sha256": "A1FB5D19E8274140B5A41476246B2DA5C774F5DA31B72C7A2227A0A2F6E89A6F"
+    },
+    "sis01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-sis01.json",
+      "sha256": "F8767B3A5E5AE1F304FBA74D785A6ED38FD4F1271ACCDAD71872C9ADC093ACA0"
+    },
+    "sis02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-sis02.json",
+      "sha256": "879913F080CD998201690CEBC7BA4E46A561D8DDBFD8F94FE7719F5DD49569F7"
+    },
+    "verify01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-verify01.json",
+      "sha256": "EDB492A833E52E7949A5A1F4D74C8CBD24FD9A718FA70CA224282D058DAB9EF1"
+    },
+    "clocks01-engine.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-clocks01-engine.txt",
+      "sha256": "F05120B6A89D16F9AF4F6A4E41274B4D912D32DFC049FA4957975DFABE53604F"
+    },
+    "clocks01-dsp.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-clocks01-dsp.txt",
+      "sha256": "67229AB6FFE3D46EF7D971CF0E880C8D9CB1CBAEF27FADF433EEAFB6702FC93B"
+    },
+    "verify01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-verify01-transport.txt",
+      "sha256": "916095C29E0A241FC3F53A560CE54EB850FE4B5C87DF1B62ABE7264056866CDF"
+    },
+    "installer01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-installer01-transport.txt",
+      "sha256": "C1FF2DE2A0C10D76A2D11B579546467832339A582E2F8C6DA0C3798A9739AC66"
+    },
+    "verify02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-verify02.json",
+      "sha256": "C424AE81A118470855CB82389EDD250B9E61E160A736D7A0B0A6FCD4039D63DB"
+    },
+    "verify02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-verify02-transport.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "verify03.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-verify03.json",
+      "sha256": "0A0600A514A46EDC937D842E7FA02817B1EF96317AFABE068E4EFC089C33163D"
+    },
+    "verify03-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-verify03-transport.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    }
+  },
+  "pending_physical_action": "Restore E90 Wi-Fi daemon only; human already reports SIS21 installed; work/HELP_NEEDED.md",
+  "N95": "No connection; earlier idle-first/clock-log/research cleanup deferred to its assigned executor",
+  "second_access_attempt": {
+    "utc": "2026-10-01T19:12:52.398799+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "verify",
+    "complete": false,
+    "error": "TimeoutError: timed out"
+  },
+  "third_access_attempt": {
+    "utc": "2026-10-01T19:26:53.387914+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "verify",
+    "complete": false,
+    "error": "TimeoutError: timed out"
+  },
+  "human_reported_host21_installed": true,
+  "installed_host21_GET_verified": false,
+  "original_file_equality_scope": "Last successful GET at 19:02 UTC, before reported host21 installation; current host/hash unknown"
+}

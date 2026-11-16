@@ -1,0 +1,13 @@
+{
+  "device": "n95",
+  "verification": "GET after PUT compared byte for byte with saved original",
+  "files": [
+    {
+      "device_path": "E:\\ocprobe.log",
+      "size": 1259,
+      "sha256": "1abc807333c186b50922edb7835429601b809d3d96c7f5d13bf03972aa60bccf",
+      "byte_equal": true
+    }
+  ],
+  "scope": "Original journal restored. Research host/DLL/log remain for ongoing work."
+}

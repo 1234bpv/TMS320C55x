@@ -1,0 +1,20 @@
+UTC=2026-10-04T00:59:23.1539691Z
+COMMAND="C:\Program Files\LibreOffice\program\python.exe" -X utf8 tools/strict_net.py --ip 192.168.3.21 --device e90 --timeout 20 --cmd "KEY down" --cmd "SHOT E:\codex-oct04-patches05.bmp" --get E:\codex-oct04-patches05.bmp out/e90-oct04-patches05.bmp
+TIMEOUT_SEC=55
+EXIT_CODE=0
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79478784
+< tick 807677 startTick 35467 boot 1 by t
+< ap Huawei
+< drive C freekb 55708
+< drive E freekb 1445964
+< script IDLE
+> KEY down
+< OK key 0x11 x1
+> SHOT E:\codex-oct04-patches05.bmp
+< OK shot 844854 800x352 fb mode11
+> GET E:\codex-oct04-patches05.bmp
+< OK 844854 -> out\e90-oct04-patches05.bmp

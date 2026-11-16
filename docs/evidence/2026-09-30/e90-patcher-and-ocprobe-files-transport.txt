@@ -1,0 +1,26 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76247040
+< tick 9954583 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470664
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76247040
+< tick 9954669 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470664
+< script IDLE
+> GET C:\sys\bin\patcher.ldd
+< OK 1568 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\clock-driver-files-01-c-patcher.ldd
+> GET E:\sys\bin\patcher.ldd
+< OK 1568 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\clock-driver-files-01-e-patcher.ldd
+> GET E:\sys\bin\ocprobe.exe
+< OK 76052 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\clock-driver-files-01-ocprobe.exe

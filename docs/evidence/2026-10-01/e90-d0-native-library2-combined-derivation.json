@@ -1,0 +1,42 @@
+{
+  "scope": "Research-file DCD metadata only; no phone writes or code changes",
+  "source_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+  "derived_path": "out/dsp/strmcopy-e90-library2-combined.dll55l",
+  "derived_sha256": "C75723582115997EF143D23565587E3FA90AB24FB710F1BAB8AD4C69CBDDF8F8",
+  "bytes": 4476,
+  "DLLdump_verification": true,
+  "changed_section": ".dcd_register",
+  "changed_offsets": null,
+  "registration_from": ":0,",
+  "registration_to": ":0, and :2, in one packet",
+  "code_data_relocations_identical": true,
+  "requires": "Combined properties0/library2 tests select preflight; failure attribution is still open",
+  "unchanged_section_packets": [
+    {
+      "section": ".const",
+      "packet_bytes": 416,
+      "sha256": "EF5AF486A6A82D92E563D8E6FF1177347832F33E49969FDA15862DB75CDE58E0"
+    },
+    {
+      "section": ".text",
+      "packet_bytes": 1500,
+      "sha256": "F16944B0867718A6549327421F7A231412FB4B7F3BE911549CBA31F496924BCD"
+    },
+    {
+      "section": ".dspbridge_symbols",
+      "packet_bytes": 832,
+      "sha256": "372496962A0F70ABDED729BA33C2828FDD718D2B0986601229E2B52ABA4791CC"
+    },
+    {
+      "section": ".vers",
+      "packet_bytes": 140,
+      "sha256": "AD538EDC11E99655F6902E37378C986CA01CB7AD0306CB092DBDB67BF3ED3EA7"
+    },
+    {
+      "section": ".7EEB2C7E_785A_11D4_A650_00C04F0C04F3",
+      "packet_bytes": 508,
+      "sha256": "C15A0BC89780945F60B47731B5D2EE1469E27DBBCABEA415DE9482261680905D"
+    }
+  ],
+  "metadata_changes": "Registration packet grew; section size/absolute offsets and table/verification checksums updated"
+}

@@ -1,0 +1,29 @@
+{
+  "mode": "dmm-provenance",
+  "files": [
+    {
+      "bytes": 50356,
+      "path": "out/arm/c55stream.exe",
+      "sha256": "16C59E23B7292DDC9584EF1B7F8C959BCB75C5F233C81A7E3533FF2771CCD7D9"
+    },
+    {
+      "bytes": 67900,
+      "path": "src/c55stream.cpp",
+      "sha256": "A2032CC72C07AAFFD27A7155E151EBDFE2CF4BA5D2DF835FA782F765CAC59476"
+    },
+    {
+      "bytes": 35302,
+      "path": "tools/e90_task_session.py",
+      "sha256": "76C51287473FF84733B83B64E99256DAB19F469B6E5EBE5E84F923F3CD722F39"
+    },
+    {
+      "bytes": 2925,
+      "path": "out/d1-host-v36-build-r48b.log",
+      "sha256": "CB6A55683979383DE7FEB1FFDD75F656C307F8817698A93C64FB19CB22E1BE6D"
+    }
+  ],
+  "host_version": 36,
+  "no_run": true,
+  "candidate_revision": 48,
+  "no_map": true
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "standalone N95 user-mode CPU counter calibration; no DSP/patcher/DVFS writes",
+  "executable_sha256": "AD161D9C7EB73D53B97EAE1C79DB6122EAF5B6781F63AC12CC1AFEAEBA810F07",
+  "files": [
+    {
+      "path": "out/arm/counterprobe.exe",
+      "sha256": "AD161D9C7EB73D53B97EAE1C79DB6122EAF5B6781F63AC12CC1AFEAEBA810F07",
+      "bytes": 3336
+    },
+    {
+      "path": "src/cpu_counter_probe.cpp",
+      "sha256": "3C0EB41E31BC4AE4D2530A104E29744DCE189271E102BB7596EADA60068B10CF",
+      "bytes": 4061
+    },
+    {
+      "path": "tools/stage_counter_probe.py",
+      "sha256": "7B5AD833DD18785DE6EC172BCEFB90169FD70250B62C7ED7E1B1F13565CCF78F",
+      "bytes": 1056
+    },
+    {
+      "path": "tools/build_counter_probe.cmd",
+      "sha256": "0F3E9324E54C22C59EC4F5369B285B65F4EB55E8ABE9FF60D6918710939DF32D",
+      "bytes": 978
+    },
+    {
+      "path": "tools/counter_probe_session.py",
+      "sha256": "F0D5909D3902278BA6370B2651A6EF05436BF71E6ED662BE554168B9571CA2A8",
+      "bytes": 6130
+    },
+    {
+      "path": "out/counterprobe-build/group/counterprobe.mmp",
+      "sha256": "E9C255715BE166D4A36FC73A34080199D7DFF6DF204EE88795EEED31627297D1",
+      "bytes": 402
+    },
+    {
+      "path": "out/n95-counter-probe-build01.log",
+      "sha256": "5FF140E3B59CCA8A8243F9DAA8944D801A5B41C704AD8A7E18F55E19649F8982",
+      "bytes": 3166
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "scope": "offline current SPU boundary/layout budget; GCCE463 ARM ABI; no emulator writes or phone commands",
+  "layout": {
+    "sizeof_int": 4,
+    "sizeof_pointer": 4,
+    "MAXCHAN": 24,
+    "NSSIZE": 914,
+    "ADSR_bytes": 16,
+    "SPUCHAN_bytes": 56,
+    "sample_buf_bytes": 64,
+    "SPUInfo_bytes": 3840,
+    "work_item_bytes": 8396,
+    "work_channel_bytes": 44,
+    "worker_bytes": 33840,
+    "work_channels_offset": 28,
+    "work_sums_offset": 1084
+  },
+  "optional_thread_layout": {
+    "sizeof_int": 4,
+    "sizeof_pointer": 4,
+    "MAXCHAN": 24,
+    "NSSIZE": 914,
+    "ADSR_bytes": 16,
+    "SPUCHAN_bytes": 56,
+    "sample_buf_bytes": 64,
+    "SPUInfo_bytes": 5440,
+    "work_item_bytes": 8396,
+    "work_channel_bytes": 44,
+    "worker_bytes": 33840,
+    "work_channels_offset": 28,
+    "work_sums_offset": 1084
+  },
+  "post_ADSR_plain_mix_budgets": [
+    {
+      "samples": 32,
+      "voices": 24,
+      "input_bytes": 3520,
+      "output_bytes": 256,
+      "input_slots": 8,
+      "output_slots": 1,
+      "fits_7200_payload_each_direction": true
+    },
+    {
+      "samples": 64,
+      "voices": 24,
+      "input_bytes": 6848,
+      "output_bytes": 512,
+      "input_slots": 15,
+      "output_slots": 2,
+      "fits_7200_payload_each_direction": true
+    },
+    {
+      "samples": 66,
+      "voices": 24,
+      "input_bytes": 7056,
+      "output_bytes": 528,
+      "input_slots": 15,
+      "output_slots": 2,
+      "fits_7200_payload_each_direction": true
+    },
+    {
+      "samples": 68,
+      "voices": 24,
+      "input_bytes": 7264,
+      "output_bytes": 544,
+      "input_slots": 16,
+      "output_slots": 2,
+      "fits_7200_payload_each_direction": false
+    },
+    {
+      "samples": 128,
+      "voices": 24,
+      "input_bytes": 13504,
+      "output_bytes": 1024,
+      "input_slots": 29,
+      "output_slots": 3,
+      "fits_7200_payload_each_direction": false
+    },
+    {
+      "samples": 256,
+      "voices": 24,
+      "input_bytes": 26816,
+      "output_bytes": 2048,
+      "input_slots": 56,
+      "output_slots": 5,
+      "fits_7200_payload_each_direction": false
+    },
+    {
+      "samples": 914,
+      "voices": 24,
+      "input_bytes": 95248,
+      "output_bytes": 7312,
+      "input_slots": 199,
+      "output_slots": 16,
+      "fits_7200_payload_each_direction": false
+    }
+  ],
+  "SPU_RAM_bytes": 524288,
+  "compiled_layout_evidence": {
+    "compiler": "D:\\VsCodeProjects\\SymbianProjects\\toolchain\\gcce\\arm-2012.03\\bin\\arm-none-symbianelf-gcc.exe",
+    "architecture_flags": [
+      "-O2",
+      "-march=armv6",
+      "-mtune=arm1136j-s"
+    ],
+    "generated_source_sha256": "4D6F25811DE7E5000EB5DBA24F70959994F9833615BC5BB5E20FCD0B46440BDF",
+    "object_sha256": "ADCB861DA6D3B61057F8926BC1B634969E83965568C078CDD6BC9BCD24440E5D",
+    "thread_object_sha256": "A90911FAD7B85DE53BED07C6ED309F582D3938DD081BB6ACE88F45FF5F959BE1",
+    "constant_keys": [
+      "sizeof_int",
+      "sizeof_pointer",
+      "MAXCHAN",
+      "NSSIZE",
+      "ADSR_bytes",
+      "SPUCHAN_bytes",
+      "sample_buf_bytes",
+      "SPUInfo_bytes",
+      "work_item_bytes",
+      "work_channel_bytes",
+      "worker_bytes",
+      "work_channels_offset",
+      "work_sums_offset"
+    ],
+    "constants_hex": "04000000040000001800000092030000100000003800000040000000000F0000CC2000002C000000308400001C0000003C040000",
+    "thread_constants_hex": "0400000004000000180000009203000010000000380000004000000040150000CC2000002C000000308400001C0000003C040000"
+  },
+  "SPU_RAM_copy_payload_handoffs_minimum": 73,
+  "historical_budget": {
+    "source": "PS1Emulator/plans/runs/2026-09-28_gemini/n95-spustage-result.md",
+    "sha256": "A01DB598486178661792BC0A01DFBD5A8248125E7475F1CDDB25F651BD66DDEC",
+    "frames": 600,
+    "control_pass_ms": [
+      25996,
+      26055
+    ],
+    "control_doSamples_ms": [
+      968,
+      965
+    ],
+    "stage_mix_plain_ms_reported": 227.9,
+    "stage_decode_adpcm_ms_reported": 644.4,
+    "stage_adsr_ms_reported": 18.8,
+    "stage_voice_calls": 7212,
+    "stage_voice_samples": 5292000,
+    "doSamples_mean_us_per_frame": 1610.8333333333333,
+    "mix_plain_reported_mean_us_per_frame": 379.8333333333333,
+    "mix_plain_reported_mean_us_per_voice_call": 31.600110926234056,
+    "mean_samples_per_voice_call": 733.7770382695508,
+    "doSamples_fraction_of_control_pass_percent": 3.7136654435073293
+  },
+  "source_files": [
+    {
+      "path": "PS1Emulator/pcsx_rearmed/plugins/dfsound/spu.c",
+      "sha256": "40A587C546B8CF528D23DEA9F842A965CB38160BAB6628A2C60B4A3F952159E6"
+    },
+    {
+      "path": "PS1Emulator/pcsx_rearmed/plugins/dfsound/externals.h",
+      "sha256": "DC24F15113BFEF117CEB74317E30755B6B4E36C0258CE965A9562C3C10215BA5"
+    },
+    {
+      "path": "PS1Emulator/pcsx_rearmed/plugins/dfsound/arm_utils.S",
+      "sha256": "5B8051F48FBCD8854B09B8032BB95070A11C8F461721872C93478062842EC355"
+    },
+    {
+      "path": "PS1Emulator/pcsx_rearmed/plugins/dfsound/adsr.c",
+      "sha256": "0615820C2AC8A89D131AA140B9BD1DD5FFEB98B74166AFE634E77AD1F6EF166F"
+    },
+    {
+      "path": "PS1Emulator/pcsx_rearmed/plugins/dfsound/dma.c",
+      "sha256": "F0C9F000D8E60D7C2F86256468BFF6BA8582485C32103FF2E594D488C5925C36"
+    },
+    {
+      "path": "PS1Emulator/pcsx_rearmed/plugins/dfsound/registers.c",
+      "sha256": "134702FB930FCB2EE531521710DA34136BAC7121C07C7BFCF429D66BC61DDD23"
+    },
+    {
+      "path": "PS1Emulator/pcsx_rearmed/plugins/dfsound/reverb.c",
+      "sha256": "A9F335FC57FC96FECF6D95F2936FEA8CDE3A1D7621273D9A0EFB383646BD8849"
+    },
+    {
+      "path": "PS1Emulator/src/compat/stdint.h",
+      "sha256": "4CDFBC0E718CE93037B55B6B10BDEDFAD3EDEF0004B95A80BACAD354F966482B"
+    }
+  ],
+  "next_probe": "Plain24-voice mix with32-bit samples and accumulator,64 samples/job fits15input+2output slots; baseline must preserve current HAVE_ARMV5 smlawb/smlawt semantics. This only covers mix_plain; decode/ADSR/noise/fmod/reverb/IRQ/state stay on ARM.",
+  "full_offload_requirements": [
+    "SPU RAM mirror/delta coherency for register/DMA writes and readbacks",
+    "Decode history, ADSR, pitch/fmod, noise generator, reverb state and RAM write ownership",
+    "Guest-cycle ordering, decode-buffer voice1/3 writes and IRQ equivalence",
+    "PCM plus mutated-state equivalence, not just integer mix output",
+    "Actual useful independent ARM W and continuous workload-specific A/H/D"
+  ],
+  "limits": [
+    "Native ARM layouts are audited only; raw struct/bitfield/pointer serialization to C55 is invalid.",
+    "Historical stage estimates use sampling1:16 and old source/build/330MHz ARM165MHz bus; current N95 ring stock bus differs. Do not call these current paired A.",
+    "Plain mixing measurement would not quantify the66% ADPCM decode component or full SPU gain.",
+    "E90 deferred; no hardware SPU kernel measurement in this audit."
+  ]
+}

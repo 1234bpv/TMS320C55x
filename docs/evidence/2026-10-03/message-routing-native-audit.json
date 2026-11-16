@@ -1,0 +1,17 @@
+{
+  "scope": "saved E90 ROM only; no device access",
+  "pdd_sha256": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4",
+  "checked_pdd_instructions": 18,
+  "list_first_sha256": "3A01EE73BE229834C373DA52FE63D9504303B662BBB9A005A30A0482CECEBBFA",
+  "incoming_pool_context_offset": 32,
+  "pool_queue_list_offset": 8,
+  "list_sentinel": "head address; head[0] == head means empty",
+  "list_item_queue_offset": 12,
+  "queue_source_offset": 16,
+  "queue_node_offset": 36,
+  "consumer": "first matching source wins; EXITACK automatically calls native delete",
+  "duplicate_source_risk": "an older matching queue can take a newer node's ACK",
+  "phase3_sets_pdd_state3": true,
+  "phase6_is_delete_completion": true,
+  "limit": "PS0 does not establish that native queues are gone; runtime causality needs a clean-device test"
+}

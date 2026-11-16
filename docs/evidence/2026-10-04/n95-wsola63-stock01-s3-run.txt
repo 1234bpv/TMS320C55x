@@ -1,0 +1,476 @@
+C55STREAM v48 command='dmm-ring-wsola frames=120' machine=20002d84 fast_counter_hz=32768 firmware_rc=0 firmware='V 35.0.001
+11-11-09
+RM-320
+N95(c)NMP'
+library load=0
+ordinal 1 = 80a5e483
+ordinal 2 = 80a5e539
+ordinal 3 = 80a5e68f
+ordinal 4 = 80a5e6bb
+ordinal 5 = 80a5e561
+ordinal 6 = 80a5e585
+ordinal 7 = 80a5e677
+ordinal 8 = 80a5e4df
+ordinal 9 = 80a5e43f
+ordinal 10 = 80a5e409
+ordinal 11 = 80a5e401
+ordinal 12 = 80a5e401
+ordinal 13 = 80a5e433
+ordinal 14 = 80a5e433
+ordinal 15 = 80a5dc71
+ordinal 16 = 80a5dc37
+ordinal 17 = 80a5dcdb
+ordinal 18 = 80a5dca1
+ordinal 19 = 80a5dd0b
+ordinal 20 = 80a5dd1b
+ordinal 21 = 80a5dc2d
+ordinal 22 = 80a5dc2d
+ordinal 23 = 80a5dc35
+ordinal 24 = 80a5dc35
+ordinal 25 = 80a5dae1
+ordinal 26 = 80a5d533
+ordinal 27 = 80a5d9b1
+ordinal 28 = 80a5dac3
+ordinal 29 = 80a5d901
+ordinal 30 = 80a5d87f
+ordinal 31 = 80a5d9ed
+ordinal 32 = 80a5d751
+ordinal 33 = 80a5d4fd
+ordinal 34 = 80a5daa3
+ordinal 35 = 80a5d955
+ordinal 36 = 80a5d4c9
+ordinal 37 = 80a5d4c9
+ordinal 38 = 80a5d4d9
+ordinal 39 = 80a5d4d9
+profile guard=0 delta=00000000
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=007000f0
+PROCESSOR STATE rc=0 state=1 expected=1 native_ioctl=2 cached=1 no_patcher=1 no_proc_load=1
+BASE attach gate=0 reused_running=1 proc_load_calls=0
+BEGIN native buffer
+native buffer=0 address=ce843000 length=0 max=16384
+NATIVE PAGE phase=0 index=0 linear=ce843000 physical=80f43000
+NATIVE PAGE phase=0 index=1 linear=ce844000 physical=80f44000
+NATIVE PAGE phase=0 index=2 linear=ce845000 physical=80f45000
+NATIVE PAGE phase=0 index=3 linear=ce846000 physical=80f46000
+NATIVE PAGES rc=0 phase=0 pages=4 bytes=16384 no_patcher=1 immutable_compare=0
+RING reserve=0 address=00300000 bytes=16384
+RING map=0 address=00300000 flags=17 setup_us=8575
+node reference_rom=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=007019f8
+node timeout original=00000000
+node timeout modified=ffffffff
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=11718
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+info phase=created rc=0 header=30000068 max=104
+  id_word=00000000 property112=3 inputs=1 outputs=1 node_env=00007654
+BEGIN native buffer
+native buffer=0 address=ce847000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ce848000 length=0 max=4096
+state phase=native pre-RUN rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+NATIVE pre-RUN gate=0 env=00007654 state=1 no_patcher=1 proc_load_calls=0 env_allocator=RMS_MEM_valloc
+BEGIN execute
+execute submitted=0 status=-2147483647
+execute start=0 status=0
+state phase=running rc=0 header=3000010c max=268
+  state=2 detail=00000005 streams=2
+RING SETUP total_us=692596 includes_journaling=1
+RING WSOLA CONFIG bytes=16384 frames=120 input_slots=4 output_slots=1 payload_words=880 protocol=40 useful_ARM_W=0 performance_reservation=0
+RING WSOLA RESULT frame=1 case=0 slot=0 offset=172 expected_offset=172 score=4364902 expected_score=4364902 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=1 arm_iterations=16 arm_ticks=1110 arm_first=1 pack_ticks=7 transfer_ticks=65 end_to_end_ticks=72 cpu_us=8728 raw_dsp_ticks=23621 counts_per_ms=164
+DCR READ frame=1 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=2 case=1 slot=4 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=2 arm_iterations=16 arm_ticks=1052 arm_first=0 pack_ticks=6 transfer_ticks=63 end_to_end_ticks=70 cpu_us=2899 raw_dsp_ticks=23186 counts_per_ms=164
+DCR READ frame=2 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=3 case=2 slot=8 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=3 arm_iterations=16 arm_ticks=1049 arm_first=1 pack_ticks=6 transfer_ticks=63 end_to_end_ticks=70 cpu_us=2167 raw_dsp_ticks=23172 counts_per_ms=164
+DCR READ frame=3 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=4 case=3 slot=12 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=4 arm_iterations=16 arm_ticks=1097 arm_first=0 pack_ticks=7 transfer_ticks=65 end_to_end_ticks=73 cpu_us=2899 raw_dsp_ticks=24534 counts_per_ms=164
+DCR READ frame=4 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=5 case=4 slot=1 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=5 arm_iterations=16 arm_ticks=1050 arm_first=1 pack_ticks=6 transfer_ticks=64 end_to_end_ticks=71 cpu_us=9064 raw_dsp_ticks=23187 counts_per_ms=164
+DCR READ frame=5 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=6 case=5 slot=5 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=6 arm_iterations=16 arm_ticks=1077 arm_first=0 pack_ticks=6 transfer_ticks=63 end_to_end_ticks=70 cpu_us=2930 raw_dsp_ticks=23355 counts_per_ms=164
+DCR READ frame=6 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=7 case=6 slot=9 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=7 arm_iterations=16 arm_ticks=1182 arm_first=1 pack_ticks=7 transfer_ticks=122 end_to_end_ticks=129 cpu_us=1831 raw_dsp_ticks=24362 counts_per_ms=164
+DCR READ frame=7 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=8 case=7 slot=13 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=8 arm_iterations=16 arm_ticks=1080 arm_first=0 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2961 raw_dsp_ticks=23318 counts_per_ms=164
+DCR READ frame=8 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=9 case=0 slot=2 offset=288 expected_offset=288 score=3471070 expected_score=3471070 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=9 arm_iterations=16 arm_ticks=1076 arm_first=1 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=5982 raw_dsp_ticks=23314 counts_per_ms=164
+DCR READ frame=9 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=10 case=1 slot=6 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=10 arm_iterations=16 arm_ticks=1093 arm_first=0 pack_ticks=6 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2899 raw_dsp_ticks=23180 counts_per_ms=164
+DCR READ frame=10 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=11 case=2 slot=10 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=11 arm_iterations=16 arm_ticks=1050 arm_first=1 pack_ticks=6 transfer_ticks=63 end_to_end_ticks=70 cpu_us=2197 raw_dsp_ticks=23153 counts_per_ms=164
+DCR READ frame=11 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=12 case=3 slot=14 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=12 arm_iterations=16 arm_ticks=1051 arm_first=0 pack_ticks=6 transfer_ticks=63 end_to_end_ticks=70 cpu_us=2930 raw_dsp_ticks=23179 counts_per_ms=164
+DCR READ frame=12 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=13 case=4 slot=3 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=13 arm_iterations=16 arm_ticks=1136 arm_first=1 pack_ticks=7 transfer_ticks=82 end_to_end_ticks=89 cpu_us=1770 raw_dsp_ticks=24807 counts_per_ms=164
+DCR READ frame=13 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=14 case=5 slot=7 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=14 arm_iterations=16 arm_ticks=1110 arm_first=0 pack_ticks=7 transfer_ticks=105 end_to_end_ticks=113 cpu_us=3113 raw_dsp_ticks=24998 counts_per_ms=164
+DCR READ frame=14 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=15 case=6 slot=11 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=15 arm_iterations=16 arm_ticks=1053 arm_first=1 pack_ticks=6 transfer_ticks=64 end_to_end_ticks=71 cpu_us=5218 raw_dsp_ticks=23162 counts_per_ms=164
+DCR READ frame=15 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=16 case=7 slot=0 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=16 arm_iterations=16 arm_ticks=1077 arm_first=0 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2930 raw_dsp_ticks=23313 counts_per_ms=164
+DCR READ frame=16 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=17 case=0 slot=4 offset=92 expected_offset=92 score=3337147 expected_score=3337147 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=17 arm_iterations=16 arm_ticks=1121 arm_first=1 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=72 cpu_us=2289 raw_dsp_ticks=23315 counts_per_ms=164
+DCR READ frame=17 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=18 case=1 slot=8 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=18 arm_iterations=16 arm_ticks=1050 arm_first=0 pack_ticks=6 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2502 raw_dsp_ticks=23169 counts_per_ms=164
+DCR READ frame=18 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=19 case=2 slot=12 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=19 arm_iterations=16 arm_ticks=1049 arm_first=1 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=6103 raw_dsp_ticks=23338 counts_per_ms=164
+DCR READ frame=19 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=20 case=3 slot=1 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=20 arm_iterations=16 arm_ticks=1085 arm_first=0 pack_ticks=7 transfer_ticks=133 end_to_end_ticks=140 cpu_us=2441 raw_dsp_ticks=24317 counts_per_ms=164
+DCR READ frame=20 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=21 case=4 slot=5 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=21 arm_iterations=16 arm_ticks=1106 arm_first=1 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=70 cpu_us=2808 raw_dsp_ticks=23187 counts_per_ms=164
+DCR READ frame=21 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=22 case=5 slot=9 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=22 arm_iterations=16 arm_ticks=1091 arm_first=0 pack_ticks=6 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2960 raw_dsp_ticks=23317 counts_per_ms=164
+DCR READ frame=22 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=23 case=6 slot=13 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=23 arm_iterations=16 arm_ticks=1093 arm_first=1 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=7385 raw_dsp_ticks=23158 counts_per_ms=164
+DCR READ frame=23 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=24 case=7 slot=2 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=24 arm_iterations=16 arm_ticks=1078 arm_first=0 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2991 raw_dsp_ticks=23312 counts_per_ms=164
+DCR READ frame=24 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=25 case=0 slot=6 offset=56 expected_offset=56 score=2420656 expected_score=2420656 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=25 arm_iterations=16 arm_ticks=1076 arm_first=1 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=4883 raw_dsp_ticks=23320 counts_per_ms=164
+DCR READ frame=25 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=26 case=1 slot=10 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=26 arm_iterations=16 arm_ticks=1181 arm_first=0 pack_ticks=7 transfer_ticks=68 end_to_end_ticks=76 cpu_us=2899 raw_dsp_ticks=24786 counts_per_ms=164
+DCR READ frame=26 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=27 case=2 slot=14 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=27 arm_iterations=16 arm_ticks=1082 arm_first=1 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=70 cpu_us=2899 raw_dsp_ticks=23188 counts_per_ms=164
+DCR READ frame=27 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=28 case=3 slot=3 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=28 arm_iterations=16 arm_ticks=1050 arm_first=0 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2930 raw_dsp_ticks=23153 counts_per_ms=164
+DCR READ frame=28 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=29 case=4 slot=7 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=29 arm_iterations=16 arm_ticks=1049 arm_first=1 pack_ticks=7 transfer_ticks=67 end_to_end_ticks=75 cpu_us=8087 raw_dsp_ticks=23624 counts_per_ms=164
+DCR READ frame=29 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=30 case=5 slot=11 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=30 arm_iterations=16 arm_ticks=1078 arm_first=0 pack_ticks=6 transfer_ticks=66 end_to_end_ticks=73 cpu_us=2961 raw_dsp_ticks=24208 counts_per_ms=164
+DCR READ frame=30 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=31 case=6 slot=0 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=31 arm_iterations=16 arm_ticks=1052 arm_first=1 pack_ticks=7 transfer_ticks=119 end_to_end_ticks=126 cpu_us=7324 raw_dsp_ticks=24310 counts_per_ms=164
+DCR READ frame=31 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=32 case=7 slot=4 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=32 arm_iterations=16 arm_ticks=1081 arm_first=0 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=72 cpu_us=2930 raw_dsp_ticks=23316 counts_per_ms=164
+DCR READ frame=32 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=33 case=0 slot=8 offset=372 expected_offset=372 score=2874610 expected_score=2874610 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=33 arm_iterations=16 arm_ticks=1077 arm_first=1 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2991 raw_dsp_ticks=23269 counts_per_ms=164
+DCR READ frame=33 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=34 case=1 slot=12 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=34 arm_iterations=16 arm_ticks=1093 arm_first=0 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=2929 raw_dsp_ticks=23161 counts_per_ms=164
+DCR READ frame=34 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=35 case=2 slot=1 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=35 arm_iterations=16 arm_ticks=1049 arm_first=1 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2197 raw_dsp_ticks=23156 counts_per_ms=164
+DCR READ frame=35 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=36 case=3 slot=5 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=36 arm_iterations=16 arm_ticks=1050 arm_first=0 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=2899 raw_dsp_ticks=23433 counts_per_ms=164
+DCR READ frame=36 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=37 case=4 slot=9 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=37 arm_iterations=16 arm_ticks=1050 arm_first=1 pack_ticks=7 transfer_ticks=68 end_to_end_ticks=75 cpu_us=763 raw_dsp_ticks=24784 counts_per_ms=164
+DCR READ frame=37 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=38 case=5 slot=13 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=38 arm_iterations=16 arm_ticks=1080 arm_first=0 pack_ticks=7 transfer_ticks=76 end_to_end_ticks=83 cpu_us=2960 raw_dsp_ticks=24631 counts_per_ms=164
+DCR READ frame=38 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=39 case=6 slot=2 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=39 arm_iterations=16 arm_ticks=1052 arm_first=1 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=3174 raw_dsp_ticks=23143 counts_per_ms=164
+DCR READ frame=39 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=40 case=7 slot=6 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=40 arm_iterations=16 arm_ticks=1206 arm_first=0 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2990 raw_dsp_ticks=23299 counts_per_ms=164
+DCR READ frame=40 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=41 case=0 slot=10 offset=144 expected_offset=144 score=3098390 expected_score=3098390 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=41 arm_iterations=16 arm_ticks=1077 arm_first=1 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=1678 raw_dsp_ticks=23340 counts_per_ms=164
+DCR READ frame=41 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=42 case=1 slot=14 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=42 arm_iterations=16 arm_ticks=1054 arm_first=0 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=2868 raw_dsp_ticks=23139 counts_per_ms=164
+DCR READ frame=42 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=43 case=2 slot=3 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=43 arm_iterations=16 arm_ticks=1181 arm_first=1 pack_ticks=7 transfer_ticks=69 end_to_end_ticks=76 cpu_us=1220 raw_dsp_ticks=24787 counts_per_ms=164
+DCR READ frame=43 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=44 case=3 slot=7 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=44 arm_iterations=16 arm_ticks=1095 arm_first=0 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2808 raw_dsp_ticks=23193 counts_per_ms=164
+DCR READ frame=44 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=45 case=4 slot=11 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=45 arm_iterations=16 arm_ticks=1066 arm_first=1 pack_ticks=6 transfer_ticks=63 end_to_end_ticks=70 cpu_us=2563 raw_dsp_ticks=23168 counts_per_ms=164
+DCR READ frame=45 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=46 case=5 slot=0 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=46 arm_iterations=16 arm_ticks=1077 arm_first=0 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=2136 raw_dsp_ticks=23300 counts_per_ms=164
+DCR READ frame=46 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=47 case=6 slot=4 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=47 arm_iterations=16 arm_ticks=1093 arm_first=1 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=9491 raw_dsp_ticks=23151 counts_per_ms=164
+DCR READ frame=47 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=48 case=7 slot=8 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=48 arm_iterations=16 arm_ticks=1077 arm_first=0 pack_ticks=6 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2991 raw_dsp_ticks=23303 counts_per_ms=164
+DCR READ frame=48 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=49 case=0 slot=12 offset=376 expected_offset=376 score=3470188 expected_score=3470188 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=49 arm_iterations=16 arm_ticks=1210 arm_first=1 pack_ticks=7 transfer_ticks=68 end_to_end_ticks=75 cpu_us=8209 raw_dsp_ticks=24904 counts_per_ms=164
+DCR READ frame=49 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=50 case=1 slot=1 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=50 arm_iterations=16 arm_ticks=1087 arm_first=0 pack_ticks=7 transfer_ticks=120 end_to_end_ticks=127 cpu_us=3051 raw_dsp_ticks=24446 counts_per_ms=164
+DCR READ frame=50 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=51 case=2 slot=5 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=51 arm_iterations=16 arm_ticks=1054 arm_first=1 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=367 raw_dsp_ticks=23167 counts_per_ms=164
+DCR READ frame=51 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=52 case=3 slot=9 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=52 arm_iterations=16 arm_ticks=1102 arm_first=0 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=2991 raw_dsp_ticks=23447 counts_per_ms=164
+DCR READ frame=52 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=53 case=4 slot=13 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=53 arm_iterations=16 arm_ticks=1093 arm_first=1 pack_ticks=7 transfer_ticks=63 end_to_end_ticks=71 cpu_us=7416 raw_dsp_ticks=23214 counts_per_ms=164
+DCR READ frame=53 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=54 case=5 slot=2 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=54 arm_iterations=16 arm_ticks=1077 arm_first=0 pack_ticks=7 transfer_ticks=64 end_to_end_ticks=71 cpu_us=2929 raw_dsp_ticks=23297 counts_per_ms=164
+DCR READ frame=54 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=55 case=6 slot=6 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=55 arm_iterations=16 arm_ticks=1053 arm_first=1 pack_ticks=7 transfer_ticks=161 end_to_end_ticks=169 cpu_us=9185 raw_dsp_ticks=24926 counts_per_ms=164
+DCR READ frame=55 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=56 case=7 slot=10 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=56 arm_iterations=16 arm_ticks=707 arm_first=0 pack_ticks=7 transfer_ticks=567 end_to_end_ticks=576 cpu_us=3205 raw_dsp_ticks=24665 counts_per_ms=164
+DCR READ frame=56 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=57 case=0 slot=14 offset=340 expected_offset=340 score=3710222 expected_score=3710222 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=57 arm_iterations=16 arm_ticks=537 arm_first=1 pack_ticks=3 transfer_ticks=48 end_to_end_ticks=51 cpu_us=3509 raw_dsp_ticks=12582 counts_per_ms=164
+DCR READ frame=57 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=58 case=1 slot=3 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=58 arm_iterations=16 arm_ticks=551 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1465 raw_dsp_ticks=11617 counts_per_ms=164
+DCR READ frame=58 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=59 case=2 slot=7 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=59 arm_iterations=16 arm_ticks=522 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1465 raw_dsp_ticks=11602 counts_per_ms=164
+DCR READ frame=59 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=60 case=3 slot=11 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=60 arm_iterations=16 arm_ticks=523 arm_first=0 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=580 raw_dsp_ticks=11602 counts_per_ms=164
+DCR READ frame=60 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=61 case=4 slot=0 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=61 arm_iterations=16 arm_ticks=530 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1770 raw_dsp_ticks=11612 counts_per_ms=164
+DCR READ frame=61 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=62 case=5 slot=4 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=62 arm_iterations=16 arm_ticks=537 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1465 raw_dsp_ticks=11667 counts_per_ms=164
+DCR READ frame=62 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=63 case=6 slot=8 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=63 arm_iterations=16 arm_ticks=523 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1557 raw_dsp_ticks=11597 counts_per_ms=164
+DCR READ frame=63 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=64 case=7 slot=12 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=64 arm_iterations=16 arm_ticks=536 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1496 raw_dsp_ticks=11670 counts_per_ms=164
+DCR READ frame=64 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=65 case=0 slot=1 offset=16 expected_offset=16 score=2760924 expected_score=2760924 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=65 arm_iterations=16 arm_ticks=538 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1984 raw_dsp_ticks=11666 counts_per_ms=164
+DCR READ frame=65 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=66 case=1 slot=5 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=66 arm_iterations=16 arm_ticks=592 arm_first=0 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1434 raw_dsp_ticks=11596 counts_per_ms=164
+DCR READ frame=66 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=67 case=2 slot=9 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=67 arm_iterations=16 arm_ticks=524 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1587 raw_dsp_ticks=11601 counts_per_ms=164
+DCR READ frame=67 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=68 case=3 slot=13 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=68 arm_iterations=16 arm_ticks=523 arm_first=0 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=610 raw_dsp_ticks=11589 counts_per_ms=164
+DCR READ frame=68 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=69 case=4 slot=2 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=69 arm_iterations=16 arm_ticks=523 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1526 raw_dsp_ticks=11589 counts_per_ms=164
+DCR READ frame=69 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=70 case=5 slot=6 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=70 arm_iterations=16 arm_ticks=536 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1495 raw_dsp_ticks=11666 counts_per_ms=164
+DCR READ frame=70 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=71 case=6 slot=10 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=71 arm_iterations=16 arm_ticks=552 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=2441 raw_dsp_ticks=11611 counts_per_ms=164
+DCR READ frame=71 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=72 case=7 slot=14 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=72 arm_iterations=16 arm_ticks=538 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1495 raw_dsp_ticks=11711 counts_per_ms=164
+DCR READ frame=72 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=73 case=0 slot=3 offset=332 expected_offset=332 score=2848326 expected_score=2848326 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=73 arm_iterations=16 arm_ticks=536 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1922 raw_dsp_ticks=11670 counts_per_ms=164
+DCR READ frame=73 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=74 case=1 slot=7 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=74 arm_iterations=16 arm_ticks=592 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1465 raw_dsp_ticks=11592 counts_per_ms=164
+DCR READ frame=74 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=75 case=2 slot=11 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=75 arm_iterations=16 arm_ticks=524 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1648 raw_dsp_ticks=11611 counts_per_ms=164
+DCR READ frame=75 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=76 case=3 slot=0 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=76 arm_iterations=16 arm_ticks=523 arm_first=0 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1434 raw_dsp_ticks=11594 counts_per_ms=164
+DCR READ frame=76 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=77 case=4 slot=4 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=77 arm_iterations=16 arm_ticks=523 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1586 raw_dsp_ticks=11696 counts_per_ms=164
+DCR READ frame=77 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=78 case=5 slot=8 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=78 arm_iterations=16 arm_ticks=537 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1495 raw_dsp_ticks=11671 counts_per_ms=164
+DCR READ frame=78 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=79 case=6 slot=12 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=79 arm_iterations=16 arm_ticks=553 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=2441 raw_dsp_ticks=11600 counts_per_ms=164
+DCR READ frame=79 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=80 case=7 slot=1 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=80 arm_iterations=16 arm_ticks=536 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1526 raw_dsp_ticks=11668 counts_per_ms=164
+DCR READ frame=80 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=81 case=0 slot=5 offset=88 expected_offset=88 score=3066391 expected_score=3066391 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=81 arm_iterations=16 arm_ticks=536 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1923 raw_dsp_ticks=11664 counts_per_ms=164
+DCR READ frame=81 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=82 case=1 slot=9 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=82 arm_iterations=16 arm_ticks=523 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1465 raw_dsp_ticks=11594 counts_per_ms=164
+DCR READ frame=82 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=83 case=2 slot=13 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=83 arm_iterations=16 arm_ticks=524 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1618 raw_dsp_ticks=11600 counts_per_ms=164
+DCR READ frame=83 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=84 case=3 slot=2 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=84 arm_iterations=16 arm_ticks=592 arm_first=0 pack_ticks=3 transfer_ticks=31 end_to_end_ticks=35 cpu_us=1495 raw_dsp_ticks=11611 counts_per_ms=164
+DCR READ frame=84 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=85 case=4 slot=6 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=85 arm_iterations=16 arm_ticks=524 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1495 raw_dsp_ticks=11598 counts_per_ms=164
+DCR READ frame=85 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=86 case=5 slot=10 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=86 arm_iterations=16 arm_ticks=544 arm_first=0 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1495 raw_dsp_ticks=11701 counts_per_ms=164
+DCR READ frame=86 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=87 case=6 slot=14 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=87 arm_iterations=16 arm_ticks=524 arm_first=1 pack_ticks=4 transfer_ticks=33 end_to_end_ticks=37 cpu_us=1525 raw_dsp_ticks=12210 counts_per_ms=164
+DCR READ frame=87 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=88 case=7 slot=3 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=88 arm_iterations=16 arm_ticks=537 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1525 raw_dsp_ticks=11661 counts_per_ms=164
+DCR READ frame=88 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=89 case=0 slot=7 offset=272 expected_offset=272 score=2840207 expected_score=2840207 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=89 arm_iterations=16 arm_ticks=536 arm_first=1 pack_ticks=4 transfer_ticks=33 end_to_end_ticks=37 cpu_us=1953 raw_dsp_ticks=12414 counts_per_ms=164
+DCR READ frame=89 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=90 case=1 slot=11 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=90 arm_iterations=16 arm_ticks=523 arm_first=0 pack_ticks=4 transfer_ticks=33 end_to_end_ticks=37 cpu_us=1526 raw_dsp_ticks=12065 counts_per_ms=164
+DCR READ frame=90 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=91 case=2 slot=0 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=91 arm_iterations=16 arm_ticks=523 arm_first=1 pack_ticks=3 transfer_ticks=33 end_to_end_ticks=36 cpu_us=1557 raw_dsp_ticks=12052 counts_per_ms=164
+DCR READ frame=91 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=92 case=3 slot=4 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=92 arm_iterations=16 arm_ticks=592 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1495 raw_dsp_ticks=11995 counts_per_ms=164
+DCR READ frame=92 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=93 case=4 slot=8 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=93 arm_iterations=16 arm_ticks=524 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1587 raw_dsp_ticks=11582 counts_per_ms=164
+DCR READ frame=93 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=94 case=5 slot=12 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=94 arm_iterations=16 arm_ticks=537 arm_first=0 pack_ticks=4 transfer_ticks=33 end_to_end_ticks=37 cpu_us=1496 raw_dsp_ticks=12194 counts_per_ms=164
+DCR READ frame=94 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=95 case=6 slot=1 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=95 arm_iterations=16 arm_ticks=522 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1465 raw_dsp_ticks=11588 counts_per_ms=164
+DCR READ frame=95 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=96 case=7 slot=5 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=96 arm_iterations=16 arm_ticks=536 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1526 raw_dsp_ticks=11678 counts_per_ms=164
+DCR READ frame=96 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=97 case=0 slot=9 offset=412 expected_offset=412 score=3621584 expected_score=3621584 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=97 arm_iterations=16 arm_ticks=545 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=2198 raw_dsp_ticks=11670 counts_per_ms=164
+DCR READ frame=97 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=98 case=1 slot=13 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=98 arm_iterations=16 arm_ticks=523 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1465 raw_dsp_ticks=11606 counts_per_ms=164
+DCR READ frame=98 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=99 case=2 slot=2 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=99 arm_iterations=16 arm_ticks=568 arm_first=1 pack_ticks=3 transfer_ticks=35 end_to_end_ticks=38 cpu_us=2930 raw_dsp_ticks=12512 counts_per_ms=164
+DCR READ frame=99 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=100 case=3 slot=6 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=100 arm_iterations=16 arm_ticks=541 arm_first=0 pack_ticks=3 transfer_ticks=34 end_to_end_ticks=37 cpu_us=1495 raw_dsp_ticks=12106 counts_per_ms=164
+DCR READ frame=100 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=101 case=4 slot=10 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=101 arm_iterations=16 arm_ticks=523 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1556 raw_dsp_ticks=11602 counts_per_ms=164
+DCR READ frame=101 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=102 case=5 slot=14 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=102 arm_iterations=16 arm_ticks=537 arm_first=0 pack_ticks=3 transfer_ticks=33 end_to_end_ticks=36 cpu_us=1495 raw_dsp_ticks=11669 counts_per_ms=164
+DCR READ frame=102 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=103 case=6 slot=3 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=103 arm_iterations=16 arm_ticks=522 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1495 raw_dsp_ticks=11583 counts_per_ms=164
+DCR READ frame=103 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=104 case=7 slot=7 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=104 arm_iterations=16 arm_ticks=541 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1525 raw_dsp_ticks=11686 counts_per_ms=164
+DCR READ frame=104 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=105 case=0 slot=11 offset=164 expected_offset=164 score=3312937 expected_score=3312937 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=105 arm_iterations=16 arm_ticks=537 arm_first=1 pack_ticks=4 transfer_ticks=33 end_to_end_ticks=37 cpu_us=1953 raw_dsp_ticks=12257 counts_per_ms=164
+DCR READ frame=105 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=106 case=1 slot=0 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=106 arm_iterations=16 arm_ticks=523 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1465 raw_dsp_ticks=11599 counts_per_ms=164
+DCR READ frame=106 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=107 case=2 slot=4 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=107 arm_iterations=16 arm_ticks=523 arm_first=1 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1556 raw_dsp_ticks=11582 counts_per_ms=164
+DCR READ frame=107 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=108 case=3 slot=8 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=108 arm_iterations=16 arm_ticks=524 arm_first=0 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1464 raw_dsp_ticks=11603 counts_per_ms=164
+DCR READ frame=108 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=109 case=4 slot=12 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=109 arm_iterations=16 arm_ticks=522 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1526 raw_dsp_ticks=11598 counts_per_ms=164
+DCR READ frame=109 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=110 case=5 slot=1 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=110 arm_iterations=16 arm_ticks=606 arm_first=0 pack_ticks=3 transfer_ticks=33 end_to_end_ticks=36 cpu_us=1495 raw_dsp_ticks=11683 counts_per_ms=164
+DCR READ frame=110 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=111 case=6 slot=5 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=111 arm_iterations=16 arm_ticks=524 arm_first=1 pack_ticks=3 transfer_ticks=31 end_to_end_ticks=35 cpu_us=1618 raw_dsp_ticks=11612 counts_per_ms=164
+DCR READ frame=111 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=112 case=7 slot=9 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=112 arm_iterations=16 arm_ticks=537 arm_first=0 pack_ticks=3 transfer_ticks=33 end_to_end_ticks=36 cpu_us=1495 raw_dsp_ticks=11977 counts_per_ms=164
+DCR READ frame=112 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=113 case=0 slot=13 offset=68 expected_offset=68 score=3782649 expected_score=3782649 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=113 arm_iterations=16 arm_ticks=536 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1953 raw_dsp_ticks=11675 counts_per_ms=164
+DCR READ frame=113 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=114 case=1 slot=2 offset=0 expected_offset=0 score=0 expected_score=0 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=114 arm_iterations=16 arm_ticks=524 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1496 raw_dsp_ticks=11614 counts_per_ms=164
+DCR READ frame=114 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=115 case=2 slot=6 offset=0 expected_offset=0 score=57446620 expected_score=57446620 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=115 arm_iterations=16 arm_ticks=523 arm_first=1 pack_ticks=3 transfer_ticks=33 end_to_end_ticks=36 cpu_us=1587 raw_dsp_ticks=12120 counts_per_ms=164
+DCR READ frame=115 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=116 case=3 slot=10 offset=0 expected_offset=0 score=-57559040 expected_score=-57559040 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=116 arm_iterations=16 arm_ticks=523 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1496 raw_dsp_ticks=11601 counts_per_ms=164
+DCR READ frame=116 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=117 case=4 slot=14 offset=1 expected_offset=1 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=117 arm_iterations=16 arm_ticks=523 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1495 raw_dsp_ticks=11731 counts_per_ms=164
+DCR READ frame=117 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=118 case=5 slot=3 offset=439 expected_offset=439 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=118 arm_iterations=16 arm_ticks=537 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1526 raw_dsp_ticks=11668 counts_per_ms=164
+DCR READ frame=118 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=119 case=6 slot=7 offset=440 expected_offset=440 score=261121 expected_score=261121 scored=114 expected_scored=114 errors=0 checked_words=1280
+RING WSOLA TIMING frame=119 arm_iterations=16 arm_ticks=522 arm_first=1 pack_ticks=4 transfer_ticks=32 end_to_end_ticks=36 cpu_us=1465 raw_dsp_ticks=11616 counts_per_ms=164
+DCR READ frame=119 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA RESULT frame=120 case=7 slot=11 offset=4 expected_offset=4 score=261121 expected_score=261121 scored=117 expected_scored=117 errors=0 checked_words=1280
+RING WSOLA TIMING frame=120 arm_iterations=16 arm_ticks=614 arm_first=0 pack_ticks=3 transfer_ticks=32 end_to_end_ticks=35 cpu_us=1526 raw_dsp_ticks=11686 counts_per_ms=164
+DCR READ frame=120 protocol=40 marker=dc01 io_port=0200 before=0000 after=0000 wpe_before=0 wpe_after=0 writes=0 diagnostic_only=1
+RING WSOLA PASS jobs=120 input_slots_per_job=4 output_slots_per_job=1 checked_words_per_job=1280 protocol=40 ownership=whole_region useful_ARM_W=0
+NATIVE PAGE phase=1 index=0 linear=ce843000 physical=80f43000
+NATIVE PAGE phase=1 index=1 linear=ce844000 physical=80f44000
+NATIVE PAGE phase=1 index=2 linear=ce845000 physical=80f45000
+NATIVE PAGE phase=1 index=3 linear=ce846000 physical=80f46000
+NATIVE PAGES rc=0 phase=1 pages=4 bytes=16384 no_patcher=1 immutable_compare=1
+state phase=before delete rc=0 header=3000010c max=268
+  state=2 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=61
+delete=0 status=0
+state phase=after delete rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+RING unmap=0
+RING unreserve=0
+RING free native=0
+free native out=0
+free native in=0
+BEGIN close
+RING LIFECYCLE setup_us=692596 teardown_us=111328 includes_journaling=1 status=0
+FINAL status=0

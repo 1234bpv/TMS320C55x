@@ -1,0 +1,16 @@
+{
+  "action": "deploy",
+  "complete": false,
+  "files": [],
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 80515072",
+    "tick 719221 startTick 35467 boot 1 by t",
+    "ap Huawei",
+    "drive C freekb 55712",
+    "drive E freekb 1446792",
+    "script IDLE"
+  ]
+}

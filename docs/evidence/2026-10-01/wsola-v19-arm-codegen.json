@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-01T11:07:25.046888+00:00",
+  "compiler": "CSL GCCE3.4.3",
+  "harness": "SDK GCCE UREL -O2 -fno-unit-at-a-time ARMv5 defaults",
+  "comparison_flags": [
+    "-O2",
+    "-fno-unit-at-a-time",
+    "-march=armv6",
+    "-mtune=arm1136j-s",
+    "-fomit-frame-pointer",
+    "-marm",
+    "-msoft-float",
+    "-fno-exceptions",
+    "-fno-rtti"
+  ],
+  "ps1_flags_source": "PS1Emulator/configs/stage1/group/stage1.mmp",
+  "method": "Compile the identical pure function with32-bit TInt/TInt32/TBool and16-bit TInt16; compare instruction opcodes, excluding other functions/symbols.",
+  "harness_function_bytes": 260,
+  "armv6_function_bytes": 244,
+  "harness_opcode_sha256": "9DA3075692C2400E13147B87EC923486EFC16B293A8BC9D13EF2164D40424802",
+  "armv6_opcode_sha256": "E270A54D82231215EDD213226BAF23A6D57CEB58B9220BB2510AC26CC0AC6DD6",
+  "opcodes_identical": false,
+  "scope": "Only this scalar WsolaBestOffsetOriginal body, not complete application build or newer ARM compilers."
+}

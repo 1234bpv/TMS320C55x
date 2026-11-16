@@ -1,0 +1,48 @@
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 88002560
+< tick 24445020 startTick 22918156 boot 0 by n
+< ap Huawei
+< drive C freekb 65848
+< drive E freekb 1066048
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 88002560
+< tick 24445070 startTick 22918156 boot 0 by n
+< ap Huawei
+< drive C freekb 65848
+< drive E freekb 1066048
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> GET E:\sys\bin\c55stream.exe
+< OK 34196 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\host28-deploy01-before-0.bin
+> GET C:\sys\hash\c55stream.exe
+< OK 20 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\host28-deploy01-before-1.bin
+> GET E:\c55stream.dll55l
+< OK 3668 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\host28-deploy01-dsp-before.dll55l
+> PUT E:\sys\bin\c55stream.exe 41476
+< OK 41476
+> GET E:\sys\bin\c55stream.exe
+< OK 41476 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\host28-deploy01-host-readback.exe
+> PUT C:\sys\hash\c55stream.exe 20
+< OK 20
+> GET C:\sys\hash\c55stream.exe
+< OK 20 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\host28-deploy01-hash-readback.bin
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 88010752
+< tick 24446743 startTick 22918156 boot 0 by n
+< ap Huawei
+< drive C freekb 65848
+< drive E freekb 1066048
+< script IDLE

@@ -1,0 +1,16 @@
+UTC=2026-10-04T01:05:43.0395359Z
+COMMAND="C:\Program Files\LibreOffice\program\python.exe" -X utf8 tools/strict_net.py --ip 192.168.3.21 --device e90 --timeout 8 --get E:\ps1_daemon.log out/e90-oct04-daemon-after-reboot01.log
+TIMEOUT_SEC=38
+EXIT_CODE=0
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 78008320
+< tick 350987 startTick 93682 boot 0 by n
+< ap Huawei
+< drive C freekb 55708
+< drive E freekb 1445136
+< script IDLE
+> GET E:\ps1_daemon.log
+< OK 335793 -> out\e90-oct04-daemon-after-reboot01.log

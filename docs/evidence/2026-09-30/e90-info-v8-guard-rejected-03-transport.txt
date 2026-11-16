@@ -1,0 +1,53 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 75714560
+< tick 9015321 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470664
+< script IDLE
+2026-09-30T13:17:20.090946+00:00
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 75714560
+< tick 9015392 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470664
+< script IDLE
+2026-09-30T13:17:20.151168+00:00
+> PS c55stream*
+< OK ps 0
+2026-09-30T13:17:20.213685+00:00
+> PS ocprobe*
+< OK ps 0
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-03-before.dll55l
+> GET E:\c55stream.log
+< OK 1083 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-03-before.log
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-03-before-ocprobe.log
+2026-09-30T13:17:20.458977+00:00
+> START E:\sys\bin\ocprobe.exe patcher dsp 1 e90
+< OK proc 2
+2026-09-30T13:17:20.534640+00:00
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+2026-09-30T13:17:21.105646+00:00
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+2026-09-30T13:17:21.291114+00:00
+> WAIT 2 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 742 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-03-clock.log
+> PUT E:\ocprobe.log 1249
+< OK 1249
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-03-ocprobe-restored.log

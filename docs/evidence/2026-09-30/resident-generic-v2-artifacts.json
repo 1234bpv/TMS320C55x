@@ -1,0 +1,24 @@
+{
+  "utc": "2026-09-30T22:39:23.755209+00:00",
+  "version": 2,
+  "variant": "resident-check",
+  "bytes": 3000,
+  "sha256": "D229D53FA2E4A7958F66F5013E25C66C6C082A2EECDB09B5224C3B6713B3A729",
+  "assembler_sha256": "A0BC5092F6BC65ED262CE1E03ABBF8D701F5C79ED73587F8B62C73039A326611",
+  "source_sha256": "B2E54359497528E01682057F6AABCC0364D76660FC7B66F22E47CEB33CB96BA8",
+  "imports": [
+    "_STRM_allocateBuffer",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_create",
+    "_c_int00"
+  ],
+  "all_imports_exist_in_both_baseimages": true,
+  "dll_dump_verification": "headers/sections/symbols passed",
+  "registration": "node0 plus generic library2",
+  "delete_null_context_is_error": true,
+  "official_run": false,
+  "scope": "All probe assertions must pass; null context cannot return success"
+}

@@ -1,0 +1,80 @@
+{
+  "scope": "E90 reboot after UI inspection; no new DSP RUN or compatible clock-probe execution",
+  "phone_reboot_confirmed_by": [
+    "user observation",
+    "decreasing system tick in recovered daemon log"
+  ],
+  "completed_actions": [
+    "INFO",
+    "KEY down (one DownArrow press/release)",
+    "SHOT E:\\codex-oct04-patches05.bmp",
+    "GET screenshot"
+  ],
+  "next_attempt": {
+    "command_intended": "KEY down press 2 150, then SHOT/GET",
+    "socket_connected": false,
+    "commands_sent": 0
+  },
+  "daemon_log": {
+    "raw_local_sha256": "6DFD81702FAA7834BA2EBA497A55AAA2F2F0898BE2D739D03D54DDB152C891D8",
+    "raw_bytes": 335793,
+    "extract_path": "docs/evidence/2026-10-04/e90-daemon-reboot-boundary.txt",
+    "extract_sha256": "78955C9D9594F2B25941EA33EBFCAC5EFA5E71DE301076E8E444744EE7CF9D1F",
+    "last_success_tick": 814919,
+    "next_daemon_launch_tick": 93682,
+    "fresh_fault_or_panic_reason": null
+  },
+  "reports": [
+    {
+      "event": "ui_completed",
+      "path": "docs/evidence/2026-10-04/e90-daemon-ui_completed.txt",
+      "sha256": "383E53ECD385C5DF5D23BB743141CECF35025AE30D20D01EC14F086E6C33D927"
+    },
+    {
+      "event": "next_connection_failed",
+      "path": "docs/evidence/2026-10-04/e90-daemon-next_connection_failed.txt",
+      "sha256": "EE1538C04D465AFB28AE3033F349B59F7938B5049C17D37DCE78082C2EDFE328"
+    },
+    {
+      "event": "daemon_journal_read",
+      "path": "docs/evidence/2026-10-04/e90-daemon-daemon_journal_read.txt",
+      "sha256": "3D55B01410ABB158006E59484C90877D0B55B60C83A5038A011FDD0AE2AE5C4C"
+    }
+  ],
+  "local_source_review": [
+    {
+      "path": "../SymbianDeployDaemon/src/tester_input.cpp",
+      "sha256": "14979AB0C0A7B535D52023A01443790DEEA04E77837D597C38ED82593EAA6C5E",
+      "sections_reviewed": [
+        "CmdKey",
+        "RawKey",
+        "WriteBmp",
+        "CmdShot",
+        "CmdInfo"
+      ]
+    },
+    {
+      "path": "../SymbianDeployDaemon/src/deploy_daemon.cpp",
+      "sha256": "B94775C0D04CEBD14648CFBE6E14858C8DE1EDBC3228AFC72FB2DD90F637109F",
+      "sections_reviewed": [
+        "mainL",
+        "spawnSuccessor"
+      ]
+    }
+  ],
+  "findings": [
+    "startTick is daemon launch NTickCount; boot/by are startup classification, not a unique phone boot identifier",
+    "KEY down defaults to a DownArrow key-down/key-up pair with a 40ms gap; it does not hold the key indefinitely",
+    "KEY and SHOT handlers contain no ResetMachine call; explicit REBOOT is a separate command not sent here",
+    "SHOT used the framebuffer path through CFbsScreenDevice::GetScanLine; buffers are heap allocated, length checked during pixel conversion and deleted",
+    "successful screenshot delivery and client-done preceded the reset; they do not exclude a delayed graphics/kernel failure",
+    "new daemon startup kills stale daemon instances; this entry describes daemon processes, not a command to reset the phone"
+  ],
+  "limits": [
+    "installed daemon executable has not been matched to reviewed local source",
+    "no crash dump or fresh panic category identifies the failing component",
+    "combined KEY/SHOT/GET history cannot isolate a trigger",
+    "clock-driver API mismatch is separately proved; it is not a proved reboot cause"
+  ],
+  "next_step": "INFO-only stability observations and preserve daemon logs; then isolate individual UI commands with recorded timestamps before clock/DSP work"
+}

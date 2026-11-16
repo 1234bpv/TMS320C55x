@@ -1,0 +1,28 @@
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 89767936
+< tick 55757701 startTick 62209 boot 0 by n
+< ap Huawei
+< drive C freekb 65760
+< drive E freekb 1065984
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 89767936
+< tick 55757721 startTick 62209 boot 0 by n
+< ap Huawei
+< drive C freekb 65760
+< drive E freekb 1065984
+< script IDLE
+> WAKE
+< OK wake
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> GET E:\sys\bin\c55stream.exe
+< OK 34196 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261003-clean34\wsola68-stock01-s3-run-host-readback.exe

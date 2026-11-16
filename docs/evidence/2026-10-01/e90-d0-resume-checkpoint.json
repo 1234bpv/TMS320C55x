@@ -1,0 +1,2106 @@
+{
+  "scope": "E90 D0 continuation; failed own-node and ROM-reference RUN; D1 hardware prohibited until D0 accepted",
+  "ip": "192.168.3.21",
+  "N95_connections": 0,
+  "experimental_RUN_calls": 5,
+  "initial_three_RUN_limit_hit": true,
+  "limit_lifted_by_human": "HELP_NEEDED.md, decision passed via orchestrator 2026-10-01 23:22 local; a new documented hypothesis per RUN required",
+  "accepted_consecutive_D0_cycles": 0,
+  "required_consecutive_D0_cycles": 3,
+  "runs": [
+    {
+      "experimental_run": 1,
+      "candidate_revision": 21,
+      "host_version": 21,
+      "protocol": 21,
+      "correct_packets": 8,
+      "packet_bytes_each_direction": 512,
+      "delete_rc": -2,
+      "delete_status": -2,
+      "accepted_d0": false,
+      "FINAL_present": false,
+      "quarantined": true,
+      "packet_wall_us": [
+        457,
+        396,
+        396,
+        396,
+        396,
+        396,
+        366,
+        488
+      ],
+      "journal_proof": {
+        "path": "docs/evidence/2026-10-01/e90-d0-resume-recovery02.txt",
+        "sha256": "CE5B1947FBD1509002DDEC54AF85A7C97D4F78E8F6CFFD99142D031F614D3609"
+      }
+    },
+    {
+      "experimental_run": 2,
+      "candidate_revision": 22,
+      "host_version": 21,
+      "protocol": 21,
+      "correct_packets": 8,
+      "packet_bytes_each_direction": 512,
+      "delete_rc": -33,
+      "delete_status": -2147483647,
+      "accepted_d0": false,
+      "FINAL_present": false,
+      "quarantined": true,
+      "packet_wall_us": [
+        457,
+        396,
+        396,
+        366,
+        396,
+        396,
+        366,
+        396
+      ],
+      "journal_proof": {
+        "path": "docs/evidence/2026-10-01/e90-d0-resume-recovery03.txt",
+        "sha256": "F35CDF7F783B5D6A74FF21A89C1B565AAAF2155186B29A1889989427418697BA"
+      }
+    }
+  ],
+  "diagnostic_packet_wall_us": {
+    "count": 16,
+    "median": 396.0,
+    "min": 366,
+    "max": 488
+  },
+  "timing_limit": "Correct packet timings from failed lifecycle runs are diagnostics, not accepted D1 latency or application speedup.",
+  "clock_kHz_from_read_only_registers": {
+    "ARM": 330240,
+    "bus": 110080,
+    "DSP": 220160
+  },
+  "PRCM_writes": false,
+  "phone_process_KILL_calls": 0,
+  "third_RUN_message_diagnostic": {
+    "host_version": 22,
+    "candidate_revision": 24,
+    "protocol": 15,
+    "three_STRM_snapshots": true,
+    "NODE_getMsg_timeout0_result": 0,
+    "NODE_putMsg_timeout0_result": 1,
+    "fromDSP_count": 1,
+    "fromDSP_empty_at_snapshot": 1,
+    "record_ror16": {
+      "cmd": "00000600",
+      "arg1": "000F0001",
+      "arg2": "000077E0",
+      "source": "000077E0"
+    },
+    "host_message_get_rc": -2,
+    "state_before_delete": 3,
+    "delete_rc": -2,
+    "live_journal_GET_succeeded": true,
+    "FINAL_EXIT0": false,
+    "proof": {
+      "path": "docs/evidence/2026-10-01/e90-d0-message-diag01-message-stages.txt",
+      "sha256": "D29CDA121D789A3B509D38EA53E4ABED4E46A021FC7E0BE30993F5310A0DDAD9"
+    },
+    "limit": "A valid DSP record is not proof of ARM reader flags, IRQ/DFC execution, or successful EXITACK delivery."
+  },
+  "recoveries": [
+    {
+      "utc": "2026-10-01T19:40:31.849183+00:00",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "action": "recover-journal",
+      "complete": true,
+      "info_before": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 79728640",
+        "tick 328593 startTick 61377 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55852",
+        "drive E freekb 1447796",
+        "script IDLE"
+      ],
+      "c55stream_processes": [
+        "OK ps 0"
+      ],
+      "ocprobe_processes": [
+        "OK ps 0"
+      ],
+      "journal": "resume-recovery02.log",
+      "journal_sha256": "CE5B1947FBD1509002DDEC54AF85A7C97D4F78E8F6CFFD99142D031F614D3609",
+      "dsp_sha256": "7B07E8D0F0FA4F948B91DEE5CE2099FCCE3EA5A8D5ABCD7E1D101D942166630E",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 79716352",
+        "tick 328852 startTick 61377 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55852",
+        "drive E freekb 1447796",
+        "script IDLE"
+      ]
+    },
+    {
+      "utc": "2026-10-01T19:58:28.940243+00:00",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "action": "recover-journal",
+      "complete": true,
+      "info_before": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 80056320",
+        "tick 152607 startTick 60875 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55840",
+        "drive E freekb 1447792",
+        "script IDLE"
+      ],
+      "c55stream_processes": [
+        "OK ps 0"
+      ],
+      "ocprobe_processes": [
+        "OK ps 0"
+      ],
+      "journal": "resume-recovery03.log",
+      "journal_sha256": "F35CDF7F783B5D6A74FF21A89C1B565AAAF2155186B29A1889989427418697BA",
+      "dsp_sha256": "2B97836D039E698094D6256AFE99D8A539F1CA610877B2313196122BC40B6B34",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 80044032",
+        "tick 152866 startTick 60875 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55840",
+        "drive E freekb 1447792",
+        "script IDLE"
+      ]
+    }
+  ],
+  "last_exact_research_file_restore": {
+    "utc": "2026-10-02T18:34:43.890402+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "restore",
+    "host_version_expected": 27,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 77885440",
+      "tick 682642 startTick 61087 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55788",
+      "drive E freekb 1447684",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "files": [
+      {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 3668,
+        "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+        "equal": true
+      },
+      {
+        "remote": "E:\\c55stream.log",
+        "bytes": 21528,
+        "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D",
+        "equal": true
+      },
+      {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "equal": true
+      }
+    ],
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 77885440",
+      "tick 683625 startTick 61087 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55788",
+      "drive E freekb 1447668",
+      "script IDLE"
+    ]
+  },
+  "original_host_restored": true,
+  "final_verified": {
+    "utc": "2026-10-02T18:42:06.159873+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "verify",
+    "host_version_expected": 28,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 77885440",
+      "tick 1124759 startTick 61087 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55792",
+      "drive E freekb 1447668",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "files": [
+      {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 3668,
+        "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+        "equal_original": true
+      },
+      {
+        "remote": "E:\\c55stream.log",
+        "bytes": 21528,
+        "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D",
+        "equal_original": true
+      },
+      {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "equal_original": true
+      },
+      {
+        "remote": "C:\\sys\\bin\\c55stream.exe",
+        "bytes": 34196,
+        "sha256": "CBB91873639FC226B6DD2E40C6A75CC40E5C01C645C513A9DFA5E8A940890946",
+        "equal_original": true
+      },
+      {
+        "remote": "C:\\sys\\hash\\c55stream.exe",
+        "bytes": 20,
+        "sha256": "B3AB7C72332FF3EF42B059BC24C391D4CD7C1002518EF500BA6E9971EF965614",
+        "equal_original": true
+      }
+    ],
+    "installed_host_matches_built": false,
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 77885440",
+      "tick 1125069 startTick 61087 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55792",
+      "drive E freekb 1447668",
+      "script IDLE"
+    ]
+  },
+  "host22_delivery": {
+    "utc": "2026-10-01T20:04:13.275012+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "deliver-sis",
+    "host_version_expected": 22,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80023552",
+      "tick 496906 startTick 60875 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55840",
+      "drive E freekb 1447776",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "sis_before_stat": [
+      "ERR stat -1"
+    ],
+    "deployed": {
+      "remote": "E:\\c55stream-livejournal-v22.sis",
+      "bytes": 20416,
+      "sha256": "0F8577C66D84C0C2C43FC600AFAB0C77736FC4962084DE95DBFEC0C4084E21BA",
+      "equal": true
+    },
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80023552",
+      "tick 497615 startTick 60875 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55840",
+      "drive E freekb 1447756",
+      "script IDLE"
+    ]
+  },
+  "host22_GET_verified": {
+    "utc": "2026-10-01T20:14:49.700167+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "verify",
+    "host_version_expected": 22,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 76955648",
+      "tick 279663 startTick 91233 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55848",
+      "drive E freekb 1447756",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "files": [
+      {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 3668,
+        "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+        "equal_original": true
+      },
+      {
+        "remote": "E:\\c55stream.log",
+        "bytes": 21528,
+        "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D",
+        "equal_original": true
+      },
+      {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "equal_original": true
+      },
+      {
+        "remote": "C:\\sys\\bin\\c55stream.exe",
+        "bytes": 35120,
+        "sha256": "AFF498B8D1FF925B935CDB8736C17C2A7C83835F4DAFF02E01AF435F8DA0BEA6",
+        "equal_original": false
+      },
+      {
+        "remote": "C:\\sys\\hash\\c55stream.exe",
+        "bytes": 20,
+        "sha256": "847D76BD7B8E6FD420D8385E9FAE3385367BF51267C00536FDC3CFF7B8E9DE77",
+        "equal_original": false
+      }
+    ],
+    "installed_host_matches_built": true,
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 76910592",
+      "tick 280189 startTick 91233 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55848",
+      "drive E freekb 1447756",
+      "script IDLE"
+    ]
+  },
+  "ROM_reference_controls": [
+    {
+      "utc": "2026-10-01T20:35:14.168520+00:00",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "action": "d0-native-reference",
+      "host_version_expected": 23,
+      "complete": false,
+      "info_before": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 76906496",
+        "tick 543988 startTick 61475 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55836",
+        "drive E freekb 1447732",
+        "script IDLE"
+      ],
+      "c55stream_processes": [
+        "OK ps 0"
+      ],
+      "ocprobe_processes": [
+        "OK ps 0"
+      ],
+      "host_sha256": "31836A0F706999DB89E303F23303F5F55E53BCDB2AD893892CFF99E6B2927EEC",
+      "clock_probes": [
+        {
+          "path": "native-reference01-engine.log",
+          "sha256": "A0741304D6C2039DB6C76AB0826C10ABA71BC085950742E52E993DC4A2541B50"
+        },
+        {
+          "path": "native-reference01-dsp.log",
+          "sha256": "4AA4A16767AB179757CA4D7F1B70C039CA08461B45F3697C9A9C3A66E6618789"
+        }
+      ],
+      "clock_exit": [
+        "EXIT 0 Kill"
+      ],
+      "clock_restored": {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "equal": true
+      },
+      "steps": [
+        {
+          "label": "inspect",
+          "command": "inspect",
+          "complete": true,
+          "exit": [
+            "EXIT 0 Kill"
+          ],
+          "journal": "native-reference01-inspect.log",
+          "sha256": "166C96064F614598535B9A8B153A9767B481092B9001DCE03998BAC1D5E0B05E",
+          "info_after": [
+            "OK info",
+            "protocol 2",
+            "screen 800x352",
+            "ramfree 76898304",
+            "tick 548158 startTick 61475 boot 0 by n",
+            "ap Huawei",
+            "drive C freekb 55832",
+            "drive E freekb 1447748",
+            "script IDLE"
+          ]
+        },
+        {
+          "label": "native-copy",
+          "command": "native-copy",
+          "complete": false,
+          "run_error": "RuntimeError: process exit: ['EXIT -6 Kill']",
+          "journal": "native-reference01-native-copy.log",
+          "sha256": "8D09F7504712B0FD56B7E97E84FF74013B343D768A2E9428D9ED94B219BADB14"
+        }
+      ],
+      "reference_rom_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+      "error": "RuntimeError: process exit: ['EXIT -6 Kill']",
+      "RUN_observed": false
+    },
+    {
+      "utc": "2026-10-01T21:03:05.705786+00:00",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "action": "d0-native-library2",
+      "host_version_expected": 24,
+      "complete": false,
+      "info_before": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 79290368",
+        "tick 376195 startTick 35185 boot 1 by t",
+        "ap Huawei",
+        "drive C freekb 55840",
+        "drive E freekb 1447704",
+        "script IDLE"
+      ],
+      "c55stream_processes": [
+        "OK ps 0"
+      ],
+      "ocprobe_processes": [
+        "OK ps 0"
+      ],
+      "host_sha256": "12356F00E0163EF0B0823A0E017D38A2796DCE83F2AB1FA85554DCFFF32A09D8",
+      "clock_probes": [
+        {
+          "path": "native-reference02-engine.log",
+          "sha256": "693722BA7EA7E8E4207095D91852240B166F7DFE3F0F754039B88291AC73C351"
+        },
+        {
+          "path": "native-reference02-dsp.log",
+          "sha256": "9C7B903CA74D9DD9E78091C8051E291711532FFE9BA4733A8416E812E744B7BC"
+        }
+      ],
+      "clock_exit": [
+        "EXIT 0 Kill"
+      ],
+      "clock_restored": {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "equal": true
+      },
+      "steps": [
+        {
+          "label": "inspect",
+          "command": "inspect",
+          "complete": true,
+          "exit": [
+            "EXIT 0 Kill"
+          ],
+          "journal": "native-reference02-inspect.log",
+          "sha256": "C965FAE4685B6438327E2023A77792F6A3BE0FFE8E85967EFD6D9F4312832713",
+          "info_after": [
+            "OK info",
+            "protocol 2",
+            "screen 800x352",
+            "ramfree 79237120",
+            "tick 380118 startTick 35185 boot 1 by t",
+            "ap Huawei",
+            "drive C freekb 55840",
+            "drive E freekb 1447724",
+            "script IDLE"
+          ]
+        },
+        {
+          "label": "native-copy",
+          "command": "native-copy",
+          "complete": false,
+          "run_error": "RuntimeError: process exit: ['EXIT -6 Kill']",
+          "journal": "native-reference02-native-copy.log",
+          "sha256": "4A81F1F9121314314FB5C0785B4011BBBA58A006CFDECC636BC5A3CDEDDE0EB7"
+        }
+      ],
+      "reference_rom_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+      "deployed": {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 4396,
+        "sha256": "308090D3EF802349EF0F5C234B664903C40418F53CD163F3145F8583A00E968F",
+        "equal": true
+      },
+      "error": "RuntimeError: process exit: ['EXIT -6 Kill']",
+      "RUN_observed": false
+    },
+    {
+      "utc": "2026-10-01T21:08:00.448537+00:00",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "action": "d0-native-library2",
+      "host_version_expected": 24,
+      "complete": false,
+      "info_before": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 79212544",
+        "tick 670862 startTick 35185 boot 1 by t",
+        "ap Huawei",
+        "drive C freekb 55836",
+        "drive E freekb 1447704",
+        "script IDLE"
+      ],
+      "c55stream_processes": [
+        "OK ps 0"
+      ],
+      "ocprobe_processes": [
+        "OK ps 0"
+      ],
+      "host_sha256": "12356F00E0163EF0B0823A0E017D38A2796DCE83F2AB1FA85554DCFFF32A09D8",
+      "clock_probes": [
+        {
+          "path": "native-reference03-engine.log",
+          "sha256": "7420593132153003AE0547D1D434BB697C9E04F5A1DFAFD5B397449005DAEB6C"
+        },
+        {
+          "path": "native-reference03-dsp.log",
+          "sha256": "3BC3656784CF38EAF32E491F1BD703B3D7642CE0DD9508B0DD99D64386289261"
+        }
+      ],
+      "clock_exit": [
+        "EXIT 0 Kill"
+      ],
+      "clock_restored": {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "equal": true
+      },
+      "steps": [
+        {
+          "label": "inspect",
+          "command": "inspect",
+          "complete": true,
+          "exit": [
+            "EXIT 0 Kill"
+          ],
+          "journal": "native-reference03-inspect.log",
+          "sha256": "C965FAE4685B6438327E2023A77792F6A3BE0FFE8E85967EFD6D9F4312832713",
+          "info_after": [
+            "OK info",
+            "protocol 2",
+            "screen 800x352",
+            "ramfree 79212544",
+            "tick 674262 startTick 35185 boot 1 by t",
+            "ap Huawei",
+            "drive C freekb 55836",
+            "drive E freekb 1447724",
+            "script IDLE"
+          ]
+        },
+        {
+          "label": "native-copy",
+          "command": "native-copy",
+          "complete": false,
+          "run_error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery",
+          "journal": "native-reference03-native-copy.log",
+          "sha256": "A33A433C6B8555C945A58DB7C12D75A3427A285C7337520F3804CC4C0EC47BF1"
+        }
+      ],
+      "reference_rom_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+      "deployed": {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 4476,
+        "sha256": "C75723582115997EF143D23565587E3FA90AB24FB710F1BAB8AD4C69CBDDF8F8",
+        "equal": true
+      },
+      "error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery",
+      "RUN_observed": true
+    }
+  ],
+  "fourth_RUN_ROM_reference": {
+    "experimental_RUN": 4,
+    "host_version": 24,
+    "correct_packets": 8,
+    "checked_words_per_frame": 256,
+    "packet_bytes_each_direction": 512,
+    "packet_wall_us": [
+      579,
+      488,
+      488,
+      488,
+      457,
+      457,
+      488,
+      488
+    ],
+    "delete_rc": -33,
+    "delete_status": -2147483647,
+    "state_before_delete": 2,
+    "state_after_delete": 3,
+    "FINAL_EXIT0": false,
+    "live_journal_GET_succeeded": true,
+    "proof": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference03-native-copy.txt",
+      "sha256": "A33A433C6B8555C945A58DB7C12D75A3427A285C7337520F3804CC4C0EC47BF1"
+    },
+    "limit": "Native code/data/relocations unchanged; narrows failure to host/setup/native path, without proving the specific cause."
+  },
+  "fifth_RUN_RMS_EXIT_diagnostic": {
+    "experimental_RUN": 5,
+    "host_version": 25,
+    "RUN_observed": true,
+    "correct_packet_transfers": 8,
+    "packet_wall_us": [
+      457,
+      396,
+      396,
+      366,
+      366,
+      396,
+      396,
+      396
+    ],
+    "stages": [
+      {
+        "stage": 4,
+        "protocol": 25,
+        "get_result": 0,
+        "env": "000077e0",
+        "cmd": "00000000",
+        "arg1": "00000000",
+        "arg2": "00000000",
+        "input_pending": 0,
+        "output_pending": 0,
+        "idle_input": 0,
+        "idle_output": 0,
+        "waits": 0,
+        "status": "00000000"
+      },
+      {
+        "stage": 5,
+        "protocol": 25,
+        "get_result": 1,
+        "env": "000077e0",
+        "cmd": "80000000",
+        "arg1": "000077e0",
+        "arg2": "00000000",
+        "input_pending": 0,
+        "output_pending": 0,
+        "idle_input": 0,
+        "idle_output": 0,
+        "waits": 1,
+        "status": "00008000"
+      },
+      {
+        "stage": 6,
+        "protocol": 25,
+        "get_result": 1,
+        "env": "000077e0",
+        "cmd": "80000000",
+        "arg1": "000077e0",
+        "arg2": "00000000",
+        "input_pending": 0,
+        "output_pending": 0,
+        "idle_input": 0,
+        "idle_output": 0,
+        "waits": 1,
+        "status": "00008000"
+      }
+    ],
+    "delete_rc": -33,
+    "delete_status": -2147483647,
+    "quarantined": true,
+    "FINAL_EXIT0": false,
+    "accepted_D0": false,
+    "proof": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag01-exit-stages.txt",
+      "sha256": "778039EBA2B21B3A07F65FB7EDF89040F2BBB386CF1C11B84157B76023F1691E"
+    },
+    "limit": "The post-idle output reissue perturbs cleanup. Only clean delete proves final reclaim/idle/EXITACK; this diagnostic does not count toward three ordinary D0 cycles."
+  },
+  "host25_SIS_delivery": {
+    "utc": "2026-10-02T10:34:15.407322+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "deliver-sis",
+    "host_version_expected": 25,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80531456",
+      "tick 900059 startTick 81256 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55812",
+      "drive E freekb 1447696",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "sis_before_stat": [
+      "ERR stat -1"
+    ],
+    "deployed": {
+      "remote": "E:\\c55stream-exit-diag-v25.sis",
+      "bytes": 22416,
+      "sha256": "8D0E3BE832E8F81E2538A747D9904FBA37BDEF32F6FCDF614B00BB3EDD51E97A",
+      "equal": true
+    },
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80531456",
+      "tick 900901 startTick 81256 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55812",
+      "drive E freekb 1447672",
+      "script IDLE"
+    ]
+  },
+  "host25_GET_verified": null,
+  "host25_direct_deployment": {
+    "utc": "2026-10-02T10:41:13.506342+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "deploy-host",
+    "host_version_expected": 25,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80531456",
+      "tick 1318152 startTick 81256 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55808",
+      "drive E freekb 1447672",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "before": [
+      {
+        "remote": "C:\\sys\\bin\\c55stream.exe",
+        "local": "host25-deploy01-before-0.bin",
+        "bytes": 36724,
+        "sha256": "12356F00E0163EF0B0823A0E017D38A2796DCE83F2AB1FA85554DCFFF32A09D8"
+      },
+      {
+        "remote": "C:\\sys\\hash\\c55stream.exe",
+        "local": "host25-deploy01-before-1.bin",
+        "bytes": 20,
+        "sha256": "608C6C60F3CB91DE46D593A4EE59169568292D91FE7EBD531D8F38C53D654DCE"
+      }
+    ],
+    "files": [
+      {
+        "remote": "C:\\sys\\bin\\c55stream.exe",
+        "bytes": 39504,
+        "sha256": "CB74DE96012E3C9D4D7DDE6F783C6A746F75713B83DBF136DF03001C7035CA0A",
+        "equal": true
+      },
+      {
+        "remote": "C:\\sys\\hash\\c55stream.exe",
+        "bytes": 20,
+        "sha256": "EDDE22CA4052B13C659CAB19973AD7DF712920F2E7D5F8F3C642526700A71BCF",
+        "equal": true
+      }
+    ],
+    "original_host_restored": false,
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80523264",
+      "tick 1319109 startTick 81256 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55804",
+      "drive E freekb 1447672",
+      "script IDLE"
+    ]
+  },
+  "host26_direct_deployment": {
+    "utc": "2026-10-02T12:14:42.127780+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "deploy-host",
+    "host_version_expected": 26,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80556032",
+      "tick 4410531 startTick 65704 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55788",
+      "drive E freekb 1447672",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "before": [
+      {
+        "remote": "C:\\sys\\bin\\c55stream.exe",
+        "local": "host26-deploy01-before-0.bin",
+        "bytes": 39504,
+        "sha256": "CB74DE96012E3C9D4D7DDE6F783C6A746F75713B83DBF136DF03001C7035CA0A"
+      },
+      {
+        "remote": "C:\\sys\\hash\\c55stream.exe",
+        "local": "host26-deploy01-before-1.bin",
+        "bytes": 20,
+        "sha256": "EDDE22CA4052B13C659CAB19973AD7DF712920F2E7D5F8F3C642526700A71BCF"
+      }
+    ],
+    "files": [
+      {
+        "remote": "C:\\sys\\bin\\c55stream.exe",
+        "bytes": 40920,
+        "sha256": "2EAC917E90CF78F18A6EA1DBD9EE117FF9CB2398C6269414E559B4140758D787",
+        "equal": true
+      },
+      {
+        "remote": "C:\\sys\\hash\\c55stream.exe",
+        "bytes": 20,
+        "sha256": "5B100DF7D24FDA32C7B033CCFF473A5159A7FBBF7051B28C44275D0302F0F91F",
+        "equal": true
+      }
+    ],
+    "original_host_restored": false,
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80547840",
+      "tick 4411531 startTick 65704 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55788",
+      "drive E freekb 1447672",
+      "script IDLE"
+    ]
+  },
+  "created_worker_message_controls": [
+    {
+      "utc": "2026-10-02T12:14:53.666218+00:00",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "action": "d0-worker-message",
+      "host_version_expected": 26,
+      "complete": false,
+      "info_before": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 80547840",
+        "tick 4422056 startTick 65704 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55788",
+        "drive E freekb 1447672",
+        "script IDLE"
+      ],
+      "c55stream_processes": [
+        "OK ps 0"
+      ],
+      "ocprobe_processes": [
+        "OK ps 0"
+      ],
+      "host_sha256": "2EAC917E90CF78F18A6EA1DBD9EE117FF9CB2398C6269414E559B4140758D787",
+      "clock_probes": [
+        {
+          "path": "worker-msg01-engine.log",
+          "sha256": "3A9807A35929608BF5FFE5EC707A8EDA2E05BC09F54BD7E1AA4A4600228D0DAD"
+        },
+        {
+          "path": "worker-msg01-dsp.log",
+          "sha256": "94973C404BE80EFF4690979450AD81BB04B945DD799AF3CD91793021D2E2BD18"
+        }
+      ],
+      "clock_exit": [
+        "EXIT 0 Kill"
+      ],
+      "clock_restored": {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "equal": true
+      },
+      "steps": [
+        {
+          "label": "inspect",
+          "command": "inspect",
+          "complete": true,
+          "exit": [
+            "EXIT 0 Kill"
+          ],
+          "journal": "worker-msg01-inspect.log",
+          "sha256": "DA8A2552E5381F1D7F76CDDA32DF869BC26601C4BC2D68AE40FA1939AF610799",
+          "info_after": [
+            "OK info",
+            "protocol 2",
+            "screen 800x352",
+            "ramfree 80539648",
+            "tick 4425992 startTick 65704 boot 0 by n",
+            "ap Huawei",
+            "drive C freekb 55784",
+            "drive E freekb 1447692",
+            "script IDLE"
+          ]
+        },
+        {
+          "label": "create",
+          "command": "create",
+          "complete": false,
+          "run_error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery",
+          "journal": "worker-msg01-create.log",
+          "sha256": "B9B4E282CF099D986E8B1AC08B25F32BFF73E546294316379563613DB084EA92"
+        }
+      ],
+      "deployed": {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 5616,
+        "sha256": "71B4D893956BEBD2575D0CF6A50706D75FC71AFD69F0D74B8EFBCD78ED0BC265",
+        "equal": true
+      },
+      "error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery"
+    }
+  ],
+  "created_worker_controls_accepted_as_D0": false,
+  "post_RUN5_recovery": {
+    "utc": "2026-10-02T11:55:48.731879+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "recover-journal",
+    "host_version_expected": 25,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80609280",
+      "tick 3277208 startTick 65704 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55792",
+      "drive E freekb 1447684",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "journal": "exit-recovery02.log",
+    "journal_sha256": "778039EBA2B21B3A07F65FB7EDF89040F2BBB386CF1C11B84157B76023F1691E",
+    "dsp_sha256": "29069D525B9209CA808F0D9315AA23BACCF222B44B6D6ABEFFC0B37B8EBB2833",
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 80592896",
+      "tick 3277499 startTick 65704 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55792",
+      "drive E freekb 1447684",
+      "script IDLE"
+    ]
+  },
+  "direct_EXE_hash_replacement_authorized": "HELP_NEEDED.md 2026-10-02 13:38: human allows replacing our research EXE/hash without SIS installer",
+  "research_files_restored_after_RUN5": true,
+  "research_files_currently_restored": true,
+  "post_RUN4_recovery_attempts": [
+    {
+      "utc": "2026-10-02T01:08:05.705196+00:00",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "action": "recover-journal",
+      "host_version_expected": 24,
+      "complete": false,
+      "error": "TimeoutError: timed out"
+    },
+    {
+      "utc": "2026-10-02T01:08:51.480052+00:00",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "action": "recover-journal",
+      "host_version_expected": 24,
+      "complete": false,
+      "error": "TimeoutError: timed out"
+    },
+    {
+      "transport": ".NET TcpClient comparison, read only",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "complete": false,
+      "utc": "2026-10-02T01:10:22.1886064Z",
+      "action": "recover-journal",
+      "error": "TCP connect timeout8s"
+    },
+    {
+      "utc": "2026-10-02T10:22:22.170721+00:00",
+      "ip": "192.168.3.21",
+      "device": "e90",
+      "action": "recover-journal",
+      "host_version_expected": 24,
+      "complete": true,
+      "info_before": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 80584704",
+        "tick 186899 startTick 81256 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55816",
+        "drive E freekb 1447716",
+        "script IDLE"
+      ],
+      "c55stream_processes": [
+        "OK ps 0"
+      ],
+      "ocprobe_processes": [
+        "OK ps 0"
+      ],
+      "journal": "native-recovery03.log",
+      "journal_sha256": "A33A433C6B8555C945A58DB7C12D75A3427A285C7337520F3804CC4C0EC47BF1",
+      "dsp_sha256": "C75723582115997EF143D23565587E3FA90AB24FB710F1BAB8AD4C69CBDDF8F8",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 80572416",
+        "tick 187222 startTick 81256 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55816",
+        "drive E freekb 1447712",
+        "script IDLE"
+      ]
+    }
+  ],
+  "research_files_restored_after_RUN4": true,
+  "native_copy_host23_SIS_delivery": {
+    "utc": "2026-10-01T20:32:43.642229+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "deliver-sis",
+    "host_version_expected": 23,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 79704064",
+      "tick 393507 startTick 61475 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55836",
+      "drive E freekb 1447756",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "sis_before_stat": [
+      "ERR stat -1"
+    ],
+    "deployed": {
+      "remote": "E:\\c55stream-native-copy-v23.sis",
+      "bytes": 21064,
+      "sha256": "D383BF30F371DD8A4CBCB5C7820B25C141CBD60FC7D40AF0EE59C8026D2AC809",
+      "equal": true
+    },
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 79704064",
+      "tick 394169 startTick 61475 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55836",
+      "drive E freekb 1447732",
+      "script IDLE"
+    ]
+  },
+  "native_copy_host24_SIS_delivery": {
+    "utc": "2026-10-01T20:41:38.335390+00:00",
+    "ip": "192.168.3.21",
+    "device": "e90",
+    "action": "deliver-sis",
+    "host_version_expected": 24,
+    "complete": true,
+    "info_before": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 76898304",
+      "tick 928095 startTick 61475 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55832",
+      "drive E freekb 1447728",
+      "script IDLE"
+    ],
+    "c55stream_processes": [
+      "OK ps 0"
+    ],
+    "ocprobe_processes": [
+      "OK ps 0"
+    ],
+    "sis_before_stat": [
+      "ERR stat -1"
+    ],
+    "deployed": {
+      "remote": "E:\\c55stream-native-copy-v24.sis",
+      "bytes": 21180,
+      "sha256": "CEB641F9956E3CDADECAF865634D21022140C36DD28FCE524603DC5B14DD6B79",
+      "equal": true
+    },
+    "info_after": [
+      "OK info",
+      "protocol 2",
+      "screen 800x352",
+      "ramfree 76898304",
+      "tick 928818 startTick 61475 boot 0 by n",
+      "ap Huawei",
+      "drive C freekb 55832",
+      "drive E freekb 1447704",
+      "script IDLE"
+    ]
+  },
+  "pending": "Audit a bounded read-only native snapshot of ARM window, reader flag and queue routing before another MSG/RUN experiment. Shared header changes alone do not establish the failing boundary. D0 0/3; D1 pending. No physical recovery currently required.",
+  "D1": "No reserve/map/ring or new latency/bandwidth measurement; no proven negative zero-copy conclusion.",
+  "D2": "Prior copy-channel calculation remains provisional; docs/PS1_CANDIDATES_2026-10-01.md",
+  "proofs": {
+    "resume-verify01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-verify01.json",
+      "sha256": "090B14ACA6DFBB150BA45F99634AD483E43661E82BAC811DCBFAE546ADF353F6"
+    },
+    "resume-verify01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-verify01-transport.txt",
+      "sha256": "148C519A89752133AAA002BB986834176AE250A48EE283B0C413A33D9FFE7698"
+    },
+    "resume-clocks01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-clocks01.json",
+      "sha256": "C9A0AD36833771E07201909D4EC1FD3A0FCA5AB00264F4178791CD905D9E292B"
+    },
+    "resume-clocks01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-clocks01-transport.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "resume-sequence01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence01.json",
+      "sha256": "A073A6F380E9759493F5AED10BDB0235028B05D9352A9B053C64183CB1C0751F"
+    },
+    "resume-sequence01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence01-transport.txt",
+      "sha256": "13A0F20A5B7181B52454156AE2B5D6AF87EA938B9784EA3D1A29E3B2147255D6"
+    },
+    "resume-recovery02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-recovery02.json",
+      "sha256": "538713D480815A6733AFB7C86D61431D91B8816F00BE6ADD471BF47F06CF5679"
+    },
+    "resume-recovery02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-recovery02-transport.txt",
+      "sha256": "4CB36F07BDB24D37FE1A8B83A5D45FF7A4D2BF99280DD35C077FF0A963C4D990"
+    },
+    "resume-restore01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-restore01.json",
+      "sha256": "21E6F285147D403791F7C2150B258D812FDBF692791A0766B1E5885FB0931FE4"
+    },
+    "resume-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-restore01-transport.txt",
+      "sha256": "76AA0817C9D261378F0406ADE357D916662566C1FD6FF0CD5269F96DA627BF56"
+    },
+    "resume-sequence02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence02.json",
+      "sha256": "2BB63AD29C4F1848E648C5E2042C9D98FE02FAEEA6D477B3926A75F362C7B8A8"
+    },
+    "resume-sequence02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence02-transport.txt",
+      "sha256": "C6069EFA36469EE208C675653CB2FDE9BEC9FC9172F44CEB066B2C520BF7E28B"
+    },
+    "resume-recovery03.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-recovery03.json",
+      "sha256": "DA1CD2B8B1249BE7E0A9F35963F624975614B7147D39600C5B866D123E5EFE5E"
+    },
+    "resume-recovery03-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-recovery03-transport.txt",
+      "sha256": "244984357B0F696FE6AA030D1385B77E99666BB23381B26EA76522F3CABA867C"
+    },
+    "resume-restore02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-restore02.json",
+      "sha256": "BAFFA485DD1B3657F75D6822E0D3761E276BB2DCA77F0C09D6A4EB70B514C479"
+    },
+    "resume-restore02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-restore02-transport.txt",
+      "sha256": "8953B6A940EB4EE2F26E743B56A62866B1E9D85BBB2486361DF2D3C9B82BACF5"
+    },
+    "livejournal-sis01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-livejournal-sis01.json",
+      "sha256": "320F9C78A0F3D928E0DD403B2BF6C165C543FD402F508483C52C3709D22E8256"
+    },
+    "livejournal-sis01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-livejournal-sis01-transport.txt",
+      "sha256": "A1178C96A40335E5AF3C85D6F25AAB38608CC38D7602A56E649D6D86B0855EB3"
+    },
+    "host22-verify01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host22-verify01.json",
+      "sha256": "C4A4C227909D9CFF95AF3C30059952FD12BA0B38CCCCDFD68E4E97A4B82A03DD"
+    },
+    "host22-verify01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host22-verify01-transport.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "host22-verify02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host22-verify02.json",
+      "sha256": "CE8F7D642B649D5794C05BF1CC90D3CE756D5828E24354E9B10FF6845BDAB743"
+    },
+    "host22-verify02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host22-verify02-transport.txt",
+      "sha256": "93DB91CE13D9D502BB42561680DB7F3909DE5CF9982039370E37C8F3B238B914"
+    },
+    "message-diag01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-message-diag01.json",
+      "sha256": "F1959037B7AD879317E5727B47910EFD9BBB59B6498E390F3F87FE3FB89E4869"
+    },
+    "message-diag01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-message-diag01-transport.txt",
+      "sha256": "356A6367EFA24635E729540A1A6022F1BB3683968E97DDC5139A177FEC744ABB"
+    },
+    "resume-sequence01-inspect.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence01-inspect.txt",
+      "sha256": "8948E7566A85FD5C93886103A9A308744F5AE6119D00C23575CDC3078A6B15BA"
+    },
+    "resume-sequence01-create.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence01-create.txt",
+      "sha256": "AA6C9EFEA63343917B7A67D54136E3487B22C11825F3194604E4C135FAD05B66"
+    },
+    "resume-sequence01-engine.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence01-engine.txt",
+      "sha256": "5C0948F9B42BAA89E0126B3AB69022ED3F52B98A7B6FC84FE18B4794E3329990"
+    },
+    "resume-sequence01-dsp.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence01-dsp.txt",
+      "sha256": "20A8D144947B80A0A9A0D97640FE28A43E7B7BDECFC0917C1BB512D6D8C36C1C"
+    },
+    "resume-sequence02-inspect.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence02-inspect.txt",
+      "sha256": "8948E7566A85FD5C93886103A9A308744F5AE6119D00C23575CDC3078A6B15BA"
+    },
+    "resume-sequence02-create.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence02-create.txt",
+      "sha256": "A1638F093C8494D003E28CEAFC043905F00C8DD79CDA18C086C60D1C806A7818"
+    },
+    "resume-sequence02-engine.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence02-engine.txt",
+      "sha256": "4A23FECAFBC3ED0C678FA3074B671876E3A67D768DF21F28B7229C56BF2F5C8E"
+    },
+    "resume-sequence02-dsp.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-sequence02-dsp.txt",
+      "sha256": "7F6B905BB13C7E7AB273E5C819C25F9F6FEB9B36DF573CF062BF726126A29539"
+    },
+    "resume-recovery02.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-recovery02.txt",
+      "sha256": "CE5B1947FBD1509002DDEC54AF85A7C97D4F78E8F6CFFD99142D031F614D3609"
+    },
+    "resume-recovery03.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-resume-recovery03.txt",
+      "sha256": "F35CDF7F783B5D6A74FF21A89C1B565AAAF2155186B29A1889989427418697BA"
+    },
+    "message-diag01-inspect.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-message-diag01-inspect.txt",
+      "sha256": "C959552336D350595F8AF2AE2843A944C9BD3ADD7CA087F304F2E0A6248A9EC8"
+    },
+    "message-diag01-create.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-message-diag01-create.txt",
+      "sha256": "BAE8A14B3ABACA71C30B19F071C77FE73CA34714E96BA67CF6A21CAC028EE38E"
+    },
+    "message-diag01-engine.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-message-diag01-engine.txt",
+      "sha256": "6D86742B8486F82F01A8B030DA6611CF4FDEC325DBE21A39678204B779DB6FCF"
+    },
+    "message-diag01-dsp.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-message-diag01-dsp.txt",
+      "sha256": "5E619FA2C0500202BB7E508E2437EC019D95764A8B683F8513FB1C7D91E2F0C8"
+    },
+    "message-diag01-message-stages.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-message-diag01-message-stages.txt",
+      "sha256": "D29CDA121D789A3B509D38EA53E4ABED4E46A021FC7E0BE30993F5310A0DDAD9"
+    },
+    "final-recovery01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-final-recovery01.json",
+      "sha256": "89F71D92BA3483469E9F650BC1067BBA90675DB7F4C8D4C2EED9B8405E8B14DC"
+    },
+    "final-recovery01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-final-recovery01-transport.txt",
+      "sha256": "5733FE853C4D2655815F0E5985F38F59913EE38FC40FDE0E9925CE25B744211C"
+    },
+    "final-recovery01.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-final-recovery01.txt",
+      "sha256": "D29CDA121D789A3B509D38EA53E4ABED4E46A021FC7E0BE30993F5310A0DDAD9"
+    },
+    "final-restore01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-final-restore01.json",
+      "sha256": "785EB70B28F9BFD011A9A2B37B53F46DF029D2449F83148EEDE5AD75B0A59A11"
+    },
+    "final-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-final-restore01-transport.txt",
+      "sha256": "567C366C00CDCE3BD0A828C78DC079E6E93492E7AE06AD926CAA414FA19EE52F"
+    },
+    "native-copy-sis01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-copy-sis01.json",
+      "sha256": "BF05EB1D60AD0C96B17455586550A294933EAB39B33373D178F7A65FFC19D931"
+    },
+    "native-copy-sis01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-copy-sis01-transport.txt",
+      "sha256": "E19B2A7F4A9C2DD18838A1B4D8A93450BF7DAF50FB910D26D8C3BFE93B84D675"
+    },
+    "host23-verify01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host23-verify01.json",
+      "sha256": "67497BBE53A4DFDDE10B2F7F7A2ABDDB418FC4CF717C8A33DB1D1FA5DAA2A2C5"
+    },
+    "host23-verify01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host23-verify01-transport.txt",
+      "sha256": "558AE8EFB717DD31C7B67E50458131CFDCAA2299E9BC235DAA3339F4AA863C2B"
+    },
+    "native-reference01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference01.json",
+      "sha256": "60E8933DFA09D6F321D7B3AA401E19AA00C45C539D8554A070BD397CEF7FFF45"
+    },
+    "native-reference01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference01-transport.txt",
+      "sha256": "0DAE9F1FFFF17BAD6EB8333C8ED211B44B081E371BA344CCA46329C1D8073D23"
+    },
+    "native-preflight-restore01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-preflight-restore01.json",
+      "sha256": "D66AFAC000864394551E95E1EC8BD911F639EA892E94427E9C3B3C110624ED19"
+    },
+    "native-preflight-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-preflight-restore01-transport.txt",
+      "sha256": "831628A1FDC49F0D74FE138993B4CBE3DCFD96A3B9298BACEE081A7AF3348F28"
+    },
+    "native-preflight-restore02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-preflight-restore02.json",
+      "sha256": "D9D72964BBBE315F49BC18227A43B6D6B313A3498CC60D67878C3E9D36278D3C"
+    },
+    "native-preflight-restore02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-preflight-restore02-transport.txt",
+      "sha256": "5B6B5DFD7CECC498F932C31AE0619EA7096292EE7934CBC44B585E1FDBF417F0"
+    },
+    "native-copy-v24-sis01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-copy-v24-sis01.json",
+      "sha256": "2ABC089C988AA1DE59CE00401984F9DC0BB7BBBFC7FC4CAC6E57B6A1A9E27091"
+    },
+    "native-copy-v24-sis01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-copy-v24-sis01-transport.txt",
+      "sha256": "2AE30D572A0D402E101AE35A77EA62668EA2A1DB73551D394F957004561C3734"
+    },
+    "host24-verify01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host24-verify01.json",
+      "sha256": "95882739B8D7276DAC9992DE2D3B31026B666CB9A3CAF51D123390F69E7AAE55"
+    },
+    "host24-verify01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host24-verify01-transport.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "host24-verify02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host24-verify02.json",
+      "sha256": "86BB8FEEB0182F4B7B6F72C5B76ADF35638F520537216CFDE9DA93B01B06F304"
+    },
+    "host24-verify02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host24-verify02-transport.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "native-reference02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference02.json",
+      "sha256": "E3871ABC6D167F271887CC10BEA1665C9484E0079FA95CE56EEB3095B73B00C9"
+    },
+    "native-reference02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference02-transport.txt",
+      "sha256": "E2084E97A8A6D54E0C25E67831AE527CA6817A29851336F69941FC1AC6FAEDED"
+    },
+    "native-reference03.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference03.json",
+      "sha256": "CFF149DA52386EBEBC88EF1E6C529C14FCFB146CC76BD893393528A60F4DE31D"
+    },
+    "native-reference03-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference03-transport.txt",
+      "sha256": "13D2B70B2F7B852AE01090FDDFF8F5CDCCB14F73CC85F4244E5D727E4BAA69E3"
+    },
+    "native-recovery01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-recovery01.json",
+      "sha256": "29EE71ED26F6BB7598E366D1C3BF00BE113DE2FB3F3E58EFD54A9B175F290405"
+    },
+    "native-recovery01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-recovery01-transport.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "native-recovery02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-recovery02.json",
+      "sha256": "D10E7F91CFE6831251BFF5C13A38DBE10B0E6E3EAFC3305C2ACFD31CE18388E4"
+    },
+    "native-recovery02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-recovery02-transport.txt",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    "native-recovery-net01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-recovery-net01.json",
+      "sha256": "A0F4163F4B92A0215B9B7D0CBB9B12CFAAA7E23E761AC363EC5EF7D84FE9F8B0"
+    },
+    "native-recovery03.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-recovery03.json",
+      "sha256": "A0392B14DDB822F9E4AA2D45344300A33777ABE0098C010FC2AC7EAD25F38F00"
+    },
+    "native-recovery03-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-recovery03-transport.txt",
+      "sha256": "C643CF7D319601117DE60311731885B1ED0E0E1F1E4259E8B796C03C17501C71"
+    },
+    "native-recovery03.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-recovery03.txt",
+      "sha256": "A33A433C6B8555C945A58DB7C12D75A3427A285C7337520F3804CC4C0EC47BF1"
+    },
+    "native-restore01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-restore01.json",
+      "sha256": "B2B0FAB5FE32DEEFD93780E6C0CC356BE915291010B466E5BC4839AD667CB41B"
+    },
+    "native-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-restore01-transport.txt",
+      "sha256": "4E1E884206E16DE309EE62B15A0B3065EE15171AE610A2D2F925881232404D63"
+    },
+    "exit-diag-sis01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag-sis01.json",
+      "sha256": "F437A61490C91842573BF8132F779D631CD98B8AF3F9E0AC0C053BC7BB75B5E6"
+    },
+    "exit-diag-sis01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag-sis01-transport.txt",
+      "sha256": "7FB54B406973EE1EE2AA27EA94307E7F6AB56E52BE8DF98BEB28FC3EE618408F"
+    },
+    "host25-deploy01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host25-deploy01.json",
+      "sha256": "9901428BF835DCECC0203D5C3B08322FFD9E219EA816BBD5D9B164A5FA559DA8"
+    },
+    "host25-deploy01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host25-deploy01-transport.txt",
+      "sha256": "4876683D37480DDB60F172982E732953B5880CCC485C93ACFD5BA46F79F95E08"
+    },
+    "exit-diag01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag01.json",
+      "sha256": "86DE0F2DAA4EAFB5626B46B32F6E2B92D9B62F5F3F3C35AD520AB842BAAC0BFA"
+    },
+    "exit-diag01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag01-transport.txt",
+      "sha256": "093A1BA1B24AD6CB86FBBCD4D58859861077D816CF541FC0D5B14C1217C4C44F"
+    },
+    "exit-recovery01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-recovery01.json",
+      "sha256": "A4600E4B8CF50ED976147C1739D418FDE1E8CBCDA1D6217ABC7C28BE0F4343F6"
+    },
+    "exit-recovery01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-recovery01-transport.txt",
+      "sha256": "C60A8D2725AF70DAF522A9FC0BBDCBC501750342019E0E762FF2B8F54C8CEC3C"
+    },
+    "exit-recovery01.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-recovery01.txt",
+      "sha256": "778039EBA2B21B3A07F65FB7EDF89040F2BBB386CF1C11B84157B76023F1691E"
+    },
+    "exit-recovery02.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-recovery02.json",
+      "sha256": "E7F6BAB631B73FDBC58001C99C7A2C38EF7656899F1F18F22C96B961B3A3A6D5"
+    },
+    "exit-recovery02-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-recovery02-transport.txt",
+      "sha256": "006D2E8B27AC13C13A7870C64932E3900ED716C183D3D6D0839131201B0821BC"
+    },
+    "exit-recovery02.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-recovery02.txt",
+      "sha256": "778039EBA2B21B3A07F65FB7EDF89040F2BBB386CF1C11B84157B76023F1691E"
+    },
+    "exit-restore01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-restore01.json",
+      "sha256": "99B7276C4B6D09CA1C334D4A4F5C6625FF02FEC64BA348B6117492CB127D9086"
+    },
+    "exit-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-restore01-transport.txt",
+      "sha256": "E95C733D12119FBF11012C4BE196ECD0570DA6873171346EAD48E293D5663537"
+    },
+    "host26-deploy01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host26-deploy01.json",
+      "sha256": "FF950081CE5CBFCE278F50A9429689A7E97C1FE29791F82B2B0DAC0D26B433BC"
+    },
+    "host26-deploy01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-host26-deploy01-transport.txt",
+      "sha256": "CD5E9166FE765C31138FC1CD6D3BEE6617ABCFBEA87DDA7B456ED921047A9824"
+    },
+    "worker-msg01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-worker-msg01.json",
+      "sha256": "133AF50A695F88FAE873C07C6D95E113B57C123F0B00224217B08A4E68DDC75E"
+    },
+    "worker-msg01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-worker-msg01-transport.txt",
+      "sha256": "D2EDA167787F976B1B4E64732A161EF0B381080FF7F685514E6DDAEC041F66A6"
+    },
+    "worker-recovery01.json": {
+      "path": "docs/evidence/2026-10-01/e90-d0-worker-recovery01.json",
+      "sha256": "D41E8B8EA387EA64E435697FF5C82DE19AFE1A01EF3CACAE424FE0E84B168E46"
+    },
+    "worker-recovery01-transport.txt": {
+      "path": "docs/evidence/2026-10-01/e90-d0-worker-recovery01-transport.txt",
+      "sha256": "9B6346928BB26AF7740B90753EBAB0B614E9DFA4957116C16F4F41A913D9668E"
+    },
+    "worker-recovery01.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-worker-recovery01.txt",
+      "sha256": "B9B4E282CF099D986E8B1AC08B25F32BFF73E546294316379563613DB084EA92"
+    },
+    "native-reference01-inspect.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference01-inspect.txt",
+      "sha256": "166C96064F614598535B9A8B153A9767B481092B9001DCE03998BAC1D5E0B05E"
+    },
+    "native-reference01-engine.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference01-engine.txt",
+      "sha256": "A0741304D6C2039DB6C76AB0826C10ABA71BC085950742E52E993DC4A2541B50"
+    },
+    "native-reference01-dsp.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference01-dsp.txt",
+      "sha256": "4AA4A16767AB179757CA4D7F1B70C039CA08461B45F3697C9A9C3A66E6618789"
+    },
+    "native-reference01-native-copy.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference01-native-copy.txt",
+      "sha256": "8D09F7504712B0FD56B7E97E84FF74013B343D768A2E9428D9ED94B219BADB14"
+    },
+    "native-reference02-inspect.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference02-inspect.txt",
+      "sha256": "C965FAE4685B6438327E2023A77792F6A3BE0FFE8E85967EFD6D9F4312832713"
+    },
+    "native-reference02-engine.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference02-engine.txt",
+      "sha256": "693722BA7EA7E8E4207095D91852240B166F7DFE3F0F754039B88291AC73C351"
+    },
+    "native-reference02-dsp.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference02-dsp.txt",
+      "sha256": "9C7B903CA74D9DD9E78091C8051E291711532FFE9BA4733A8416E812E744B7BC"
+    },
+    "native-reference02-native-copy.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference02-native-copy.txt",
+      "sha256": "4A81F1F9121314314FB5C0785B4011BBBA58A006CFDECC636BC5A3CDEDDE0EB7"
+    },
+    "native-reference03-inspect.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference03-inspect.txt",
+      "sha256": "C965FAE4685B6438327E2023A77792F6A3BE0FFE8E85967EFD6D9F4312832713"
+    },
+    "native-reference03-engine.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference03-engine.txt",
+      "sha256": "7420593132153003AE0547D1D434BB697C9E04F5A1DFAFD5B397449005DAEB6C"
+    },
+    "native-reference03-dsp.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference03-dsp.txt",
+      "sha256": "3BC3656784CF38EAF32E491F1BD703B3D7642CE0DD9508B0DD99D64386289261"
+    },
+    "native-reference03-native-copy.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-reference03-native-copy.txt",
+      "sha256": "A33A433C6B8555C945A58DB7C12D75A3427A285C7337520F3804CC4C0EC47BF1"
+    },
+    "exit-diag01-inspect.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag01-inspect.txt",
+      "sha256": "94AC200197DF3374F9A3EDC540E49692661BBDC8C5A3BDD6250979D818BE716A"
+    },
+    "exit-diag01-create.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag01-create.txt",
+      "sha256": "D46B74E3E2469CD95FF034D6AE345709C65745743D7A0EC794F0F4ECC9F2496E"
+    },
+    "exit-diag01-engine.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag01-engine.txt",
+      "sha256": "AB3166C5C95F83A450EE55F27EC4FCBAAABE96CDBEB16670A72F7E52E2DE8B0C"
+    },
+    "exit-diag01-dsp.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag01-dsp.txt",
+      "sha256": "D0E3AE4264C55DE333D02FF8C8193E6EF461DD3A74BBB32BB40B4B37FFFEE159"
+    },
+    "exit-diag01-exit-stages.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-exit-diag01-exit-stages.txt",
+      "sha256": "778039EBA2B21B3A07F65FB7EDF89040F2BBB386CF1C11B84157B76023F1691E"
+    },
+    "worker-msg01-inspect.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-worker-msg01-inspect.txt",
+      "sha256": "DA8A2552E5381F1D7F76CDDA32DF869BC26601C4BC2D68AE40FA1939AF610799"
+    },
+    "worker-msg01-create.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-worker-msg01-create.txt",
+      "sha256": "B9B4E282CF099D986E8B1AC08B25F32BFF73E546294316379563613DB084EA92"
+    },
+    "worker-msg01-engine.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-worker-msg01-engine.txt",
+      "sha256": "3A9807A35929608BF5FFE5EC707A8EDA2E05BC09F54BD7E1AA4A4600228D0DAD"
+    },
+    "worker-msg01-dsp.log": {
+      "path": "docs/evidence/2026-10-01/e90-d0-worker-msg01-dsp.txt",
+      "sha256": "94973C404BE80EFF4690979450AD81BB04B945DD799AF3CD91793021D2E2BD18"
+    },
+    "e90/laptop-final-verify01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-final-verify01-transport.txt",
+      "sha256": "00298D61D251C5AEC58CF9B440DD8A161AC3E8BDB650B92FE8B5F1A60607D86D"
+    },
+    "e90/laptop-final-verify01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-final-verify01.json",
+      "sha256": "5AE3A92F02B7DB9BAE3983BB1043ADA8F84CFFD11BF1330BC6A15010683F069A"
+    },
+    "e90/laptop-host-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-host-restore01-transport.txt",
+      "sha256": "D205624273258DA4D88E6C8D930BAE359B0DB928F42DED2AE7520D01D1834AED"
+    },
+    "e90/laptop-host-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-host-restore01.json",
+      "sha256": "471D96C103E53688EF5CD941DC6584BB7DD4F4231220D262C0AF3433238FF40E"
+    },
+    "e90/laptop-host27-deploy01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-host27-deploy01-transport.txt",
+      "sha256": "5EA6B8C5862F3C802CD5D5E815F1CB0BD8642C33F9C187530C223C0E9E03889C"
+    },
+    "e90/laptop-host27-deploy01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-host27-deploy01.json",
+      "sha256": "C707FC0D0F47EC77C2BED04B1EA0AF81C47000B057B649AAB72F2A38644376CD"
+    },
+    "e90/laptop-msg-recovery01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-recovery01-transport.txt",
+      "sha256": "CD44767EB9F8139624CA7068DFB46EB719743C39766B2818236281AA4FFE44AF"
+    },
+    "e90/laptop-msg-recovery01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-recovery01.json",
+      "sha256": "BEAC20C281A4D4FBE58E39D468640324BD78F91F727E17ECB6FB263A8762D1C8"
+    },
+    "e90/laptop-msg-recovery01.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-recovery01.txt",
+      "sha256": "1A0CA1F6CEFE88A9B2903CA98F8801D8590F1D5351B84B9820D573B553CA1499"
+    },
+    "e90/laptop-msg-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-restore01-transport.txt",
+      "sha256": "BBB102B32D24AF99DF586CDFDB8033D18AB99A4111572AB8242DF600AD441591"
+    },
+    "e90/laptop-msg-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-restore01.json",
+      "sha256": "AAF1BC0F097DFCF207AC8AEBBB4EF22F980031FC31F738CFECA0186BF4D3CFB2"
+    },
+    "e90/laptop-prearmed-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-prearmed-restore01-transport.txt",
+      "sha256": "0753B0083B3018097D57B6F88A83FC10B074AE8917D8453C93AC743BA4408365"
+    },
+    "e90/laptop-prearmed-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-prearmed-restore01.json",
+      "sha256": "11CAC438DBF689DEDDF942BEFD3A4732B33CDAB262531174D4981111A20C4A4A"
+    },
+    "e90/laptop-queued-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-queued-restore01-transport.txt",
+      "sha256": "AB95D4FC61FC068467222483CC00DDB7C96F6AA8988F5545741CDBF0D7A8F251"
+    },
+    "e90/laptop-queued-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-queued-restore01.json",
+      "sha256": "085EEA88E696C43C1586B725A574FA6ED315A8DFA00CD2D8970F3E1F768FFB90"
+    },
+    "e90/laptop-recovery01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-recovery01-transport.txt",
+      "sha256": "E80A198C4914A42D7C4B3E1A7E7D78956DD157B8B2C807EA89AD050AF051A6BB"
+    },
+    "e90/laptop-recovery01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-recovery01.json",
+      "sha256": "927F07B719599386917A258BF2FAA56F0DA328945A745FB56005F8337B9B6E41"
+    },
+    "e90/laptop-recovery01.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-recovery01.txt",
+      "sha256": "B9B4E282CF099D986E8B1AC08B25F32BFF73E546294316379563613DB084EA92"
+    },
+    "e90/laptop-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-restore01-transport.txt",
+      "sha256": "AB058FC7A591336AF5FF4272CF34681B25CF655E28CFF4F9FA014115052C9965"
+    },
+    "e90/laptop-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-restore01.json",
+      "sha256": "F5423FD280C69630F4E3FCAC0214B56EA40F313F0382421F4C79015C86596114"
+    },
+    "e90/laptop-worker-msg01-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-clock-before.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-msg01-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-clock-restored.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-msg01-dsp.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-dsp.txt",
+      "sha256": "ECB0FD57C5105D6CD09AB7D896EF55D32D5B4545C8D0E3D8372BCDDDC5300867"
+    },
+    "e90/laptop-worker-msg01-engine.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-engine.txt",
+      "sha256": "AE515DE458795416C781370A38213CB53AAD56D2270B33B20F87C1D44B25BDAF"
+    },
+    "e90/laptop-worker-msg01-inspect.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-inspect.txt",
+      "sha256": "DA8A2552E5381F1D7F76CDDA32DF869BC26601C4BC2D68AE40FA1939AF610799"
+    },
+    "e90/laptop-worker-msg01-log-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-log-before.txt",
+      "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D"
+    },
+    "e90/laptop-worker-msg01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-transport.txt",
+      "sha256": "EF83C167A970EE50D3642CB225EFC7BF413E44315085682069F3AD0F25745F04"
+    },
+    "e90/laptop-worker-msg01-worker-message.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-worker-message.txt",
+      "sha256": "1A0CA1F6CEFE88A9B2903CA98F8801D8590F1D5351B84B9820D573B553CA1499"
+    },
+    "e90/laptop-worker-msg01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01.json",
+      "sha256": "B073139E968037A9C408EB17E7316B27FD2607F7AAA51A0C410253A64C0D5CFD"
+    },
+    "e90/laptop-worker-prearmed27-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-clock-before.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-prearmed27-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-clock-restored.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-prearmed27-dsp.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-dsp.txt",
+      "sha256": "8AF72E7118F1D2AB339CC34E5FE070E12F195A0DC509D3152E8F2FF0D696C0D6"
+    },
+    "e90/laptop-worker-prearmed27-engine.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-engine.txt",
+      "sha256": "69E612DF18263119658306444AC946E98C648842F01E0CC35F68DA1D7F57EF77"
+    },
+    "e90/laptop-worker-prearmed27-inspect.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-inspect.txt",
+      "sha256": "CE5E7D2F28C7A9383EA00B900577BFCDE971B14909261EFFBDD96570ED023D80"
+    },
+    "e90/laptop-worker-prearmed27-log-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-log-before.txt",
+      "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D"
+    },
+    "e90/laptop-worker-prearmed27-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-transport.txt",
+      "sha256": "5E58F054DC2B68507DDCFC41CA0A9509FBB775448CF955DFF8D55800182CAEB2"
+    },
+    "e90/laptop-worker-prearmed27-worker-message.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-worker-message.txt",
+      "sha256": "E94AC469AF7F92D717D48F013B44E33338A030D448E9AB3DCFB77FDFFB82133D"
+    },
+    "e90/laptop-worker-prearmed27.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27.json",
+      "sha256": "984D23ABAE0DD6A98241A1AD099A86229CE8E93E385299BF1C87940F372BA931"
+    },
+    "e90/laptop-worker-queued01-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-clock-before.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-queued01-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-clock-restored.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-queued01-dsp.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-dsp.txt",
+      "sha256": "1EBB0512CD449C5D2F76CA1B881A77460C191870F0207F5E60729483643F8E84"
+    },
+    "e90/laptop-worker-queued01-engine.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-engine.txt",
+      "sha256": "E40EEC48DB515452E11A5ACD2CF621FEF69D7E7DA215CAE205653C262BA839F5"
+    },
+    "e90/laptop-worker-queued01-inspect.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-inspect.txt",
+      "sha256": "CE5E7D2F28C7A9383EA00B900577BFCDE971B14909261EFFBDD96570ED023D80"
+    },
+    "e90/laptop-worker-queued01-log-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-log-before.txt",
+      "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D"
+    },
+    "e90/laptop-worker-queued01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-transport.txt",
+      "sha256": "0C3DCE2E6D33FA5FB3C258289C1FEFA1E380D5282A98D9EF24444AF58A1547E0"
+    },
+    "e90/laptop-worker-queued01-worker-message-queued.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-worker-message-queued.txt",
+      "sha256": "FD075EE43D3666A09FC5FFC09314E04D22FA403EB69B2F6471DEC0FB82402854"
+    },
+    "e90/laptop-worker-queued01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01.json",
+      "sha256": "62E9A131ED87473CD4471C58F5CBBCA05CAE45C4EFEED98AC105E35BD2CA6C8E"
+    },
+    "n95/final-verify01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-final-verify01-transport.txt",
+      "sha256": "24ECFED563E058FD9B8BB3470546E0E6148D5CEF09D6EE2982B6AB6F137F8A8A"
+    },
+    "n95/final-verify01.json": {
+      "path": "docs/evidence/2026-10-02/n95-final-verify01.json",
+      "sha256": "908531114B6993AF276E56E3C267E8AC2D0C22A694AF434D181211F208C5B57D"
+    },
+    "n95/host-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-host-restore01-transport.txt",
+      "sha256": "B250FC88F47143855237DF9778DFA0F46AD4633B917BF86192D66ED664D09E6C"
+    },
+    "n95/host-restore01.json": {
+      "path": "docs/evidence/2026-10-02/n95-host-restore01.json",
+      "sha256": "B61F89EF89B28112680B68F311B005BE778FCC8CF59BCF7863F1E1E3435D7454"
+    },
+    "n95/host28-deploy01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-host28-deploy01-transport.txt",
+      "sha256": "8A9A7898D8A4237998951224EFD8280CA9E2C3A1135266C8FB42269AF534172F"
+    },
+    "n95/host28-deploy01.json": {
+      "path": "docs/evidence/2026-10-02/n95-host28-deploy01.json",
+      "sha256": "D5CF9B827D3C69BC801ABD38980B013A31CBC01B7B26D72C71662DCF9783FA88"
+    },
+    "n95/originals.json": {
+      "path": "docs/evidence/2026-10-02/n95-originals.json",
+      "sha256": "163C5EE3E7D1782D284E3873E2A6BC6D7025DCCCBB582EE9E96665FFC80403DE"
+    },
+    "n95/restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-restore01-transport.txt",
+      "sha256": "447AB6B137C344389705705DCD9E8DCE3461A79A6915A84E078CAFEECCD2D57D"
+    },
+    "n95/restore01.json": {
+      "path": "docs/evidence/2026-10-02/n95-restore01.json",
+      "sha256": "4DA7B2794DA59D2DB931AB7CBC57D58C4CEA7C09848CBADE84A6C23AEB882252"
+    },
+    "n95/snapshot01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-snapshot01-transport.txt",
+      "sha256": "1F25957843A965848981EFA7D629A587FA083CC05C09851F0C4CDA16D5334CFB"
+    },
+    "n95/snapshot01.json": {
+      "path": "docs/evidence/2026-10-02/n95-snapshot01.json",
+      "sha256": "163C5EE3E7D1782D284E3873E2A6BC6D7025DCCCBB582EE9E96665FFC80403DE"
+    },
+    "n95/worker-msg01-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-clock-before.txt",
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    "n95/worker-msg01-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-clock-restored.txt",
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    "n95/worker-msg01-dsp.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-dsp.txt",
+      "sha256": "B7F10B08D8DCBE0B45E72B1AC8557E256CB9E27AD159AC06BBB4DB7D7E4468A8"
+    },
+    "n95/worker-msg01-engine.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-engine.txt",
+      "sha256": "07E21814C8D6BAE1E3E8F8EA28F06BF3D60DD9EE0D7867468A47DDD839408BF9"
+    },
+    "n95/worker-msg01-log-before.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-log-before.txt",
+      "sha256": "51201B91D6F2632262C522225CAC096D4D865C0D2D10B777829EF5101E4146CC"
+    },
+    "n95/worker-msg01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-transport.txt",
+      "sha256": "4949F30A7560CB864002DC1A38848BD750FED4B890ED1CB1568ACBFE333CF187"
+    },
+    "n95/worker-msg01.json": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01.json",
+      "sha256": "D1763851D50A83FBAD9CE8223131D5F370B281EB217693195E0F849AD9DEE86D"
+    },
+    "n95/worker-msg02-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-clock-before.txt",
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    "n95/worker-msg02-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-clock-restored.txt",
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    "n95/worker-msg02-dsp.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-dsp.txt",
+      "sha256": "D4F786CF3F5139E9DD63FB9A79221FCEF0C83615799D062C79A5CE36C5F27830"
+    },
+    "n95/worker-msg02-engine.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-engine.txt",
+      "sha256": "90B632CE3CBEB2A0AC55FF373BB8C09D1AF1FDD945C24BAAB3195A2916B8DEBD"
+    },
+    "n95/worker-msg02-inspect.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-inspect.txt",
+      "sha256": "B3F8CE3711444AD485D6D3943D15A1D11432BD78758A96B579BCF48B8B971437"
+    },
+    "n95/worker-msg02-log-before.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-log-before.txt",
+      "sha256": "51201B91D6F2632262C522225CAC096D4D865C0D2D10B777829EF5101E4146CC"
+    },
+    "n95/worker-msg02-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-transport.txt",
+      "sha256": "3C3612AA2589958C8AC8B167AAC7BAB04E588BBC05B13223BAD121C3AB1C2F30"
+    },
+    "n95/worker-msg02-worker-message.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-worker-message.txt",
+      "sha256": "BC0B3B917763315985D8907DDE2F1D062C20A1F777A4856E7E94F5DEFB821CD7"
+    },
+    "n95/worker-msg02.json": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02.json",
+      "sha256": "78C94209C65B9058E18E39A6B7E1975B0571F2243F332E1490E428E7C8EABD69"
+    },
+    "worker-message-checkpoint.json": {
+      "path": "docs/evidence/2026-10-02/worker-message-checkpoint.json",
+      "sha256": "EC8B4EAC800A2B881C06E322E8150D0E2885F7E3173C53A80E84C57D59621196"
+    }
+  },
+  "current_devices": {
+    "e90": {
+      "utc": "2026-10-02T18:42:06.159873+00:00",
+      "daemon_startTick": 61087,
+      "all_five_files_GET_equal": true,
+      "processes": {
+        "c55stream": 0,
+        "ocprobe": 0
+      },
+      "proof": {
+        "path": "docs/evidence/2026-10-02/e90-laptop-final-verify01.json",
+        "sha256": "5AE3A92F02B7DB9BAE3983BB1043ADA8F84CFFD11BF1330BC6A15010683F069A"
+      }
+    },
+    "n95": {
+      "utc": "2026-10-02T18:42:06.185800+00:00",
+      "daemon_startTick": 22918156,
+      "all_five_files_GET_equal": true,
+      "processes": {
+        "c55stream": 0,
+        "ocprobe": 0
+      },
+      "proof": {
+        "path": "docs/evidence/2026-10-02/n95-final-verify01.json",
+        "sha256": "908531114B6993AF276E56E3C267E8AC2D0C22A694AF434D181211F208C5B57D"
+      }
+    }
+  },
+  "finite_worker_message_diagnostics": [
+    {
+      "device": "e90",
+      "tag": "laptop-worker-msg01",
+      "host_version": 26,
+      "receive_timing": "before input",
+      "DSP_NODE_putMsg_result": 1,
+      "STRM_snapshot_received": true,
+      "ARM_receive": -33,
+      "ARM_record_observed_empty": null,
+      "created_delete_free_close_clean": true,
+      "FINAL_EXIT0": false,
+      "official_RUN_calls": 0,
+      "proof": {
+        "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-worker-message.txt",
+        "sha256": "1A0CA1F6CEFE88A9B2903CA98F8801D8590F1D5351B84B9820D573B553CA1499"
+      }
+    },
+    {
+      "device": "e90",
+      "tag": "laptop-worker-queued01",
+      "host_version": 27,
+      "receive_timing": "after output",
+      "DSP_NODE_putMsg_result": 1,
+      "STRM_snapshot_received": true,
+      "ARM_receive": -33,
+      "ARM_record_observed_empty": true,
+      "created_delete_free_close_clean": true,
+      "FINAL_EXIT0": false,
+      "official_RUN_calls": 0,
+      "proof": {
+        "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-worker-message-queued.txt",
+        "sha256": "FD075EE43D3666A09FC5FFC09314E04D22FA403EB69B2F6471DEC0FB82402854"
+      }
+    },
+    {
+      "device": "e90",
+      "tag": "laptop-worker-prearmed27",
+      "host_version": 27,
+      "receive_timing": "before input",
+      "DSP_NODE_putMsg_result": 1,
+      "STRM_snapshot_received": true,
+      "ARM_receive": -33,
+      "ARM_record_observed_empty": true,
+      "created_delete_free_close_clean": true,
+      "FINAL_EXIT0": false,
+      "official_RUN_calls": 0,
+      "proof": {
+        "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-worker-message.txt",
+        "sha256": "E94AC469AF7F92D717D48F013B44E33338A030D448E9AB3DCFB77FDFFB82133D"
+      }
+    },
+    {
+      "device": "n95",
+      "tag": "worker-msg02",
+      "host_version": 28,
+      "receive_timing": "before input",
+      "DSP_NODE_putMsg_result": 1,
+      "STRM_snapshot_received": true,
+      "ARM_receive": -33,
+      "ARM_record_observed_empty": true,
+      "created_delete_free_close_clean": true,
+      "FINAL_EXIT0": false,
+      "official_RUN_calls": 0,
+      "proof": {
+        "path": "docs/evidence/2026-10-02/n95-worker-msg02-worker-message.txt",
+        "sha256": "BC0B3B917763315985D8907DDE2F1D062C20A1F777A4856E7E94F5DEFB821CD7"
+      }
+    }
+  ]
+}

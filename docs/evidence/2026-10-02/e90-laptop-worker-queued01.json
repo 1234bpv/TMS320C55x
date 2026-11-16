@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-02T18:32:32.702282+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "d0-worker-message-queued",
+  "host_version_expected": 27,
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 77692928",
+    "tick 551336 startTick 61087 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55788",
+    "drive E freekb 1447668",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "618B21AC8B74A7326D89A644604ABD795BCFB9D240E674677D728C8309C7F0DE",
+  "clock_probes": [
+    {
+      "path": "laptop-worker-queued01-engine.log",
+      "sha256": "E40EEC48DB515452E11A5ACD2CF621FEF69D7E7DA215CAE205653C262BA839F5"
+    },
+    {
+      "path": "laptop-worker-queued01-dsp.log",
+      "sha256": "1EBB0512CD449C5D2F76CA1B881A77460C191870F0207F5E60729483643F8E84"
+    }
+  ],
+  "clock_exit": [
+    "EXIT 0 Kill"
+  ],
+  "clock_restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1249,
+    "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+    "equal": true
+  },
+  "steps": [
+    {
+      "label": "inspect",
+      "command": "inspect",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "laptop-worker-queued01-inspect.log",
+      "sha256": "CE5E7D2F28C7A9383EA00B900577BFCDE971B14909261EFFBDD96570ED023D80",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 77688832",
+        "tick 554806 startTick 61087 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55788",
+        "drive E freekb 1447688",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "worker-message-queued",
+      "command": "worker-message-queued",
+      "complete": false,
+      "run_error": "RuntimeError: process exit: ['EXIT -33 Kill']",
+      "journal": "laptop-worker-queued01-worker-message-queued.log",
+      "sha256": "FD075EE43D3666A09FC5FFC09314E04D22FA403EB69B2F6471DEC0FB82402854"
+    }
+  ],
+  "deployed": {
+    "remote": "E:\\c55stream.dll55l",
+    "bytes": 5616,
+    "sha256": "71B4D893956BEBD2575D0CF6A50706D75FC71AFD69F0D74B8EFBCD78ED0BC265",
+    "equal": true
+  },
+  "create_only_preflight_skipped": true,
+  "error": "RuntimeError: process exit: ['EXIT -33 Kill']"
+}

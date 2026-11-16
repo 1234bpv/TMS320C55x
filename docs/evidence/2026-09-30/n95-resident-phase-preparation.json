@@ -1,0 +1,70 @@
+{
+  "utc": "2026-09-30T17:19:20.886867+00:00",
+  "device": "n95",
+  "ip": "192.168.3.22",
+  "files": [
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "backup": "work/evidence/n95/stream-resident-phase-prepare-01-before.dll55l",
+      "bytes": 3668,
+      "sha256": "5B6BE15B20E73D8D318FDF9C5E5050C16AA28994BC422C891C2B0132EA4AB9F9"
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "backup": "work/evidence/n95/stream-resident-phase-prepare-01-before.log",
+      "bytes": 2067,
+      "sha256": "EFE51863940372EC52059E536E8C8B8D1FE222E779D2E4918DF01FDE501647E8"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "backup": "work/evidence/n95/stream-resident-phase-prepare-01-before-ocprobe.log",
+      "bytes": 1259,
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "readback": "work/evidence/n95/stream-resident-phase-prepare-01-ocprobe-restored.log",
+      "bytes": 1259,
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF",
+      "equal": true
+    },
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "readback": "work/evidence/n95/stream-resident-phase-prepare-01-dsp-readback.dll55l",
+      "bytes": 3136,
+      "sha256": "488C980B471F892F394D14CF4A47EDC9058C9A2DF1CBE9FC4EE0E1B13BF8246B",
+      "equal": true
+    }
+  ],
+  "clock_log_restored": true,
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 89845760",
+    "tick 22726924 startTick 7928381 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65988",
+    "drive E freekb 1070176",
+    "script IDLE"
+  ],
+  "clock_log": "work/evidence/n95/stream-resident-phase-prepare-01-clock.log",
+  "clock_profile": {
+    "uid": 536882564,
+    "profile": "RM-320 35.0.001/31.0.015",
+    "restore_code": 100
+  },
+  "stock_clock_guard": true,
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 89845760",
+    "tick 22730022 startTick 7928381 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65988",
+    "drive E freekb 1070176",
+    "script IDLE"
+  ]
+}

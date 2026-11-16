@@ -1,0 +1,209 @@
+{
+  "scope": "offline captured-driver contract plus fresh own-RAM failure/clock recovery; not loaded-module identity proof",
+  "variants": [
+    {
+      "name": "patcher.ldd",
+      "bytes": 1568,
+      "sha256": "423E4FF1405C10C3CED21BD8445D7179A69CACBEF0AA51AA8AB43B679A7F4D23",
+      "decompressed_code_sha256": "C492761D89300145AD4AFEC117306ED91639245471C2CEF78009937C095F13BA",
+      "instruction_checks": {
+        "00008608": "e2411064",
+        "00008624": "e3510005",
+        "0000863c": "00008648",
+        "00008644": "00008658",
+        "0000864c": "e5850000",
+        "00008658": "e5950000",
+        "00008668": "e5934000",
+        "00008670": "e3c4420f",
+        "00008678": "e5951000",
+        "00008680": "e1a03004",
+        "000087ec": "e51ff004",
+        "000087f0": "00000168"
+      },
+      "logical_channel": "RomPatcherPlus.Driver",
+      "getter_control": 103,
+      "copy_control": 105,
+      "free_shadow_control": 100,
+      "free_shadow_entry": "00008694",
+      "getter": "Kern::SuperPage (import360) -> *a1; returns0",
+      "copy": "*a1 destination, a2 descriptor pointer/low28 length -> copy router; no *a1 getter assignment"
+    },
+    {
+      "name": "patcherShadow.ldd",
+      "bytes": 1573,
+      "sha256": "8D6414CFE3583854044ED1CF9041F8D920FDC1D7C5BF7B3BD01EC659D9C4B753",
+      "decompressed_code_sha256": "CBBA127E291A53C6E09AD3C0DD0BCE21D11D1E778803CE61CD7C6A170F273086",
+      "instruction_checks": {
+        "0000860c": "e2411064",
+        "00008628": "e3510005",
+        "00008640": "0000864c",
+        "00008648": "0000865c",
+        "00008650": "e5850000",
+        "0000865c": "e5950000",
+        "0000866c": "e5934000",
+        "00008674": "e3c4420f",
+        "0000867c": "e5951000",
+        "00008684": "e1a03004",
+        "000087f8": "e51ff004",
+        "000087fc": "00000168"
+      },
+      "logical_channel": "RomPatcherPlus.Driver",
+      "getter_control": 103,
+      "copy_control": 105,
+      "free_shadow_control": 100,
+      "free_shadow_entry": "00008698",
+      "getter": "Kern::SuperPage (import360) -> *a1; returns0",
+      "copy": "*a1 destination, a2 descriptor pointer/low28 length -> copy router; no *a1 getter assignment"
+    },
+    {
+      "name": "patcherS3.ldd",
+      "bytes": 1609,
+      "sha256": "A9633C610C16B161B5F30E7686902C2F36A90F8C4594F156A192350726449BD3",
+      "decompressed_code_sha256": "B0D7CF0E1708AFF50018512D9ED4345B5731A6FF36DADB368E74116F1D3E0094",
+      "instruction_checks": {
+        "00008624": "e2411064",
+        "00008640": "e3510005",
+        "00008658": "00008664",
+        "00008660": "00008674",
+        "00008668": "e5850000",
+        "00008674": "e5950000",
+        "00008684": "e5934000",
+        "0000868c": "e3c4420f",
+        "00008694": "e5951000",
+        "0000869c": "e1a03004",
+        "00008818": "e51ff004",
+        "0000881c": "00000168"
+      },
+      "logical_channel": "RomPatcherPlus.Driver",
+      "getter_control": 103,
+      "copy_control": 105,
+      "free_shadow_control": 100,
+      "free_shadow_entry": "000086b0",
+      "getter": "Kern::SuperPage (import360) -> *a1; returns0",
+      "copy": "*a1 destination, a2 descriptor pointer/low28 length -> copy router; no *a1 getter assignment"
+    },
+    {
+      "name": "RDomain.ldd",
+      "bytes": 1561,
+      "sha256": "76C630AFA3E64952061A2058AE263D71E5B287D7C95BB0D1ECA686880509EECB",
+      "decompressed_code_sha256": "B75D3267BE3E0BBD5D668B3FC42050CE92CF09A0736A395065886DA9A49E46D4",
+      "instruction_checks": {
+        "00008608": "e2411064",
+        "00008624": "e3510005",
+        "00008644": "00008648",
+        "00008638": "000086c0",
+        "0000864c": "e5850000",
+        "000086c0": "e5950000",
+        "000086d0": "e5934000",
+        "000086d8": "e3c4420f",
+        "000086e0": "e5951000",
+        "000086e8": "e1a03004",
+        "000087e4": "e51ff004",
+        "000087e8": "00000168"
+      },
+      "logical_channel": "RomPatcherPlus.Driver",
+      "getter_control": 105,
+      "copy_control": 102,
+      "free_shadow_control": 104,
+      "free_shadow_entry": "00008710",
+      "getter": "Kern::SuperPage (import360) -> *a1; returns0",
+      "copy": "*a1 destination, a2 descriptor pointer/low28 length -> copy router; no *a1 getter assignment"
+    },
+    {
+      "name": "RDomainShadow.ldd",
+      "bytes": 1573,
+      "sha256": "B791DBCF70FB579F8B11C35AFC1133AC3BE4D32D47FEFD0795F36D86C6F41A2C",
+      "decompressed_code_sha256": "102DC7AEB5133CA73606F2A4692D4A33B329F2B76CC48530099008A1F945E65D",
+      "instruction_checks": {
+        "0000860c": "e2411064",
+        "00008628": "e3510005",
+        "00008648": "0000864c",
+        "0000863c": "000086c4",
+        "00008650": "e5850000",
+        "000086c4": "e5950000",
+        "000086d4": "e5934000",
+        "000086dc": "e3c4420f",
+        "000086e4": "e5951000",
+        "000086ec": "e1a03004",
+        "000087f0": "e51ff004",
+        "000087f4": "00000168"
+      },
+      "logical_channel": "RomPatcherPlus.Driver",
+      "getter_control": 105,
+      "copy_control": 102,
+      "free_shadow_control": 104,
+      "free_shadow_entry": "00008714",
+      "getter": "Kern::SuperPage (import360) -> *a1; returns0",
+      "copy": "*a1 destination, a2 descriptor pointer/low28 length -> copy router; no *a1 getter assignment"
+    }
+  ],
+  "clocks": [
+    {
+      "tag": "resume-oct04-clock01",
+      "boot": "67736 boot 0 by n",
+      "stock_verified": false,
+      "probes": [
+        {
+          "published_path": "docs/evidence/2026-10-04/e90-resume-oct04-clock01-engine.txt",
+          "published_sha256": "4A32D59D3585B32C45B8C0C63EBAE19DFD196412ADF26E2F8F88C3AF784E364C"
+        },
+        {
+          "published_path": "docs/evidence/2026-10-04/e90-resume-oct04-clock01-dsp.txt",
+          "published_sha256": "8D20016B544AEB95C092F1DAA283C0FCCEF1C1CAA987F00252509BC5FD5F5FDA"
+        }
+      ],
+      "clock_log_restored": {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "equal": true
+      }
+    },
+    {
+      "tag": "resume-oct04-clock02",
+      "boot": "67736 boot 0 by n",
+      "stock_verified": true,
+      "probes": [
+        {
+          "published_path": "docs/evidence/2026-10-04/e90-resume-oct04-clock02-engine.txt",
+          "published_sha256": "700F6953C175E7B61ABCBC9183A3F5181BB493DDD76419035811C7C80B669005"
+        },
+        {
+          "published_path": "docs/evidence/2026-10-04/e90-resume-oct04-clock02-dsp.txt",
+          "published_sha256": "46106DA5398B0D928C79580FDE627029FE27A33B2E144526C8B4A47A810738A4"
+        }
+      ],
+      "clock_log_restored": {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1249,
+        "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+        "equal": true
+      }
+    }
+  ],
+  "own_ram_failure": {
+    "published_path": "docs/evidence/2026-10-04/e90-resume-oct04-patcher-read01.txt",
+    "published_sha256": "0397E0F6F498530D4C9B0BB1A3B03457CE0C5EAFC7232A9E8E6A3FD962C8A25B",
+    "dsp_open": false,
+    "new_dsp_run": false
+  },
+  "observed_screen": {
+    "application": "RPDomain Plus",
+    "active": [
+      "c2z4bin ARM",
+      "Open4All RP+"
+    ],
+    "inactive": [
+      "c2z4bin THUMB",
+      "Install Server RP+"
+    ],
+    "local_bmp_sha256": "1123933A5BB082A0A9996F53797AE8D5E8CA4E7DAB8445E09D0AE39ECFDCE7C4"
+  },
+  "finding": "RDomain and standard patcher share the channel name but have incompatible control numbers. RDomain105 is the SuperPage getter, exactly consistent with the observed changed destination. Standard105 is descriptor copy. RDomain102/104 are copy/free-shadow.",
+  "limits": [
+    "saved RDomain API and observed control105 result agree; the actual loaded module code was not read",
+    "fresh clocks passed after user toggled patches, without a boot change; which toggle changed behavior is unknown",
+    "clock recovery cannot qualify earlier E90 runs retrospectively or explain historical automatic reboots",
+    "binaries/screenshots remain local; instruction words are audit checks, not a shipped vendor binary"
+  ]
+}

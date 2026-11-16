@@ -1,0 +1,69 @@
+{
+  "utc": "2026-09-30T14:13:05.032723+00:00",
+  "scope": "Static ROM contract; no E90 receive test or DSP RUN",
+  "ldd_sha256": {
+    "n95": "34EE45B4F1C0F394C1C06B4141709E025FA8205860E0FAAC83510EF8577ECD3A",
+    "e90": "07731D17142D8D45EF29229F00D7856135CE59D2F51935DB1DF96AD742E9A70D"
+  },
+  "ranges": {
+    "ldd_node_destructor": {
+      "n95_start": "801B4150",
+      "e90_start": "803F8790",
+      "bytes": 156,
+      "bytes_equal": true,
+      "n95_sha256": "6CB8E00FAAEF35D419CC1FA399B230A4EB36527384480C5EE93057FAD740B0F0",
+      "e90_sha256": "6CB8E00FAAEF35D419CC1FA399B230A4EB36527384480C5EE93057FAD740B0F0"
+    },
+    "cancel_saved_put_get": {
+      "n95_start": "801B418C",
+      "e90_start": "803F87CC",
+      "bytes": 48,
+      "bytes_equal": true,
+      "n95_sha256": "15516D89C817BA998BEAA03A7F2C4E5574347653D0E9EBE28E6C2F39CDDBE95E",
+      "e90_sha256": "15516D89C817BA998BEAA03A7F2C4E5574347653D0E9EBE28E6C2F39CDDBE95E"
+    },
+    "control7_free_task": {
+      "n95_start": "801B4DE4",
+      "e90_start": "803F9424",
+      "bytes": 132,
+      "bytes_equal": true,
+      "n95_sha256": "3EFF5A861A95E64E5AC44C9E3004029A97598E1948EF9FA2AE22968B93817C40",
+      "e90_sha256": "3EFF5A861A95E64E5AC44C9E3004029A97598E1948EF9FA2AE22968B93817C40"
+    },
+    "allocate_copy_arguments": {
+      "n95_start": "801B4EE8",
+      "e90_start": "803F9528",
+      "bytes": 12,
+      "bytes_equal": true,
+      "n95_sha256": "0FA107BE30C241868BFBB93630DAD754E8993EEC53275A2FAE3DD6026280B328",
+      "e90_sha256": "0FA107BE30C241868BFBB93630DAD754E8993EEC53275A2FAE3DD6026280B328"
+    },
+    "allocate_payload_forwarding": {
+      "n95_start": "801B4F70",
+      "e90_start": "803F95B0",
+      "bytes": 20,
+      "bytes_equal": true,
+      "n95_sha256": "C57E2CE76C110F7D14CB964C0C8C847DEEB2903FF2CE24ABF9C74B0903DF7E77",
+      "e90_sha256": "C57E2CE76C110F7D14CB964C0C8C847DEEB2903FF2CE24ABF9C74B0903DF7E77"
+    }
+  },
+  "allocation_record": {
+    "control": 4,
+    "raw_bytes": 32,
+    "header": "30000014",
+    "maximum": 20,
+    "reference_raw_offset": 16,
+    "padding_raw_offset": 28,
+    "sdk_TBuf8_20_bytes": 28,
+    "sdk_size_evidence": "src/c55stream.cpp compile-time assertion in successful v10 build",
+    "padding_use": "last copied word is not forwarded by this allocator",
+    "failure_causality": "over-read fixed; message failure cause not established"
+  },
+  "pending_receive": {
+    "task": 21,
+    "ldd_saved_status_offset": 84,
+    "destructor_completion": -3,
+    "control7_precondition": "PDD node has completed deletion and entered state4",
+    "hardware_scope": "N95 receive-created v9/v10: pending before delete, cancelled by free; no RUN"
+  }
+}

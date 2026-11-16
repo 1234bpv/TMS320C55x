@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-30T22:33:01.294816+00:00",
+  "device": "n95",
+  "variant": "resident-phase v1, types0/3/4/5",
+  "artifact_sha256": "488C980B471F892F394D14CF4A47EDC9058C9A2DF1CBE9FC4EE0E1B13BF8246B",
+  "create": 0,
+  "create_us": 7415,
+  "delete": -2,
+  "last_journal_line": "BEGIN close",
+  "final_logged": false,
+  "transport_timed_out": true,
+  "recovery": "n95-resident-phase-recovery.json",
+  "original_dsp_get_equal": true,
+  "interpretation": "The joint data-stamp/address check failed in delete. It does not distinguish data reinitialization from a different delete-code instance. A later lower uptime proves restart before recovery, without identifying its cause; no task/RUN in this probe."
+}

@@ -1,0 +1,52 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76247040
+< tick 9842159 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470664
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76247040
+< tick 9842247 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470664
+< script IDLE
+> PS ocprobe*
+< OK ps 0
+> PS c55stream*
+< OK ps 0
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\clock-selftest-level1-01-before.log
+> START E:\sys\bin\ocprobe.exe patcher level 1
+< OK proc 5
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+> WAIT 5 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 633 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\clock-selftest-level1-01.log
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 76247040
+< tick 9843450 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470664
+< script IDLE
+> PUT E:\ocprobe.log 1249
+< OK 1249
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\clock-selftest-level1-01-restored.log

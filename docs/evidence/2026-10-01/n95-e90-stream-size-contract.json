@@ -1,0 +1,88 @@
+{
+  "utc": "2026-10-01T01:01:41.522019+00:00",
+  "scope": "Static size-bearing instructions on both ROMs; hardware sizes must be tested separately",
+  "module_sha256": {
+    "n95_pdd": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF",
+    "e90_pdd": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4",
+    "n95_bridge": "69F6AD946DA3F6538B9DC47C0E02E7B0AA9DDEEDE368BCEBC4FBADB5FFCD0CBB",
+    "e90_bridge": "003D47B0778D1E6687BDEEB456E4E02BFE64D8763E4178CFAECFDDBA994C6FE2"
+  },
+  "ranges": {
+    "attributes_to_rms_stream_definition": {
+      "n95_start": "8019FE38",
+      "e90_start": "803E4478",
+      "bytes": 52,
+      "bytes_equal": true,
+      "n95_sha256": "016F8F0CD2944EBFE74605181CA387E8E56263BE501FA71053D089E74287E349",
+      "e90_sha256": "016F8F0CD2944EBFE74605181CA387E8E56263BE501FA71053D089E74287E349"
+    },
+    "input_properties_offset184": {
+      "n95_start": "8019FFA4",
+      "e90_start": "803E45E4",
+      "bytes": 16,
+      "bytes_equal": true,
+      "n95_sha256": "4348C6DA4D0DB1E2B95DEE7067C5DB53FEB5233B955B07D04BBF98F3622C08FE",
+      "e90_sha256": "4348C6DA4D0DB1E2B95DEE7067C5DB53FEB5233B955B07D04BBF98F3622C08FE"
+    },
+    "output_properties_offset1592": {
+      "n95_start": "801A00D4",
+      "e90_start": "803E4714",
+      "bytes": 20,
+      "bytes_equal": true,
+      "n95_sha256": "5CC2A1979DB094A01F5F0B4719D556C4FC0A742167775352FD115F511B483A15",
+      "e90_sha256": "5CC2A1979DB094A01F5F0B4719D556C4FC0A742167775352FD115F511B483A15"
+    },
+    "input_descriptor_length_to_request": {
+      "n95_start": "801A1B6C",
+      "e90_start": "803E61AC",
+      "bytes": 16,
+      "bytes_equal": true,
+      "n95_sha256": "E8AF73ECD334EF4FD1EE21E7B59D43B94578F13C50696C616FD1192B567BE518",
+      "e90_sha256": "E8AF73ECD334EF4FD1EE21E7B59D43B94578F13C50696C616FD1192B567BE518"
+    },
+    "output_descriptor_length_to_request": {
+      "n95_start": "801A1954",
+      "e90_start": "803E5F94",
+      "bytes": 16,
+      "bytes_equal": true,
+      "n95_sha256": "E8AF73ECD334EF4FD1EE21E7B59D43B94578F13C50696C616FD1192B567BE518",
+      "e90_sha256": "E8AF73ECD334EF4FD1EE21E7B59D43B94578F13C50696C616FD1192B567BE518"
+    },
+    "allocation_modes_positive_page_multiple": {
+      "n95_start": "80A5D8B8",
+      "e90_start": "803FA328",
+      "bytes": 20,
+      "bytes_equal": true,
+      "n95_sha256": "5491147D2EFBD2767F5486675C43E9C30595E36890FF882B5231F20E91D084F7",
+      "e90_sha256": "5491147D2EFBD2767F5486675C43E9C30595E36890FF882B5231F20E91D084F7"
+    }
+  },
+  "properties_offsets": {
+    "input": 184,
+    "output": 1592
+  },
+  "attributes_size_offset": 4,
+  "rms_stream_size_offset": 0,
+  "rms_stream_size_units": "C55 16-bit words; existing 256-word/512-byte hardware proof",
+  "transfer_descriptor_length_units": "ARM bytes, forwarded without a fixed 512-byte constant in these ranges",
+  "native_allocation": {
+    "modes": [
+      1,
+      2
+    ],
+    "positive_bytes": true,
+    "bytes_multiple": 4096,
+    "prototype_capacity_bytes": 4096
+  },
+  "prototype_packet_limits": {
+    "min_bytes": 512,
+    "max_bytes": 4096,
+    "even_bytes": true
+  },
+  "dcd_changed": false,
+  "limits": [
+    "These ranges do not establish the maximum driver or DSP allocator capacity.",
+    "Prototype bounds preserve at least 240 Q15 input values plus a 32-byte header.",
+    "Neither a hardware transfer nor negative lifecycle safety is inferred."
+  ]
+}

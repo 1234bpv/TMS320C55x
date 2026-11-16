@@ -1,0 +1,248 @@
+C55STREAM v18 command='worker-transfer reps=0 bytes=2304 frames=32' machine=20002496 fast_counter_hz=32768 firmware_rc=0 firmware='400.34.93
+21-04-2009
+RA-6
+(c)Nokia'
+library load=0
+ordinal 1 = 803faef3
+ordinal 2 = 803fafa9
+ordinal 3 = 803fb0ff
+ordinal 4 = 803fb12b
+ordinal 5 = 803fafd1
+ordinal 6 = 803faff5
+ordinal 7 = 803fb0e7
+ordinal 8 = 803faf4f
+ordinal 9 = 803faeaf
+ordinal 10 = 803fae79
+ordinal 11 = 803fae71
+ordinal 12 = 803fae71
+ordinal 13 = 803faea3
+ordinal 14 = 803faea3
+ordinal 15 = 803fa6e1
+ordinal 16 = 803fa6a7
+ordinal 17 = 803fa74b
+ordinal 18 = 803fa711
+ordinal 19 = 803fa77b
+ordinal 20 = 803fa78b
+ordinal 21 = 803fa69d
+ordinal 22 = 803fa69d
+ordinal 23 = 803fa6a5
+ordinal 24 = 803fa6a5
+ordinal 25 = 803fa551
+ordinal 26 = 803f9fa3
+ordinal 27 = 803fa421
+ordinal 28 = 803fa533
+ordinal 29 = 803fa371
+ordinal 30 = 803fa2ef
+ordinal 31 = 803fa45d
+ordinal 32 = 803fa1c1
+ordinal 33 = 803f9f6d
+ordinal 34 = 803fa513
+ordinal 35 = 803fa3c5
+ordinal 36 = 803f9f39
+ordinal 37 = 803f9f39
+ordinal 38 = 803f9f49
+ordinal 39 = 803f9f49
+profile guard=0 delta=ff99ca70
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=00700110
+BEGIN base load
+base load=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=00701730
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=1152 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=1152 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=9582
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN native buffer
+native buffer=0 address=ced41000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ced42000 length=0 max=4096
+BEGIN worker stream no_run=1 frames=32 packet_bytes=2304
+ARM CRC skipped transport measurement no_crc=1
+frame=1 put=0/0 get=0/0 wall_us=793 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=793
+SIZE frame=1 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=22 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=4648241
+frame=2 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=305 arm_crc_us=0 wait_us=457 completion_observed_us=762
+SIZE frame=2 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=5434441
+frame=3 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=3 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=6972109
+frame=4 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=4 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=10 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=7528070
+frame=5 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=244 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=5 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=8162469
+frame=6 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=762
+SIZE frame=6 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=8816614
+frame=7 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=7 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=9490004
+frame=8 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=8 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=8 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=17287152
+frame=9 put=0/0 get=0/0 wall_us=793 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=518 completion_observed_us=793
+SIZE frame=9 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=10 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=17827193
+frame=10 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=10 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=18440146
+frame=11 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=762
+SIZE frame=11 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=19076151
+frame=12 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=12 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=20612392
+frame=13 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=13 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=8 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=21207347
+frame=14 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=14 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=21822096
+frame=15 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=15 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=22534693
+frame=16 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=16 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=23149242
+frame=17 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=17 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=24743162
+frame=18 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=18 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=25455392
+frame=19 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=19 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=26068429
+frame=20 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=20 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=26644845
+frame=21 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=21 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=28586219
+frame=22 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=22 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=10 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=29182220
+frame=23 put=0/0 get=0/0 wall_us=946 crc=00000000
+  issue_us=915 arm_crc_us=0 wait_us=30 completion_observed_us=946
+SIZE frame=23 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=29872468
+frame=24 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=24 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=30528490
+frame=25 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=25 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=31180959
+frame=26 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=26 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=32774605
+frame=27 put=0/0 get=0/0 wall_us=762 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=488 completion_observed_us=762
+SIZE frame=27 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=33370434
+frame=28 put=0/0 get=0/0 wall_us=793 crc=00000000
+  issue_us=305 arm_crc_us=0 wait_us=488 completion_observed_us=793
+SIZE frame=28 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=10 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=34139839
+frame=29 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=29 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=34754419
+frame=30 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=30 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=36386126
+frame=31 put=0/0 get=0/0 wall_us=732 crc=00000000
+  issue_us=244 arm_crc_us=0 wait_us=457 completion_observed_us=732
+SIZE frame=31 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=0
+  dsp_stamp=37001850
+frame=32 put=0/0 get=0/0 wall_us=793 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=518 completion_observed_us=793
+SIZE frame=32 input_bytes=2304 output_bytes=2304 returned_words=1152 protocol=18 checked_payload_words=1136
+  result=0 expected=0 ticks=9 counts_per_ms=164 errors=0 stop=1
+  dsp_stamp=37558684
+state phase=worker frames complete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+WORKER STREAM PASS frames=32 creates=1 runs=0 useful_arm_crc=0 mode=0 reps=0 total_us=24392 packet_bytes=2304 no_crc=1
+state phase=before delete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=183
+delete=0 status=0
+state phase=worker deleted rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+free native out=0
+free native in=0
+BEGIN close
+WORKER CLEANUP PASS no_run=1 delete_free_native_close=0
+FINAL status=0

@@ -1,0 +1,44 @@
+{
+  "utc": "2026-10-04T00:29:43.007664+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "run",
+  "host_version_expected": 46,
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79695872",
+    "tick 248009 startTick 60715 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55712",
+    "drive E freekb 1447600",
+    "script IDLE"
+  ],
+  "wake_before": [
+    "OK wake"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "4FE07928E7AF97587A04B7DF32F16B0175CF2F3B1C38F1C9CB9927D7062929C3",
+  "exit": [
+    "EXIT 0 Kill"
+  ],
+  "journal_sha256": "4067BD9C8CD0F4FF14307D8FDC8D03428C5CD3BBFB72EB5AD5D59B8B0C48FBFB",
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79679488",
+    "tick 248736 startTick 60715 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55712",
+    "drive E freekb 1447620",
+    "script IDLE"
+  ]
+}

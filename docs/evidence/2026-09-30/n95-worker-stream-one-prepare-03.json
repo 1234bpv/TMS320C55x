@@ -1,0 +1,96 @@
+{
+  "utc": "2026-09-30T23:13:29.875041+00:00",
+  "device": "n95",
+  "ip": "192.168.3.22",
+  "files": [
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "backup": "work/evidence/n95/stream-worker-v16-one-prepare-03-before.dll55l",
+      "bytes": 3668,
+      "sha256": "5B6BE15B20E73D8D318FDF9C5E5050C16AA28994BC422C891C2B0132EA4AB9F9"
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "backup": "work/evidence/n95/stream-worker-v16-one-prepare-03-before.log",
+      "bytes": 2719,
+      "sha256": "C63203761A82BBECEE97B6DDA2B60FF89D786A110AA3D4651CB64E4EC1207593"
+    },
+    {
+      "remote": "E:\\sys\\bin\\c55stream.exe",
+      "backup": "work/evidence/n95/stream-worker-v16-one-prepare-03-before.exe",
+      "bytes": 24464,
+      "sha256": "2464B4E80FB89EF391774BE7CE34E2FBB43DC83342B5A125AA1241A22E367423"
+    },
+    {
+      "remote": "C:\\sys\\hash\\c55stream.exe",
+      "backup": "work/evidence/n95/stream-worker-v16-one-prepare-03-before.hash",
+      "bytes": 20,
+      "sha256": "C71D437E30BA610DADA480D1D368EF74BA56E1E288889426E1B8DB48291C806F"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "backup": "work/evidence/n95/stream-worker-v16-one-prepare-03-before-ocprobe.log",
+      "bytes": 1259,
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "readback": "work/evidence/n95/stream-worker-v16-one-prepare-03-ocprobe-restored.log",
+      "bytes": 1259,
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF",
+      "equal": true
+    },
+    {
+      "remote": "E:\\sys\\bin\\c55stream.exe",
+      "readback": "work/evidence/n95/stream-worker-v16-one-prepare-03-host-readback.exe",
+      "bytes": 24464,
+      "sha256": "AB016003DD44751FDDE19B57C37B9FD79E0D3A1BC40C0462EE4E9ADFAFFC43AB",
+      "equal": true
+    },
+    {
+      "remote": "C:\\sys\\hash\\c55stream.exe",
+      "readback": "work/evidence/n95/stream-worker-v16-one-prepare-03-host-readback.hash",
+      "bytes": 20,
+      "sha256": "26F048C5454021119E15A51C45F686444AAFC6E36D745A52E8AFB66285B855B2",
+      "equal": true
+    },
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "readback": "work/evidence/n95/stream-worker-v16-one-prepare-03-dsp-readback.dll55l",
+      "bytes": 4792,
+      "sha256": "DE7DF9266C254A954306476DA3399D152855EF459DF201671CDD4FB74B12A792",
+      "equal": true
+    }
+  ],
+  "clock_log_restored": true,
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 90202112",
+    "tick 21090986 startTick 17620669 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65972",
+    "drive E freekb 1070176",
+    "script IDLE"
+  ],
+  "clock_log": "work/evidence/n95/stream-worker-v16-one-prepare-03-clock.log",
+  "clock_profile": {
+    "uid": 536882564,
+    "profile": "RM-320 35.0.001/31.0.015",
+    "restore_code": 100
+  },
+  "stock_clock_guard": true,
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 90210304",
+    "tick 21094343 startTick 17620669 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65972",
+    "drive E freekb 1070176",
+    "script IDLE"
+  ]
+}

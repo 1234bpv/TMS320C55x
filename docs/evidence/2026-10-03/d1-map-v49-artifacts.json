@@ -1,0 +1,29 @@
+{
+  "candidate_revision": 49,
+  "no_dsp_access": true,
+  "host_version": 37,
+  "no_run": true,
+  "files": [
+    {
+      "sha256": "75E0A49B4532BB73D4D2A03BC6F898143F8646FBBB65643C9CADD0D84A5BFCED",
+      "path": "out/arm/c55stream.exe",
+      "bytes": 51688
+    },
+    {
+      "sha256": "9AE84E31EF6AA056EFBF067D3794DED57D84C9A7D0416BF2A68AA51CBD87D47D",
+      "path": "src/c55stream.cpp",
+      "bytes": 69465
+    },
+    {
+      "sha256": "4B5CAB67D20E61A1C51454166836E0150D73470FCC1C8E9A3011E892CB06D42E",
+      "path": "tools/e90_task_session.py",
+      "bytes": 35666
+    },
+    {
+      "sha256": "2847A8F53551C80258D9D585FCD6F6A370D35865EC85F0F8C5C4F2A4E9045CD4",
+      "path": "out/d1-host-v37-build-r49.log",
+      "bytes": 2925
+    }
+  ],
+  "mode": "dmm-map"
+}

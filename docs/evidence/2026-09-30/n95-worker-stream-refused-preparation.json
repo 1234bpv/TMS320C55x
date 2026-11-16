@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-30T23:12:54.077922+00:00",
+  "device": "n95",
+  "ip": "192.168.3.22",
+  "files": [
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "backup": "work/evidence/n95/stream-worker-v16-one-prepare-02-before.dll55l",
+      "bytes": 4792,
+      "sha256": "DE7DF9266C254A954306476DA3399D152855EF459DF201671CDD4FB74B12A792"
+    }
+  ],
+  "clock_log_restored": false,
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 90202112",
+    "tick 21055634 startTick 17620669 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65972",
+    "drive E freekb 1070176",
+    "script IDLE"
+  ],
+  "error": "RuntimeError: current phone DSP differs from expected image"
+}

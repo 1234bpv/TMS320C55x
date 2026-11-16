@@ -1,0 +1,16 @@
+{
+  "source": "../PS1Emulator/pcsx_rearmed/libpcsxcore/mdec.c",
+  "source_sha256": "AB19602EA3CF2DA4E05C4FDC7C4D689E801C3662E3833232B7028777187C2065",
+  "kernel_LF_sha256": "06585F7A7E5538E5C4F79B0A3ECE2D20B0A095FDE4DC91A807EA689C3F29F4C5",
+  "ARM_snapshot_sha256": "B657AD8846C14178235C85658FFA3321F78476805B0D5CA9342D7159F417DD5C",
+  "C55_snapshot_sha256": "C9ECC1EE3B1ADB46D24FC9FB0BD8FA278409C9A21BD44EA0E3F19B797AAEE929",
+  "scope": "six IDCT blocks + exact current RGB24 conversion; RLE/dequantization/DMA/IRQ/state remain outside",
+  "C55_adaptations": [
+    "wrapper macro converts int to32-bit long; no16-bit coefficient narrowing",
+    "three rounding literals1<<19 become1UL<<19 before evaluation",
+    "GNU noinline attributes replaced by TI FUNC_CANNOT_INLINE pragmas",
+    "RGB24 output is192 packed32-bit words; u8 pointer is only cast back to aligned u32 within conversion"
+  ],
+  "ARM_baseline_limit": "snapshot can be built by CSL343; current emulator core usesGCCE463, which needs a matching baseline before claiming application A",
+  "license": "GPL-2.0-or-later; original copyright/license notice preserved"
+}

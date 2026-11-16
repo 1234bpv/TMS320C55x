@@ -1,0 +1,601 @@
+{
+  "scope": "saved N95 firmware exact instructions; no phone commands, E90 access or changes to deployed binaries",
+  "status": "ARM_path_verified_DSP_endpoint_unresolved",
+  "module_sha256": {
+    "utility": "54C7B093D847C29843EA2B12B746AD815E137CBBB7ABCDDCD67A97CEB85EFB5D",
+    "kernel": "11F1383F534AA1774B6AB222E2436B5B64D931292EF580FB5926253838CD9455",
+    "bridge": "69F6AD946DA3F6538B9DC47C0E02E7B0AA9DDEEDE368BCEBC4FBADB5FFCD0CBB"
+  },
+  "utility_order": [
+    378,
+    376
+  ],
+  "exports": {
+    "378": "8007343C",
+    "376": "8007344C"
+  },
+  "asserted_instruction_sites": 46,
+  "ranges": [
+    {
+      "label": "exports378_376",
+      "address": "8007343C",
+      "bytes": 32,
+      "sha256": "14184AAF836A984F80AE7A035AD3123175B75CDF76158BE9988AB23CC37A6300",
+      "instructions": [
+        {
+          "address": "8007343C",
+          "word": "E1A02001"
+        },
+        {
+          "address": "80073440",
+          "word": "E1A01000"
+        },
+        {
+          "address": "80073444",
+          "word": "E3A00006"
+        },
+        {
+          "address": "80073448",
+          "word": "EAFFFFC3"
+        },
+        {
+          "address": "8007344C",
+          "word": "E1A02001"
+        },
+        {
+          "address": "80073450",
+          "word": "E1A01000"
+        },
+        {
+          "address": "80073454",
+          "word": "E3A00006"
+        },
+        {
+          "address": "80073458",
+          "word": "EAFFFFA1"
+        }
+      ]
+    },
+    {
+      "label": "clean_dispatch",
+      "address": "8007335C",
+      "bytes": 48,
+      "sha256": "5C6B8BB82C827701AD8EE4351072B96D9046C8F90ADD1DB7C27988BCD53D6068",
+      "instructions": [
+        {
+          "address": "8007335C",
+          "word": "E1A03000"
+        },
+        {
+          "address": "80073360",
+          "word": "E1A00001"
+        },
+        {
+          "address": "80073364",
+          "word": "E1B01002"
+        },
+        {
+          "address": "80073368",
+          "word": "13130002"
+        },
+        {
+          "address": "8007336C",
+          "word": "012FFF1E"
+        },
+        {
+          "address": "80073370",
+          "word": "E59F2260"
+        },
+        {
+          "address": "80073374",
+          "word": "E592300C"
+        },
+        {
+          "address": "80073378",
+          "word": "E5D22020"
+        },
+        {
+          "address": "8007337C",
+          "word": "E1A02213"
+        },
+        {
+          "address": "80073380",
+          "word": "E1520001"
+        },
+        {
+          "address": "80073384",
+          "word": "2AFFE8B8"
+        },
+        {
+          "address": "80073388",
+          "word": "3AFFE8C5"
+        }
+      ]
+    },
+    {
+      "label": "invalidate_dispatch",
+      "address": "800732E4",
+      "bytes": 80,
+      "sha256": "C36098336950197C20D4AABA5C805547850C30362F2170F45B94D32560319552",
+      "instructions": [
+        {
+          "address": "800732E4",
+          "word": "E92D41F0"
+        },
+        {
+          "address": "800732E8",
+          "word": "E1B04002"
+        },
+        {
+          "address": "800732EC",
+          "word": "E1A05000"
+        },
+        {
+          "address": "800732F0",
+          "word": "E1A07001"
+        },
+        {
+          "address": "800732F4",
+          "word": "08BD81F0"
+        },
+        {
+          "address": "800732F8",
+          "word": "E3150002"
+        },
+        {
+          "address": "800732FC",
+          "word": "E51F6028"
+        },
+        {
+          "address": "80073300",
+          "word": "0A000009"
+        },
+        {
+          "address": "80073304",
+          "word": "E5D60044"
+        },
+        {
+          "address": "80073308",
+          "word": "E596102C"
+        },
+        {
+          "address": "8007330C",
+          "word": "E1A00011"
+        },
+        {
+          "address": "80073310",
+          "word": "E1500004"
+        },
+        {
+          "address": "80073314",
+          "word": "2A000001"
+        },
+        {
+          "address": "80073318",
+          "word": "EBFFE8F6"
+        },
+        {
+          "address": "8007331C",
+          "word": "EA000002"
+        },
+        {
+          "address": "80073320",
+          "word": "E1A01004"
+        },
+        {
+          "address": "80073324",
+          "word": "E1A00007"
+        },
+        {
+          "address": "80073328",
+          "word": "EBFFE8C2"
+        },
+        {
+          "address": "8007332C",
+          "word": "E3150001"
+        },
+        {
+          "address": "80073330",
+          "word": "08BD81F0"
+        }
+      ]
+    },
+    {
+      "label": "invalidate_MVA",
+      "address": "8006D638",
+      "bytes": 52,
+      "sha256": "A338D015BA33558DE55C9AA95424849C89749B9D9F69F6594CC73C6BAD46D024",
+      "instructions": [
+        {
+          "address": "8006D638",
+          "word": "E51F20C8"
+        },
+        {
+          "address": "8006D63C",
+          "word": "E1D230B6"
+        },
+        {
+          "address": "8006D640",
+          "word": "E243C001"
+        },
+        {
+          "address": "8006D644",
+          "word": "E00CC000"
+        },
+        {
+          "address": "8006D648",
+          "word": "E081100C"
+        },
+        {
+          "address": "8006D64C",
+          "word": "E243C001"
+        },
+        {
+          "address": "8006D650",
+          "word": "E1C0000C"
+        },
+        {
+          "address": "8006D654",
+          "word": "E081100C"
+        },
+        {
+          "address": "8006D658",
+          "word": "E0511003"
+        },
+        {
+          "address": "8006D65C",
+          "word": "2E070F36"
+        },
+        {
+          "address": "8006D660",
+          "word": "E0800003"
+        },
+        {
+          "address": "8006D664",
+          "word": "8AFFFFFB"
+        },
+        {
+          "address": "8006D668",
+          "word": "E12FFF1E"
+        }
+      ]
+    },
+    {
+      "label": "clean_MVA",
+      "address": "8006D66C",
+      "bytes": 56,
+      "sha256": "E3645232D0F25E08F3CFA5BA87B0E0F9A7D1429D85D610962A0312212364554D",
+      "instructions": [
+        {
+          "address": "8006D66C",
+          "word": "E51F20FC"
+        },
+        {
+          "address": "8006D670",
+          "word": "E1D230B6"
+        },
+        {
+          "address": "8006D674",
+          "word": "E243C001"
+        },
+        {
+          "address": "8006D678",
+          "word": "E00CC000"
+        },
+        {
+          "address": "8006D67C",
+          "word": "E081100C"
+        },
+        {
+          "address": "8006D680",
+          "word": "E243C001"
+        },
+        {
+          "address": "8006D684",
+          "word": "E1C0000C"
+        },
+        {
+          "address": "8006D688",
+          "word": "E081100C"
+        },
+        {
+          "address": "8006D68C",
+          "word": "E0511003"
+        },
+        {
+          "address": "8006D690",
+          "word": "2E070F3A"
+        },
+        {
+          "address": "8006D694",
+          "word": "E0800003"
+        },
+        {
+          "address": "8006D698",
+          "word": "8AFFFFFB"
+        },
+        {
+          "address": "8006D69C",
+          "word": "EE071F9A"
+        },
+        {
+          "address": "8006D6A0",
+          "word": "E12FFF1E"
+        }
+      ]
+    },
+    {
+      "label": "clean_SetWay",
+      "address": "8006D6A4",
+      "bytes": 84,
+      "sha256": "94E31234E1C78EBBC3BC63ED4E914211ED534D43C0D49A07B3DFD3604AF81D25",
+      "instructions": [
+        {
+          "address": "8006D6A4",
+          "word": "E51F0134"
+        },
+        {
+          "address": "8006D6A8",
+          "word": "E5901018"
+        },
+        {
+          "address": "8006D6AC",
+          "word": "E1D020B6"
+        },
+        {
+          "address": "8006D6B0",
+          "word": "E1D030B0"
+        },
+        {
+          "address": "8006D6B4",
+          "word": "E590C014"
+        },
+        {
+          "address": "8006D6B8",
+          "word": "E3A00000"
+        },
+        {
+          "address": "8006D6BC",
+          "word": "EE070F5A"
+        },
+        {
+          "address": "8006D6C0",
+          "word": "E0800002"
+        },
+        {
+          "address": "8006D6C4",
+          "word": "EE070F5A"
+        },
+        {
+          "address": "8006D6C8",
+          "word": "E0800002"
+        },
+        {
+          "address": "8006D6CC",
+          "word": "EE070F5A"
+        },
+        {
+          "address": "8006D6D0",
+          "word": "E0800002"
+        },
+        {
+          "address": "8006D6D4",
+          "word": "EE070F5A"
+        },
+        {
+          "address": "8006D6D8",
+          "word": "E0800002"
+        },
+        {
+          "address": "8006D6DC",
+          "word": "E1100001"
+        },
+        {
+          "address": "8006D6E0",
+          "word": "E1C00001"
+        },
+        {
+          "address": "8006D6E4",
+          "word": "1080000C"
+        },
+        {
+          "address": "8006D6E8",
+          "word": "E2533004"
+        },
+        {
+          "address": "8006D6EC",
+          "word": "1AFFFFF2"
+        },
+        {
+          "address": "8006D6F0",
+          "word": "EE073F9A"
+        },
+        {
+          "address": "8006D6F4",
+          "word": "E12FFF1E"
+        }
+      ]
+    },
+    {
+      "label": "clean_invalidate_SetWay",
+      "address": "8006D6F8",
+      "bytes": 84,
+      "sha256": "E51A44D50C5908F948A71D7B8D090747843F88F4CF6020F6902DBF95762C95FB",
+      "instructions": [
+        {
+          "address": "8006D6F8",
+          "word": "E51F0188"
+        },
+        {
+          "address": "8006D6FC",
+          "word": "E5901018"
+        },
+        {
+          "address": "8006D700",
+          "word": "E1D020B6"
+        },
+        {
+          "address": "8006D704",
+          "word": "E1D030B0"
+        },
+        {
+          "address": "8006D708",
+          "word": "E590C014"
+        },
+        {
+          "address": "8006D70C",
+          "word": "E3A00000"
+        },
+        {
+          "address": "8006D710",
+          "word": "EE070F5E"
+        },
+        {
+          "address": "8006D714",
+          "word": "E0800002"
+        },
+        {
+          "address": "8006D718",
+          "word": "EE070F5E"
+        },
+        {
+          "address": "8006D71C",
+          "word": "E0800002"
+        },
+        {
+          "address": "8006D720",
+          "word": "EE070F5E"
+        },
+        {
+          "address": "8006D724",
+          "word": "E0800002"
+        },
+        {
+          "address": "8006D728",
+          "word": "EE070F5E"
+        },
+        {
+          "address": "8006D72C",
+          "word": "E0800002"
+        },
+        {
+          "address": "8006D730",
+          "word": "E1100001"
+        },
+        {
+          "address": "8006D734",
+          "word": "E1C00001"
+        },
+        {
+          "address": "8006D738",
+          "word": "1080000C"
+        },
+        {
+          "address": "8006D73C",
+          "word": "E2533004"
+        },
+        {
+          "address": "8006D740",
+          "word": "1AFFFFF2"
+        },
+        {
+          "address": "8006D744",
+          "word": "EE073F9A"
+        },
+        {
+          "address": "8006D748",
+          "word": "E12FFF1E"
+        }
+      ]
+    }
+  ],
+  "branches": [
+    {
+      "address": "80073448",
+      "target": "8007335C"
+    },
+    {
+      "address": "80073458",
+      "target": "800732E4"
+    },
+    {
+      "address": "80073384",
+      "target": "8006D66C"
+    },
+    {
+      "address": "80073388",
+      "target": "8006D6A4"
+    },
+    {
+      "address": "80073318",
+      "target": "8006D6F8"
+    },
+    {
+      "address": "80073328",
+      "target": "8006D638"
+    },
+    {
+      "address": "8006D698",
+      "target": "8006D68C"
+    },
+    {
+      "address": "8006D6EC",
+      "target": "8006D6BC"
+    },
+    {
+      "address": "8006D664",
+      "target": "8006D658"
+    },
+    {
+      "address": "8006D740",
+      "target": "8006D710"
+    }
+  ],
+  "cp15_operations": {
+    "clean_MVA": [
+      "8006D690"
+    ],
+    "clean_SetWay": [
+      "8006D6BC",
+      "8006D6C4",
+      "8006D6CC",
+      "8006D6D4"
+    ],
+    "invalidate_MVA": [
+      "8006D65C"
+    ],
+    "clean_invalidate_SetWay": [
+      "8006D710",
+      "8006D718",
+      "8006D720",
+      "8006D728"
+    ],
+    "DSB": [
+      "8006D69C",
+      "8006D6F0",
+      "8006D744"
+    ]
+  },
+  "interpretation": [
+    "Both two-argument exported wrappers pass internal mask6: mask0x2 selects data-cache work, mask0x1 is zero so instruction-cache work is skipped.",
+    "Ordinal378 dispatches to MVA clean or Set/Way clean according to the configured threshold; both branches end in CP15 c7,c10,4 (DSB).",
+    "Ordinal376 dispatches to MVA invalidate or whole-cache Set/Way clean-invalidate according to the configured threshold. The whole-cache branch includes DSB; the short MVA invalidate branch has no explicit DSB in its52bytes.",
+    "Whole-region utility2 always calls378 before376; an ARM dirty line created during DSP ownership could therefore overwrite DSP results during the clean phase.",
+    "ARM-side DSB is not evidence that an earlier DSP master write has reached SDRAM before its mailbox interrupt."
+  ],
+  "reference": {
+    "author": "Arm",
+    "url": "https://documentation-service.arm.com/static/5e8e4306fd977155116aade2",
+    "document": "ARM1136JF-S/J-S TRM DDI0211I r1p3",
+    "sections": [
+      "Table3-77,3-99/3-100 cache line operations",
+      "CP15 c7 Flush operations,3-105..3-107 DSB"
+    ],
+    "scope": "Instruction semantics only; not proof of the phone's core revision or OMAP interconnect acknowledgement rules"
+  },
+  "limits": [
+    "Runtime cache metadata/threshold and page-table attributes not dumped; both compiled threshold branches checked.",
+    "No claim that a short invalidate without a subsequent explicit DSB proves all cache-operation completion ordering; caller/context semantics remain separate.",
+    "Independent DSP endpoint-memory publication contract remains open; successful isolated jobs and measured WPE0 do not establish a general fence."
+  ]
+}

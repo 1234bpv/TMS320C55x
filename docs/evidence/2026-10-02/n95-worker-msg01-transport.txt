@@ -1,0 +1,69 @@
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 88010752
+< tick 24454136 startTick 22918156 boot 0 by n
+< ap Huawei
+< drive C freekb 65848
+< drive E freekb 1066048
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 88010752
+< tick 24454162 startTick 22918156 boot 0 by n
+< ap Huawei
+< drive C freekb 65848
+< drive E freekb 1066048
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> GET E:\sys\bin\c55stream.exe
+< OK 41476 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\worker-msg01-host-readback.exe
+> GET E:\c55stream.dll55l
+< OK 3668 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\worker-msg01-dsp-before.dll55l
+> GET E:\c55stream.log
+< OK 23054 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\worker-msg01-log-before.log
+> GET E:\ocprobe.log
+< OK 1259 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\worker-msg01-clock-before.log
+> START E:\sys\bin\ocprobe.exe patcher engine n95
+< OK proc 1
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+> WAIT 1 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1365 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\worker-msg01-engine.log
+> START E:\sys\bin\ocprobe.exe patcher dsp 1 n95
+< OK proc 2
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+> WAIT 2 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1459 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\worker-msg01-dsp.log
+> PUT E:\ocprobe.log 1259
+< OK 1259
+> GET E:\ocprobe.log
+< OK 1259 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\worker-msg01-clock-restored.log

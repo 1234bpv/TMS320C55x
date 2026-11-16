@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-01T11:14:35.449073+00:00",
+  "device": "n95",
+  "ip": "192.168.3.22",
+  "restore_requested": true,
+  "journal_recovered": true,
+  "dsp_restored": true,
+  "complete": true,
+  "journal": {
+    "path": "work/evidence/n95/wsola-v20-recovery-01.log",
+    "bytes": 23054,
+    "sha256": "51201B91D6F2632262C522225CAC096D4D865C0D2D10B777829EF5101E4146CC"
+  },
+  "current_dsp": {
+    "path": "work/evidence/n95/wsola-v20-recovery-01-current.dll55l",
+    "bytes": 5384,
+    "sha256": "87EDE15CE7F6C2101BA35D221B1747DC7F027B375D71EFC39FCE6E05436CCEED"
+  },
+  "info": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 94212096",
+    "tick 3022285 startTick 93219 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65948",
+    "drive E freekb 1070128",
+    "script IDLE"
+  ],
+  "ps": [
+    "OK ps 0"
+  ],
+  "restored_dsp": {
+    "path": "work/evidence/n95/wsola-v20-recovery-01-restored.dll55l",
+    "bytes": 3668,
+    "sha256": "5B6BE15B20E73D8D318FDF9C5E5050C16AA28994BC422C891C2B0132EA4AB9F9",
+    "equal": true
+  },
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 94212096",
+    "tick 3022546 startTick 93219 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65948",
+    "drive E freekb 1070128",
+    "script IDLE"
+  ]
+}

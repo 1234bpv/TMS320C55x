@@ -1,0 +1,146 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 77885440
+< tick 651819 startTick 61087 boot 0 by n
+< ap Huawei
+< drive C freekb 55788
+< drive E freekb 1447668
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 77885440
+< tick 651848 startTick 61087 boot 0 by n
+< ap Huawei
+< drive C freekb 55788
+< drive E freekb 1447668
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> GET C:\sys\bin\c55stream.exe
+< OK 41492 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-host-readback.exe
+> GET E:\c55stream.dll55l
+< OK 3668 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-dsp-before.dll55l
+> GET E:\c55stream.log
+< OK 21528 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-log-before.log
+> GET E:\ocprobe.log
+< OK 1249 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-clock-before.log
+> START E:\sys\bin\ocprobe.exe patcher engine e90
+< OK proc 9
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+> WAIT 9 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1246 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-engine.log
+> START E:\sys\bin\ocprobe.exe patcher dsp 1 e90
+< OK proc 10
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+> WAIT 10 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1340 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-dsp.log
+> PUT E:\ocprobe.log 1249
+< OK 1249
+> GET E:\ocprobe.log
+< OK 1249 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-clock-restored.log
+> START C:\sys\bin\c55stream.exe inspect
+< OK proc 11
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 0 c55stream.exe[e0001021]0001
+> WAIT 11 1
+< EXIT 0 Kill
+> GET E:\c55stream.log
+< OK 1084 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-inspect.log
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 77885440
+< tick 655126 startTick 61087 boot 0 by n
+< ap Huawei
+< drive C freekb 55788
+< drive E freekb 1447688
+< script IDLE
+> PUT E:\c55stream.dll55l 5616
+< OK 5616
+> GET E:\c55stream.dll55l
+< OK 5616 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-dsp-readback.dll55l
+> START C:\sys\bin\c55stream.exe worker-message
+< OK proc 12
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 0 c55stream.exe[e0001021]0001
+> WAIT 12 1
+< EXIT -33 Kill
+> GET E:\c55stream.log
+< OK 3686 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\laptop-worker-prearmed27-worker-message.log

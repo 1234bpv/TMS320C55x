@@ -1,0 +1,29 @@
+{
+  "scope": "saved firmware only; no phone access",
+  "n95": {
+    "module_sha256": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF",
+    "checked_instructions": 20,
+    "checked_calls": 3,
+    "base_load_dispatch": "8019A1A4",
+    "unconditional_stop_call": "8019A1D0",
+    "processor_state_offset": 8,
+    "running_state": 4,
+    "stop_board_slot": 68,
+    "start_board_slot": 64,
+    "stop_state": 1
+  },
+  "e90": {
+    "module_sha256": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4",
+    "checked_instructions": 20,
+    "checked_calls": 3,
+    "base_load_dispatch": "803DE7F4",
+    "unconditional_stop_call": "803DE820",
+    "processor_state_offset": 8,
+    "running_state": 4,
+    "stop_board_slot": 68,
+    "start_board_slot": 64,
+    "stop_state": 1
+  },
+  "conclusion": "PROC_Load stops and reloads an already running processor; host35 must attach without calling ordinal26",
+  "limit": "This call graph alone does not establish which runtime audio queue owns an active DSP task, or prove clean D0."
+}

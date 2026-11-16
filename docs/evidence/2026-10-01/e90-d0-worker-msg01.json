@@ -1,0 +1,83 @@
+{
+  "utc": "2026-10-02T12:14:53.666218+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "d0-worker-message",
+  "host_version_expected": 26,
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 80547840",
+    "tick 4422056 startTick 65704 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55788",
+    "drive E freekb 1447672",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "2EAC917E90CF78F18A6EA1DBD9EE117FF9CB2398C6269414E559B4140758D787",
+  "clock_probes": [
+    {
+      "path": "worker-msg01-engine.log",
+      "sha256": "3A9807A35929608BF5FFE5EC707A8EDA2E05BC09F54BD7E1AA4A4600228D0DAD"
+    },
+    {
+      "path": "worker-msg01-dsp.log",
+      "sha256": "94973C404BE80EFF4690979450AD81BB04B945DD799AF3CD91793021D2E2BD18"
+    }
+  ],
+  "clock_exit": [
+    "EXIT 0 Kill"
+  ],
+  "clock_restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1249,
+    "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+    "equal": true
+  },
+  "steps": [
+    {
+      "label": "inspect",
+      "command": "inspect",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "worker-msg01-inspect.log",
+      "sha256": "DA8A2552E5381F1D7F76CDDA32DF869BC26601C4BC2D68AE40FA1939AF610799",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 80539648",
+        "tick 4425992 startTick 65704 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 55784",
+        "drive E freekb 1447692",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "create",
+      "command": "create",
+      "complete": false,
+      "run_error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery",
+      "journal": "worker-msg01-create.log",
+      "sha256": "B9B4E282CF099D986E8B1AC08B25F32BFF73E546294316379563613DB084EA92"
+    }
+  ],
+  "deployed": {
+    "remote": "E:\\c55stream.dll55l",
+    "bytes": 5616,
+    "sha256": "71B4D893956BEBD2575D0CF6A50706D75FC71AFD69F0D74B8EFBCD78ED0BC265",
+    "equal": true
+  },
+  "error": "TimeoutError: deadline exceeded; no KILL; save journal and request manual recovery"
+}

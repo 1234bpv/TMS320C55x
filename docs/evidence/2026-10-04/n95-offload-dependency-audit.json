@@ -1,0 +1,640 @@
+{
+  "scope": "read-only current source dependency edges plus recomputation of published N95 cohorts66/67/68; no phone commands or emulator edits",
+  "status": "audit_complete",
+  "plan_status": "in_progress",
+  "sources": [
+    {
+      "path": "PS1Emulator/src/symbian/snd_symbian.cpp",
+      "sha256": "FAD06BA9F9916E5AE57C648A736511DC820CD571D809A34BB45285081D2B2946",
+      "excerpts": [
+        {
+          "line": 549,
+          "text": "\t\tconst TInt off = WsolaBestOffset(iWsTail, search, KWsolaHop, KWsolaRange);",
+          "sha256": "8083953A1010C68BAEC2FED12B5AE224AA352642BC0DDB1EB7673FE3803FB6BF"
+        },
+        {
+          "line": 550,
+          "text": "\t\tconst TInt16 *win = search + off * 2;",
+          "sha256": "E7CE3B4BC5082F1E69DD0D813D3520847A07F223C386808B26A742878BC01D78"
+        },
+        {
+          "line": 561,
+          "text": "\t\tMem::Copy(iWsTail, win + KWsolaHop * 2, KWsolaHop * 2 * sizeof(TInt16));",
+          "sha256": "EE4A6CD94A3A0F6D30D3C8A52A23D840703F316E576694087DB2E1C73B9AB5C5"
+        },
+        {
+          "line": 563,
+          "text": "\t\tMem::Move(iWsBuf, iWsBuf + ss * 2, (iWsLen - ss) * 2 * sizeof(TInt16));",
+          "sha256": "4D52B0FED270F56A386DDB0E72182A6D2FC09C247A6A39BBE32A685D6D4AB5C9"
+        },
+        {
+          "line": 610,
+          "text": "static TBool g_pumpAo = ETrue;",
+          "sha256": "D8B2D1842535AB79FB5C8C2EDE088FE338C4B081FCF160B5A88EDA65885BC80F"
+        },
+        {
+          "line": 702,
+          "text": "\tSPUasync(a, b);",
+          "sha256": "F1950F733F7AEE7D90FC90A5AAA0E06F5C668D8563FCE600345B518EFCC46CAC"
+        }
+      ]
+    },
+    {
+      "path": "PS1Emulator/pcsx_rearmed/libpcsxcore/mdec.c",
+      "sha256": "AB19602EA3CF2DA4E05C4FDC7C4D689E801C3662E3833232B7028777187C2065",
+      "excerpts": [
+        {
+          "line": 431,
+          "text": "static const unsigned short *rl2blk(int *blk, const unsigned short *mdec_rl) {",
+          "sha256": "B6AFBD574598E930A4762CBAFD56315BC1606E6351D0EC40ED7DA7461856C349"
+        },
+        {
+          "line": 466,
+          "text": "\t\tidct(blk, used_col);",
+          "sha256": "4B69EF5B84037568ADACC301A36B4D10347143CD08F0D82D9073F8736A774222"
+        },
+        {
+          "line": 645,
+          "text": "void psxDma1(u32 adr, u32 bcr, u32 chcr) {",
+          "sha256": "A96901FBE9228203329F40623331640B1C590B32DDD01C889CFB0F861F23282A"
+        },
+        {
+          "line": 731,
+          "text": "\t\t\tyuv2rgb24(blk, image);",
+          "sha256": "7DDDF6E665799B0FD684D04D8508952CD377365AC32F6390483008D354B3EF1D"
+        },
+        {
+          "line": 751,
+          "text": "\tset_event(PSXINT_MDECOUTDMA, words * MDEC_BIAS + MDEC_DELAY);",
+          "sha256": "30F7048B424EEC009C8D33A596B740BB8E254450D691F5779CF3D66FD42AC02F"
+        },
+        {
+          "line": 753,
+          "text": "\tpsxRegs.cycle += words * MDEC_BIAS / 4;",
+          "sha256": "FD7CA587A4454915C14074F4AC3ED154E39FD57CC089AC43EA067C4C1790871F"
+        }
+      ]
+    },
+    {
+      "path": "PS1Emulator/pcsx_rearmed/plugins/dfsound/spu.c",
+      "sha256": "40A587C546B8CF528D23DEA9F842A965CB38160BAB6628A2C60B4A3F952159E6",
+      "excerpts": [
+        {
+          "line": 722,
+          "text": "static void do_channels(int ns_to)",
+          "sha256": "24B86632B261748135615DAF6A45B992B6AB50D38D3546CDBCB9309450E429CC"
+        },
+        {
+          "line": 1184,
+          "text": "static const void * const worker = NULL;",
+          "sha256": "8E50AB69E3F29264F676BC76CC39A395C27BB57DD0A093ADDBE6841B211E93CB"
+        },
+        {
+          "line": 1278,
+          "text": "  if (force_no_thread || worker == NULL || !spu_config.iUseThread) {",
+          "sha256": "2C5D9954E411B3D49AE32AB1722C47BAF578054AF2714370678696BE0623707E"
+        },
+        {
+          "line": 858,
+          "text": "  MixCD(spu.SSumLR, RVB, ns_to, spu.decode_pos);",
+          "sha256": "38CE94D74154427494227BD3CB96CD19E1E7780DB27238325DBA2A20A2526304"
+        },
+        {
+          "line": 1280,
+          "text": "   do_samples_finish(spu.SSumLR, ns_to, silentch, spu.decode_pos);",
+          "sha256": "6BE44C18BA82D03AC725FCCD179ECC36D1966F28E67A63B3C9F69CA42AE19DAF"
+        },
+        {
+          "line": 1338,
+          "text": "    d = SSumLR[ns]; SSumLR[ns] = 0;",
+          "sha256": "17B40318336F7A31806EAF32095664F35308AB8E6853D155E76550375147922D"
+        },
+        {
+          "line": 1344,
+          "text": "    d = SSumLR[ns]; SSumLR[ns] = 0;",
+          "sha256": "17B40318336F7A31806EAF32095664F35308AB8E6853D155E76550375147922D"
+        },
+        {
+          "line": 1402,
+          "text": "  out_current->feed(spu.pSpuBuffer, (unsigned char *)spu.pS - spu.pSpuBuffer);",
+          "sha256": "4EA19E223BEFC2C3DC7BE4D4062387D17E2EDA9C859C786412594B24E0C96407"
+        }
+      ]
+    },
+    {
+      "path": "PS1Emulator/pcsx_rearmed/plugins/dfsound/dma.c",
+      "sha256": "F0C9F000D8E60D7C2F86256468BFF6BA8582485C32103FF2E594D488C5925C36",
+      "excerpts": [
+        {
+          "line": 44,
+          "text": " do_samples_if_needed(cycles, 1, 2);",
+          "sha256": "1CC8AC87CACA1B40560B455CDEB51AC8A09625E3138432FA453A8721E4D0CEE4"
+        },
+        {
+          "line": 71,
+          "text": " do_samples_if_needed(cycles + iSize*2 * 4, 1, 2);",
+          "sha256": "CFB67F3D0D6FAD582A408E02BB433231B5939E21EF460A2EB5AD41C4DBA53BB0"
+        },
+        {
+          "line": 73,
+          "text": " spu.bMemDirty = 1;",
+          "sha256": "E37AB434025CEBB0E72B33A07AF54FD75D35813771CA346350966697790CDFD5"
+        }
+      ]
+    },
+    {
+      "path": "PS1Emulator/src/symbian/stage1.cpp",
+      "sha256": "2C34191A9AB982F2E075FFC1661E793B67CC082E10620903D0BC5EDBCFA1CE31",
+      "excerpts": [
+        {
+          "line": 2157,
+          "text": "\tpsxCpu->Execute(&psxRegs);",
+          "sha256": "AB6F09B50EAAA05C2FD8C7AE1842B0416C405BED0822AB3589F77EFCF49BFA6B"
+        },
+        {
+          "line": 2197,
+          "text": "\t\tps1SndPump();   // service audio callbacks and refill buffer",
+          "sha256": "F9DC5F743CA9AD0562B97DD39BBF25DC52EA607C3DAC96BF50E0B4FAEC85503D"
+        }
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "cohort": 66,
+      "kernel": "mdec",
+      "published_result": "docs/evidence/2026-10-04/n95-mdec66-results.json",
+      "result_sha256": "BB5C4D40195CAAB654A95D65FAD14BCB08813A3EBDD9D1C20C2C835B7762D9F4",
+      "groups": {
+        "1": {
+          "jobs": 360,
+          "A_us": {
+            "count": 360,
+            "min": 32.4249267578125,
+            "mean": 79.53113979763455,
+            "p50": 78.2012939453125,
+            "p95": 108.7188720703125,
+            "p99": 181.1981201171875,
+            "max": 246.0479736328125
+          },
+          "T_ready_us": {
+            "count": 360,
+            "min": 2441.40625,
+            "mean": 2834.4896104600693,
+            "p50": 2655.029296875,
+            "p95": 4425.048828125,
+            "p99": 4974.365234375,
+            "max": 6683.349609375
+          },
+          "pack_us": {
+            "count": 360,
+            "min": 396.728515625,
+            "mean": 436.1470540364583,
+            "p50": 427.24609375,
+            "p95": 427.24609375,
+            "p99": 976.5625,
+            "max": 2471.923828125
+          },
+          "serial_outside_notification_us": {
+            "count": 360,
+            "min": 518.798828125,
+            "mean": 590.7694498697916,
+            "p50": 549.31640625,
+            "p95": 610.3515625,
+            "p99": 1770.01953125,
+            "max": 2960.205078125
+          },
+          "pack_less_than_A_jobs": 0,
+          "serial_lower_bound_less_than_A_jobs": 0,
+          "paired_W_threshold_with_zero_setup_us": {
+            "count": 360,
+            "min": 2388.00048828125,
+            "mean": 2754.958470662435,
+            "p50": 2565.3839111328125,
+            "p95": 4384.9945068359375,
+            "p99": 4867.5537109375,
+            "max": 6612.7777099609375
+          },
+          "single_ARM_necessary_condition": {
+            "16": 0,
+            "64": 0,
+            "256": 0,
+            "1000": 0,
+            "10000": 0,
+            "1000000": 0
+          }
+        },
+        "2": {
+          "jobs": 360,
+          "A_us": {
+            "count": 360,
+            "min": 64.849853515625,
+            "mean": 124.45449829101562,
+            "p50": 110.626220703125,
+            "p95": 215.5303955078125,
+            "p99": 289.9169921875,
+            "max": 370.025634765625
+          },
+          "T_ready_us": {
+            "count": 360,
+            "min": 2105.712890625,
+            "mean": 3570.3023274739585,
+            "p50": 4272.4609375,
+            "p95": 5249.0234375,
+            "p99": 9460.44921875,
+            "max": 22369.384765625
+          },
+          "pack_us": {
+            "count": 360,
+            "min": 366.2109375,
+            "mean": 591.3628472222222,
+            "p50": 732.421875,
+            "p95": 793.45703125,
+            "p99": 1770.01953125,
+            "max": 2532.958984375
+          },
+          "serial_outside_notification_us": {
+            "count": 360,
+            "min": 488.28125,
+            "mean": 809.0549045138889,
+            "p50": 976.5625,
+            "p95": 1068.115234375,
+            "p99": 2227.783203125,
+            "max": 4699.70703125
+          },
+          "pack_less_than_A_jobs": 0,
+          "serial_lower_bound_less_than_A_jobs": 0,
+          "paired_W_threshold_with_zero_setup_us": {
+            "count": 360,
+            "min": 2037.04833984375,
+            "mean": 3445.847829182943,
+            "p50": 4133.2244873046875,
+            "p95": 5058.28857421875,
+            "p99": 9243.011474609375,
+            "max": 22224.42626953125
+          },
+          "single_ARM_necessary_condition": {
+            "16": 0,
+            "64": 0,
+            "256": 0,
+            "1000": 0,
+            "10000": 0,
+            "1000000": 0
+          }
+        },
+        "4": {
+          "jobs": 360,
+          "A_us": {
+            "count": 360,
+            "min": 146.8658447265625,
+            "mean": 270.3454759385851,
+            "p50": 295.6390380859375,
+            "p95": 377.655029296875,
+            "p99": 633.23974609375,
+            "max": 1173.0194091796875
+          },
+          "T_ready_us": {
+            "count": 360,
+            "min": 3784.1796875,
+            "mean": 6613.667805989583,
+            "p50": 7690.4296875,
+            "p95": 9002.685546875,
+            "p99": 14770.5078125,
+            "max": 105682.373046875
+          },
+          "pack_us": {
+            "count": 360,
+            "min": 701.904296875,
+            "mean": 1137.3731825086807,
+            "p50": 1403.80859375,
+            "p95": 1495.361328125,
+            "p99": 2410.888671875,
+            "max": 2929.6875
+          },
+          "serial_outside_notification_us": {
+            "count": 360,
+            "min": 946.044921875,
+            "mean": 1615.2275933159722,
+            "p50": 1922.607421875,
+            "p95": 2105.712890625,
+            "p99": 3967.28515625,
+            "max": 9399.4140625
+          },
+          "pack_less_than_A_jobs": 2,
+          "serial_lower_bound_less_than_A_jobs": 1,
+          "paired_W_threshold_with_zero_setup_us": {
+            "count": 360,
+            "min": 2977.3712158203125,
+            "mean": 6343.322330050998,
+            "p50": 7385.25390625,
+            "p95": 8697.509765625,
+            "p99": 14442.44384765625,
+            "max": 105327.60620117188
+          },
+          "single_ARM_necessary_condition": {
+            "16": 0,
+            "64": 0,
+            "256": 0,
+            "1000": 0,
+            "10000": 1,
+            "1000000": 1
+          }
+        }
+      }
+    },
+    {
+      "cohort": 67,
+      "kernel": "spu",
+      "published_result": "docs/evidence/2026-10-04/n95-spu67-results.json",
+      "result_sha256": "407873D41A1A2A6F9CEACF0266C3C9AFBAAE5270BF0338A87189EBE334E129C3",
+      "groups": {
+        "1": {
+          "jobs": 360,
+          "A_us": {
+            "count": 360,
+            "min": 3.5762786865234375,
+            "mean": 3.7342309951782227,
+            "p50": 3.5762786865234375,
+            "p95": 3.6954879760742188,
+            "p99": 10.371208190917969,
+            "max": 16.33167266845703
+          },
+          "T_ready_us": {
+            "count": 360,
+            "min": 1586.9140625,
+            "mean": 1711.8665907118057,
+            "p50": 1617.431640625,
+            "p95": 2044.677734375,
+            "p99": 3601.07421875,
+            "max": 4730.224609375
+          },
+          "pack_us": {
+            "count": 360,
+            "min": 183.10546875,
+            "mean": 208.45201280381946,
+            "p50": 213.623046875,
+            "p95": 213.623046875,
+            "p99": 244.140625,
+            "max": 1251.220703125
+          },
+          "serial_outside_notification_us": {
+            "count": 360,
+            "min": 244.140625,
+            "mean": 305.85394965277777,
+            "p50": 305.17578125,
+            "p95": 305.17578125,
+            "p99": 579.833984375,
+            "max": 1342.7734375
+          },
+          "pack_less_than_A_jobs": 0,
+          "serial_lower_bound_less_than_A_jobs": 0,
+          "paired_W_threshold_with_zero_setup_us": {
+            "count": 360,
+            "min": 1583.099365234375,
+            "mean": 1708.1323597166274,
+            "p50": 1613.8553619384766,
+            "p95": 2041.1014556884766,
+            "p99": 3597.4979400634766,
+            "max": 4726.648330688477
+          },
+          "single_ARM_necessary_condition": {
+            "16": 0,
+            "64": 0,
+            "256": 0,
+            "1000": 0,
+            "10000": 0,
+            "1000000": 0
+          }
+        },
+        "8": {
+          "jobs": 360,
+          "A_us": {
+            "count": 360,
+            "min": 13.470649719238281,
+            "mean": 23.599134551154243,
+            "p50": 27.179718017578125,
+            "p95": 34.689903259277344,
+            "p99": 42.79613494873047,
+            "max": 44.345855712890625
+          },
+          "T_ready_us": {
+            "count": 360,
+            "min": 1617.431640625,
+            "mean": 2927.398681640625,
+            "p50": 3295.8984375,
+            "p95": 4760.7421875,
+            "p99": 5004.8828125,
+            "max": 5462.646484375
+          },
+          "pack_us": {
+            "count": 360,
+            "min": 335.693359375,
+            "mean": 584.9202473958334,
+            "p50": 671.38671875,
+            "p95": 701.904296875,
+            "p99": 762.939453125,
+            "max": 1434.326171875
+          },
+          "serial_outside_notification_us": {
+            "count": 360,
+            "min": 366.2109375,
+            "mean": 670.7933213975695,
+            "p50": 762.939453125,
+            "p95": 823.974609375,
+            "p99": 1342.7734375,
+            "max": 1739.501953125
+          },
+          "pack_less_than_A_jobs": 0,
+          "serial_lower_bound_less_than_A_jobs": 0,
+          "paired_W_threshold_with_zero_setup_us": {
+            "count": 360,
+            "min": 1603.841781616211,
+            "mean": 2903.7995470894707,
+            "p50": 3268.599510192871,
+            "p95": 4733.562469482422,
+            "p99": 4973.888397216797,
+            "max": 5435.466766357422
+          },
+          "single_ARM_necessary_condition": {
+            "16": 0,
+            "64": 0,
+            "256": 0,
+            "1000": 0,
+            "10000": 0,
+            "1000000": 0
+          }
+        },
+        "24": {
+          "jobs": 360,
+          "A_us": {
+            "count": 360,
+            "min": 40.411949157714844,
+            "mean": 47.50755098130968,
+            "p50": 40.531158447265625,
+            "p95": 81.77757263183594,
+            "p99": 92.50640869140625,
+            "max": 98.10924530029297
+          },
+          "T_ready_us": {
+            "count": 360,
+            "min": 3509.521484375,
+            "mean": 4197.099473741319,
+            "p50": 3540.0390625,
+            "p95": 7293.701171875,
+            "p99": 8544.921875,
+            "max": 14312.744140625
+          },
+          "pack_us": {
+            "count": 360,
+            "min": 854.4921875,
+            "mean": 1046.7529296875,
+            "p50": 885.009765625,
+            "p95": 1800.537109375,
+            "p99": 1892.08984375,
+            "max": 2868.65234375
+          },
+          "serial_outside_notification_us": {
+            "count": 360,
+            "min": 885.009765625,
+            "mean": 1102.108425564236,
+            "p50": 946.044921875,
+            "p95": 1892.08984375,
+            "p99": 2258.30078125,
+            "max": 2960.205078125
+          },
+          "pack_less_than_A_jobs": 0,
+          "serial_lower_bound_less_than_A_jobs": 0,
+          "paired_W_threshold_with_zero_setup_us": {
+            "count": 360,
+            "min": 3468.751907348633,
+            "mean": 4149.59192276001,
+            "p50": 3499.627113342285,
+            "p95": 7212.281227111816,
+            "p99": 8460.044860839844,
+            "max": 14214.634895324707
+          },
+          "single_ARM_necessary_condition": {
+            "16": 0,
+            "64": 0,
+            "256": 0,
+            "1000": 0,
+            "10000": 0,
+            "1000000": 0
+          }
+        }
+      }
+    },
+    {
+      "cohort": 68,
+      "kernel": "wsola",
+      "published_result": "docs/evidence/2026-10-04/n95-wsola68-results.json",
+      "result_sha256": "B530B05AAAC21703D17B26F3B50C14F0304EA31AE0CB8EBAEF785FEDDB7F8BCE",
+      "groups": {
+        "current_SMLAD": {
+          "jobs": 360,
+          "A_us": {
+            "count": 360,
+            "min": 329.4944763183594,
+            "mean": 350.3825929429796,
+            "p50": 337.6007080078125,
+            "p95": 387.1917724609375,
+            "p99": 679.9697875976562,
+            "max": 727.6535034179688
+          },
+          "T_ready_us": {
+            "count": 360,
+            "min": 1007.080078125,
+            "mean": 1366.6788736979167,
+            "p50": 1098.6328125,
+            "p95": 2075.1953125,
+            "p99": 8514.404296875,
+            "max": 9155.2734375
+          },
+          "pack_us": {
+            "count": 360,
+            "min": 91.552734375,
+            "mean": 105.37041558159723,
+            "p50": 91.552734375,
+            "p95": 122.0703125,
+            "p99": 213.623046875,
+            "max": 549.31640625
+          },
+          "serial_outside_notification_us": {
+            "count": 360,
+            "min": 91.552734375,
+            "mean": 109.52419704861111,
+            "p50": 91.552734375,
+            "p95": 122.0703125,
+            "p99": 213.623046875,
+            "max": 549.31640625
+          },
+          "pack_less_than_A_jobs": 359,
+          "serial_lower_bound_less_than_A_jobs": 359,
+          "paired_W_threshold_with_zero_setup_us": {
+            "count": 360,
+            "min": 428.6766052246094,
+            "mean": 1016.296280754937,
+            "p50": 738.1439208984375,
+            "p95": 1714.7064208984375,
+            "p99": 8060.932159423828,
+            "max": 8806.228637695312
+          },
+          "single_ARM_necessary_condition": {
+            "16": 0,
+            "64": 0,
+            "256": 0,
+            "1000": 0,
+            "10000": 359,
+            "1000000": 359
+          }
+        }
+      }
+    }
+  ],
+  "dependencies": {
+    "WSOLA": {
+      "submit_boundary": "current template + search window",
+      "immediate_consumer": "offset selects win; overlap-add/tail replacement depend on win; next-hop template depends on previous offset",
+      "independent_W_in_unchanged_synchronous_call": "0 by scheduling structure, not a measured general emulator W budget",
+      "async_requirements": [
+        "Keep template/search buffers stable until completion; defer mutation/compaction.",
+        "One outstanding search per stream; refill/presentation/guest work is eligible only after proving data/state independence and audio deadlines.",
+        "Changing scheduler/reentrancy/guest frame placement is emulator integration outside this research task."
+      ]
+    },
+    "MDEC": {
+      "submit_boundary": "probe uses post-RLE coefficients + six IDCT + RGB24; source rl2blk interleaves RLE/dequant and IDCT per block",
+      "immediate_consumer": "yuv2rgb24 writes guest DMA destination before psxDma1 returns and schedules MDECOUTDMA",
+      "independent_W_in_unchanged_synchronous_call": "0 for a blocking replacement; guest-cycle event delay is not host wall-time W",
+      "async_requirements": [
+        "Split/stabilize coefficient job and RLE input/DMA output aliasing.",
+        "Prove guest RAM visibility, dynarec invalidation, pending DMA, busy/status/IRQ order before running guest CPU concurrently.",
+        "RLE of a next macroblock could be pipeline work only after proving independent buffers/state; not measured by cohort66."
+      ]
+    },
+    "SPU_plain_mix": {
+      "submit_boundary": "post-ADSR ChanBuf + volumes + initial stereo sums",
+      "immediate_consumer": "next voice reuses ChanBuf/updates shared SSumLR; MixCD/reverb/finish consume accumulated sums",
+      "independent_W_in_unchanged_synchronous_call": "0 for the blocking call; optional worker source is a different compiled/state contract",
+      "async_requirements": [
+        "Double-buffer/retain per-voice sample data and sum ownership until completion.",
+        "FMOD/capture/noise/ADSR and register/DMA/SPU RAM ordering must stay equivalent; normal voices are not proof for all voices.",
+        "Full SPU resident mirror/coherency and final PCM/state equivalence not measured by plain-mix67."
+      ]
+    }
+  },
+  "models": {
+    "ideal": "max(T,W)+q < A+W iff q<A and W>T+q-A; T=H+D,q=S/N",
+    "same_ARM_serial_submission_completion": "H+max(D,W)+q < A+W iff H+q<A and W>H+D+q-A",
+    "measured_lower_bound": "Ready ticks minus notification ticks is the serial pack/setup/result interval outside exchange; notification also includes ARM cache/submission/completion work so total H is not measured separately.",
+    "interpretation": "Failure of lower-bound+q<A rejects ideal same-thread overlap under this measured stage envelope; passing it is only necessary. Intervals are wall time, CPU time unmeasured. New zero-copy staging/job layout/scheduler can change H and requires new measurement."
+  },
+  "limits": [
+    "Source edges establish consumption/mutation order, not measured useful independent guest work or callback safety.",
+    "No current deployed emulator identity/runtime thread configuration audited; optional SPU worker is conditional and not proven active.",
+    "Elapsed packing/result stages include headers/padding/scratch initialization and any scheduling delay; not a minimum production packing or pure CPU-busy estimate.",
+    "Same-ARM lower bound assumes submission and completion are serial with W on that ARM thread; other placements/refactoring require a different model.",
+    "Measured kernels are isolated synthetic fixtures; neither source nor arithmetic is proof of full-game speedup/PCM/state correctness.",
+    "Independent endpoint publication and E90 frequency/restoration remain open; E90 deferred, no commands."
+  ]
+}

@@ -1,0 +1,345 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79679488
+< tick 933578 startTick 61377 boot 0 by n
+< ap Huawei
+< drive C freekb 55848
+< drive E freekb 1447780
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79679488
+< tick 933648 startTick 61377 boot 0 by n
+< ap Huawei
+< drive C freekb 55848
+< drive E freekb 1447780
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> GET C:\sys\bin\c55stream.exe
+< OK 35120 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-host-readback.exe
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-dsp-before.dll55l
+> GET E:\c55stream.log
+< OK 21528 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-log-before.log
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-clock-before.log
+> START E:\sys\bin\ocprobe.exe patcher engine e90
+< OK proc 1
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+> WAIT 1 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1246 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-engine.log
+> START E:\sys\bin\ocprobe.exe patcher dsp 1 e90
+< OK proc 2
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+> WAIT 2 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1340 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-dsp.log
+> PUT E:\ocprobe.log 1249
+< OK 1249
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-clock-restored.log
+> START C:\sys\bin\c55stream.exe inspect
+< OK proc 3
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 0 c55stream.exe[e0001021]0001
+> WAIT 3 1
+< EXIT 0 Kill
+> GET E:\c55stream.log
+< OK 1084 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-inspect.log
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79671296
+< tick 937623 startTick 61377 boot 0 by n
+< ap Huawei
+< drive C freekb 55844
+< drive E freekb 1447800
+< script IDLE
+> PUT E:\c55stream.dll55l 3952
+< OK 3952
+> GET E:\c55stream.dll55l
+< OK 3952 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-dsp-readback.dll55l
+> START C:\sys\bin\c55stream.exe create
+< OK proc 4
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 0 c55stream.exe[e0001021]0001
+> WAIT 4 1
+< EXIT 0 Kill
+> GET E:\c55stream.log
+< OK 1946 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\resume-sequence02-create.log
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79671296
+< tick 938706 startTick 61377 boot 0 by n
+< ap Huawei
+< drive C freekb 55844
+< drive E freekb 1447800
+< script IDLE
+> START C:\sys\bin\c55stream.exe run-transfer reps=0 bytes=512 frames=8
+< OK proc 5
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> PS c55stream*
+< OK ps 1
+< 1 c55stream.exe[e0001021]0001
+> GET E:\c55stream.log

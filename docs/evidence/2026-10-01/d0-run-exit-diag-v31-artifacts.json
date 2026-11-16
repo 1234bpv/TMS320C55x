@@ -1,0 +1,109 @@
+{
+  "utc": "2026-10-02T10:34:14.393941+00:00",
+  "variant": "generic library2, eight checked packets, STRM snapshots before RMS_EXIT and combined after receipt/idle; extra output reissue perturbs cleanup, diagnostic only",
+  "candidate_revision": 31,
+  "host_mode": "own DSP candidate",
+  "native_reference": null,
+  "native_library2": null,
+  "host_version": 25,
+  "protocol": 25,
+  "hardware_verified": false,
+  "d0_accepted_runs": 0,
+  "dll_dump_verification": true,
+  "imports_exist_in_saved_e90_baseimage": true,
+  "imports": [
+    "_MSG_ptoDSPBuffer",
+    "_MSG_toGPP",
+    "_NODE_wait",
+    "_MSG_maxMessages",
+    "_STRM_allocateBuffer",
+    "_MSG_pfromDSPBuffer",
+    "_CLK_countspms",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_CLK_gethtime",
+    "_NODE_getMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_STRM_create",
+    "_STRM_idle",
+    "_c_int00"
+  ],
+  "files": [
+    {
+      "path": "out/dsp/c55stream-run-exit-diag.dll55l",
+      "bytes": 5144,
+      "sha256": "29069D525B9209CA808F0D9315AA23BACCF222B44B6D6ABEFFC0B37B8EBB2833"
+    },
+    {
+      "path": "out/dsp/stream_node-run-exit-diag.asm",
+      "bytes": 43142,
+      "sha256": "1304180E5B9587B2713456B66522B49B2DD8A676F7E15855F2D9B8903D2BECAD"
+    },
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 39504,
+      "sha256": "CB74DE96012E3C9D4D7DDE6F783C6A746F75713B83DBF136DF03001C7035CA0A"
+    },
+    {
+      "path": "src/dsp/stream_resident_dcd.s55",
+      "bytes": 738,
+      "sha256": "4220828E5CC6759C8C04560EE352A830AA0EEFBAFD772A7ADBE90F2EE7220D4F"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 48995,
+      "sha256": "172A66E64E549EFBF74850AC3CF6151CFB1689A615111BB3F2EB730323710C39"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 29833,
+      "sha256": "012869B2C8671CEF96AFD051E7192357AA3A23995BFF0BFD9246143462DF4573"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 5586,
+      "sha256": "AC245A524B37187D03D7BC81876883C81A1AE3100831CDC782C7C0FBFE4687CB"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 534,
+      "sha256": "34B79FF0C08EA0EE2C2D37C6D14C864ABE8561575F26A8F69EAFE6B874835C2C"
+    },
+    {
+      "path": "out/sis/c55stream-exit-diag-v25_sha1.sis",
+      "bytes": 22416,
+      "sha256": "8D0E3BE832E8F81E2538A747D9904FBA37BDEF32F6FCDF614B00BB3EDD51E97A"
+    },
+    {
+      "path": "out/sis/c55stream-restore-v20-r32_sha1.sis",
+      "bytes": 19924,
+      "sha256": "6E6C81E0D9DC49999D96FD9FDBB51C98825FB5E5CEACF1B0D2F8D0A2C22AC543"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/d0-host-v25-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-run-exit-diag-v31-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-host-v25-sis.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-restore-v20-r32-sis-build.log",
+      "exit_code": 0
+    }
+  ],
+  "limits": [
+    "Assembly/import checks are not proof of RMS EXITACK delivery.",
+    "Fail-stop retains ownership and requires manual recovery; cancel safety is not proven.",
+    "The restore SIS contains the saved original v20 EXE; its package revision is independent of host version."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "utc": "2026-09-30T23:17:40.241042+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "revision": 16,
+  "installed": false,
+  "backups": [
+    {
+      "remote": "C:\\sys\\bin\\c55stream.exe",
+      "path": "work/evidence/e90/stream-host-v16-delivery-02-before.exe",
+      "bytes": 22408,
+      "sha256": "5F1C77CF7914312818F63D77AA950DED5B1208F454E986CF55C68EAD9E47274A"
+    },
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "path": "work/evidence/e90/stream-host-v16-delivery-02-before.dll55l",
+      "bytes": 3668,
+      "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1"
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "path": "work/evidence/e90/stream-host-v16-delivery-02-before.log",
+      "bytes": 2064,
+      "sha256": "6EF3AC580FE6104C41C87C258D520E755813A1F098C604CD7CE31239502C811B"
+    }
+  ],
+  "info": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 80220160",
+    "tick 3711534 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55868",
+    "drive E freekb 1470640",
+    "script IDLE"
+  ],
+  "sis": {
+    "remote": "E:\\c55stream-v16.sis",
+    "bytes": 14604,
+    "sha256": "6422DAE688C1C071843F5B26DB0707EE0CC6E2DC9EE57FAADBE6F9AC2C93BC5D",
+    "readback_equal": true
+  },
+  "open": [
+    "OK open"
+  ]
+}

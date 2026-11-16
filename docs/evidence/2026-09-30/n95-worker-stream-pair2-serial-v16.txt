@@ -1,0 +1,112 @@
+C55STREAM v16 command='worker-serial reps=10000' machine=20002d84 fast_counter_hz=32768 firmware_rc=0 firmware='V 35.0.001
+11-11-09
+RM-320
+N95(c)NMP'
+library load=0
+ordinal 1 = 80a5e483
+ordinal 2 = 80a5e539
+ordinal 3 = 80a5e68f
+ordinal 4 = 80a5e6bb
+ordinal 5 = 80a5e561
+ordinal 6 = 80a5e585
+ordinal 7 = 80a5e677
+ordinal 8 = 80a5e4df
+ordinal 9 = 80a5e43f
+ordinal 10 = 80a5e409
+ordinal 11 = 80a5e401
+ordinal 12 = 80a5e401
+ordinal 13 = 80a5e433
+ordinal 14 = 80a5e433
+ordinal 15 = 80a5dc71
+ordinal 16 = 80a5dc37
+ordinal 17 = 80a5dcdb
+ordinal 18 = 80a5dca1
+ordinal 19 = 80a5dd0b
+ordinal 20 = 80a5dd1b
+ordinal 21 = 80a5dc2d
+ordinal 22 = 80a5dc2d
+ordinal 23 = 80a5dc35
+ordinal 24 = 80a5dc35
+ordinal 25 = 80a5dae1
+ordinal 26 = 80a5d533
+ordinal 27 = 80a5d9b1
+ordinal 28 = 80a5dac3
+ordinal 29 = 80a5d901
+ordinal 30 = 80a5d87f
+ordinal 31 = 80a5d9ed
+ordinal 32 = 80a5d751
+ordinal 33 = 80a5d4fd
+ordinal 34 = 80a5daa3
+ordinal 35 = 80a5d955
+ordinal 36 = 80a5d4c9
+ordinal 37 = 80a5d4c9
+ordinal 38 = 80a5d4d9
+ordinal 39 = 80a5d4d9
+profile guard=0 delta=00000000
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=007000f0
+BEGIN base load
+base load=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=007016a8
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=9094
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN native buffer
+native buffer=0 address=ce841000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ce842000 length=0 max=4096
+BEGIN worker stream no_run=1 frames=8
+ARM CRC baseline bytes=65536 crc=cd837cd0 wall_us=19836
+frame=1 put=0/0 get=0/0 wall_us=32257 crc=cd837cd0
+  issue_us=152 arm_crc_us=19470 wait_us=12634 completion_observed_us=12786
+  result=-5480 expected=-5480 ticks=239853 counts_per_ms=164 errors=0 stop=0
+frame=2 put=0/0 get=0/0 wall_us=31158 crc=cd837cd0
+  issue_us=122 arm_crc_us=18371 wait_us=12634 completion_observed_us=12786
+  result=-4416 expected=-4416 ticks=239835 counts_per_ms=164 errors=0 stop=0
+frame=3 put=0/0 get=0/0 wall_us=31738 crc=cd837cd0
+  issue_us=122 arm_crc_us=18951 wait_us=12634 completion_observed_us=12786
+  result=1256 expected=1256 ticks=239834 counts_per_ms=164 errors=0 stop=0
+frame=4 put=0/0 get=0/0 wall_us=54504 crc=cd837cd0
+  issue_us=122 arm_crc_us=36804 wait_us=17547 completion_observed_us=17700
+  result=-1520 expected=-1520 ticks=331444 counts_per_ms=164 errors=0 stop=0
+frame=5 put=0/0 get=0/0 wall_us=62835 crc=cd837cd0
+  issue_us=274 arm_crc_us=37231 wait_us=25299 completion_observed_us=25573
+  result=-2248 expected=-2248 ticks=479668 counts_per_ms=164 errors=0 stop=0
+frame=6 put=0/0 get=0/0 wall_us=62377 crc=cd837cd0
+  issue_us=274 arm_crc_us=36834 wait_us=25268 completion_observed_us=25543
+  result=2144 expected=2144 ticks=479669 counts_per_ms=164 errors=0 stop=0
+frame=7 put=0/0 get=0/0 wall_us=62408 crc=cd837cd0
+  issue_us=274 arm_crc_us=36834 wait_us=25268 completion_observed_us=25543
+  result=1672 expected=1672 ticks=479669 counts_per_ms=164 errors=0 stop=0
+frame=8 put=0/0 get=0/0 wall_us=62561 crc=cd837cd0
+  issue_us=274 arm_crc_us=36926 wait_us=25329 completion_observed_us=25604
+  result=-848 expected=-848 ticks=479667 counts_per_ms=164 errors=0 stop=1
+state phase=worker frames complete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+WORKER STREAM PASS frames=8 creates=1 runs=0 useful_arm_crc=8 mode=0 reps=10000 total_us=399838
+state phase=before delete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=244
+delete=0 status=0
+state phase=worker deleted rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+free native out=0
+free native in=0
+BEGIN close
+WORKER CLEANUP PASS no_run=1 delete_free_native_close=0
+FINAL status=0

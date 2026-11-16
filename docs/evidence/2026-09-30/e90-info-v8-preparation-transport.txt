@@ -1,0 +1,72 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79560704
+< tick 3659863 startTick 42746 boot 1 by t
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470668
+< script IDLE
+2026-09-30T11:48:02.586233+00:00
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79560704
+< tick 3659939 startTick 42746 boot 1 by t
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470668
+< script IDLE
+2026-09-30T11:48:02.648226+00:00
+> PS c55stream*
+< OK ps 0
+2026-09-30T11:48:02.710597+00:00
+> PS ocprobe*
+< OK ps 0
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-02-before.dll55l
+> GET E:\c55stream.log
+< OK 2063 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-02-before.log
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-02-before-ocprobe.log
+2026-09-30T11:48:02.943037+00:00
+> START E:\sys\bin\ocprobe.exe patcher dsp 1 e90
+< OK proc 2
+2026-09-30T11:48:03.011544+00:00
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+2026-09-30T11:48:03.569682+00:00
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+2026-09-30T11:48:04.199336+00:00
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+2026-09-30T11:48:04.313799+00:00
+> WAIT 2 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1342 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-02-clock.log
+> PUT E:\ocprobe.log 1249
+< OK 1249
+> GET E:\ocprobe.log
+< OK 1249 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-02-ocprobe-restored.log
+> PUT E:\c55stream.dll55l 3668
+< OK 3668
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\stream-v8-info-guard-02-dsp-readback.dll55l
+2026-09-30T11:48:04.840325+00:00
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 79552512
+< tick 3662237 startTick 42746 boot 1 by t
+< ap Huawei
+< drive C freekb 55884
+< drive E freekb 1470668
+< script IDLE

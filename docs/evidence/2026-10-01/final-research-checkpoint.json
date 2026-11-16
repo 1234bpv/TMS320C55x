@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-01T11:40:38.811005+00:00",
+  "repository": {
+    "nameWithOwner": "1234bpv/TMS320C55x",
+    "url": "https://github.com/1234bpv/TMS320C55x",
+    "visibility": "PRIVATE"
+  },
+  "verified_source_checkpoint_commit": "e8f38c1c052046560c216fb4cf7aa8aec8d02d16",
+  "verified_remote_main": "e8f38c1c052046560c216fb4cf7aa8aec8d02d16",
+  "local_equals_remote": true,
+  "clean_at_source_checkpoint_verification": true,
+  "host_version": 20,
+  "dsp_protocol": 20,
+  "verified_stages": [
+    19,
+    20
+  ],
+  "successful_runs": 36,
+  "correct_packets": 780,
+  "byte_exact_staged_text_files": 76,
+  "reviewed_files": 129,
+  "environment_artifact_gate": "passed",
+  "hardware_final_state": "docs/evidence/2026-10-01/worker-stream-v20-checkpoint-device-status.json",
+  "scope_audit": "work/FINAL_AUDIT.md",
+  "limits": [
+    "Research prototype and application assessment; application integration/gain are future work.",
+    "Error/timeout unload, real audio/long stability and timer idle cause remain unverified."
+  ],
+  "note": "Records verified source/evidence checkpoint; completion metadata is committed afterwards."
+}

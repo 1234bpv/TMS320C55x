@@ -1,0 +1,45 @@
+2026-09-30T11:00:08.934612+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 89337856
+tick 40492832 startTick 39645043 boot 0 by n
+ap Huawei
+drive C freekb 65996
+drive E freekb 1070192
+script IDLE
+2026-09-30T11:00:09.027298+00:00 PS c55stream*
+OK ps 0
+2026-09-30T11:00:09.143663+00:00 START E:\sys\bin\c55stream.exe inspect
+OK proc 2
+2026-09-30T11:00:09.234787+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T11:00:09.808269+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-09-30T11:00:09.995922+00:00 WAIT 2 1
+EXIT 0 Kill
+2026-09-30T11:00:10.091929+00:00 START E:\sys\bin\c55stream.exe info
+OK proc 3
+2026-09-30T11:00:10.191801+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T11:00:10.778002+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T11:00:11.430135+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-09-30T11:00:11.650086+00:00 WAIT 3 1
+EXIT 0 Kill
+2026-09-30T11:00:11.707366+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 89329664
+tick 40495594 startTick 39645043 boot 0 by n
+ap Huawei
+drive C freekb 65996
+drive E freekb 1070192
+script IDLE

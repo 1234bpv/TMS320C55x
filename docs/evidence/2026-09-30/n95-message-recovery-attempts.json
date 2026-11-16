@@ -1,0 +1,45 @@
+{
+  "recorded_utc": "2026-09-30T11:45:05.514436+00:00",
+  "attempts": [
+    {
+      "utc": "2026-09-30T11:17:23.062548+00:00",
+      "device": "n95",
+      "ip": "192.168.3.22",
+      "restore_requested": true,
+      "journal_recovered": false,
+      "dsp_restored": false,
+      "complete": false,
+      "error": "TimeoutError: timed out",
+      "source": "work/evidence/n95/stream-messages-v8-recovery-01.json",
+      "daemon_commands_issued": false
+    },
+    {
+      "utc": "2026-09-30T11:20:55.891636+00:00",
+      "device": "n95",
+      "ip": "192.168.3.22",
+      "restore_requested": true,
+      "journal_recovered": false,
+      "dsp_restored": false,
+      "complete": false,
+      "error": "TimeoutError: timed out",
+      "source": "work/evidence/n95/stream-messages-v8-recovery-02.json",
+      "daemon_commands_issued": false
+    }
+  ],
+  "observations": {
+    "tcp2323_scan": {
+      "subnet": "192.168.3.0/24",
+      "hosts": "1-254 excluding local PC11",
+      "workers": 32,
+      "timeout_seconds": 1.5,
+      "open": [
+        "192.168.3.21"
+      ]
+    },
+    "n95_22_arp": "Incomplete; 00-00-00-00-00-00",
+    "n95_22_icmp": "unreachable from PC192.168.3.11 and timeout",
+    "n95_reboot": "not confirmed"
+  },
+  "normal_dsp_restore_pending": true,
+  "message_journal_recovered": false
+}

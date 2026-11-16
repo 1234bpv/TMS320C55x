@@ -1,0 +1,26 @@
+{
+  "utc": "2026-09-30T16:28:59.462877+00:00",
+  "scope": "Static native TSK creation site; no own TSK hardware experiment",
+  "primary_reference": "https://www.ti.com/lit/ug/spru404q/spru404q.pdf",
+  "native_range": {
+    "start": "24B0FC",
+    "end_exclusive": "24B134",
+    "bytes": 56,
+    "sha256": "79B2798C05B8CFB3D0BFD63EE5A826F0814E292BEA0476220044F2788F51F5FB",
+    "n95_e90_equal": true
+  },
+  "symbols_byte_addresses": {
+    "TSK_create": "25A5B4",
+    "TSK_delete": "25B6FC",
+    "TSK_ATTRS": "255814"
+  },
+  "attributes_c55_words": 14,
+  "native_priority": -1,
+  "entry": "24E6F0",
+  "open": [
+    "Arg ABI and calling context",
+    "task termination before delete",
+    "stream resources/context lifetime"
+  ],
+  "disassembly": "ignored work/evidence/static/base-common.asm"
+}

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-09-30T13:31:06.620546+00:00",
+  "device": "e90",
+  "ip": "192.168.3.21",
+  "command": "START E:\\sys\\bin\\ocprobe.exe patcher level 1",
+  "scope": "Only patcher write to this process own buffer; no kernel code or PRCM patch",
+  "complete": true,
+  "log_restored": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 76247040",
+    "tick 9842247 startTick 8770239 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55884",
+    "drive E freekb 1470664",
+    "script IDLE"
+  ],
+  "original_log_sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+  "process": "5",
+  "exit": [
+    "EXIT 0 Kill"
+  ],
+  "log_sha256": "FF7028AA24D37693EC0DCD402C4FAF26B9A7B9F094E5A0DB60C431272C5BE76F",
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 76247040",
+    "tick 9843450 startTick 8770239 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55884",
+    "drive E freekb 1470664",
+    "script IDLE"
+  ]
+}

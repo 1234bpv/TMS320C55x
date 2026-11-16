@@ -1,0 +1,19 @@
+UTC=2026-10-04T00:59:46.6569464Z
+COMMAND="C:\Program Files\LibreOffice\program\python.exe" -X utf8 tools/strict_net.py --ip 192.168.3.21 --device e90 --timeout 20 --cmd "KEY down press 2 150" --cmd "SHOT E:\codex-oct04-patches06.bmp" --get E:\codex-oct04-patches06.bmp out/e90-oct04-patches06.bmp
+TIMEOUT_SEC=55
+EXIT_CODE=1
+
+Traceback (most recent call last):
+  File "D:\VsCodeProjects\SymbianProjects\TMS320C55x test\tools\strict_net.py", line 132, in <module>
+    main()
+  File "D:\VsCodeProjects\SymbianProjects\TMS320C55x test\tools\strict_net.py", line 111, in main
+    d = Device(a.ip, a.device, timeout=a.timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\VsCodeProjects\SymbianProjects\TMS320C55x test\tools\strict_net.py", line 11, in __init__
+    self.socket = socket.create_connection((ip, 2323), timeout=connect_timeout)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\LibreOffice\program\python-core-3.12.13\lib\socket.py", line 865, in create_connection
+    raise exceptions[0]
+  File "C:\Program Files\LibreOffice\program\python-core-3.12.13\lib\socket.py", line 850, in create_connection
+    sock.connect(sa)
+TimeoutError: timed out

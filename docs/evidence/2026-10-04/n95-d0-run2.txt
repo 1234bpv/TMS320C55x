@@ -1,0 +1,177 @@
+C55STREAM v35 command='run-transfer reps=0 bytes=512 frames=8' machine=20002d84 fast_counter_hz=32768 firmware_rc=0 firmware='V 35.0.001
+11-11-09
+RM-320
+N95(c)NMP'
+library load=0
+ordinal 1 = 80a5e483
+ordinal 2 = 80a5e539
+ordinal 3 = 80a5e68f
+ordinal 4 = 80a5e6bb
+ordinal 5 = 80a5e561
+ordinal 6 = 80a5e585
+ordinal 7 = 80a5e677
+ordinal 8 = 80a5e4df
+ordinal 9 = 80a5e43f
+ordinal 10 = 80a5e409
+ordinal 11 = 80a5e401
+ordinal 12 = 80a5e401
+ordinal 13 = 80a5e433
+ordinal 14 = 80a5e433
+ordinal 15 = 80a5dc71
+ordinal 16 = 80a5dc37
+ordinal 17 = 80a5dcdb
+ordinal 18 = 80a5dca1
+ordinal 19 = 80a5dd0b
+ordinal 20 = 80a5dd1b
+ordinal 21 = 80a5dc2d
+ordinal 22 = 80a5dc2d
+ordinal 23 = 80a5dc35
+ordinal 24 = 80a5dc35
+ordinal 25 = 80a5dae1
+ordinal 26 = 80a5d533
+ordinal 27 = 80a5d9b1
+ordinal 28 = 80a5dac3
+ordinal 29 = 80a5d901
+ordinal 30 = 80a5d87f
+ordinal 31 = 80a5d9ed
+ordinal 32 = 80a5d751
+ordinal 33 = 80a5d4fd
+ordinal 34 = 80a5daa3
+ordinal 35 = 80a5d955
+ordinal 36 = 80a5d4c9
+ordinal 37 = 80a5d4c9
+ordinal 38 = 80a5d4d9
+ordinal 39 = 80a5d4d9
+profile guard=0 delta=00000000
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=007000f0
+POINTER load=-11
+POINTER open=0
+POINTER pdd_slot=c8001a18 container=c80a0660 rc=0
+POINTER pdd_count=9 objects_ptr=c8285e40
+POINTER pdd_obj[0]=c80b7d80 vtable=800d90cc
+POINTER pdd_obj[1]=c80b8d40 vtable=800f11c0
+POINTER pdd_obj[2]=c80d2aa0 vtable=800c5804
+POINTER pdd_obj[3]=c815fd00 vtable=800f6cac
+POINTER pdd_obj[4]=c8188520 vtable=8014b1c4
+POINTER pdd_obj[5]=c81a8238 vtable=801b3d44
+POINTER factory=c81a8238 expected_vtable=801b3d44
+POINTER manager_ptr=c81a8b40 rc=0
+POINTER manager magic=434f5250 back_factory=c81a8238 proc_index=0 common_board=c81a9038
+POINTER processor_state=4 require_running=1
+POINTER board=c81a9030 board_swap_byte=01 context=c81a9a80
+POINTER ctx_reader=c81a90dc ctx_board=c81a9038 ctx_from_dsp=ce81fdf0 ctx_records=ce81fdf8 queue16=c81a9c28 queue40=c81a9708
+POINTER shared_base=ce800000 reader_swap_byte=01
+ROUTING pool=c81a96e0 pending=0 list=c81aad50 limit=16 non_atomic=1
+ROUTING window=ce81fdf0 header=00000001/03030001 raw=00004000/80000000/00000000/76540000 decoded=40000000/00008000/00000000/00007654
+ROUTING queue[0]=c81d0bc0 source=000077e0 node=c81cf918 receive=00000000 source_matches=0
+ROUTING node=c81cf918 vtable=801b3de8 internal_state=2 env=000077e0 phase=2 timeout=00002710 expired=0 explicit_delete=1 exit_path=0
+ROUTING queue[1]=c81ad4b0 source=00007700 node=c81ad2e8 receive=00000000 source_matches=0
+ROUTING node=c81ad2e8 vtable=801b3de8 internal_state=2 env=00007700 phase=2 timeout=00002710 expired=0 explicit_delete=1 exit_path=0
+ROUTING snapshot=0 kernel_code_writes=0 prcm_writes=0
+BASE attach gate=0 reused_running=1 proc_load_calls=0
+node reference_rom=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=007013d0
+node timeout original=00000000
+node timeout modified=ffffffff
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=11199
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+info phase=created rc=0 header=30000068 max=104
+  id_word=00000000 property112=3 inputs=1 outputs=1 node_env=00007654
+BEGIN native buffer
+native buffer=0 address=ce843000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ce844000 length=0 max=4096
+POINTER load=-11
+POINTER open=0
+POINTER pdd_slot=c8001a18 container=c80a0660 rc=0
+POINTER pdd_count=9 objects_ptr=c8285e40
+POINTER pdd_obj[0]=c80b7d80 vtable=800d90cc
+POINTER pdd_obj[1]=c80b8d40 vtable=800f11c0
+POINTER pdd_obj[2]=c80d2aa0 vtable=800c5804
+POINTER pdd_obj[3]=c815fd00 vtable=800f6cac
+POINTER pdd_obj[4]=c8188520 vtable=8014b1c4
+POINTER pdd_obj[5]=c81a8238 vtable=801b3d44
+POINTER factory=c81a8238 expected_vtable=801b3d44
+POINTER manager_ptr=c81a8b40 rc=0
+POINTER manager magic=434f5250 back_factory=c81a8238 proc_index=0 common_board=c81a9038
+POINTER processor_state=4 require_running=0
+POINTER board=c81a9030 board_swap_byte=01 context=c81a9a80
+POINTER ctx_reader=c81a90dc ctx_board=c81a9038 ctx_from_dsp=ce81fdf0 ctx_records=ce81fdf8 queue16=c81a9c28 queue40=c81a9708
+POINTER shared_base=ce800000 reader_swap_byte=01
+ROUTING pool=c81a96e0 pending=0 list=c81aad50 limit=16 non_atomic=1
+ROUTING window=ce81fdf0 header=00000001/03030001 raw=00004000/80000000/00000000/76540000 decoded=40000000/00008000/00000000/00007654
+ROUTING queue[0]=c81d0bc0 source=000077e0 node=c81cf918 receive=00000000 source_matches=0
+ROUTING node=c81cf918 vtable=801b3de8 internal_state=2 env=000077e0 phase=2 timeout=00002710 expired=0 explicit_delete=1 exit_path=0
+ROUTING queue[1]=c81ad4b0 source=00007700 node=c81ad2e8 receive=00000000 source_matches=0
+ROUTING node=c81ad2e8 vtable=801b3de8 internal_state=2 env=00007700 phase=2 timeout=00002710 expired=0 explicit_delete=1 exit_path=0
+ROUTING queue[2]=c81af200 source=00007654 node=c82c6cf8 receive=00000000 source_matches=1
+ROUTING node=c82c6cf8 vtable=801b3de8 internal_state=1 env=00007654 phase=1 timeout=ffffffff expired=0 explicit_delete=1 exit_path=0
+ROUTING preflight env=00007654 matching_queues=1 require_unique=1
+ROUTING snapshot=0 kernel_code_writes=0 prcm_writes=0
+ROUTING pre-RUN gate=0 no_run_on_failure=1
+BEGIN execute
+execute submitted=0 status=-2147483647
+execute start=0 status=0
+state phase=running rc=0 header=3000010c max=268
+  state=2 detail=00000005 streams=2
+ARM CRC skipped transport measurement no_crc=1
+frame=1 put=0/0 get=0/0 wall_us=610 crc=00000000
+  issue_us=244 arm_crc_us=0 wait_us=335 completion_observed_us=610
+SIZE frame=1 input_bytes=512 output_bytes=512 returned_words=256 protocol=21 checked_payload_words=240
+  result=0 expected=0 ticks=44 counts_per_ms=164 errors=0 stop=0
+frame=2 put=0/0 get=0/0 wall_us=549 crc=00000000
+  issue_us=244 arm_crc_us=0 wait_us=274 completion_observed_us=549
+SIZE frame=2 input_bytes=512 output_bytes=512 returned_words=256 protocol=21 checked_payload_words=240
+  result=0 expected=0 ticks=17 counts_per_ms=164 errors=0 stop=0
+frame=3 put=0/0 get=0/0 wall_us=640 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=366 completion_observed_us=640
+SIZE frame=3 input_bytes=512 output_bytes=512 returned_words=256 protocol=21 checked_payload_words=240
+  result=0 expected=0 ticks=17 counts_per_ms=164 errors=0 stop=0
+frame=4 put=0/0 get=0/0 wall_us=640 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=366 completion_observed_us=640
+SIZE frame=4 input_bytes=512 output_bytes=512 returned_words=256 protocol=21 checked_payload_words=240
+  result=0 expected=0 ticks=16 counts_per_ms=164 errors=0 stop=0
+frame=5 put=0/0 get=0/0 wall_us=610 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=335 completion_observed_us=610
+SIZE frame=5 input_bytes=512 output_bytes=512 returned_words=256 protocol=21 checked_payload_words=240
+  result=0 expected=0 ticks=18 counts_per_ms=164 errors=0 stop=0
+frame=6 put=0/0 get=0/0 wall_us=640 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=335 completion_observed_us=640
+SIZE frame=6 input_bytes=512 output_bytes=512 returned_words=256 protocol=21 checked_payload_words=240
+  result=0 expected=0 ticks=17 counts_per_ms=164 errors=0 stop=0
+frame=7 put=0/0 get=0/0 wall_us=549 crc=00000000
+  issue_us=244 arm_crc_us=0 wait_us=274 completion_observed_us=549
+SIZE frame=7 input_bytes=512 output_bytes=512 returned_words=256 protocol=21 checked_payload_words=240
+  result=0 expected=0 ticks=17 counts_per_ms=164 errors=0 stop=0
+frame=8 put=0/0 get=0/0 wall_us=549 crc=00000000
+  issue_us=274 arm_crc_us=0 wait_us=274 completion_observed_us=549
+SIZE frame=8 input_bytes=512 output_bytes=512 returned_words=256 protocol=21 checked_payload_words=240
+  result=0 expected=0 ticks=18 counts_per_ms=164 errors=0 stop=1
+STREAM PASS frames=8 creates=1 useful_arm_crc=0 mode=0 total_us=4787
+state phase=before delete rc=0 header=3000010c max=268
+  state=2 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=122
+delete=0 status=0
+state phase=after delete rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+free native out=0
+free native in=0
+BEGIN close
+FINAL status=0

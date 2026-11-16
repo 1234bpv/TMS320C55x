@@ -1,0 +1,75 @@
+{
+  "utc": "2026-09-30T11:38:07.987311+00:00",
+  "scope": "Static firmware comparison; no DSP RUN or hardware get-info",
+  "rom_sha256": {
+    "n95_ldd": "34EE45B4F1C0F394C1C06B4141709E025FA8205860E0FAAC83510EF8577ECD3A",
+    "e90_ldd": "07731D17142D8D45EF29229F00D7856135CE59D2F51935DB1DF96AD742E9A70D",
+    "n95_pdd": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF",
+    "e90_pdd": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4"
+  },
+  "ldd": {
+    "task2_raw_copy": {
+      "n95_start": "801B4A98",
+      "e90_start": "803F90D8",
+      "bytes": 100,
+      "bytes_equal": true,
+      "n95_sha256": "8B798B242B67E7A3EBAB94E6C373C996F97BECCCA20933C9E56C6A20EEE2AF2C",
+      "e90_sha256": "8B798B242B67E7A3EBAB94E6C373C996F97BECCCA20933C9E56C6A20EEE2AF2C"
+    },
+    "node_info_adapter": {
+      "n95_start": "801B43B4",
+      "e90_start": "803F89F4",
+      "bytes": 56,
+      "bytes_equal": true,
+      "n95_sha256": "46FF58AA0C735D757104901CD33E80E70E02641E0264B4E4284526B6A3F8EE83",
+      "e90_sha256": "46FF58AA0C735D757104901CD33E80E70E02641E0264B4E4284526B6A3F8EE83"
+    },
+    "record_constructor": {
+      "n95_start": "801B56DC",
+      "e90_start": "803F9D1C",
+      "bytes": 44,
+      "bytes_equal": true,
+      "n95_sha256": "E87319401868DBFED27F7A70AC07D0F676C76FEB0F4C4D00B8ACF21D83DC8354",
+      "e90_sha256": "E87319401868DBFED27F7A70AC07D0F676C76FEB0F4C4D00B8ACF21D83DC8354"
+    }
+  },
+  "pdd_node_info_getter": {
+    "n95_start": "801A11B8",
+    "e90_start": "803E57F8",
+    "bytes": 92,
+    "bytes_equal": false,
+    "n95_sha256": "C54AC08C1AC68DA80125C5761D271B78801979A181AF204CCEF608FA89C1DDB0",
+    "e90_sha256": "7D047110407777480341E2743846391B2BAB67CC9A0F52D8A02B3DFA1D855821",
+    "different_arm_word_offsets": [
+      20
+    ],
+    "equal_except_relocated_bl": true,
+    "call_targets": [
+      "801B2EC8",
+      "803F7504"
+    ],
+    "import_stub_targets": [
+      "8006EE6C",
+      "80017C20"
+    ],
+    "vtable_starts": [
+      "801B3DE8",
+      "803F8424"
+    ],
+    "vtable_byte_slot": 20
+  },
+  "record": {
+    "bytes_including_header": 112,
+    "header": "30000068",
+    "maximum": 104,
+    "payload_offsets": {
+      "property112": 52,
+      "inputs": 56,
+      "outputs": 60,
+      "node_env": 64
+    },
+    "node_env_load_store_n95": "801A11F0-801A11F4",
+    "node_env_load_store_e90": "803E5830-803E5834",
+    "property112_units": "unknown"
+  }
+}

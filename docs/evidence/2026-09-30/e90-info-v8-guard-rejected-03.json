@@ -1,0 +1,52 @@
+{
+  "utc": "2026-09-30T13:17:19.910666+00:00",
+  "device": "e90",
+  "ip": "192.168.3.21",
+  "files": [
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "backup": "work/evidence/e90/stream-v8-info-guard-03-before.dll55l",
+      "bytes": 3668,
+      "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1"
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "backup": "work/evidence/e90/stream-v8-info-guard-03-before.log",
+      "bytes": 1083,
+      "sha256": "4FE55A84AA47CC174586486981F7591862FA07C64B9B9D33CC18E9D9A6396F7F"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "backup": "work/evidence/e90/stream-v8-info-guard-03-before-ocprobe.log",
+      "bytes": 1249,
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "readback": "work/evidence/e90/stream-v8-info-guard-03-ocprobe-restored.log",
+      "bytes": 1249,
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+      "equal": true
+    }
+  ],
+  "clock_log_restored": true,
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 75714560",
+    "tick 9015392 startTick 8770239 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55884",
+    "drive E freekb 1470664",
+    "script IDLE"
+  ],
+  "clock_log": "work/evidence/e90/stream-v8-info-guard-03-clock.log",
+  "clock_profile": {
+    "uid": 536880278,
+    "profile": "RA-6 400.34.93",
+    "restore_code": 1
+  },
+  "error": "RuntimeError: clock probe did not confirm the expected stock state"
+}

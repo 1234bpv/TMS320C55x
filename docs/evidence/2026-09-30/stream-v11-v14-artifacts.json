@@ -1,0 +1,101 @@
+{
+  "utc": "2026-09-30T16:04:15.145115+00:00",
+  "scope": "Local builds and verified hardware readbacks; no speed claim",
+  "files": [
+    {
+      "label": "host-v11",
+      "path": "work/evidence/n95/stream-v12-windows-prepare-01-before.exe",
+      "bytes": 20408,
+      "sha256": "C3201C0DC0BD79C0D336AD51FBDF6A1F26F5B2C1CD150163FC126D48AC0C061D"
+    },
+    {
+      "label": "host-v12",
+      "path": "work/evidence/n95/stream-v13-get-after-stages-prepare-01-before.exe",
+      "bytes": 20896,
+      "sha256": "4E7E8D258E937166D7BE09583DD833410D19F220ACD0D9831EF7701ABD399F4D"
+    },
+    {
+      "label": "host-v13",
+      "path": "work/evidence/n95/stream-v14-patcher-prepare-01-before.exe",
+      "bytes": 21124,
+      "sha256": "415A87FA17B4DDC8929221D058B79B8B06EB2A30599EAA9009BC8DC8E74A883A"
+    },
+    {
+      "label": "host-v14",
+      "path": "out/arm/c55stream.exe",
+      "bytes": 22408,
+      "sha256": "5F1C77CF7914312818F63D77AA950DED5B1208F454E986CF55C68EAD9E47274A"
+    },
+    {
+      "label": "dsp-stages-v11",
+      "path": "work/evidence/n95/stream-v11-stages-recovery-01-current.dll55l",
+      "bytes": 3156,
+      "sha256": "1EF2C25A8E6562DF74115D4EE5FC28D6FA929B41C4143279D63152EB35DE13A2"
+    },
+    {
+      "label": "dsp-windows-v12-v13",
+      "path": "out/dsp/c55stream-message-stages.dll55l",
+      "bytes": 3536,
+      "sha256": "0B966DD67017BBFA2192C34469D2BDB199F3BC5F8616A756866ABDE9C7F15482"
+    },
+    {
+      "label": "local-normal-after-windows",
+      "path": "out/dsp/c55stream.dll55l",
+      "bytes": 3668,
+      "sha256": "7108C0A78309B3057BACEBC22417907BB46D3AFC84961FDF350C30E2E174C3D2"
+    },
+    {
+      "label": "sis-v14",
+      "path": "out/sis/c55stream_sha1.sis",
+      "bytes": 13624,
+      "sha256": "1BC4F000E88AB9C1FE42B372AD32B4796E59BE81544FA35B4ADEF25FD55DB898"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/arm-build-stream-v11-message-stages.log",
+      "exit_code": 0,
+      "sha256": "7B12DB0839DBE1B5F1B53BA25BBC043457E926A7D13ACF12391816360011F639"
+    },
+    {
+      "log": "out/arm-build-stream-v12-message-windows.log",
+      "exit_code": 0,
+      "sha256": "E5E04D8196176BEE33DA0FEBB883F3EDA7EBF640A52BBA28FCAA31157AAD967D"
+    },
+    {
+      "log": "out/arm-build-stream-v13-get-after-stages.log",
+      "exit_code": 0,
+      "sha256": "7B901E89CEBB9E3404C5E5D9294AA877ABA2A47EBEF8BA0068D896BFD96859B9"
+    },
+    {
+      "log": "out/arm-build-stream-v14-patcher-check.log",
+      "exit_code": 0,
+      "sha256": "49F23311AAFEEC57ADA9F71113C1B1A1D86E3566C5D18BFEA6D13CA897F2B8C1"
+    },
+    {
+      "log": "out/dsp-build-stream-message-stages-01.log",
+      "exit_code": 0,
+      "sha256": "777A2250A404DF0D519B918D3DD76C4C26CB091A6DBC4BCF077F29DC9025D93F"
+    },
+    {
+      "log": "out/dsp-build-stream-message-windows-01.log",
+      "exit_code": 0,
+      "sha256": "3688D6762366A1E3816DDCDDADE2D3DAE9F5B81637119C6277B446654763A16B"
+    },
+    {
+      "log": "out/dsp-build-stream-normal-after-stages-01.log",
+      "exit_code": 0,
+      "sha256": "511F1351F8F1F516D49AC3871D2ADD763C2703E08DFF219A515BC384689EDEFF"
+    },
+    {
+      "log": "out/dsp-build-stream-normal-after-windows-01.log",
+      "exit_code": 0,
+      "sha256": "E6873923A6B28E36DDAD5CC767AEAF583C1E907872FD18AC86AE93FE49418AF7"
+    },
+    {
+      "log": "out/stream-sis-v14-build.log",
+      "exit_code": 0,
+      "sha256": "543B8BC9B4C07BDDD86775313D5E1163ABFCD66CA8B5BF292B7527179FA3319D"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "utc": "2026-10-03T17:27:37.233537+00:00",
+  "ip": "192.168.3.22",
+  "device": "n95",
+  "action": "d0-sequence",
+  "host_version_expected": 35,
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 93536256",
+    "tick 105815 startTick 62209 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65832",
+    "drive E freekb 1066032",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "D09100D03445297526537D451BD10F9EDFF0276BA51D6A5965F863C091D818D5",
+  "clock_probes": [
+    {
+      "path": "attach-sequence02-engine.log",
+      "sha256": "A283C4C7FB3FC48B87B7A79CCB09A3BEB1F5674749A212B8B132C23D18FC2B95"
+    },
+    {
+      "path": "attach-sequence02-dsp.log",
+      "sha256": "50E4382C6060B1C04C9FAED0902589F698F28B2EF7A1843B985558EA60026E8F"
+    }
+  ],
+  "clock_exit": [
+    "EXIT 0 Kill"
+  ],
+  "clock_restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1259,
+    "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF",
+    "equal": true
+  },
+  "steps": [
+    {
+      "label": "inspect",
+      "command": "inspect",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "attach-sequence02-inspect.log",
+      "sha256": "DAC68D1998DFF2EFD017B57D5779A502DFBF1C1B1BC970B9DE59B04BB2619DED",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 320x240",
+        "ramfree 93388800",
+        "tick 110998 startTick 62209 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 65832",
+        "drive E freekb 1066048",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "create",
+      "command": "create",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "attach-sequence02-create.log",
+      "sha256": "FC14677C972B1E139F39952271E5B5A64E8A48C3F463919E7502114C1AC21854",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 320x240",
+        "ramfree 93388800",
+        "tick 113144 startTick 62209 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 65832",
+        "drive E freekb 1066048",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "run1",
+      "command": "run-transfer reps=0 bytes=512 frames=8",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "attach-sequence02-run1.log",
+      "sha256": "A83EC61E7351AC635E43507C762EA3D0C0B5590DBF7F92604999597BD2C81EA6",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 320x240",
+        "ramfree 93388800",
+        "tick 115196 startTick 62209 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 65832",
+        "drive E freekb 1066048",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "run2",
+      "command": "run-transfer reps=0 bytes=512 frames=8",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "attach-sequence02-run2.log",
+      "sha256": "2713FA619BE262C39E2D50E22080C7D24EF5F7AC185C2F8BE9665A4C808EDF25",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 320x240",
+        "ramfree 93388800",
+        "tick 116940 startTick 62209 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 65832",
+        "drive E freekb 1066048",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "run3",
+      "command": "run-transfer reps=0 bytes=512 frames=8",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "attach-sequence02-run3.log",
+      "sha256": "575B6B4D41212C2119472BDA2A25FDACF2F29046CEA1A4FF346FDE3FC8DB0726",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 320x240",
+        "ramfree 93388800",
+        "tick 118778 startTick 62209 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 65832",
+        "drive E freekb 1066048",
+        "script IDLE"
+      ]
+    }
+  ],
+  "deployed": {
+    "remote": "E:\\c55stream.dll55l",
+    "bytes": 4064,
+    "sha256": "7E1D922E177F12487BFF7A3E0AC81BC96CD85A3B8039275E6362F1206637FC62",
+    "equal": true
+  },
+  "accepted_runs": 3,
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 93388800",
+    "tick 118792 startTick 62209 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65832",
+    "drive E freekb 1066048",
+    "script IDLE"
+  ]
+}

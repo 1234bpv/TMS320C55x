@@ -1,0 +1,113 @@
+C55STREAM v34 command='run-transfer reps=0 bytes=512 frames=8' machine=20002496 fast_counter_hz=32768 firmware_rc=0 firmware='400.34.93
+21-04-2009
+RA-6
+(c)Nokia'
+library load=0
+ordinal 1 = 803faef3
+ordinal 2 = 803fafa9
+ordinal 3 = 803fb0ff
+ordinal 4 = 803fb12b
+ordinal 5 = 803fafd1
+ordinal 6 = 803faff5
+ordinal 7 = 803fb0e7
+ordinal 8 = 803faf4f
+ordinal 9 = 803faeaf
+ordinal 10 = 803fae79
+ordinal 11 = 803fae71
+ordinal 12 = 803fae71
+ordinal 13 = 803faea3
+ordinal 14 = 803faea3
+ordinal 15 = 803fa6e1
+ordinal 16 = 803fa6a7
+ordinal 17 = 803fa74b
+ordinal 18 = 803fa711
+ordinal 19 = 803fa77b
+ordinal 20 = 803fa78b
+ordinal 21 = 803fa69d
+ordinal 22 = 803fa69d
+ordinal 23 = 803fa6a5
+ordinal 24 = 803fa6a5
+ordinal 25 = 803fa551
+ordinal 26 = 803f9fa3
+ordinal 27 = 803fa421
+ordinal 28 = 803fa533
+ordinal 29 = 803fa371
+ordinal 30 = 803fa2ef
+ordinal 31 = 803fa45d
+ordinal 32 = 803fa1c1
+ordinal 33 = 803f9f6d
+ordinal 34 = 803fa513
+ordinal 35 = 803fa3c5
+ordinal 36 = 803f9f39
+ordinal 37 = 803f9f39
+ordinal 38 = 803f9f49
+ordinal 39 = 803f9f49
+profile guard=0 delta=ff99ca70
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=00700110
+BEGIN base load
+base load=0
+node reference_rom=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=00701420
+node timeout original=00000000
+node timeout modified=ffffffff
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=6866
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+info phase=created rc=0 header=30000068 max=104
+  id_word=00000000 property112=3 inputs=1 outputs=1 node_env=000077e0
+BEGIN native buffer
+native buffer=0 address=ced41000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ced42000 length=0 max=4096
+POINTER load=-11
+POINTER open=0
+POINTER pdd_slot=c80019fc container=c8051628 rc=0
+POINTER pdd_count=7 objects_ptr=c8082510
+POINTER pdd_obj[0]=c80824b0 vtable=80072f88
+POINTER pdd_obj[1]=c8082630 vtable=800865ac
+POINTER pdd_obj[2]=c8082788 vtable=8009ff04
+POINTER pdd_obj[3]=c810a000 vtable=800aaa8c
+POINTER pdd_obj[4]=c8164ef0 vtable=803f8380
+POINTER factory=c8164ef0 expected_vtable=803f8380
+POINTER manager_ptr=c81658b0 rc=0
+POINTER manager magic=434f5250 back_factory=c8164ef0 proc_index=0 common_board=c8165de8
+POINTER board=c8165de0 board_swap_byte=01 context=c81668d8
+POINTER ctx_reader=c8165e8c ctx_board=c8165de8 ctx_from_dsp=ced1fdf0 ctx_records=ced1fdf8 queue16=c8166a98 queue40=c8166520
+POINTER shared_base=ced00000 reader_swap_byte=01
+ROUTING pool=c81664f8 pending=0 list=c8167c80 limit=16 non_atomic=1
+ROUTING window=ced1fdf0 header=00000001/03030000 raw=03030303/03030303/03030303/03030303 decoded=03030303/03030303/03030303/03030303
+ROUTING queue[0]=c819bb48 source=000077e0 node=c819a850 receive=00000000 source_matches=0
+ROUTING node=c819a850 vtable=803f8424 internal_state=2 env=000077e0 phase=2 timeout=00002710 expired=0 explicit_delete=1 exit_path=0
+ROUTING queue[1]=c819de18 source=00007700 node=c819cb20 receive=00000000 source_matches=0
+ROUTING node=c819cb20 vtable=803f8424 internal_state=2 env=00007700 phase=2 timeout=00002710 expired=0 explicit_delete=1 exit_path=0
+ROUTING queue[2]=c817a690 source=000077e0 node=c81783b0 receive=00000000 source_matches=0
+ROUTING node=c81783b0 vtable=803f8424 internal_state=1 env=000077e0 phase=1 timeout=ffffffff expired=0 explicit_delete=1 exit_path=0
+ROUTING preflight env=000077e0 matching_queues=2 require_unique=1
+ROUTING snapshot=-11 kernel_code_writes=0 prcm_writes=0
+ROUTING pre-RUN gate=-11 no_run_on_failure=1
+state phase=before delete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=152
+delete=0 status=0
+state phase=after delete rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+free native out=0
+free native in=0
+BEGIN close
+FINAL status=-11

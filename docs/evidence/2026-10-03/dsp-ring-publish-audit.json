@@ -1,0 +1,26 @@
+{
+  "scope": "deployed DSP candidate52/protocol38 compiler artifact; no phone I/O",
+  "assembly_sha256": "8D4B622EE14DDABE339EB8B7AE7A752697DEE2C1E1A97002844EF2D2E1637E3E",
+  "DSP_sha256": "E58A4CBBDA48241788A904C5409CB23F5FF624070207F453489AFB8608B4D6D1",
+  "compiler_order_verified": true,
+  "order": "volatile ring output stores -> four ring completion-control stores -> return -> CLK_gethtime -> output notification fields -> STRM_issue",
+  "references": [
+    {
+      "url": "https://www.ti.com/lit/ug/spru312/spru312.pdf",
+      "section": "4.2, instruction cache applies to program-unit fetches; ring accesses are data operands"
+    },
+    {
+      "url": "https://www.ti.com/lit/ug/spru371f/spru371f.pdf",
+      "section": "1.7.1, CPU memory writes finish in W+; instruction completion alone must not be called an interconnect fence"
+    },
+    {
+      "url": "https://edgeworker.ti.com/lit/pdf/spru376",
+      "section": "4.4.3.1, write-pending and bypass show why volatile/readback alone are not a complete system barrier proof"
+    }
+  ],
+  "status": "partial",
+  "native_notification_audit": "docs/evidence/2026-10-03/dsp-native-notification-audit.json",
+  "posted_write_configuration": "TI's OMAP2420 GBL reference sets WPE using I/O port 0x200, mask0x80. Native BIOS5.10 user-init only clears ST3_MPNMC. The runtime WPE value and mailbox read as a SDRAM write drain remain unknown.",
+  "remaining": "An OMAP2420-specific external-memory/notification publication contract is still required. Generic C55x instruction-cache documentation, absence of BCACHE exports and successful data tests do not independently prove completion of all external writes before notification visibility.",
+  "hardware_evidence": "9360 fully checked packets per phone in three series; this demonstrates this synthetic protocol under measured conditions, not all future mappings/concurrent writers"
+}

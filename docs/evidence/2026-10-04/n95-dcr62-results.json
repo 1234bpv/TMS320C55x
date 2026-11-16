@@ -1,0 +1,149 @@
+{
+  "scope": "distinct N95 candidate62/host47/protocol39 pilot; not candidate61 qualification",
+  "status": "measurement_complete",
+  "D1_status": "in_progress",
+  "packets": 120,
+  "frames": 8,
+  "batch": 15,
+  "command": "dmm-ring-dcr batch=15 frames=8",
+  "daemon_startup_tuple": "62209 boot 0 by n",
+  "startup_tuple_is_phone_boot_id": false,
+  "host_sha256": "9C1D6B6304E346F419129C09270ED0E5939918315DF3DDAA5C7448CB892FA5C5",
+  "DSP_sha256": "F090D32D9F1B23DE9B78931B93B8177B62ED621B3B1E00CBBF3A015253E549F8",
+  "published_journal": "docs/evidence/2026-10-04/n95-dcr62-pilot-b15-f8-01.txt",
+  "published_sha256": "24EAD5BB402AAB036573BC75A4E354FC3ACCB60798B1E9F101A1C3AF651AB9E0",
+  "readings": [
+    {
+      "frame": 1,
+      "before": "0000",
+      "after": "0000",
+      "WPE_before": 0,
+      "WPE_after": 0
+    },
+    {
+      "frame": 2,
+      "before": "0000",
+      "after": "0000",
+      "WPE_before": 0,
+      "WPE_after": 0
+    },
+    {
+      "frame": 3,
+      "before": "0000",
+      "after": "0000",
+      "WPE_before": 0,
+      "WPE_after": 0
+    },
+    {
+      "frame": 4,
+      "before": "0000",
+      "after": "0000",
+      "WPE_before": 0,
+      "WPE_after": 0
+    },
+    {
+      "frame": 5,
+      "before": "0000",
+      "after": "0000",
+      "WPE_before": 0,
+      "WPE_after": 0
+    },
+    {
+      "frame": 6,
+      "before": "0000",
+      "after": "0000",
+      "WPE_before": 0,
+      "WPE_after": 0
+    },
+    {
+      "frame": 7,
+      "before": "0000",
+      "after": "0000",
+      "WPE_before": 0,
+      "WPE_after": 0
+    },
+    {
+      "frame": 8,
+      "before": "0000",
+      "after": "0000",
+      "WPE_before": 0,
+      "WPE_after": 0
+    }
+  ],
+  "WPE_disabled_for_all_samples": true,
+  "clock_brackets": [
+    {
+      "position": "before",
+      "stock_verified": true,
+      "probes": [
+        {
+          "published_path": "docs/evidence/2026-10-04/n95-dcr62-pilot-clock-before01-engine.txt",
+          "published_sha256": "52C49C1E1C9344631102E3E4D518254A66A9BF280FAF593E4305EABCA4905FA5"
+        },
+        {
+          "published_path": "docs/evidence/2026-10-04/n95-dcr62-pilot-clock-before01-dsp.txt",
+          "published_sha256": "DD737D79CD48E0419A224FE037469DC18A9AD64E387F800F7F5FD4656050E0D4"
+        }
+      ]
+    },
+    {
+      "position": "after",
+      "stock_verified": true,
+      "probes": [
+        {
+          "published_path": "docs/evidence/2026-10-04/n95-dcr62-pilot-clock-after01-engine.txt",
+          "published_sha256": "93C2A23384275515DD969F245A577BF48ABD88DC6B0B120394A4342A1AE9BF84"
+        },
+        {
+          "published_path": "docs/evidence/2026-10-04/n95-dcr62-pilot-clock-after01-dsp.txt",
+          "published_sha256": "0B83DE2C58B6E953C83F814BB9B6B552DDAEB7647DF607244D15C5F430DFFAB2"
+        }
+      ]
+    }
+  ],
+  "teardown": "clean native delete/free task/unmap/unreserve/free buffers/close/FINAL0/EXIT0",
+  "restoration": {
+    "utc": "2026-10-04T01:22:22.205649+00:00",
+    "published_path": "docs/evidence/2026-10-04/n95-dcr62-final-verify01.json",
+    "published_sha256": "9CDC3CA8D5F4E8FAD60E4AC36CE79318CE33880792D4735E7CA8F55855EE6384",
+    "files": [
+      {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 3668,
+        "sha256": "5B6BE15B20E73D8D318FDF9C5E5050C16AA28994BC422C891C2B0132EA4AB9F9",
+        "equal_original": true
+      },
+      {
+        "remote": "E:\\c55stream.log",
+        "bytes": 23054,
+        "sha256": "51201B91D6F2632262C522225CAC096D4D865C0D2D10B777829EF5101E4146CC",
+        "equal_original": true
+      },
+      {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1259,
+        "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF",
+        "equal_original": true
+      },
+      {
+        "remote": "E:\\sys\\bin\\c55stream.exe",
+        "bytes": 34196,
+        "sha256": "CBB91873639FC226B6DD2E40C6A75CC40E5C01C645C513A9DFA5E8A940890946",
+        "equal_original": true
+      },
+      {
+        "remote": "C:\\sys\\hash\\c55stream.exe",
+        "bytes": 20,
+        "sha256": "B3AB7C72332FF3EF42B059BC24C391D4CD7C1002518EF500BA6E9971EF965614",
+        "equal_original": true
+      }
+    ]
+  },
+  "instruction_audit": "docs/evidence/2026-10-04/n95-dcr62-instruction-audit.json",
+  "limits": [
+    "DCR measurements apply to this new pilot; historical candidate54/61 WPE remains unknown",
+    "DCR reads can perturb timing/ordering; do not merge pilot timings into original transport cohorts",
+    "non-posted mode identification does not alone document end-to-end OMAP2420 memory/notification ordering",
+    "no DCR/PRCM configuration writes or emulator changes; E90 deferred by user"
+  ]
+}

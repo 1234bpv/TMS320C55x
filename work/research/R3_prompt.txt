@@ -1,0 +1,26 @@
+You are a researcher. You only read; you change nothing. Answer in Ukrainian,
+in an academic style, with exact references (file, line, document section).
+Distinguish what was measured from what was assumed. Do not draw conclusions
+beyond what was found.
+
+Root: H:\VsCodeProjects\SymbianProjects. Context: on the Nokia N95 8GB and E90 (TI
+OMAP2420, ARM1136 at ~330-426 MHz without NEON, plus the TMS320C55x DSP) we can
+run our own code on the DSP. Measured: the DSP wins only on 16-bit fixed-point
+multiply-accumulate (Q15 ~50 MMAC/s versus 32 on the ARM); 32-bit integer
+arithmetic on the DSP is 5-15 times slower; fp32 is 33+ times slower; branching
+code is at parity. Launching a portion of work on the DSP currently costs ~9 ms;
+we are looking for a streaming channel. It is necessary to understand which parts
+of two neighboring projects are worth moving to the DSP.
+
+Project 1: PS1Emulator (and, if there is a link, pcsx_rearmed-symbian next to it).
+Find out:
+- architecture: whose port it is, how the frame loop is organized, whether there
+  are already threads;
+- SPU: the implementation files; how and when the voices are mixed (ADPCM
+  decoding, 24 voices, reverb, interpolation); the format and size of the buffer;
+  the call frequency; where the sound comes from on Symbian (CMdaAudioOutputStream
+  or other);
+- MDEC (IDCT, YUV->RGB), GTE (whether there is assembly/dynarec), GPU (software
+  rasterizer);
+- any measurements: share of frame time on SPU/GPU/GTE/CPU, fps on N95/E90,
+  profiling. On

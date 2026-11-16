@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-02T18:26:23.071810+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "restore",
+  "host_version_expected": 26,
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 77742080",
+    "tick 182232 startTick 61087 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55792",
+    "drive E freekb 1447684",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "files": [
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "bytes": 3668,
+      "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+      "equal": true
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "bytes": 21528,
+      "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D",
+      "equal": true
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "bytes": 1249,
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+      "equal": true
+    }
+  ],
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 77705216",
+    "tick 183351 startTick 61087 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55792",
+    "drive E freekb 1447668",
+    "script IDLE"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-01T10:17:31.428694+00:00",
+  "device": "e90",
+  "info": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79867904",
+    "tick 43292458 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55844",
+    "drive E freekb 1459792",
+    "script IDLE"
+  ],
+  "ps": [
+    "OK ps 0"
+  ],
+  "host_version": 18,
+  "normal.dll55l": {
+    "remote": "E:\\c55stream.dll55l",
+    "bytes": 3668,
+    "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+    "expected_equal": true
+  },
+  "clock.log": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1249,
+    "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+    "expected_equal": true
+  },
+  "host.exe": {
+    "remote": "C:\\sys\\bin\\c55stream.exe",
+    "bytes": 29760,
+    "sha256": "571C5A6221C7E7815558A2C3AE5F6665D8D7DE0B82D676488869C7BAA260F14F",
+    "expected_equal": true
+  }
+}

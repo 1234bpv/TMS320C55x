@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-30T16:07:12.225892+00:00",
+  "scope": "Local gate validation, no phone connection or START",
+  "failed_preparation": "work\\evidence\\e90\\stream-v8-info-guard-03-preparation.json",
+  "rejected": true,
+  "reason": "successful preparation for this device/IP is required"
+}

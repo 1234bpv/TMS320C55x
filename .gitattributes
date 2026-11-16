@@ -1,0 +1,20 @@
+# These phone journals retain the exact bytes used by the recorded SHA-256.
+docs/evidence/2026-09-30/*resident*.txt -text whitespace=cr-at-eol
+docs/evidence/2026-09-30/*worker-parked*.txt -text whitespace=cr-at-eol
+docs/evidence/2026-09-30/*worker-stream*.txt -text whitespace=cr-at-eol
+docs/evidence/2026-10-01/*worker-stream*.txt -text whitespace=cr-at-eol
+docs/evidence/2026-10-01/*packet-sizes*.txt -text whitespace=cr-at-eol
+docs/evidence/2026-10-01/*wsola*.txt -text whitespace=cr-at-eol
+docs/evidence/2026-10-01/e90-d0-*.txt -text whitespace=cr-at-eol
+docs/evidence/2026-10-01/e90-d0-*.json -text whitespace=cr-at-eol
+docs/evidence/2026-10-02/*.txt -text whitespace=cr-at-eol
+docs/evidence/2026-10-02/*.json -text whitespace=cr-at-eol
+# Preserve exact upstream kernel whitespace and snapshot hashes.
+src/mdec/*.inc text eol=lf whitespace=-blank-at-eol
+src/mdec/fixtures.h text eol=lf
+src/mdec/snapshot.json text eol=lf
+src/spu/*.s text eol=lf whitespace=-blank-at-eol
+src/spu/fixtures.h text eol=lf
+src/spu/snapshot.json text eol=lf
+src/wsola_current/kernel.inc text eol=lf whitespace=-blank-at-eol
+src/wsola_current/snapshot.json text eol=lf

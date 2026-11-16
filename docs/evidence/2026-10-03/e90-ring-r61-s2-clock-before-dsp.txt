@@ -1,0 +1,24 @@
+== ocprobe: DVFS probe, read-only ==
+UPTIME: 736 s (12 min) - ntick=736608
+fast counter: 32768 Hz
+--- HAL ---
+ECPUSpeed(kHz) = 330000
+EFastCounterFreq(Hz) = 32768
+ENanoTickPeriod(us) = 1000
+ESystemTickPeriod = 15625
+ECPU = 0
+ECPUABI = 0
+EMemoryRAM = 113967104
+EMemoryRAMFree = 79052800
+EMachineUid = 536880278
+EModel = 536880286
+EManufacturer = 2
+EPowerExternal = 1
+EPowerBatteryStatus -> err -5
+ECaseState -> err -5
+--- TestPowerAPI skipped (pass "power <0..12>" to enable) ---
+--- DSP clock domain probe (READ ONLY, no PRCM writes) ---
+profile: RA-6 400.34.93  (forced by command line)
+engine NOT ready: err -20 at step [patcher self-test]
+  device firmware read as [400.34.93] (empty = SysUtil failed)
+== end ==

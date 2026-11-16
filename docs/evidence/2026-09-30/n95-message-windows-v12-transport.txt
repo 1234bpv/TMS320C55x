@@ -1,0 +1,73 @@
+2026-09-30T14:25:14.618519+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 90566656
+tick 12285798 startTick 7928381 boot 0 by n
+ap Huawei
+drive C freekb 65976
+drive E freekb 1070192
+script IDLE
+2026-09-30T14:25:14.725886+00:00 PS c55stream*
+OK ps 0
+PREPARATION VERIFIED work\evidence\n95\stream-v12-windows-prepare-01-preparation.json
+2026-09-30T14:25:14.888733+00:00 START E:\sys\bin\c55stream.exe inspect
+OK proc 24
+2026-09-30T14:25:14.983993+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:15.561563+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-09-30T14:25:15.746516+00:00 WAIT 24 1
+EXIT 0 Kill
+2026-09-30T14:25:15.858861+00:00 START E:\sys\bin\c55stream.exe message-stages
+OK proc 25
+2026-09-30T14:25:15.951907+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:16.526954+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:17.163030+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:17.880656+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:18.602048+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:19.330268+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:20.059701+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:20.758087+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:21.476728+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:22.179137+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:22.891992+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-30T14:25:23.516769+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-09-30T14:25:23.745531+00:00 WAIT 25 1
+EXIT -33 Kill
+2026-09-30T14:25:23.801473+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 90566656
+tick 12294954 startTick 7928381 boot 0 by n
+ap Huawei
+drive C freekb 65976
+drive E freekb 1070192
+script IDLE

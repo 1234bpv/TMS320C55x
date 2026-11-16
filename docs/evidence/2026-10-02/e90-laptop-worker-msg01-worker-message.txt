@@ -1,0 +1,102 @@
+C55STREAM v26 command='worker-message' machine=20002496 fast_counter_hz=32768 firmware_rc=0 firmware='400.34.93
+21-04-2009
+RA-6
+(c)Nokia'
+library load=0
+ordinal 1 = 803faef3
+ordinal 2 = 803fafa9
+ordinal 3 = 803fb0ff
+ordinal 4 = 803fb12b
+ordinal 5 = 803fafd1
+ordinal 6 = 803faff5
+ordinal 7 = 803fb0e7
+ordinal 8 = 803faf4f
+ordinal 9 = 803faeaf
+ordinal 10 = 803fae79
+ordinal 11 = 803fae71
+ordinal 12 = 803fae71
+ordinal 13 = 803faea3
+ordinal 14 = 803faea3
+ordinal 15 = 803fa6e1
+ordinal 16 = 803fa6a7
+ordinal 17 = 803fa74b
+ordinal 18 = 803fa711
+ordinal 19 = 803fa77b
+ordinal 20 = 803fa78b
+ordinal 21 = 803fa69d
+ordinal 22 = 803fa69d
+ordinal 23 = 803fa6a5
+ordinal 24 = 803fa6a5
+ordinal 25 = 803fa551
+ordinal 26 = 803f9fa3
+ordinal 27 = 803fa421
+ordinal 28 = 803fa533
+ordinal 29 = 803fa371
+ordinal 30 = 803fa2ef
+ordinal 31 = 803fa45d
+ordinal 32 = 803fa1c1
+ordinal 33 = 803f9f6d
+ordinal 34 = 803fa513
+ordinal 35 = 803fa3c5
+ordinal 36 = 803f9f39
+ordinal 37 = 803f9f39
+ordinal 38 = 803f9f49
+ordinal 39 = 803f9f49
+profile guard=0 delta=ff99ca70
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=00700110
+BEGIN base load
+base load=0
+node reference_rom=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=00701a30
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=9979
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+info phase=created rc=0 header=30000068 max=104
+  id_word=00000000 property112=3 inputs=1 outputs=1 node_env=000077e0
+BEGIN native buffer
+native buffer=0 address=ced41000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ced42000 length=0 max=4096
+message get submitted=0 status=-2147483647
+EXITDIAG output armed=0 status=-2147483647
+MSGWORKER trigger=0 input=0 output=-2147483647 no_run=1
+MSGWORKER trigger completion input=0/0 output=0/0
+EXITDIAG stage=7 protocol=26 result=1 env=000077e0 cmd=00000606 arg1=a1b2c3d4 arg2=000077e0
+EXITDIAG stage=7 input_pending=0 output_pending=0 idle_input=0 idle_output=0 waits=0 status=00008000
+EXITDIAG stage=7 to_gpp=0012ac38 count=0 notify=2000 handle=0000/7ae6 status=0000 max=16
+EXITDIAG stage=7 from_dsp=0008fef8 header=0000/0000/0001/0303 captured=1 after=0001/0001
+EXITDIAG stage=7 from_raw=0000/0606/a1b2/c3d4/0000/77e0/0000/77e0
+EXITDIAG stage=7 to_dsp=0008ff7c header=0001/0000/0000/0303 raw_present=1 after=0001/0000
+EXITDIAG stage=7 to_raw=8000/0000/0000/732c/0040/bc34/0000/732c
+message phase=created worker completion=-33 status=-2147483647
+state phase=created worker complete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+MSGWORKER delivery=-33 overall=-33 no_run=1
+state phase=before delete rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=213
+delete=0 status=0
+state phase=after delete rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+state phase=worker deleted rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+free native out=0
+free native in=0
+BEGIN close
+FINAL status=-33

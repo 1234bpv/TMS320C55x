@@ -1,0 +1,46 @@
+2026-10-01T11:17:33.201622+00:00 INFO
+OK info
+protocol 2
+screen 800x352
+ramfree 79855616
+tick 46893304 startTick 75535 boot 0 by n
+ap Huawei
+drive C freekb 55856
+drive E freekb 1450640
+script IDLE
+2026-10-01T11:17:33.293386+00:00 PS c55stream*
+OK ps 0
+PREPARATION VERIFIED work\evidence\e90\wsola-v20-prepare-01-preparation.json
+2026-10-01T11:17:33.443324+00:00 START C:\sys\bin\c55stream.exe inspect
+OK proc 124
+2026-10-01T11:17:33.486470+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:34.062124+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-10-01T11:17:34.221903+00:00 WAIT 124 1
+EXIT 0 Kill
+2026-10-01T11:17:34.321292+00:00 START C:\sys\bin\c55stream.exe worker-wsola reps=0 bytes=1792 frames=1
+OK proc 125
+2026-10-01T11:17:34.362422+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:34.940791+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:35.637526+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-10-01T11:17:35.863830+00:00 WAIT 125 1
+EXIT 0 Kill
+2026-10-01T11:17:35.919058+00:00 INFO
+OK info
+protocol 2
+screen 800x352
+ramfree 79855616
+tick 46896008 startTick 75535 boot 0 by n
+ap Huawei
+drive C freekb 55856
+drive E freekb 1450640
+script IDLE

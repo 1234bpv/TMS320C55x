@@ -1,0 +1,237 @@
+C55STREAM v46 command='dmm-ring-native batch=8 frames=120' machine=20002496 fast_counter_hz=32768 firmware_rc=0 firmware='400.34.93
+21-04-2009
+RA-6
+(c)Nokia'
+library load=0
+ordinal 1 = 803faef3
+ordinal 2 = 803fafa9
+ordinal 3 = 803fb0ff
+ordinal 4 = 803fb12b
+ordinal 5 = 803fafd1
+ordinal 6 = 803faff5
+ordinal 7 = 803fb0e7
+ordinal 8 = 803faf4f
+ordinal 9 = 803faeaf
+ordinal 10 = 803fae79
+ordinal 11 = 803fae71
+ordinal 12 = 803fae71
+ordinal 13 = 803faea3
+ordinal 14 = 803faea3
+ordinal 15 = 803fa6e1
+ordinal 16 = 803fa6a7
+ordinal 17 = 803fa74b
+ordinal 18 = 803fa711
+ordinal 19 = 803fa77b
+ordinal 20 = 803fa78b
+ordinal 21 = 803fa69d
+ordinal 22 = 803fa69d
+ordinal 23 = 803fa6a5
+ordinal 24 = 803fa6a5
+ordinal 25 = 803fa551
+ordinal 26 = 803f9fa3
+ordinal 27 = 803fa421
+ordinal 28 = 803fa533
+ordinal 29 = 803fa371
+ordinal 30 = 803fa2ef
+ordinal 31 = 803fa45d
+ordinal 32 = 803fa1c1
+ordinal 33 = 803f9f6d
+ordinal 34 = 803fa513
+ordinal 35 = 803fa3c5
+ordinal 36 = 803f9f39
+ordinal 37 = 803f9f39
+ordinal 38 = 803f9f49
+ordinal 39 = 803f9f49
+profile guard=0 delta=ff99ca70
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=00700110
+PROCESSOR STATE rc=0 state=1 expected=1 native_ioctl=2 cached=1 no_patcher=1 no_proc_load=1
+BASE attach gate=0 reused_running=1 proc_load_calls=0
+BEGIN native buffer
+native buffer=0 address=ced43000 length=0 max=16384
+NATIVE PAGE phase=0 index=0 linear=ced43000 physical=81643000
+NATIVE PAGE phase=0 index=1 linear=ced44000 physical=81644000
+NATIVE PAGE phase=0 index=2 linear=ced45000 physical=81645000
+NATIVE PAGE phase=0 index=3 linear=ced46000 physical=81646000
+NATIVE PAGES rc=0 phase=0 pages=4 bytes=16384 no_patcher=1 immutable_compare=0
+RING reserve=0 address=00300000 bytes=16384
+RING map=0 address=00300000 flags=17 setup_us=6408
+node reference_rom=0
+BEGIN DCD parse
+DCD parse=0
+BEGIN select node
+select node=0
+properties=0 reference=00701698
+node timeout original=00000000
+node timeout modified=ffffffff
+original stream direction=0 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=0 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+original stream direction=1 attrs=0/0/0/0/0 id=0 connection=1
+stream direction=1 size_words=256 nbufs=2 timeout_ms=1000 connection=0
+BEGIN allocate
+allocate=0 handle=00008000
+BEGIN create
+create=0 status=0 wall_us=8941
+state phase=created rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+info phase=created rc=0 header=30000068 max=104
+  id_word=00000000 property112=3 inputs=1 outputs=1 node_env=00007654
+BEGIN native buffer
+native buffer=0 address=ced47000 length=0 max=4096
+BEGIN native buffer
+native buffer=0 address=ced48000 length=0 max=4096
+state phase=native pre-RUN rc=0 header=3000010c max=268
+  state=1 detail=00000005 streams=2
+NATIVE pre-RUN gate=0 env=00007654 state=1 no_patcher=1 proc_load_calls=0 env_allocator=RMS_MEM_valloc
+BEGIN execute
+execute submitted=0 status=-2147483647
+execute start=0 status=0
+state phase=running rc=0 header=3000010c max=268
+  state=2 detail=00000005 streams=2
+RING SETUP total_us=790527 includes_journaling=1
+RING CONFIG bytes=16384 control_bytes=1024 slots_per_direction=15 slot_bytes=512 payload_bytes=480 batch=8 frames=120 dsp_byte_address=00300000 dsp_word_address=00180000 whole_region_ownership=1
+RING OBSERVED dsp_control=d16a/0026/0008/0000/fff0/0000/0000/0000 dsp_address=0000/0018 result=0 arm_control=d16a/0026/0008/0000
+RING FRAME frame=1 slot=0 batch=8 packet_start=0 wall_us=1861 cpu_us=580 bad_words=0 dsp_ticks=26572
+RING FRAME frame=2 slot=8 batch=8 packet_start=8 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26444
+RING FRAME frame=3 slot=1 batch=8 packet_start=16 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26443
+RING FRAME frame=4 slot=9 batch=8 packet_start=24 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26463
+RING FRAME frame=5 slot=2 batch=8 packet_start=32 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26430
+RING FRAME frame=6 slot=10 batch=8 packet_start=40 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26431
+RING FRAME frame=7 slot=3 batch=8 packet_start=48 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26449
+RING FRAME frame=8 slot=11 batch=8 packet_start=56 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26465
+RING FRAME frame=9 slot=4 batch=8 packet_start=64 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26440
+RING FRAME frame=10 slot=12 batch=8 packet_start=72 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26426
+RING FRAME frame=11 slot=5 batch=8 packet_start=80 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26453
+RING FRAME frame=12 slot=13 batch=8 packet_start=88 wall_us=1831 cpu_us=640 bad_words=0 dsp_ticks=26476
+RING FRAME frame=13 slot=6 batch=8 packet_start=96 wall_us=2136 cpu_us=702 bad_words=0 dsp_ticks=27042
+RING FRAME frame=14 slot=14 batch=8 packet_start=104 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26450
+RING FRAME frame=15 slot=7 batch=8 packet_start=112 wall_us=1861 cpu_us=611 bad_words=0 dsp_ticks=26464
+RING FRAME frame=16 slot=0 batch=8 packet_start=120 wall_us=1861 cpu_us=641 bad_words=0 dsp_ticks=26574
+RING FRAME frame=17 slot=8 batch=8 packet_start=128 wall_us=1831 cpu_us=671 bad_words=0 dsp_ticks=26457
+RING FRAME frame=18 slot=1 batch=8 packet_start=136 wall_us=1861 cpu_us=611 bad_words=0 dsp_ticks=26418
+RING FRAME frame=19 slot=9 batch=8 packet_start=144 wall_us=1861 cpu_us=579 bad_words=0 dsp_ticks=26424
+RING FRAME frame=20 slot=2 batch=8 packet_start=152 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26420
+RING FRAME frame=21 slot=10 batch=8 packet_start=160 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26436
+RING FRAME frame=22 slot=3 batch=8 packet_start=168 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26463
+RING FRAME frame=23 slot=11 batch=8 packet_start=176 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26438
+RING FRAME frame=24 slot=4 batch=8 packet_start=184 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26834
+RING FRAME frame=25 slot=12 batch=8 packet_start=192 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26444
+RING FRAME frame=26 slot=5 batch=8 packet_start=200 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26437
+RING FRAME frame=27 slot=13 batch=8 packet_start=208 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26437
+RING FRAME frame=28 slot=6 batch=8 packet_start=216 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26423
+RING FRAME frame=29 slot=14 batch=8 packet_start=224 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26832
+RING FRAME frame=30 slot=7 batch=8 packet_start=232 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26439
+RING FRAME frame=31 slot=0 batch=8 packet_start=240 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26416
+RING FRAME frame=32 slot=8 batch=8 packet_start=248 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26444
+RING FRAME frame=33 slot=1 batch=8 packet_start=256 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26428
+RING FRAME frame=34 slot=9 batch=8 packet_start=264 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26452
+RING FRAME frame=35 slot=2 batch=8 packet_start=272 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26426
+RING FRAME frame=36 slot=10 batch=8 packet_start=280 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26465
+RING FRAME frame=37 slot=3 batch=8 packet_start=288 wall_us=1861 cpu_us=611 bad_words=0 dsp_ticks=26437
+RING FRAME frame=38 slot=11 batch=8 packet_start=296 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26439
+RING FRAME frame=39 slot=4 batch=8 packet_start=304 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26424
+RING FRAME frame=40 slot=12 batch=8 packet_start=312 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26432
+RING FRAME frame=41 slot=5 batch=8 packet_start=320 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26904
+RING FRAME frame=42 slot=13 batch=8 packet_start=328 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26444
+RING FRAME frame=43 slot=6 batch=8 packet_start=336 wall_us=1831 cpu_us=640 bad_words=0 dsp_ticks=26416
+RING FRAME frame=44 slot=14 batch=8 packet_start=344 wall_us=1953 cpu_us=641 bad_words=0 dsp_ticks=27866
+RING FRAME frame=45 slot=7 batch=8 packet_start=352 wall_us=1953 cpu_us=672 bad_words=0 dsp_ticks=27907
+RING FRAME frame=46 slot=0 batch=8 packet_start=360 wall_us=1953 cpu_us=671 bad_words=0 dsp_ticks=28000
+RING FRAME frame=47 slot=8 batch=8 packet_start=368 wall_us=2655 cpu_us=671 bad_words=0 dsp_ticks=26443
+RING FRAME frame=48 slot=1 batch=8 packet_start=376 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26484
+RING FRAME frame=49 slot=9 batch=8 packet_start=384 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26462
+RING FRAME frame=50 slot=2 batch=8 packet_start=392 wall_us=1861 cpu_us=641 bad_words=0 dsp_ticks=26841
+RING FRAME frame=51 slot=10 batch=8 packet_start=400 wall_us=1861 cpu_us=611 bad_words=0 dsp_ticks=26453
+RING FRAME frame=52 slot=3 batch=8 packet_start=408 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26454
+RING FRAME frame=53 slot=11 batch=8 packet_start=416 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26450
+RING FRAME frame=54 slot=4 batch=8 packet_start=424 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26430
+RING FRAME frame=55 slot=12 batch=8 packet_start=432 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26469
+RING FRAME frame=56 slot=5 batch=8 packet_start=440 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26477
+RING FRAME frame=57 slot=13 batch=8 packet_start=448 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26451
+RING FRAME frame=58 slot=6 batch=8 packet_start=456 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26424
+RING FRAME frame=59 slot=14 batch=8 packet_start=464 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26420
+RING FRAME frame=60 slot=7 batch=8 packet_start=472 wall_us=1831 cpu_us=640 bad_words=0 dsp_ticks=26431
+RING FRAME frame=61 slot=0 batch=8 packet_start=480 wall_us=1861 cpu_us=641 bad_words=0 dsp_ticks=26850
+RING FRAME frame=62 slot=8 batch=8 packet_start=488 wall_us=2197 cpu_us=641 bad_words=0 dsp_ticks=26568
+RING FRAME frame=63 slot=1 batch=8 packet_start=496 wall_us=1861 cpu_us=641 bad_words=0 dsp_ticks=26468
+RING FRAME frame=64 slot=9 batch=8 packet_start=504 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26436
+RING FRAME frame=65 slot=2 batch=8 packet_start=512 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26433
+RING FRAME frame=66 slot=10 batch=8 packet_start=520 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26425
+RING FRAME frame=67 slot=3 batch=8 packet_start=528 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26443
+RING FRAME frame=68 slot=11 batch=8 packet_start=536 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26458
+RING FRAME frame=69 slot=4 batch=8 packet_start=544 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26431
+RING FRAME frame=70 slot=12 batch=8 packet_start=552 wall_us=1922 cpu_us=579 bad_words=0 dsp_ticks=27898
+RING FRAME frame=71 slot=5 batch=8 packet_start=560 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=26436
+RING FRAME frame=72 slot=13 batch=8 packet_start=568 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26440
+RING FRAME frame=73 slot=6 batch=8 packet_start=576 wall_us=2075 cpu_us=671 bad_words=0 dsp_ticks=29799
+RING FRAME frame=74 slot=14 batch=8 packet_start=584 wall_us=1953 cpu_us=702 bad_words=0 dsp_ticks=28036
+RING FRAME frame=75 slot=7 batch=8 packet_start=592 wall_us=3509 cpu_us=763 bad_words=0 dsp_ticks=26736
+RING FRAME frame=76 slot=0 batch=8 packet_start=600 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26464
+RING FRAME frame=77 slot=8 batch=8 packet_start=608 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26468
+RING FRAME frame=78 slot=1 batch=8 packet_start=616 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26476
+RING FRAME frame=79 slot=9 batch=8 packet_start=624 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26448
+RING FRAME frame=80 slot=2 batch=8 packet_start=632 wall_us=1892 cpu_us=610 bad_words=0 dsp_ticks=27324
+RING FRAME frame=81 slot=10 batch=8 packet_start=640 wall_us=1831 cpu_us=579 bad_words=0 dsp_ticks=26431
+RING FRAME frame=82 slot=3 batch=8 packet_start=648 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26431
+RING FRAME frame=83 slot=11 batch=8 packet_start=656 wall_us=1861 cpu_us=641 bad_words=0 dsp_ticks=26482
+RING FRAME frame=84 slot=4 batch=8 packet_start=664 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26441
+RING FRAME frame=85 slot=12 batch=8 packet_start=672 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26463
+RING FRAME frame=86 slot=5 batch=8 packet_start=680 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26430
+RING FRAME frame=87 slot=13 batch=8 packet_start=688 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26443
+RING FRAME frame=88 slot=6 batch=8 packet_start=696 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26431
+RING FRAME frame=89 slot=14 batch=8 packet_start=704 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26430
+RING FRAME frame=90 slot=7 batch=8 packet_start=712 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26433
+RING FRAME frame=91 slot=0 batch=8 packet_start=720 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26473
+RING FRAME frame=92 slot=8 batch=8 packet_start=728 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26423
+RING FRAME frame=93 slot=1 batch=8 packet_start=736 wall_us=1861 cpu_us=610 bad_words=0 dsp_ticks=27022
+RING FRAME frame=94 slot=9 batch=8 packet_start=744 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26458
+RING FRAME frame=95 slot=2 batch=8 packet_start=752 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26507
+RING FRAME frame=96 slot=10 batch=8 packet_start=760 wall_us=2288 cpu_us=335 bad_words=0 dsp_ticks=28688
+RING FRAME frame=97 slot=3 batch=8 packet_start=768 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26631
+RING FRAME frame=98 slot=11 batch=8 packet_start=776 wall_us=2319 cpu_us=640 bad_words=0 dsp_ticks=28072
+RING FRAME frame=99 slot=4 batch=8 packet_start=784 wall_us=1861 cpu_us=672 bad_words=0 dsp_ticks=26458
+RING FRAME frame=100 slot=12 batch=8 packet_start=792 wall_us=1892 cpu_us=640 bad_words=0 dsp_ticks=26902
+RING FRAME frame=101 slot=5 batch=8 packet_start=800 wall_us=1831 cpu_us=702 bad_words=0 dsp_ticks=26464
+RING FRAME frame=102 slot=13 batch=8 packet_start=808 wall_us=1861 cpu_us=611 bad_words=0 dsp_ticks=26450
+RING FRAME frame=103 slot=6 batch=8 packet_start=816 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26433
+RING FRAME frame=104 slot=14 batch=8 packet_start=824 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26446
+RING FRAME frame=105 slot=7 batch=8 packet_start=832 wall_us=1831 cpu_us=579 bad_words=0 dsp_ticks=26435
+RING FRAME frame=106 slot=0 batch=8 packet_start=840 wall_us=1831 cpu_us=580 bad_words=0 dsp_ticks=26436
+RING FRAME frame=107 slot=8 batch=8 packet_start=848 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26432
+RING FRAME frame=108 slot=1 batch=8 packet_start=856 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26442
+RING FRAME frame=109 slot=9 batch=8 packet_start=864 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26452
+RING FRAME frame=110 slot=2 batch=8 packet_start=872 wall_us=1892 cpu_us=610 bad_words=0 dsp_ticks=27325
+RING FRAME frame=111 slot=10 batch=8 packet_start=880 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26447
+RING FRAME frame=112 slot=3 batch=8 packet_start=888 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26417
+RING FRAME frame=113 slot=11 batch=8 packet_start=896 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26443
+RING FRAME frame=114 slot=4 batch=8 packet_start=904 wall_us=1831 cpu_us=611 bad_words=0 dsp_ticks=26437
+RING FRAME frame=115 slot=12 batch=8 packet_start=912 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26630
+RING FRAME frame=116 slot=5 batch=8 packet_start=920 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26457
+RING FRAME frame=117 slot=13 batch=8 packet_start=928 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26438
+RING FRAME frame=118 slot=6 batch=8 packet_start=936 wall_us=1831 cpu_us=641 bad_words=0 dsp_ticks=26493
+RING FRAME frame=119 slot=14 batch=8 packet_start=944 wall_us=1861 cpu_us=641 bad_words=0 dsp_ticks=26484
+RING FRAME frame=120 slot=7 batch=8 packet_start=952 wall_us=1831 cpu_us=610 bad_words=0 dsp_ticks=26475
+RING DATA PASS bytes=16384 packets=960 frames=120 batch=8 total_exchange_us=225594 checked_words_per_packet=512 index_wraps=64 sequence_wrap=1 ownership=whole_region notify_stream_bytes=1024 counter_base=65520 counter_32bit_carry=1
+NATIVE PAGE phase=1 index=0 linear=ced43000 physical=81643000
+NATIVE PAGE phase=1 index=1 linear=ced44000 physical=81644000
+NATIVE PAGE phase=1 index=2 linear=ced45000 physical=81645000
+NATIVE PAGE phase=1 index=3 linear=ced46000 physical=81646000
+NATIVE PAGES rc=0 phase=1 pages=4 bytes=16384 no_patcher=1 immutable_compare=1
+state phase=before delete rc=0 header=3000010c max=268
+  state=2 detail=00000005 streams=2
+BEGIN delete
+delete submitted=0 status=-2147483647 submit_us=91
+delete=0 status=0
+state phase=after delete rc=0 header=3000010c max=268
+  state=5 detail=00000005 streams=2
+free task=0
+RING unmap=0
+RING unreserve=0
+RING free native=0
+free native out=0
+free native in=0
+BEGIN close
+RING LIFECYCLE setup_us=790527 teardown_us=167572 includes_journaling=1 status=0
+FINAL status=0

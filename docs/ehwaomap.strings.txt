@@ -1,0 +1,157 @@
+#### ehwaomap.pdd codeAddr=0x80199138 size=110168
+  80199428  Error: DBridgeFactory, MutexCreate failed.
+  8019ac80  LSHM|@-
+  8019b034  DSP RESET
+  8019b3a8   RMS_STATUS:NodeExecuteComplete [0x%x]
+  8019c3f8  LSHMg
+  8019c434  _SHM_BEG
+  8019c440  _SHM_END
+  8019c44c  TIOMAP1510SHM_maxMessages
+  8019c468  _SHM0_BEG
+  8019c474  _SHM0_END
+  8019d6d4  *** DSP MMU Fault ***
+  8019d6ec  Fault status : 0x%x
+  8019d700  Fault address: 0x%x
+  8019d714  *********************
+  8019d72c  *** Unrecoverble DSP MMU Exception ***
+  8019db54  SYS_PUTCBEG
+  8019db60  SYS_PUTCEND
+  8019db74  DSP_GENERAL_EXCEPTION: 0x%X
+  8019db90  DSP Exception: DSP_MMU_FAULT
+  8019dbb0  DSP Exception: 0x%x
+  801a2974   RMS_STATUS:NodeCreate: [0x%x]
+  801a2994   RMSComplete: calling CreateComplete
+  801a29bc   RMSComplete: calling DoCloseTask
+  801a29e0   RMS_STATUS:NodeExecute: [0x%x]
+  801a2a00   RMS_STATUS:NodeSuspend: [0x%x]
+  801a2c0c   RMS_STATUS:NodeResume: [0x%x]
+  801a2c2c   RMS_STATUS:NodeSetPriority: [0x%x]
+  801a2c50   RMSComplete: cleanup after creation failure done
+  801a2c84   RMS_STATUS:NodeDelete: [0x%x]
+  801a2dac  NODEh%
+  801a5880  create
+  801a5888  execute
+  801a5890  delete
+  801a6078  Dynamic Loader Error: Symbol redefined: 
+  801a60b4  Dynamic Loader Error: 
+  801a6634  DYN_DARAM
+  801a6640  DYN_SARAM
+  801a664c  DYN_EXTERNAL
+  801a665c  DYN_SRAM
+  801a72f4  .dspbridge_mem
+  801a7328  _BRIDGEINIT_DSP_FREQ
+  801aab74  DRBJKPwrDomainSem
+  801ab4d8  Enable to put DSP in standby mode
+  801ab500  Enable to put IVA in standby mode
+  801ab94c  Failed to create Bridge Resource handler
+  801abba0  DRBJKDSPSemHP
+  801abbb0  KDSPPwrDomainSem
+  801ac220  BRIDGEINIT_BIOSGPTIMER
+  801ac54c  _DYNEXT_BEG
+  801ac558  _DYNEXT_END
+  801ac564  _EXT_BEG
+  801ac570  _EXT_END
+  801ac57c  _SHM_BEG
+  801ac588  _SRAM_BEG
+  801ac594  _SRAM_END
+  801ad218  **** Warning in TLB[%d] entry in CDB ****
+  801ad244  Dynamic Memory Mapping Feature must not be used
+  801ad274  Dynamic Memory Mapping Range: 0x%X to 0x%X (byte addressed)
+  801ad2b4  **** Failed to map Peripheral ****
+  801ad2d8   Phys addr [0x%x] Virt addr [0x%x] size [0x%x]
+  801ad308   Status [0x%x]
+  801af7b4  DRBJKIVAPwrDomainSem
+  801af7cc  KIVAHighPerfSem
+  801afcf0  _IVAEXTMEM_BEG
+  801afd00  _IVAEXTMEM_END
+  801afd14  **** Error Writing to IVA memory ****
+  801afd3c  IVA address [0x%x] not in valid range
+  801afd64  Valid IVA memory range: 0x%X to 0x%X
+  801afd8c  Valid IVA memory range: 0x0 to 0x%X
+  801b0ff0  __DLModules
+  801b1458  write
+  801b1464  %d bytes left over in cinit packet
+  801b1490  Bad image packet size %d
+  801b14ac  Write to 0x%x failed
+  801b14c4  Zero-initialization at 0x%x after load-time initialization!
+  801b1964  Bad name offset in symbol %d
+  801b1984  Undefined external symbol %s
+  801b19a4  Checksum of symbols failed
+  801b19c0  Symbol table addition failed
+  801b19e0  Arg 3 (alloc) required but NULL
+  801b1a00  Bad name offset in section %d
+  801b1eac  File Headers
+  801b1ec8  Bad byte swap map 0x%x in header
+  801b1eec  header or verify record
+  801b1f08  Bad target ID 0x%x
+  801b1f1c  Bad DOFF version 0x%x
+  801b1f34  Excessive string table size 0x%x
+  801b1f58  Excessive section count 0x%x
+  801b1f78  Required parameter is NULL
+  801b1f94  Init->Execute Failed
+  801b2070  relocation
+  801b23b0  Required parameter is NULL
+  801b23cc  Can't allocate module info
+  801b23ec  image packet
+  801b2ab0  Bad coff operator 0x%x
+  801b2ad0  Expression stack overflow in %s at offset 0x%x
+  801b2b8c  Relocation value 0x%x overflows %d bits in %s offset 0x%x
+  801b31b8  D32HWA
+  801b31c4  Hwa.Omap
+  801b31d4  DBridgeFactoryMutex
+  801b31f0  D32HWA
+  801b3200  D32HWA
+  801b3210  D32HWA
+  801b3224  D32HWA
+  801b3264  D32HWA
+  801b3280  BridgeDevicePowerHandler
+  801b32a0  BridgeRH
+  801b32b8  D32HWA
+  801b342c  DDspObject::MMUInit, AddDSPMMUEntry(lp=%d, pa=0x%x, va=0x%x, sz=%d)
+  801b3474  D32HWA
+  801b3494  symbol
+  801b349b  section
+  801b34a3  ?DLModules?
+  801b34af  Error reading %s from input stream
+  801b34d2  Syms->Allocate( %d ) failed
+  801b34ee  Target memory allocate failed, section %s size 0x%x
+  801b3522  %s to target address 0x%x failed
+  801b3543  Write to DLLview list failed
+  801b3560  Connect call to init interface failed
+  801b3586  Checksum failed on %s
+  801b359c  string table
+  801b35c4  image packet
+  801b35ec  Zero-initialization at 0x%x attempted after load-time initialization!
+  801b3632  .cinit
+  801b3639  Error reading %s from input stream
+  801b365c  Set file position to %d failed
+  801b367b  Bad image packet size %d
+  801b3694  Checksum failed on %s
+  801b36aa  DLOAD_GetSection unable to read sections containing relocation entries
+  801b3990  10DBridgePdd
+  801b399d  10DDevObject
+  801b39aa  10DDspObject
+  801b39b7  10DIvaObject
+  801b39c4  11DLinkDspSHM
+  801b39d2  11DLinkIvaSHM
+  801b39e0  13DHwaDevicePdd
+  801b39f0  14DBridgeFactory
+  801b3a01  16DDevPowerHandler
+  801b3a14  16DResourceHandler
+  801b3a27  19THwaTaskHwInterface
+  801b3a3d  28TResourceStateChangeNotifier
+  801b3a5c  5DBase
+  801b3a63  5DNode
+  801b3a6a  8DLinkSHM
+  801b3ea8  EIrqMail
+  801b3eb1  EIrqFree34
+  801b3ebc  Lv2_DSP_MMU
+  801b3ec8  RMS_createNode
+  801b3ed7  RMS_deleteNode
+  801b3ee6  RMS_executeNode
+  801b3ef6  /dbpipe
+  801b3efe  RMS_configureServer
+  801b3f12  RMS_qu
+  801b383d  W16: "&*.26:>BFJ
+  801b3868  W16: ###/####''''#"#++/+///++//++/+/#@@
+  801b38ae  W16: @@@@@@@@@

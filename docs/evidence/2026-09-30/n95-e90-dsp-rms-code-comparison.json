@@ -1,0 +1,51 @@
+{
+  "utc": "2026-09-30T01:57:08.526344+00:00",
+  "section": "EXTERNAL_common_code",
+  "load_address": "0x240900",
+  "packets": 64,
+  "packet_header_bytes": 12,
+  "bytes": 65266,
+  "entire_section_equal": false,
+  "common_sha256": {
+    "n95": "22a82b9156a1e8ceae10ef3312a56885feca20243d98fb62b6c82ad467b29f00",
+    "e90": "e17c7d30b45e0b92330dcf1907d917568712a1f11cce6868e62020a9df238a0b"
+  },
+  "functions": {
+    "NODE_wait": {
+      "start": "0x24d020",
+      "end_exclusive": "0x24d160",
+      "bytes_equal": true,
+      "bytes": 320,
+      "sha256": "1273a3ae98c9c09280aac106bf7c3e38126c784637e61921b4aab81fbd388fa1"
+    },
+    "NODE_getMsg": {
+      "start": "0x24d790",
+      "end_exclusive": "0x24d878",
+      "bytes_equal": true,
+      "bytes": 232,
+      "sha256": "def8bbad818430978eab79a15a589989886ea3b51d413fb033831c9ea817e4a2"
+    },
+    "RMS_executeNode": {
+      "start": "0x24dedc",
+      "end_exclusive": "0x24df8c",
+      "bytes_equal": true,
+      "bytes": 176,
+      "sha256": "5df9338acb29ddd30c8bce11906207572c694022cf6f9c5395e6a440c59528f1"
+    },
+    "STRM_idle_prefix": {
+      "start": "0x24ebd8",
+      "end_exclusive": "0x24ecd8",
+      "bytes_equal": true,
+      "bytes": 256,
+      "sha256": "d9fd250505cef385609fc465695e5a759f047ec1681ace703029f5dff5e02c8a"
+    },
+    "RMS_task_wrapper": {
+      "start": "0x24e6f0",
+      "end_exclusive": "0x24e758",
+      "bytes_equal": true,
+      "bytes": 104,
+      "sha256": "92b8c63cdb688b6ce55664c117a11643cd38c7990a789e92a12f3a8df6107b5a"
+    }
+  },
+  "scope": "Static comparison of decoded firmware code. Hardware lifecycle remains separate."
+}

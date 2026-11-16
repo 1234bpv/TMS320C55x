@@ -1,0 +1,48 @@
+{
+  "utc": "2026-09-30T14:13:05.302488+00:00",
+  "scope": "Local builds and received installed E90 host; no speed claim",
+  "files": [
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 19328,
+      "sha256": "8DCCFAA525973C157BEF6EEEF48145818D8CC4AB22A7E1447D6CCA9D09BC9ECF"
+    },
+    {
+      "path": "out/dsp/c55stream-messages-bare.dll55l",
+      "bytes": 2136,
+      "sha256": "113F005B7744BB0412209D5613761457AEC1487B04DCE8A8AFCE9E4D5AF28B45"
+    },
+    {
+      "path": "out/dsp/c55stream.dll55l",
+      "bytes": 3668,
+      "sha256": "16F927CD806D5134116CB6571179481EFCF7FF42A98C0ED509FECC0EC0DFE7EE"
+    },
+    {
+      "path": "work/evidence/e90/stream-v8-sis-status-05.exe",
+      "bytes": 18668,
+      "sha256": "0900DFE31E14D915E2DC902C318DC0704A45B42FFF8335FF04ACA34F5C444D5F"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/arm-build-stream-v9-receive-created.log",
+      "exit_code": 0,
+      "sha256": "ACB6B31FBB7424D2FC979AE9A9E4E15674431E4F3CF897EB46061EF69241C9A8"
+    },
+    {
+      "log": "out/dsp-build-stream-messages-bare-01.log",
+      "exit_code": 0,
+      "sha256": "EA403ACD8B6A219F3A7B473D94A76AE859A7394DD95FB279A8BD935DA8C8979F"
+    },
+    {
+      "log": "out/dsp-build-stream-normal-after-bare-01.log",
+      "exit_code": 0,
+      "sha256": "CC5F689242755273EEAB17809B72A898A5B3BC0137780BC1EDDF7EC17A45400F"
+    },
+    {
+      "log": "out/arm-build-stream-v10-allocate-record.log",
+      "exit_code": 0,
+      "sha256": "2A413438359423F26971FDB0B8AB8A2C734010D491922ACCB5BA7DA0FA34D0D1"
+    }
+  ]
+}

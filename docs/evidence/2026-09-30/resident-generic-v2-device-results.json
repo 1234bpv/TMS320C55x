@@ -1,0 +1,46 @@
+{
+  "utc": "2026-09-30T22:42:24.470191+00:00",
+  "version": 2,
+  "artifact": "resident-generic-v2-artifacts.json",
+  "delete_null_context_is_error": true,
+  "proof_method": "conditional assertions in byte-verified DSP artifact and native RMS negative-status relay; ARM does not independently log internal task/stat fields",
+  "devices": {
+    "n95": {
+      "host_version": 15,
+      "create_us": 9399,
+      "created_state": 1,
+      "delete": 0,
+      "free_task": 0,
+      "final": 0,
+      "exit": "EXIT 0 Kill",
+      "official_node_run": false,
+      "stock_clock_guard": true,
+      "clock_log_restored": true,
+      "dsp_restored": true,
+      "restored_sha256": "5B6BE15B20E73D8D318FDF9C5E5050C16AA28994BC422C891C2B0132EA4AB9F9",
+      "restore_equal": true,
+      "active_c55stream_processes": 0,
+      "daemon_start_tick_unchanged": true,
+      "journal_sha256": "5C0FE36A836FA6EA4D74B3CDB011D3B9436CD6DFAA821C9D63730F3296245632"
+    },
+    "e90": {
+      "host_version": 14,
+      "create_us": 6744,
+      "created_state": 1,
+      "delete": 0,
+      "free_task": 0,
+      "final": 0,
+      "exit": "EXIT 0 Kill",
+      "official_node_run": false,
+      "stock_clock_guard": true,
+      "clock_log_restored": true,
+      "dsp_restored": true,
+      "restored_sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+      "restore_equal": true,
+      "active_c55stream_processes": 0,
+      "daemon_start_tick_unchanged": true,
+      "journal_sha256": "FBE4DB42F598243A976A8C8CDB1E850E1A16A4D3000D228137151C5A85E22B3E"
+    }
+  },
+  "scope": "Data stamp and saved delete address preserved across create/delete"
+}

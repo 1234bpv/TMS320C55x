@@ -1,0 +1,34 @@
+{
+  "scope": "Archived TI userspace reference only; E90 DMM ABI/flags/cache/pinning unverified; no device I/O",
+  "source_sha256": {
+    "VisionTest/MPU/inc/dbdefs.h": "83328EBB75B8D50A2B6FCB7085D519A4523B2A561212C429DA1859DCE00D4AF1",
+    "samples/mpu/src/dmmcopy/dmmcopy.c": "D690E94AD0F5BF9179E6E878D6B52865D36A60E95F3349B23526DDC01E85F235",
+    "samples/dsp/dmmcopyExecute.c": "5DF77782B41E9B6F0F8011586B4D4A41638C95C7EB755E611A02645C4E658A4C"
+  },
+  "map_flag_reference": {
+    "DSP_MAPVIRTUALADDR": 0,
+    "DSP_MAPPHYSICALADDR": 1,
+    "DSP_MAPBIGENDIAN": 2,
+    "DSP_MAPLITTLEENDIAN": 0,
+    "DSP_MAPMIXEDELEMSIZE": 4,
+    "DSP_MAPELEMSIZE8": 8,
+    "DSP_MAPELEMSIZE16": 16,
+    "DSP_MAPELEMSIZE32": 32,
+    "DSP_MAPELEMSIZE64": 64,
+    "DSP_MAPVMALLOCADDR": 128
+  },
+  "C55_reference_conventions": [
+    "Host selects g_dwDSPWordSize=2 for DSPTYPE_55.",
+    "Host divides returned mapping byte address and byte length by DSP word size before notifying the DSP.",
+    "Host flushes ARM input before DSP work and invalidates ARM output after completion.",
+    "The sample synchronizes through NODE messages; E90 message delivery remains a D0 diagnostic gate."
+  ],
+  "not_established_on_E90": [
+    "returned mapping address units",
+    "actual native flag interpretation",
+    "ARM cache API and ownership",
+    "nonpageable lifetime",
+    "16KiB ring wrap/ordering/notification",
+    "latency/bandwidth"
+  ]
+}

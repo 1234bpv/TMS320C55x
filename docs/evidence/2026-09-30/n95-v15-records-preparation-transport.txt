@@ -1,0 +1,80 @@
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 89849856
+< tick 18805967 startTick 7928381 boot 0 by n
+< ap Huawei
+< drive C freekb 65980
+< drive E freekb 1070192
+< script IDLE
+2026-09-30T16:13:59.448553+00:00
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 89849856
+< tick 18806045 startTick 7928381 boot 0 by n
+< ap Huawei
+< drive C freekb 65980
+< drive E freekb 1070192
+< script IDLE
+2026-09-30T16:13:59.513709+00:00
+> PS c55stream*
+< OK ps 0
+2026-09-30T16:13:59.578568+00:00
+> PS ocprobe*
+< OK ps 0
+> GET E:\c55stream.dll55l
+< OK 3668 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-before.dll55l
+> GET E:\c55stream.log
+< OK 1359 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-before.log
+> GET E:\sys\bin\c55stream.exe
+< OK 22408 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-before.exe
+> GET C:\sys\hash\c55stream.exe
+< OK 20 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-before.hash
+> GET E:\ocprobe.log
+< OK 1259 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-before-ocprobe.log
+2026-09-30T16:14:00.030343+00:00
+> START E:\sys\bin\ocprobe.exe patcher dsp 1
+< OK proc 32
+2026-09-30T16:14:00.198781+00:00
+> PS ocprobe*
+< OK ps 1
+< 1 ocprobe.exe[e0001010]0001
+2026-09-30T16:14:00.764548+00:00
+> PS ocprobe*
+< OK ps 1
+< 0 ocprobe.exe[e0001010]0001
+2026-09-30T16:14:00.930444+00:00
+> WAIT 32 1
+< EXIT 0 Kill
+> GET E:\ocprobe.log
+< OK 1355 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-clock.log
+> PUT E:\ocprobe.log 1259
+< OK 1259
+> GET E:\ocprobe.log
+< OK 1259 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-ocprobe-restored.log
+> PUT E:\sys\bin\c55stream.exe 23032
+< OK 23032
+> GET E:\sys\bin\c55stream.exe
+< OK 23032 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-host-readback.exe
+> PUT C:\sys\hash\c55stream.exe 20
+< OK 20
+> GET C:\sys\hash\c55stream.exe
+< OK 20 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-host-readback.hash
+> PUT E:\c55stream.dll55l 3692
+< OK 3692
+> GET E:\c55stream.dll55l
+< OK 3692 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\stream-v15-records-prepare-01-dsp-readback.dll55l
+2026-09-30T16:14:03.365106+00:00
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 89858048
+< tick 18809953 startTick 7928381 boot 0 by n
+< ap Huawei
+< drive C freekb 65980
+< drive E freekb 1070176
+< script IDLE

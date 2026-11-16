@@ -1,0 +1,300 @@
+{
+  "scope": "saved firmware and read-only extraction of a primary TI reference; no phone I/O",
+  "status": "partial",
+  "n95": {
+    "baseimage_sha256": "93BD6550FE26DF69C9AA3A1440DAF4DF6BCC118983DB30CE33E2CA3F3A95FB5C",
+    "native_BIOS_version": "5.10 (0x5100)",
+    "checked_instructions": [
+      {
+        "byte_address": "02725E",
+        "bytes": "6C25D65F"
+      },
+      {
+        "byte_address": "027262",
+        "bytes": "7C510044"
+      },
+      {
+        "byte_address": "027266",
+        "bytes": "0414FD"
+      },
+      {
+        "byte_address": "0272A6",
+        "bytes": "6C24ECE0"
+      },
+      {
+        "byte_address": "24ECE0",
+        "bytes": "46664804"
+      },
+      {
+        "byte_address": "24BFA3",
+        "bytes": "140EA4"
+      },
+      {
+        "byte_address": "24BFA9",
+        "bytes": "4C0D806514"
+      },
+      {
+        "byte_address": "24E581",
+        "bytes": "ED6D080014"
+      },
+      {
+        "byte_address": "24E589",
+        "bytes": "9200"
+      },
+      {
+        "byte_address": "247DC5",
+        "bytes": "F06D00010008"
+      },
+      {
+        "byte_address": "247DD9",
+        "bytes": "6C246958"
+      },
+      {
+        "byte_address": "247DE3",
+        "bytes": "F06D00020008"
+      },
+      {
+        "byte_address": "247DF7",
+        "bytes": "6C24B350"
+      },
+      {
+        "byte_address": "247E3B",
+        "bytes": "6C24DAA4"
+      },
+      {
+        "byte_address": "24B456",
+        "bytes": "EB6D080008"
+      },
+      {
+        "byte_address": "24B4C9",
+        "bytes": "6C24DAC4"
+      },
+      {
+        "byte_address": "026768",
+        "bytes": "ED310812ACE0"
+      },
+      {
+        "byte_address": "026776",
+        "bytes": "9200"
+      },
+      {
+        "byte_address": "0267BA",
+        "bytes": "6C24DAA4"
+      },
+      {
+        "byte_address": "24DAA4",
+        "bytes": "EC31BE7F1041"
+      },
+      {
+        "byte_address": "24DAAA",
+        "bytes": "ED6108180100"
+      },
+      {
+        "byte_address": "24DAB0",
+        "bytes": "0410F7"
+      },
+      {
+        "byte_address": "24DAB7",
+        "bytes": "EC31BE7F1022"
+      },
+      {
+        "byte_address": "24DABD",
+        "bytes": "EB6108"
+      },
+      {
+        "byte_address": "24DAC8",
+        "bytes": "EC31BE7F1041"
+      },
+      {
+        "byte_address": "24DACE",
+        "bytes": "ED6108180100"
+      },
+      {
+        "byte_address": "24DAD4",
+        "bytes": "0410F7"
+      },
+      {
+        "byte_address": "24DADA",
+        "bytes": "EC31BE7F1022"
+      },
+      {
+        "byte_address": "24DAE0",
+        "bytes": "EB6108"
+      }
+    ],
+    "DSM_function_table_cinit_word_address": "12ACCA",
+    "DSM_function_table": [
+      "247A90",
+      "25C494",
+      "247ACC",
+      "247DAC",
+      "247F04",
+      "248148",
+      "2481EC"
+    ],
+    "cinit_sha256": "BEF7BEE62A4A3113F9B500E301DAED0AFED3B5524B2544C11BCBE43BE54FD1AA",
+    "GBL_DCRPOSTEDWRITE_symbol_present": false
+  },
+  "e90": {
+    "baseimage_sha256": "180F95602B078111F617F459620C4AECD203ECB730E91803AEF9E591E5D22F35",
+    "native_BIOS_version": "5.10 (0x5100)",
+    "checked_instructions": [
+      {
+        "byte_address": "02725A",
+        "bytes": "6C25D65F"
+      },
+      {
+        "byte_address": "02725E",
+        "bytes": "7C510044"
+      },
+      {
+        "byte_address": "027262",
+        "bytes": "0414FD"
+      },
+      {
+        "byte_address": "0272A2",
+        "bytes": "6C24ECE0"
+      },
+      {
+        "byte_address": "24ECE0",
+        "bytes": "46664804"
+      },
+      {
+        "byte_address": "24BFA3",
+        "bytes": "140EA4"
+      },
+      {
+        "byte_address": "24BFA9",
+        "bytes": "4C0D806514"
+      },
+      {
+        "byte_address": "24E581",
+        "bytes": "ED6D080014"
+      },
+      {
+        "byte_address": "24E589",
+        "bytes": "9200"
+      },
+      {
+        "byte_address": "247DC5",
+        "bytes": "F06D00010008"
+      },
+      {
+        "byte_address": "247DD9",
+        "bytes": "6C246958"
+      },
+      {
+        "byte_address": "247DE3",
+        "bytes": "F06D00020008"
+      },
+      {
+        "byte_address": "247DF7",
+        "bytes": "6C24B350"
+      },
+      {
+        "byte_address": "247E3B",
+        "bytes": "6C24DAA4"
+      },
+      {
+        "byte_address": "24B456",
+        "bytes": "EB6D080008"
+      },
+      {
+        "byte_address": "24B4C9",
+        "bytes": "6C24DAC4"
+      },
+      {
+        "byte_address": "026768",
+        "bytes": "ED310812ACE0"
+      },
+      {
+        "byte_address": "026776",
+        "bytes": "9200"
+      },
+      {
+        "byte_address": "0267BA",
+        "bytes": "6C24DAA4"
+      },
+      {
+        "byte_address": "24DAA4",
+        "bytes": "EC31BE7F1041"
+      },
+      {
+        "byte_address": "24DAAA",
+        "bytes": "ED6108180100"
+      },
+      {
+        "byte_address": "24DAB0",
+        "bytes": "0410F7"
+      },
+      {
+        "byte_address": "24DAB7",
+        "bytes": "EC31BE7F1022"
+      },
+      {
+        "byte_address": "24DABD",
+        "bytes": "EB6108"
+      },
+      {
+        "byte_address": "24DAC8",
+        "bytes": "EC31BE7F1041"
+      },
+      {
+        "byte_address": "24DACE",
+        "bytes": "ED6108180100"
+      },
+      {
+        "byte_address": "24DAD4",
+        "bytes": "0410F7"
+      },
+      {
+        "byte_address": "24DADA",
+        "bytes": "EC31BE7F1022"
+      },
+      {
+        "byte_address": "24DAE0",
+        "bytes": "EB6108"
+      }
+    ],
+    "DSM_function_table_cinit_word_address": "12ACCA",
+    "DSM_function_table": [
+      "247A90",
+      "25C494",
+      "247ACC",
+      "247DAC",
+      "247F04",
+      "248148",
+      "2481EC"
+    ],
+    "cinit_sha256": "66C37B7DD239FFF6E6A72409504180226FED2A6170EC9442A3490D8832305D41",
+    "GBL_DCRPOSTEDWRITE_symbol_present": false
+  },
+  "DCR_reference": {
+    "author": "Texas Instruments",
+    "download_url": "https://software-dl.ti.com/dsps/dsps_public_sw/sdo_sb/targetcontent/bios/dspbios/5_41_13_42/exports/bios_setuplinux_5_41_13_42.bin",
+    "archive_sha256": "AF43E9F599DD885B59D341DA6A51608EDA23C02AC01CE16A1B0E93DC723BE699",
+    "selected_file": "packages/ti/bios/include/gbl.h55",
+    "selected_file_sha256": "D84B8E72ED141BE583F50E5A2F335F68D4E5611669CA582E0721A8CBE9560E83",
+    "section": "GBL configuration, lines 295-306, OMAP2420 conditional",
+    "instruction": "or #0x80, port(#0x200)",
+    "meaning": "OMAP2420 DCR is I/O port 0x200, WPE bit mask 0x80",
+    "limit": "TI BIOS 5.41 reference, not the phones' BIOS 5.10 configuration"
+  },
+  "posted_mode_reference": {
+    "url": "https://software-dl.ti.com/targetcontent/legacy_files/targetcontent/bios/bios_5_31/sabios-h16/docs/packages/ti/bios/doc/spru404m.pdf",
+    "section": "GBL Module, 2-118, PDF page 146",
+    "meaning": "DCR.WPE selects posted/non-posted D-port writes on OMAP2320/2420. The documented configuration default is posted; it is not a measurement of these phones."
+  },
+  "verified": [
+    "STRM_create copies 14 words of matched device callbacks; STRM_issue calls stream+20 words. The initialized DSM table puts 0x247DAC at this position.",
+    "DSM callback branches on native channel type: DMA=1, zero-copy=2, other types follow the copy path. Both copy and zero-copy mailbox routines poll DSP-word address 0x7F1041 before writing 0x7F1022.",
+    "Native early user-init clears ST3_MPNMC and returns; this function does not set DCR.WPE."
+  ],
+  "not_proven": [
+    "The actual DCR.WPE value during candidate54/61 runs is unknown. Absence of the BIOS 5.41 configuration symbol in native BIOS 5.10 is not proof that posting is disabled.",
+    "Polling mailbox status is not independently established as a drain of earlier SDRAM D-port writes.",
+    "The configured copy-function pointer and dynamic device/channel selection of each historical run are not re-read by this static audit.",
+    "No OMAP2420 interconnect-wide publication fence is established; compiler order and correct packets remain separate evidence."
+  ],
+  "next_probe": "After fresh clock validation, use a distinct read-only DSP diagnostic to report port(0x200) before/after exchange. Do not write DCR, replace native firmware, or retrospectively assign its result to candidate61."
+}

@@ -1,0 +1,191 @@
+{
+  "utc": "2026-10-01T11:17:39.636550+00:00",
+  "device": "e90",
+  "ip": "192.168.3.21",
+  "frames_per_run": 32,
+  "orders": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "runs": [
+    {
+      "tag": "wsola-v20-pairs-reps0-r1-01",
+      "reps": 0,
+      "round": 1,
+      "command": [
+        "C:\\Users\\1234b\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\tools\\run_stream.py",
+        "--ip",
+        "192.168.3.21",
+        "--device",
+        "e90",
+        "--mode",
+        "worker-wsola",
+        "--host-version",
+        "20",
+        "--reps",
+        "0",
+        "--frames",
+        "32",
+        "--preparation",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\work\\evidence\\e90\\wsola-v20-prepare-01-preparation.json",
+        "--tag",
+        "wsola-v20-pairs-reps0-r1-01",
+        "--exe",
+        "C:\\sys\\bin\\c55stream.exe"
+      ],
+      "exit_code": 0
+    },
+    {
+      "tag": "wsola-v20-pairs-reps1-r1-01",
+      "reps": 1,
+      "round": 1,
+      "command": [
+        "C:\\Users\\1234b\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\tools\\run_stream.py",
+        "--ip",
+        "192.168.3.21",
+        "--device",
+        "e90",
+        "--mode",
+        "worker-wsola",
+        "--host-version",
+        "20",
+        "--reps",
+        "1",
+        "--frames",
+        "32",
+        "--preparation",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\work\\evidence\\e90\\wsola-v20-prepare-01-preparation.json",
+        "--tag",
+        "wsola-v20-pairs-reps1-r1-01",
+        "--exe",
+        "C:\\sys\\bin\\c55stream.exe"
+      ],
+      "exit_code": 0
+    },
+    {
+      "tag": "wsola-v20-pairs-reps1-r2-01",
+      "reps": 1,
+      "round": 2,
+      "command": [
+        "C:\\Users\\1234b\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\tools\\run_stream.py",
+        "--ip",
+        "192.168.3.21",
+        "--device",
+        "e90",
+        "--mode",
+        "worker-wsola",
+        "--host-version",
+        "20",
+        "--reps",
+        "1",
+        "--frames",
+        "32",
+        "--preparation",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\work\\evidence\\e90\\wsola-v20-prepare-01-preparation.json",
+        "--tag",
+        "wsola-v20-pairs-reps1-r2-01",
+        "--exe",
+        "C:\\sys\\bin\\c55stream.exe"
+      ],
+      "exit_code": 0
+    },
+    {
+      "tag": "wsola-v20-pairs-reps0-r2-01",
+      "reps": 0,
+      "round": 2,
+      "command": [
+        "C:\\Users\\1234b\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\tools\\run_stream.py",
+        "--ip",
+        "192.168.3.21",
+        "--device",
+        "e90",
+        "--mode",
+        "worker-wsola",
+        "--host-version",
+        "20",
+        "--reps",
+        "0",
+        "--frames",
+        "32",
+        "--preparation",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\work\\evidence\\e90\\wsola-v20-prepare-01-preparation.json",
+        "--tag",
+        "wsola-v20-pairs-reps0-r2-01",
+        "--exe",
+        "C:\\sys\\bin\\c55stream.exe"
+      ],
+      "exit_code": 0
+    },
+    {
+      "tag": "wsola-v20-pairs-reps0-r3-01",
+      "reps": 0,
+      "round": 3,
+      "command": [
+        "C:\\Users\\1234b\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\tools\\run_stream.py",
+        "--ip",
+        "192.168.3.21",
+        "--device",
+        "e90",
+        "--mode",
+        "worker-wsola",
+        "--host-version",
+        "20",
+        "--reps",
+        "0",
+        "--frames",
+        "32",
+        "--preparation",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\work\\evidence\\e90\\wsola-v20-prepare-01-preparation.json",
+        "--tag",
+        "wsola-v20-pairs-reps0-r3-01",
+        "--exe",
+        "C:\\sys\\bin\\c55stream.exe"
+      ],
+      "exit_code": 0
+    },
+    {
+      "tag": "wsola-v20-pairs-reps1-r3-01",
+      "reps": 1,
+      "round": 3,
+      "command": [
+        "C:\\Users\\1234b\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\tools\\run_stream.py",
+        "--ip",
+        "192.168.3.21",
+        "--device",
+        "e90",
+        "--mode",
+        "worker-wsola",
+        "--host-version",
+        "20",
+        "--reps",
+        "1",
+        "--frames",
+        "32",
+        "--preparation",
+        "H:\\VsCodeProjects\\SymbianProjects\\TMS320C55x test\\work\\evidence\\e90\\wsola-v20-prepare-01-preparation.json",
+        "--tag",
+        "wsola-v20-pairs-reps1-r3-01",
+        "--exe",
+        "C:\\sys\\bin\\c55stream.exe"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "complete": true
+}

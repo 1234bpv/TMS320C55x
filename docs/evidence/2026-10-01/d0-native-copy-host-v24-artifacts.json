@@ -1,0 +1,143 @@
+{
+  "utc": "2026-10-01T20:41:16.156842+00:00",
+  "variant": "generic library2, official RUN, final output reclaim, await RMS_EXIT before EXITACK",
+  "candidate_revision": 28,
+  "host_mode": "E90 ROM STRMCOPY_TI native-copy control; own run-stop retained, not scheduled",
+  "native_reference": {
+    "path": "work/evidence/e90/strmcopydyn-e90.dll55l",
+    "bytes": 4396,
+    "sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+    "DLLdump_verification": true,
+    "phone_path": "Z:\\system\\apps\\strmcopy\\strmcopydyn.dll55l",
+    "limits": "ROM control only; no clean native-copy RUN verified yet"
+  },
+  "native_library2": {
+    "scope": "Research-file DCD metadata only; no phone writes or code changes",
+    "source_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+    "derived_path": "out/dsp/strmcopy-e90-library2.dll55l",
+    "derived_sha256": "308090D3EF802349EF0F5C234B664903C40418F53CD163F3145F8583A00E968F",
+    "bytes": 4396,
+    "DLLdump_verification": true,
+    "changed_section": ".dcd_register",
+    "changed_offsets": [
+      3807,
+      3883
+    ],
+    "registration_from": ":0,",
+    "registration_to": ":2,",
+    "code_data_relocations_identical": true,
+    "requires": "Parse original Z ROM properties first, then this E research library2 registration; no successful reference RUN yet"
+  },
+  "host_version": 24,
+  "protocol": 21,
+  "hardware_verified": false,
+  "d0_accepted_runs": 0,
+  "dll_dump_verification": true,
+  "imports_exist_in_saved_e90_baseimage": true,
+  "imports": [
+    "_NODE_wait",
+    "_STRM_allocateBuffer",
+    "_CLK_countspms",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_CLK_gethtime",
+    "_NODE_getMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_STRM_create",
+    "_STRM_idle",
+    "_c_int00"
+  ],
+  "files": [
+    {
+      "path": "out/dsp/c55stream-run-stop.dll55l",
+      "bytes": 3952,
+      "sha256": "2B97836D039E698094D6256AFE99D8A539F1CA610877B2313196122BC40B6B34"
+    },
+    {
+      "path": "out/dsp/stream_node-run-stop.asm",
+      "bytes": 30203,
+      "sha256": "E35BCAC9FC1F9FA6D534FC8A96A07F584914B165A76EEAF3847843288B812B7D"
+    },
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 36724,
+      "sha256": "12356F00E0163EF0B0823A0E017D38A2796DCE83F2AB1FA85554DCFFF32A09D8"
+    },
+    {
+      "path": "src/dsp/stream_resident_dcd.s55",
+      "bytes": 738,
+      "sha256": "4220828E5CC6759C8C04560EE352A830AA0EEFBAFD772A7ADBE90F2EE7220D4F"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 45612,
+      "sha256": "8C084E1E276846B4B61C0B799FD254741D439BCF5705425B284B4ED6B4E4693E"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 27546,
+      "sha256": "C4499A00ECE8C86DE86E92DA6B8819ADE9B55B11BB5CD960791865FF806B9661"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 5226,
+      "sha256": "B1F2B9AF234D456AE5EEF0099EC6173CA9E51DEBC66D961D292B32AF4ABEE21B"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 534,
+      "sha256": "34B79FF0C08EA0EE2C2D37C6D14C864ABE8561575F26A8F69EAFE6B874835C2C"
+    },
+    {
+      "path": "out/sis/c55stream-native-copy-v24_sha1.sis",
+      "bytes": 21180,
+      "sha256": "CEB641F9956E3CDADECAF865634D21022140C36DD28FCE524603DC5B14DD6B79"
+    },
+    {
+      "path": "out/sis/c55stream-restore-v20_sha1.sis",
+      "bytes": 19924,
+      "sha256": "9C2D310E19889C4CAA3CA25F213A39C50B8C6F4FF62596951CE9C183B9B69874"
+    },
+    {
+      "path": "work/evidence/e90/strmcopydyn-e90.dll55l",
+      "bytes": 4396,
+      "sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A"
+    },
+    {
+      "path": "out/dsp/strmcopy-e90-library2.dll55l",
+      "bytes": 4396,
+      "sha256": "308090D3EF802349EF0F5C234B664903C40418F53CD163F3145F8583A00E968F"
+    },
+    {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-library2-derivation.json",
+      "bytes": 699,
+      "sha256": "4E24987C579591C3BB0BC0101EE2EADE2098BB0680A5BE40E44E004BC451CBBC"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/d0-host-v24-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-run-stop-v22-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-host-v24-sis.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-restore-v20-sis-build.log",
+      "exit_code": 0
+    }
+  ],
+  "limits": [
+    "Assembly/import checks are not proof of RMS EXITACK delivery.",
+    "Fail-stop retains ownership and requires manual recovery; cancel safety is not proven.",
+    "Restore SIS revision22 contains the exact original v20 EXE, not a v22 host."
+  ]
+}

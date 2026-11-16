@@ -1,0 +1,59 @@
+You are a researcher. You only read; you change nothing. Answer in Ukrainian,
+in an academic style, with exact references (file, § section, line number).
+Distinguish: «перевірено на апараті» (verified on the device) /
+«виведено з дизасемблера» (derived from disassembly) / «не знайдено» (not
+found). Do not draw conclusions beyond what was found.
+
+Project: H:\VsCodeProjects\SymbianProjects\TMS320C55x test — our own code on the
+TMS320C55x DSP inside the TI OMAP2420 of the Nokia N95 8GB (Symbian 9.2). Through
+the TI DSP/BIOS Bridge (bridgeapi.dll, kernel LDD Hwa), our own node bench.dll55l
+is loaded onto the C55x; the work is performed inside the create phase of the
+node, and the ARM measures the time around DoControl(5). The standard message
+queue (ordinals 15-18) is dead code. Each run of work on the DSP costs ~8-9 ms
+(the empty create phase). GOAL of the next stage: find, within the standard API
+of the bridge, a path to STREAMING processing — permanently live code on the DSP
+that exchanges data with the ARM without the 9 ms overhead for each portion, and
+parallel work of the ARM and the DSP.
+
+Sources: docs/findings.md (large; search by sections §9, §10, §16-§20),
+docs/DSP_GUIDE.md, docs/CHARACTERIZATION.md, docs/bridgeapi_fns.txt,
+docs/base_syms.txt, docs/ehwaomap.strings.txt, src/dsptest.cpp,
+src/dsp/bench_node.c, src/dsp/bench_dcd.s55.
+
+Questions:
+1. The map of the 39 ordinals of bridgeapi.dll (findings §17.4 and related
+   sections). Which of them correspond to the TI Bridge API for STREAMS
+   (DSPStream_Open/Close/AllocateBuffers/FreeBuffers/Issue/Reclaim/Idle/
+   GetInfo/RegisterNotify/Select), for DMM (DSPProcessor_ReserveMemory/
+   UnReserveMemory/Map/UnMap/FlushMemory/InvalidateMemory), for notifications
+   (DSPNode_RegisterNotify, DSPProcessor_RegisterNotify), for DSPNode_Run/
+   Pause/Terminate/GetMessage/PutMessage? For each: the ordinal, the ioctl code,
+   whether its clients in the ROM call it (bal.dll, ivapolicyserver.exe, gwc),
+   and whether it was tried on the device and with what result.
+2. How exactly the ARM starts the node's work: is the semantics of DoControl(5)
+   synchronous or asynchronous (TRequestStatus)? What exactly does the ARM wait
+   for? Can the ARM do other work in parallel while the DSP is in create? Was
+   the execute (Run) phase tried, and why does the work happen in create rather
+   than in execute?
+3. The composition of the base cost of ~8-9 ms: list the steps of the dsptest
+   sequence for one run (opening the channel, loading the base image, parsing
+   the DCD, ord6, ord4, fn4, fn5, etc.), which are executed every time, and
+   which could be executed once. Are there measurements of the individual steps?
+4. Memory: the segments DYN_DARAM/SARAM/EXTERNAL/SRAM (DSP addresses); what is
+   known about how the ARM side passes buffers to the node by the bridge's
+   standard means (DMM map, create arguments, stream buffers); the shared memory
+   segment of the bridge (SHM, _SHM_BEG, DSP_SHM, etc.) in docs/base_syms.txt.
+5. Notifications: is there evidence that the bridge's events/notify work on this
+   firmware?
+6. Functions of the DSP base image (docs/base_syms.txt) that the node can call
+   for input/output or background work: STRM_*, SIO_*, NODE_*, MSGQ_*, DSP/BIOS
+   TSK_*, SEM_*, SWI_*, CLK_*, MBX_*, QUE_*, LCK_*. In particular: can a DSP/BIOS
+   task (TSK_create) be created in the create phase that will live after the
+   return from create? Give the exact names of the symbols present.
+7. src/dsptest.cpp: a list of ALL firmware-dependent constants (hard-coded
+   addresses such as 0x80A5F0D4, ordinal addresses, structure offsets, UUIDs of
+   the base nodes, etc.) with line numbers — this is needed for the transfer to
+   the Nokia E90 with different firmware.
+
+Format: sections 1-7; in each, facts with references; at the end, a short list of
+«чого в матеріалах немає» (“what the materials do not contain”).

@@ -1,0 +1,67 @@
+{
+  "utc": "2026-09-30T02:36:02.228667+00:00",
+  "ip": "192.168.3.22",
+  "device": "n95",
+  "files": [
+    {
+      "remote": "E:\\sys\\bin\\c55stream.exe",
+      "saved": "work\\evidence\\n95\\stream-before-v8-raw-info.exe",
+      "bytes": 15684,
+      "sha256": "87CEA30CD113927F36B488F33E26AA156E0E3AB4AD75F34A8E3CE5799E69510E"
+    },
+    {
+      "remote": "C:\\sys\\hash\\c55stream.exe",
+      "saved": "work\\evidence\\n95\\stream-before-v8-raw-info.hash",
+      "bytes": 20,
+      "sha256": "BB248F33C592C586CB477F263D5F1C60BB0D23EBF66925E76F9FFFCD1F69B94D"
+    },
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "saved": "work\\evidence\\n95\\stream-before-v8-raw-info.dll55l",
+      "bytes": 3668,
+      "sha256": "5B6BE15B20E73D8D318FDF9C5E5050C16AA28994BC422C891C2B0132EA4AB9F9"
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "saved": "work\\evidence\\n95\\stream-before-v8-raw-info.log",
+      "bytes": 2064,
+      "sha256": "20EC88573E015348B76326F2CAB1523A2CF949807704E66846C060AF2CED93DA"
+    },
+    {
+      "remote": "E:\\sys\\bin\\c55stream.exe",
+      "readback": "work\\evidence\\n95\\stream-v8-raw-info-readback.exe",
+      "bytes": 18660,
+      "sha256": "374F8BE1D8EB60B2AE309BF1ED1F30C1A3C77E1B97FA9E5C4B6A9DCC543316AB",
+      "equal": true
+    },
+    {
+      "remote": "C:\\sys\\hash\\c55stream.exe",
+      "readback": "work\\evidence\\n95\\stream-v8-raw-info-readback.hash",
+      "bytes": 20,
+      "sha256": "27F74AC2EA702CFC59C685BD8DBF31BAD7B38BEEBFF368D68A77A58117DEE711",
+      "equal": true
+    }
+  ],
+  "info": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 89718784",
+    "tick 10258292 startTick 7895828 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 66004",
+    "drive E freekb 1070208",
+    "script IDLE"
+  ],
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 89726976",
+    "tick 10259536 startTick 7895828 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 66004",
+    "drive E freekb 1070192",
+    "script IDLE"
+  ]
+}

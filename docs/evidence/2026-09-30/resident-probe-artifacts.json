@@ -1,0 +1,17 @@
+{
+  "resident-check": {
+    "bytes": 2980,
+    "sha256": "475EFB3B3E64B3EF6EDA073A69F7A85FBDDE0C28DB1C40A077F86AE2244A3449",
+    "raw_text_sha256": "CF27629BDF5C4EA6B22F309FC2B17631213A4A015BA915E0A1C96BDCEDADE769",
+    "data_downloaded": true,
+    "tested_artifact_local": "work/evidence/artifacts/c55stream-resident-check-v1.dll55l"
+  },
+  "resident-phase": {
+    "bytes": 3136,
+    "sha256": "488C980B471F892F394D14CF4A47EDC9058C9A2DF1CBE9FC4EE0E1B13BF8246B",
+    "raw_text_sha256": "CF27629BDF5C4EA6B22F309FC2B17631213A4A015BA915E0A1C96BDCEDADE769",
+    "data_downloaded": true,
+    "tested_artifact_local": "work/evidence/artifacts/c55stream-resident-phase-v1.dll55l"
+  },
+  "scope": "Historical v1 probes, before null-environment/context guard hardening; no official RUN"
+}

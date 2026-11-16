@@ -1,0 +1,35 @@
+{
+  "scans_before_network_correction": [
+    {
+      "utc": "2026-09-30T01:32:55.823571+00:00",
+      "network": "192.168.3.0/24",
+      "port": 2323,
+      "addresses_probed": 254,
+      "devices": [
+        {
+          "ip": "192.168.3.21",
+          "info": "OK info\nprotocol 2\nscreen 800x352\nramfree 77541376\ntick 1000305 startTick 34100 boot 1 by t\nap Huawei\ndrive C freekb 55928\ndrive E freekb 1470688\nscript IDLE\nEND\n"
+        }
+      ]
+    },
+    {
+      "utc": "2026-09-30T01:35:37.855766+00:00",
+      "network": "192.168.3.0/24",
+      "port": 2323,
+      "addresses_probed": 254,
+      "devices": [
+        {
+          "ip": "192.168.3.21",
+          "info": "OK info\nprotocol 2\nscreen 800x352\nramfree 77508608\ntick 1157779 startTick 34100 boot 1 by t\nap Huawei\ndrive C freekb 55924\ndrive E freekb 1470688\nscript IDLE\nEND\n"
+        }
+      ]
+    }
+  ],
+  "user_report": "N95 was connected to another subnet, then .22 was to be checked again.",
+  "recovered_device": {
+    "ip": "192.168.3.22",
+    "screen": "320x240",
+    "transport": "work/evidence/n95/stream-idle-first-recovery-corrected-subnet-transport.txt"
+  },
+  "status_after_tests": "device-status-after-n95-subnet-recovery.json"
+}

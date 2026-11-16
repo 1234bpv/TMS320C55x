@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-02T10:41:13.506342+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "deploy-host",
+  "host_version_expected": 25,
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 80531456",
+    "tick 1318152 startTick 81256 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55808",
+    "drive E freekb 1447672",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "before": [
+    {
+      "remote": "C:\\sys\\bin\\c55stream.exe",
+      "local": "host25-deploy01-before-0.bin",
+      "bytes": 36724,
+      "sha256": "12356F00E0163EF0B0823A0E017D38A2796DCE83F2AB1FA85554DCFFF32A09D8"
+    },
+    {
+      "remote": "C:\\sys\\hash\\c55stream.exe",
+      "local": "host25-deploy01-before-1.bin",
+      "bytes": 20,
+      "sha256": "608C6C60F3CB91DE46D593A4EE59169568292D91FE7EBD531D8F38C53D654DCE"
+    }
+  ],
+  "files": [
+    {
+      "remote": "C:\\sys\\bin\\c55stream.exe",
+      "bytes": 39504,
+      "sha256": "CB74DE96012E3C9D4D7DDE6F783C6A746F75713B83DBF136DF03001C7035CA0A",
+      "equal": true
+    },
+    {
+      "remote": "C:\\sys\\hash\\c55stream.exe",
+      "bytes": 20,
+      "sha256": "EDDE22CA4052B13C659CAB19973AD7DF712920F2E7D5F8F3C642526700A71BCF",
+      "equal": true
+    }
+  ],
+  "original_host_restored": false,
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 80523264",
+    "tick 1319109 startTick 81256 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55804",
+    "drive E freekb 1447672",
+    "script IDLE"
+  ]
+}

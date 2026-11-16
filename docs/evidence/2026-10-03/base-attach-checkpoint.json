@@ -1,0 +1,80 @@
+{
+  "scope": "four guarded refusals; no new official RUN",
+  "devices": {
+    "e90": {
+      "session": "work/evidence/e90/d0-20261003-clean34",
+      "attempts": [
+        {
+          "host": 34,
+          "journal": "docs/evidence/2026-10-03/e90-host34-source-guard.txt",
+          "sha256": "7A35875EB8F7324DFF15548FC8990E0690DCEA39500659A85F608A83F2AF0D88",
+          "create_preflight": true,
+          "official_run_calls": 0,
+          "source": "000077e0",
+          "matching_queues": 2,
+          "created_node_cleanup": true,
+          "exit_status": -11
+        },
+        {
+          "host": 35,
+          "journal": "docs/evidence/2026-10-03/e90-host35-source-guard.txt",
+          "sha256": "F8E9013EADE5A97B87BE8BCCD1C4ADC9C06FF720E0BB56FC5FD2B6C6581466A7",
+          "create_preflight": true,
+          "official_run_calls": 0,
+          "source": "000077e0",
+          "matching_queues": 2,
+          "created_node_cleanup": true,
+          "exit_status": -11
+        }
+      ],
+      "startTick": "33897",
+      "original_dsp_and_logs_restored": true,
+      "installed_host": 35,
+      "host_sha256": "D09100D03445297526537D451BD10F9EDFF0276BA51D6A5965F863C091D818D5",
+      "host_is_original": false,
+      "active_research_processes": 0,
+      "original_exe_hash_backup": "original-3.bin / original-4.bin"
+    },
+    "n95": {
+      "session": "work/evidence/n95/d0-20261003-clean34",
+      "attempts": [
+        {
+          "host": 34,
+          "journal": "docs/evidence/2026-10-03/n95-host34-source-guard.txt",
+          "sha256": "37EA14589930C104407599A4D6993DE8377030B1E26B314907DACF48952CAEA5",
+          "create_preflight": true,
+          "official_run_calls": 0,
+          "source": "000077e0",
+          "matching_queues": 2,
+          "created_node_cleanup": true,
+          "exit_status": -11
+        },
+        {
+          "host": 35,
+          "journal": "docs/evidence/2026-10-03/n95-host35-source-guard.txt",
+          "sha256": "A590607E990A188DC85B83CBD64213F760C5D2D9404E345D8536299C3AF5EE8A",
+          "create_preflight": true,
+          "official_run_calls": 0,
+          "source": "000077e0",
+          "matching_queues": 2,
+          "created_node_cleanup": true,
+          "exit_status": -11
+        }
+      ],
+      "startTick": "64375",
+      "original_dsp_and_logs_restored": true,
+      "installed_host": 35,
+      "host_sha256": "D09100D03445297526537D451BD10F9EDFF0276BA51D6A5965F863C091D818D5",
+      "host_is_original": false,
+      "active_research_processes": 0,
+      "original_exe_hash_backup": "original-3.bin / original-4.bin"
+    }
+  },
+  "accepted_d0_runs": 0,
+  "next": "reboot both prepared phones; verify changed startTick; host35 d0-sequence attach-sequence02",
+  "limits": [
+    "host35 cannot repair ARM queues already made stale by an earlier PROC_Load",
+    "fresh-boot host35 routing and successful RUN teardown are not yet verified",
+    "D1 and D2 remain pending; DSP pre-return delay remains an unproven earlier hypothesis"
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "utc": "2026-10-04T01:43:30.130537+00:00",
+  "variant": "Distinct N95 WSOLA coarse/refine search through native16KiB ring: four input slots, one output slot; ARM scalar baseline; DCR read-only brackets; no useful ARM W/emulator changes",
+  "candidate_revision": 63,
+  "host_mode": "own DSP candidate",
+  "native_reference": null,
+  "native_library2": null,
+  "host_version": 48,
+  "protocol": 40,
+  "hardware_verified": false,
+  "d0_accepted_runs": 0,
+  "dll_dump_verification": true,
+  "imports_exist_in_saved_e90_baseimage": true,
+  "imports": [
+    "_NODE_wait",
+    "_STRM_allocateBuffer",
+    "__divul",
+    "_CLK_countspms",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_CLK_gethtime",
+    "_NODE_getMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_STRM_create",
+    "_STRM_idle",
+    "_c_int00"
+  ],
+  "files": [
+    {
+      "path": "out/dsp/c55stream-dmm-ring-wsola.dll55l",
+      "bytes": 5644,
+      "sha256": "646231C29251F94B688FD89E2F729553CBF5083D1C734FFC6775FEE7E9470BFF"
+    },
+    {
+      "path": "out/dsp/stream_node-dmm-ring-wsola.asm",
+      "bytes": 56914,
+      "sha256": "AB2634B3AE5E94CE59AFDC02F204F18B70DA1D96842B7DB18F17248C19FD2304"
+    },
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 63740,
+      "sha256": "31DCED4C73FC39DB9B1B63CE259AFAC64C6A8844D1B2BF0C5807182CC66A4B52"
+    },
+    {
+      "path": "src/dsp/stream_resident_dcd.s55",
+      "bytes": 743,
+      "sha256": "E2C47ED94014FCB423F7B513513BE6AC55389ABF28155E47C190B8A727E4AB36"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 88066,
+      "sha256": "B29708D3A192DE883713FB9A0447588725B9F2E2E0F9EA73DB53751A980A4E60"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 37120,
+      "sha256": "155B5A6DACB69D371B4E1AFD4797B84218A42F09DAF227CC00C90283690844B7"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 7446,
+      "sha256": "7BD15E21DE61FF54E8A5B24C77039E51C70285A2088370FE198DA1A6222D498C"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 534,
+      "sha256": "34B79FF0C08EA0EE2C2D37C6D14C864ABE8561575F26A8F69EAFE6B874835C2C"
+    },
+    {
+      "path": "out/sis/c55stream-wsola-v48-r63_sha1.sis",
+      "bytes": 34608,
+      "sha256": "4BE600F225EA2E3457D4BB1A8603011D74FB979BB752A1CF8A9D7B096F016C11"
+    },
+    {
+      "path": "out/sis/c55stream-restore-v20_sha1.sis",
+      "bytes": 19924,
+      "sha256": "9C2D310E19889C4CAA3CA25F213A39C50B8C6F4FF62596951CE9C183B9B69874"
+    },
+    {
+      "path": "tools/e90_task_session.py",
+      "bytes": 50687,
+      "sha256": "E57F5F61A127C33E15A643CCC98DBF8E98A26CD62C07A185C4D0340C1501A18A"
+    },
+    {
+      "path": "tools/run_ring_series.py",
+      "bytes": 3219,
+      "sha256": "F6050E2C6C385033F8310C6E71D7384E86CA48FD96042AF7952F466A37782893"
+    },
+    {
+      "path": "src/dsp/dcr_read.s55",
+      "bytes": 302,
+      "sha256": "F2FA8A3EE9F0A6919B991E0B9F137151BAE708734E4031B57F49CC67B6D7C178"
+    },
+    {
+      "path": "tools/rev/audit_dcr_read.py",
+      "bytes": 5196,
+      "sha256": "FFE6A5636C96BB863EA09515909490E297BC6DBDA1A94DE8357F0AEFB8246CFA"
+    },
+    {
+      "path": "src/dsp/wsola_dsp.c",
+      "bytes": 966,
+      "sha256": "5A45798F51F1BAD0B3041200634A29C8448F21E2C2909A849B0670192D9CAECB"
+    },
+    {
+      "path": "src/dsp/bench_dsp.c",
+      "bytes": 2001,
+      "sha256": "477C805CCE918C594CDE57BE26CBDB89D657AF522B1A5983424188869872616C"
+    },
+    {
+      "path": "src/wsola_reference.cpp",
+      "bytes": 3344,
+      "sha256": "03860AC377252C32BB5B5809B7AE7205548821EBC3B4B4501D06B4FAEE966089"
+    },
+    {
+      "path": "src/wsola_reference.h",
+      "bytes": 477,
+      "sha256": "DF406CE07AB68AE1E0D7AD94409A716DD70F04F96502E0522D0A3657284955DE"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/n95-wsola63-host48-build01.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/n95-wsola63-dsp-build02.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/n95-wsola63-host48-sis01.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-restore-v20-sis-build.log",
+      "exit_code": 0
+    }
+  ],
+  "limits": [
+    "Assembly/import checks are not proof of RMS EXITACK delivery.",
+    "Fail-stop retains ownership and requires manual recovery; cancel safety is not proven.",
+    "The restore SIS contains the saved original v20 EXE; its package revision is independent of host version."
+  ],
+  "read_only_DCR_instruction_audit": {
+    "scope": "distinct N95 candidate63/protocol40; no phone I/O",
+    "DSP_sha256": "646231C29251F94B688FD89E2F729553CBF5083D1C734FFC6775FEE7E9470BFF",
+    "helper_section": ".text (linker merged .text:dcr_read)",
+    "helper_symbol_value": "000D6A",
+    "helper_section_byte_offset": 3178,
+    "helper_code_hex": "A45102004804",
+    "helper_code_sha256": "B4F50EC5203A63112C9C2E1FA3A7216A88D0BC23C76F23DF9D0B388C8F319439",
+    "helper_relocations": 0,
+    "instructions": [
+      "MOV port(#00200h),T0",
+      "RET"
+    ],
+    "helper_io_reads": 1,
+    "helper_io_writes": 0,
+    "calls_per_exchange": 2,
+    "call_order": "DCR read -> ring_wsola_exchange -> DCR read",
+    "notification_fields": {
+      "marker_word": 13,
+      "before_word": 14,
+      "after_word": 15
+    },
+    "reference": "docs/evidence/2026-10-03/dsp-native-notification-audit.json",
+    "limits": [
+      "DCR reads may affect timing/ordering; diagnostic is separate from candidate61",
+      "helper instruction audit is not a complete external-memory publication contract"
+    ]
+  },
+  "imports_exist_in_saved_n95_baseimage": true
+}

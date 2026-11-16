@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-01T18:40:51.489298+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "snapshot",
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79433728",
+    "tick 73485097 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55856",
+    "drive E freekb 1447868",
+    "script IDLE"
+  ],
+  "files": [
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "local": "original-0.bin",
+      "bytes": 3668,
+      "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1"
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "local": "original-1.bin",
+      "bytes": 21528,
+      "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D"
+    },
+    {
+      "remote": "E:\\ocprobe.log",
+      "local": "original-2.bin",
+      "bytes": 1249,
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    {
+      "remote": "C:\\sys\\bin\\c55stream.exe",
+      "local": "original-3.bin",
+      "bytes": 34196,
+      "sha256": "CBB91873639FC226B6DD2E40C6A75CC40E5C01C645C513A9DFA5E8A940890946"
+    },
+    {
+      "remote": "C:\\sys\\hash\\c55stream.exe",
+      "local": "original-4.bin",
+      "bytes": 20,
+      "sha256": "B3AB7C72332FF3EF42B059BC24C391D4CD7C1002518EF500BA6E9971EF965614"
+    }
+  ],
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79433728",
+    "tick 73485629 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55856",
+    "drive E freekb 1447868",
+    "script IDLE"
+  ]
+}

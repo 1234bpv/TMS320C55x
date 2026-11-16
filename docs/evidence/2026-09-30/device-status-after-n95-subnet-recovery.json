@@ -1,0 +1,41 @@
+{
+  "utc": "2026-09-30T02:10:19.222639+00:00",
+  "devices": {
+    "n95": {
+      "ip": "192.168.3.22",
+      "info": [
+        "OK info",
+        "protocol 2",
+        "screen 320x240",
+        "ramfree 89714688",
+        "tick 8716366 startTick 7895828 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 66020",
+        "drive E freekb 1070208",
+        "script IDLE"
+      ],
+      "processes": [
+        "OK ps 0"
+      ]
+    },
+    "e90": {
+      "ip": "192.168.3.21",
+      "info": [
+        "OK info",
+        "protocol 2",
+        "screen 800x352",
+        "ramfree 80633856",
+        "tick 755800 startTick 32583 boot 1 by t",
+        "ap Huawei",
+        "drive C freekb 55928",
+        "drive E freekb 1470688",
+        "script IDLE"
+      ],
+      "processes": [
+        "OK ps 0"
+      ],
+      "last_run_log_unchanged": true,
+      "normal_dll_sha256": "e039e983aa042ef1397368151e671feb8d29ba0828a576139223367cf6fef5c1"
+    }
+  }
+}

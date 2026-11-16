@@ -1,0 +1,7 @@
+SECTIONS
+{
+    .text : align = 4
+    .dcd_register : type = COPY
+    .dspbridge_symbols : type = COPY
+    .967CBF12_B90E_4B54_A4D3_3C84249EE1DA : type = COPY
+}

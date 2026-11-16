@@ -1,0 +1,44 @@
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 88043520
+< tick 24408877 startTick 22918156 boot 0 by n
+< ap Huawei
+< drive C freekb 65848
+< drive E freekb 1066048
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 88043520
+< tick 24408911 startTick 22918156 boot 0 by n
+< ap Huawei
+< drive C freekb 65848
+< drive E freekb 1066048
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> GET E:\c55stream.dll55l
+< OK 3668 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\original-0.bin
+> GET E:\c55stream.log
+< OK 23054 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\original-1.bin
+> GET E:\ocprobe.log
+< OK 1259 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\original-2.bin
+> GET E:\sys\bin\c55stream.exe
+< OK 34196 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\original-3.bin
+> GET C:\sys\hash\c55stream.exe
+< OK 20 -> D:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\n95\d0-20261002\original-4.bin
+> INFO
+< OK info
+< protocol 2
+< screen 320x240
+< ramfree 88002560
+< tick 24409216 startTick 22918156 boot 0 by n
+< ap Huawei
+< drive C freekb 65848
+< drive E freekb 1066048
+< script IDLE

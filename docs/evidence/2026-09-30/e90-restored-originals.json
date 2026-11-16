@@ -1,0 +1,19 @@
+{
+  "device": "e90",
+  "verification": "GET after PUT compared byte for byte with saved originals",
+  "files": [
+    {
+      "device_path": "E:\\ocprobe.log",
+      "size": 1249,
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+      "byte_equal": true
+    },
+    {
+      "device_path": "E:\\romdump.bin",
+      "size": 12288,
+      "sha256": "1CD8630D01E41C0864AF120BA6FBB89DCBFD21816EFBBB16A6FCF52A2E6512DE",
+      "byte_equal": true
+    }
+  ],
+  "info_after_restore": "800x352, daemon available"
+}

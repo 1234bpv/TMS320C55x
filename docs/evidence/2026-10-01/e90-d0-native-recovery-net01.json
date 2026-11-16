@@ -1,0 +1,9 @@
+{
+  "transport": ".NET TcpClient comparison, read only",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "complete": false,
+  "utc": "2026-10-02T01:10:22.1886064Z",
+  "action": "recover-journal",
+  "error": "TCP connect timeout8s"
+}

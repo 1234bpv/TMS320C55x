@@ -1,0 +1,168 @@
+{
+  "utc": "2026-10-01T21:07:39.367659+00:00",
+  "variant": "generic library2, official RUN, final output reclaim, await RMS_EXIT before EXITACK",
+  "candidate_revision": 30,
+  "host_mode": "E90 ROM STRMCOPY_TI native-copy control; own run-stop retained, not scheduled",
+  "native_reference": {
+    "path": "work/evidence/e90/strmcopydyn-e90.dll55l",
+    "bytes": 4396,
+    "sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+    "DLLdump_verification": true,
+    "phone_path": "Z:\\system\\apps\\strmcopy\\strmcopydyn.dll55l",
+    "limits": "ROM control only; no clean native-copy RUN verified yet"
+  },
+  "native_library2": {
+    "scope": "Research-file DCD metadata only; no phone writes or code changes",
+    "source_sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A",
+    "derived_path": "out/dsp/strmcopy-e90-library2-combined.dll55l",
+    "derived_sha256": "C75723582115997EF143D23565587E3FA90AB24FB710F1BAB8AD4C69CBDDF8F8",
+    "bytes": 4476,
+    "DLLdump_verification": true,
+    "changed_section": ".dcd_register",
+    "changed_offsets": null,
+    "registration_from": ":0,",
+    "registration_to": ":0, and :2, in one packet",
+    "code_data_relocations_identical": true,
+    "requires": "Combined properties0/library2 tests select preflight; failure attribution is still open",
+    "unchanged_section_packets": [
+      {
+        "section": ".const",
+        "packet_bytes": 416,
+        "sha256": "EF5AF486A6A82D92E563D8E6FF1177347832F33E49969FDA15862DB75CDE58E0"
+      },
+      {
+        "section": ".text",
+        "packet_bytes": 1500,
+        "sha256": "F16944B0867718A6549327421F7A231412FB4B7F3BE911549CBA31F496924BCD"
+      },
+      {
+        "section": ".dspbridge_symbols",
+        "packet_bytes": 832,
+        "sha256": "372496962A0F70ABDED729BA33C2828FDD718D2B0986601229E2B52ABA4791CC"
+      },
+      {
+        "section": ".vers",
+        "packet_bytes": 140,
+        "sha256": "AD538EDC11E99655F6902E37378C986CA01CB7AD0306CB092DBDB67BF3ED3EA7"
+      },
+      {
+        "section": ".7EEB2C7E_785A_11D4_A650_00C04F0C04F3",
+        "packet_bytes": 508,
+        "sha256": "C15A0BC89780945F60B47731B5D2EE1469E27DBBCABEA415DE9482261680905D"
+      }
+    ],
+    "metadata_changes": "Registration packet grew; section size/absolute offsets and table/verification checksums updated"
+  },
+  "host_version": 24,
+  "protocol": 21,
+  "hardware_verified": false,
+  "d0_accepted_runs": 0,
+  "dll_dump_verification": true,
+  "imports_exist_in_saved_e90_baseimage": true,
+  "imports": [
+    "_NODE_wait",
+    "_STRM_allocateBuffer",
+    "_CLK_countspms",
+    "_STRM_freeBuffer",
+    "_MEM_valloc",
+    "_CLK_gethtime",
+    "_NODE_getMsg",
+    "_STRM_reclaim",
+    "_MEM_free",
+    "_STRM_delete",
+    "_STRM_issue",
+    "_STRM_create",
+    "_STRM_idle",
+    "_c_int00"
+  ],
+  "files": [
+    {
+      "path": "out/dsp/c55stream-run-stop.dll55l",
+      "bytes": 3952,
+      "sha256": "2B97836D039E698094D6256AFE99D8A539F1CA610877B2313196122BC40B6B34"
+    },
+    {
+      "path": "out/dsp/stream_node-run-stop.asm",
+      "bytes": 30203,
+      "sha256": "E35BCAC9FC1F9FA6D534FC8A96A07F584914B165A76EEAF3847843288B812B7D"
+    },
+    {
+      "path": "out/arm/c55stream.exe",
+      "bytes": 36724,
+      "sha256": "12356F00E0163EF0B0823A0E017D38A2796DCE83F2AB1FA85554DCFFF32A09D8"
+    },
+    {
+      "path": "src/dsp/stream_resident_dcd.s55",
+      "bytes": 738,
+      "sha256": "4220828E5CC6759C8C04560EE352A830AA0EEFBAFD772A7ADBE90F2EE7220D4F"
+    },
+    {
+      "path": "src/c55stream.cpp",
+      "bytes": 45612,
+      "sha256": "8C084E1E276846B4B61C0B799FD254741D439BCF5705425B284B4ED6B4E4693E"
+    },
+    {
+      "path": "src/dsp/stream_node.c",
+      "bytes": 27546,
+      "sha256": "C4499A00ECE8C86DE86E92DA6B8819ADE9B55B11BB5CD960791865FF806B9661"
+    },
+    {
+      "path": "tools/build_stream_node.cmd",
+      "bytes": 5226,
+      "sha256": "B1F2B9AF234D456AE5EEF0099EC6173CA9E51DEBC66D961D292B32AF4ABEE21B"
+    },
+    {
+      "path": "group/c55stream.mmp",
+      "bytes": 534,
+      "sha256": "34B79FF0C08EA0EE2C2D37C6D14C864ABE8561575F26A8F69EAFE6B874835C2C"
+    },
+    {
+      "path": "out/sis/c55stream-native-copy-v24_sha1.sis",
+      "bytes": 21180,
+      "sha256": "CEB641F9956E3CDADECAF865634D21022140C36DD28FCE524603DC5B14DD6B79"
+    },
+    {
+      "path": "out/sis/c55stream-restore-v20_sha1.sis",
+      "bytes": 19924,
+      "sha256": "9C2D310E19889C4CAA3CA25F213A39C50B8C6F4FF62596951CE9C183B9B69874"
+    },
+    {
+      "path": "work/evidence/e90/strmcopydyn-e90.dll55l",
+      "bytes": 4396,
+      "sha256": "9929856254DF6912BB6CC70C30551A950647F1462CC4AB335E56220ED7F0E53A"
+    },
+    {
+      "path": "out/dsp/strmcopy-e90-library2-combined.dll55l",
+      "bytes": 4476,
+      "sha256": "C75723582115997EF143D23565587E3FA90AB24FB710F1BAB8AD4C69CBDDF8F8"
+    },
+    {
+      "path": "docs/evidence/2026-10-01/e90-d0-native-library2-combined-derivation.json",
+      "bytes": 1659,
+      "sha256": "734D22A3759284EC781ADABC4AC4F84CF413DA1C21EEFA02813951DEB324C52C"
+    }
+  ],
+  "builds": [
+    {
+      "log": "out/d0-host-v24-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-run-stop-v22-build.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-host-v24-sis.log",
+      "exit_code": 0
+    },
+    {
+      "log": "out/d0-restore-v20-sis-build.log",
+      "exit_code": 0
+    }
+  ],
+  "limits": [
+    "Assembly/import checks are not proof of RMS EXITACK delivery.",
+    "Fail-stop retains ownership and requires manual recovery; cancel safety is not proven.",
+    "Restore SIS revision22 contains the exact original v20 EXE, not a v22 host."
+  ]
+}

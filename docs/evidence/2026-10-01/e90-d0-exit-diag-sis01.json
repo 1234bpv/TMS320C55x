@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-02T10:34:15.407322+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "deliver-sis",
+  "host_version_expected": 25,
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 80531456",
+    "tick 900059 startTick 81256 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55812",
+    "drive E freekb 1447696",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "sis_before_stat": [
+    "ERR stat -1"
+  ],
+  "deployed": {
+    "remote": "E:\\c55stream-exit-diag-v25.sis",
+    "bytes": 22416,
+    "sha256": "8D0E3BE832E8F81E2538A747D9904FBA37BDEF32F6FCDF614B00BB3EDD51E97A",
+    "equal": true
+  },
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 80531456",
+    "tick 900901 startTick 81256 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55812",
+    "drive E freekb 1447672",
+    "script IDLE"
+  ]
+}

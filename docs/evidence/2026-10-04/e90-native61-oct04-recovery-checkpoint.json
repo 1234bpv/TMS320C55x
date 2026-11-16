@@ -1,0 +1,122 @@
+{
+  "scope": "new E90 stock-qualified series has not started; current restoration remains pending connectivity",
+  "events": [
+    {
+      "tag": "resume-oct04-final-verify01",
+      "complete": true,
+      "boot_before": "67736 boot 0 by n",
+      "boot_after": "67736 boot 0 by n",
+      "published_path": "docs/evidence/2026-10-04/e90-resume-oct04-final-verify01.json",
+      "published_sha256": "243E33254FA478E4ED382A88178592BE013DBE70402D7EF2CF958BD49D61AB8E"
+    },
+    {
+      "tag": "native61-oct04-stock01-host-deploy01",
+      "complete": true,
+      "boot_before": "67736 boot 0 by n",
+      "boot_after": "67736 boot 0 by n",
+      "published_path": "docs/evidence/2026-10-04/e90-native61-oct04-stock01-host-deploy01.json",
+      "published_sha256": "6CC6FADDB3FC1E6D8735D8A068C6E4715200A9657D75ECCFDC473147EF51CFDE"
+    },
+    {
+      "tag": "native61-oct04-stock01-dsp-deploy01",
+      "complete": false,
+      "boot_before": null,
+      "boot_after": null,
+      "published_path": "docs/evidence/2026-10-04/e90-native61-oct04-stock01-dsp-deploy01.json",
+      "published_sha256": "C97745DF4255ACEDBD2B22F0E4F9BE3DBA9C19745D3EBA99C8D1577B3663F4EA"
+    },
+    {
+      "tag": "native61-oct04-stock01-pre-dsp-recovery01",
+      "complete": true,
+      "boot_before": "60715 boot 0 by n",
+      "boot_after": "60715 boot 0 by n",
+      "published_path": "docs/evidence/2026-10-04/e90-native61-oct04-stock01-pre-dsp-recovery01.json",
+      "published_sha256": "87C921E7A4B6AE8366D93C755FB55AD1D5DFBC2AF9190067AA1E27F8388E1900"
+    },
+    {
+      "tag": "native61-oct04-stock01-reboot-info01",
+      "complete": true,
+      "boot_before": "60715 boot 0 by n",
+      "boot_after": "60715 boot 0 by n",
+      "published_path": "docs/evidence/2026-10-04/e90-native61-oct04-stock01-reboot-info01.json",
+      "published_sha256": "6818B30909FDFD347FDA8CB09F6C68854311710C05682E0272C32F325159FB4E"
+    },
+    {
+      "tag": "rdomain-clock-deploy01",
+      "complete": false,
+      "boot_before": "60715 boot 0 by n",
+      "boot_after": null,
+      "published_path": "docs/evidence/2026-10-04/e90-rdomain-clock-deploy01.json",
+      "published_sha256": "9708443B617EE4313F97542C30C76FB6A79047B3E90705775087B67FB58AA30C"
+    },
+    {
+      "tag": "rdomain-clock-deploy02",
+      "complete": false,
+      "boot_before": "93971 boot 0 by n",
+      "boot_after": null,
+      "published_path": "docs/evidence/2026-10-04/e90-rdomain-clock-deploy02.json",
+      "published_sha256": "9D79060A43315D557372417CBAAA0A130705E1E9D6B33113BAD5312719FE7EB7"
+    },
+    {
+      "tag": "rdomain-clock-deploy03",
+      "complete": false,
+      "boot_before": null,
+      "boot_after": null,
+      "published_path": "docs/evidence/2026-10-04/e90-rdomain-clock-deploy03.json",
+      "published_sha256": "08C9EF2516B64F935AC26701F63CD6D2BA1D295FCABF1CDA8824CBAC150BBE61"
+    },
+    {
+      "tag": "rdomain-clock-pilot-recovery02",
+      "complete": true,
+      "boot_before": "35467 boot 1 by t",
+      "boot_after": "35467 boot 1 by t",
+      "published_path": "docs/evidence/2026-10-04/e90-rdomain-clock-pilot-recovery02.json",
+      "published_sha256": "70B39ECAC4857E49C2A8B21E1740C69B9265C3EF61D0D8CA2556CE8D2470E639"
+    },
+    {
+      "tag": "rdomain-clock-deploy04",
+      "complete": false,
+      "boot_before": "35467 boot 1 by t",
+      "boot_after": null,
+      "published_path": "docs/evidence/2026-10-04/e90-rdomain-clock-deploy04.json",
+      "published_sha256": "F7A2477487A13FD8277C4B86898A700BC94734333DF619A55536A5FB3331FE6C"
+    }
+  ],
+  "new_dsp_runs": 0,
+  "confirmed_automatic_reboot": {
+    "before": "67736 boot 0 by n",
+    "after": "60715 boot 0 by n",
+    "boundary": "after clock02 and host46 deployment, before DSP delivery/START",
+    "confirmation": "user reply"
+  },
+  "next_observed_boot": "93971 boot 0 by n",
+  "next_boot_cause": "manual versus automatic unknown",
+  "later_observed_daemon_start": "35467 boot 1 by t",
+  "daemon_field_semantics": "startTick is daemon launch NTickCount; boot/by describe startup classification, not a unique phone boot identifier",
+  "latest_reboot_investigation": "docs/evidence/2026-10-04/e90-daemon-reboot-audit.json",
+  "recovered_dsp_equal_original": true,
+  "reboot_journal": {
+    "published_path": "docs/evidence/2026-10-04/e90-native61-oct04-stock01-reboot-info01.txt",
+    "published_sha256": "CC9F8E1E8C854AD8418FDEB74D3AD284C7E83B53489E6ACD82B15E4BF9372639"
+  },
+  "latest_known_files": {
+    "c55stream_host": "host46; boot-info executed successfully on60715; restore EXE/hash still pending",
+    "c55stream_dsp": "original; new candidate61 DSP delivery never started",
+    "ringclock": "absent; all four deploy attempts stopped before PUT",
+    "ocprobe_exe": "unchanged original; separate ringclock target only",
+    "owned_remote_screenshots_to_remove": [
+      "E:\\codex-oct04-patches03.bmp",
+      "E:\\codex-oct04-patches04.bmp",
+      "E:\\codex-oct04-patches05.bmp"
+    ]
+  },
+  "next_step": "investigate the user-confirmed reboot with daemon logs and INFO-only observations before further KEY/SHOT/clock/DSP commands; E90 original-file restoration remains pending; compatible ringclock pilot and new native series remain conditional on recovery and validated clock gate",
+  "limits": [
+    "STAT\u221246 did not prove Open4All inactive; later screenshot showed it green; installer now uses exact-file LS",
+    "clock API mismatch is proved offline, but new compatible clock probe has only been built, not installed/run",
+    "five-original E90 verification was before the subsequent host46 redeployment; it is not current restoration proof",
+    "LS also returned -46 in deploy04 despite the preceding green Open4All screenshot",
+    "daemon startup fields alone do not prove a physical reboot; user observation and a decreasing system tick provide separate evidence",
+    "no reboot is attributed to DSP, driver conflict or clock probe without a causal diagnostic"
+  ]
+}

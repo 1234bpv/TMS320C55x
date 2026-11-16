@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-01T18:42:27.675315+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "clocks",
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79433728",
+    "tick 73581261 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55856",
+    "drive E freekb 1447868",
+    "script IDLE"
+  ],
+  "probes": [
+    {
+      "path": "clocks01-engine.log",
+      "sha256": "F05120B6A89D16F9AF4F6A4E41274B4D912D32DFC049FA4957975DFABE53604F"
+    },
+    {
+      "path": "clocks01-dsp.log",
+      "sha256": "67229AB6FFE3D46EF7D971CF0E880C8D9CB1CBAEF27FADF433EEAFB6702FC93B"
+    }
+  ],
+  "restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1249,
+    "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A",
+    "equal": true
+  },
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79429632",
+    "tick 73583841 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55856",
+    "drive E freekb 1447868",
+    "script IDLE"
+  ]
+}

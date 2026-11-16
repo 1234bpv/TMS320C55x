@@ -1,0 +1,69 @@
+{
+  "scope": "saved firmware, no device I/O",
+  "n95": {
+    "module_sha256": {
+      "bridgecfg": "6E59AA8170564D4D16DA9F377A6CE9D16530B78AB4426C34D7CF384F3DD1BE42",
+      "pdd": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF",
+      "kernel": "11F1383F534AA1774B6AB222E2436B5B64D931292EF580FB5926253838CD9455"
+    },
+    "saved_rom_sha256": "271E293B79C3A4BE6832E47580C5181CC32B25E7AB92801EA06BC50EA63A616A",
+    "checked_instructions": 38,
+    "kernel_calls": [
+      {
+        "address": "80198C40",
+        "ordinal": 236
+      },
+      {
+        "address": "80198CA0",
+        "ordinal": 60
+      },
+      {
+        "address": "80198CF0",
+        "ordinal": 60
+      }
+    ],
+    "backing_chain": "ASIC selector2 physical/bytes -> DPlatChunkHw::New attrs1044 -> config+260 chunk / +268 linear -> board+172 reader[0] -> context+24 -> CMM region registration",
+    "attributes_raw": "00001044",
+    "attributes_public_reference": "https://raw.githubusercontent.com/SymbianSource/oss.FCL.sf.os.kernelhwsrv/master/kernel/eka/include/memmodel/epoc/platform.h",
+    "attributes_interpretation": "user read/write, no execute; buffered uncached L1, uncached L2 under the public TMappingAttributes contract",
+    "lifetime": "config retains hardware chunk; PDD factory cleanup calls bridgecfg cleanup with both chunk pointers; native CMM alloc/free changes suballocation lists, not backing pages. Keep the processor channel, node and allocation until delete/free/unmap/unreserve succeed.",
+    "limits": [
+      "public attribute decoding is corroboration, not a runtime page-table dump",
+      "ASIC selector implementation and boot reservation are not decoded here; no claim of explicit pin/unpin calls",
+      "current D1 page identity and successful mapping bracket the retained allocation; global DSP reset/reload is prohibited"
+    ]
+  },
+  "e90": {
+    "module_sha256": {
+      "bridgecfg": "CE80C4AB8D6158E0D4038EF4E3E32E7627B01C24BE2FB12CBA26C9E7AEA7DA6A",
+      "pdd": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4",
+      "kernel": "CC81644DD40C19ABFD72FA7B643B409C668C9B3A632C881CC70E07974D76091B"
+    },
+    "saved_rom_sha256": "B807AFFCFBED487643929F8E30AB0D58DC7F9FC9CE1C9A529A40F26C3C22ABF9",
+    "checked_instructions": 38,
+    "kernel_calls": [
+      {
+        "address": "803DD290",
+        "ordinal": 236
+      },
+      {
+        "address": "803DD2F0",
+        "ordinal": 60
+      },
+      {
+        "address": "803DD340",
+        "ordinal": 60
+      }
+    ],
+    "backing_chain": "ASIC selector2 physical/bytes -> DPlatChunkHw::New attrs1044 -> config+260 chunk / +268 linear -> board+172 reader[0] -> context+24 -> CMM region registration",
+    "attributes_raw": "00001044",
+    "attributes_public_reference": "https://raw.githubusercontent.com/SymbianSource/oss.FCL.sf.os.kernelhwsrv/master/kernel/eka/include/memmodel/epoc/platform.h",
+    "attributes_interpretation": "user read/write, no execute; buffered uncached L1, uncached L2 under the public TMappingAttributes contract",
+    "lifetime": "config retains hardware chunk; PDD factory cleanup calls bridgecfg cleanup with both chunk pointers; native CMM alloc/free changes suballocation lists, not backing pages. Keep the processor channel, node and allocation until delete/free/unmap/unreserve succeed.",
+    "limits": [
+      "public attribute decoding is corroboration, not a runtime page-table dump",
+      "ASIC selector implementation and boot reservation are not decoded here; no claim of explicit pin/unpin calls",
+      "current D1 page identity and successful mapping bracket the retained allocation; global DSP reset/reload is prohibited"
+    ]
+  }
+}

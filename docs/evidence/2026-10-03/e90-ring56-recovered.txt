@@ -1,0 +1,68 @@
+C55STREAM v43 command='dmm-ring batch=2 frames=120' machine=20002496 fast_counter_hz=32768 firmware_rc=0 firmware='400.34.93
+21-04-2009
+RA-6
+(c)Nokia'
+library load=0
+ordinal 1 = 803faef3
+ordinal 2 = 803fafa9
+ordinal 3 = 803fb0ff
+ordinal 4 = 803fb12b
+ordinal 5 = 803fafd1
+ordinal 6 = 803faff5
+ordinal 7 = 803fb0e7
+ordinal 8 = 803faf4f
+ordinal 9 = 803faeaf
+ordinal 10 = 803fae79
+ordinal 11 = 803fae71
+ordinal 12 = 803fae71
+ordinal 13 = 803faea3
+ordinal 14 = 803faea3
+ordinal 15 = 803fa6e1
+ordinal 16 = 803fa6a7
+ordinal 17 = 803fa74b
+ordinal 18 = 803fa711
+ordinal 19 = 803fa77b
+ordinal 20 = 803fa78b
+ordinal 21 = 803fa69d
+ordinal 22 = 803fa69d
+ordinal 23 = 803fa6a5
+ordinal 24 = 803fa6a5
+ordinal 25 = 803fa551
+ordinal 26 = 803f9fa3
+ordinal 27 = 803fa421
+ordinal 28 = 803fa533
+ordinal 29 = 803fa371
+ordinal 30 = 803fa2ef
+ordinal 31 = 803fa45d
+ordinal 32 = 803fa1c1
+ordinal 33 = 803f9f6d
+ordinal 34 = 803fa513
+ordinal 35 = 803fa3c5
+ordinal 36 = 803f9f39
+ordinal 37 = 803f9f39
+ordinal 38 = 803f9f49
+ordinal 39 = 803f9f49
+profile guard=0 delta=ff99ca70
+BEGIN processor open
+processor open=0
+BEGIN DCD bind
+DCD bind=0 loader=00700110
+POINTER load=-11
+POINTER open=0
+POINTER pdd_slot=c80019fc container=c8051628 rc=0
+POINTER pdd_count=7 objects_ptr=c8082510
+POINTER pdd_obj[0]=c80824b0 vtable=80072f88
+POINTER pdd_obj[1]=c8082630 vtable=800865ac
+POINTER pdd_obj[2]=c8082788 vtable=8009ff04
+POINTER pdd_obj[3]=c810a000 vtable=800aaa8c
+POINTER pdd_obj[4]=c8164e48 vtable=803f8380
+POINTER factory=c8164e48 expected_vtable=803f8380
+POINTER manager_ptr=c8165808 rc=0
+POINTER manager magic=434f5250 back_factory=c8164e48 proc_index=0 common_board=c8165d40
+POINTER processor_state=4 require_running=1
+POINTER board=c8165d38 board_swap_byte=01 context=c8166830
+POINTER ctx_reader=c8165de4 ctx_board=c8165d40 ctx_from_dsp=ced1fdf0 ctx_records=ced1fdf8 queue16=c81669f0 queue40=c8166478
+POINTER shared_base=ced00000 reader_swap_byte=01
+ROUTING pool=c8166450 pending=0 list=c8167bf8 limit=16 non_atomic=1 foreign_node_reads=0
+ROUTING window=ced1fdf0 header=00000001/03030001 raw=00004000/80000000/00000000/76540000 decoded=40000000/00008000/00000000/00007654
+ROUTING queue[0]=c819ba98 source=000077e0 node=c819a7a0 receive=00000000 source_matches=0

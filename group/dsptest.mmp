@@ -1,0 +1,35 @@
+// Бенчмарк C55x DSP vs ARM1136. Консольного виводу немає — демон запускає без
+// термінала, тож звіт іде у файл E:\dsptest.log, який ПК забирає через GET.
+
+TARGET          dsptest.exe
+TARGETTYPE      exe
+UID             0 0xE0001020
+SECUREID        0xE0001020
+VENDORID        0
+
+// Набір дозволів як у сусіднього ocprobe: майбутній DSP-бік (Шлях B) чіпатиме
+// kernel-MMIO через той самий exec-примітив, що потребує PowerMgmt і доступу до
+// пристроїв. Для чистого ARM-заміру вистачило б менше, але тримаємо єдиний
+// профіль, який хеш-грант демона вже приймає — щоб відмова завантаження не
+// виявилась відмовою з побічної причини.
+// MultimediaDD додано після реверсу: рядок у ehwa.ldd прямо каже
+// "MultimediaDD capability is checked by DSP Bridge LDD" — без неї канал
+// D32HWA не відкриється (findings §16).
+CAPABILITY      PowerMgmt WriteDeviceData ReadDeviceData ReadUserData WriteUserData ProtServ MultimediaDD
+
+// Абсолютний замір частоти покладається на вбудований асемблер із фіксованою
+// вартістю такту. У THUMB кодування інше — ціль збирається як ARM.
+ALWAYS_BUILD_AS_ARM
+
+EPOCSTACKSIZE   0x5000
+EPOCHEAPSIZE    0x10000 0x800000
+
+SOURCEPATH      ..\src
+SOURCE          dsptest.cpp
+
+USERINCLUDE     ..\src
+SYSTEMINCLUDE   \epoc32\include
+
+LIBRARY         euser.lib
+LIBRARY         efsrv.lib
+LIBRARY         hal.lib

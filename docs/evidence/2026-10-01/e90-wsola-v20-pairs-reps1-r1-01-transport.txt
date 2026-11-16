@@ -1,0 +1,58 @@
+2026-10-01T11:17:45.806589+00:00 INFO
+OK info
+protocol 2
+screen 800x352
+ramfree 79855616
+tick 46905899 startTick 75535 boot 0 by n
+ap Huawei
+drive C freekb 55856
+drive E freekb 1450620
+script IDLE
+2026-10-01T11:17:45.897366+00:00 PS c55stream*
+OK ps 0
+PREPARATION VERIFIED H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\wsola-v20-prepare-01-preparation.json
+2026-10-01T11:17:46.073948+00:00 START C:\sys\bin\c55stream.exe inspect
+OK proc 130
+2026-10-01T11:17:46.115020+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:46.691623+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-10-01T11:17:46.822359+00:00 WAIT 130 1
+EXIT 0 Kill
+2026-10-01T11:17:46.920458+00:00 START C:\sys\bin\c55stream.exe worker-wsola reps=1 bytes=1792 frames=32
+OK proc 131
+2026-10-01T11:17:46.967543+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:47.542269+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:48.249077+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:48.947320+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:49.561965+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:50.268190+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-10-01T11:17:50.883857+00:00 PS c55stream*
+OK ps 1
+0 c55stream.exe[e0001021]0001
+2026-10-01T11:17:51.025781+00:00 WAIT 131 1
+EXIT 0 Kill
+2026-10-01T11:17:51.127549+00:00 INFO
+OK info
+protocol 2
+screen 800x352
+ramfree 79855616
+tick 46911228 startTick 75535 boot 0 by n
+ap Huawei
+drive C freekb 55856
+drive E freekb 1450620
+script IDLE

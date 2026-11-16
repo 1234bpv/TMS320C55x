@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-01T11:17:11.178345+00:00",
+  "device": "e90",
+  "host_version": 20,
+  "installed": true,
+  "installer_version_observed": "1.00(20)",
+  "host_readback": {
+    "remote": "C:\\sys\\bin\\c55stream.exe",
+    "bytes": 34196,
+    "sha256": "CBB91873639FC226B6DD2E40C6A75CC40E5C01C645C513A9DFA5E8A940890946",
+    "expected_equal": true
+  },
+  "info": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 79859712",
+    "tick 46871320 startTick 75535 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 55856",
+    "drive E freekb 1450624",
+    "script IDLE"
+  ],
+  "screenshots": "ignored work/evidence/e90/wsola-v20-install-01..05.bmp"
+}

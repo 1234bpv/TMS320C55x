@@ -1,0 +1,252 @@
+{
+  "utc": "2026-09-30T22:25:46.027266+00:00",
+  "scope": "Static native loader/result/SEM contract; own worker residency needs device evidence",
+  "module_sha256": {
+    "n95_bridge": "69F6AD946DA3F6538B9DC47C0E02E7B0AA9DDEEDE368BCEBC4FBADB5FFCD0CBB",
+    "e90_bridge": "003D47B0778D1E6687BDEEB456E4E02BFE64D8763E4178CFAECFDDBA994C6FE2",
+    "n95_pdd": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF",
+    "e90_pdd": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4",
+    "n95_base": "93BD6550FE26DF69C9AA3A1440DAF4DF6BCC118983DB30CE33E2CA3F3A95FB5C",
+    "e90_base": "180F95602B078111F617F459620C4AECD203ECB730E91803AEF9E591E5D22F35"
+  },
+  "bridge": {
+    "missing_create_library_fallback_3_to_2": {
+      "n95_start": "80A5E188",
+      "e90_start": "803FABF8",
+      "bytes": 42,
+      "bytes_equal": true,
+      "n95_sha256": "CA51544B8A4854C5B41CEC26B98B72B26B02C9F637D74E9BB6EC8C34ABAACC1D",
+      "e90_sha256": "CA51544B8A4854C5B41CEC26B98B72B26B02C9F637D74E9BB6EC8C34ABAACC1D"
+    },
+    "generic_library_skips_execute_delete_lists": {
+      "n95_start": "80A5E742",
+      "e90_start": "803FB1B2",
+      "bytes": 32,
+      "bytes_equal": true,
+      "n95_sha256": "62BA53256D8DEC002EF48D123BF87BA717E16F6E2F28264294E8B2286968E9BF",
+      "e90_sha256": "62BA53256D8DEC002EF48D123BF87BA717E16F6E2F28264294E8B2286968E9BF"
+    }
+  },
+  "pdd": {
+    "phase_split_from_library_lists": {
+      "n95_start": "801A07C8",
+      "e90_start": "803E4E08",
+      "bytes": 48,
+      "bytes_equal": true,
+      "n95_sha256": "29AC78582EC6AC6EDE93086B367D5F1BC8AEEECE36BF9B15AEB6DC63C8B262FB",
+      "e90_sha256": "29AC78582EC6AC6EDE93086B367D5F1BC8AEEECE36BF9B15AEB6DC63C8B262FB"
+    },
+    "run_unloads_create_only_if_split_dynamic": {
+      "n95_start": "801A1474",
+      "e90_start": "803E5AB4",
+      "bytes": 44,
+      "bytes_equal": true,
+      "n95_sha256": "1018FAA992DADB7A81198168434CF856577E5417A40144B2AE7B25D13B970B88",
+      "e90_sha256": "1018FAA992DADB7A81198168434CF856577E5417A40144B2AE7B25D13B970B88"
+    },
+    "created_delete_retains_create_and_loads_delete_if_split": {
+      "n95_start": "801A263C",
+      "e90_start": "803E6C7C",
+      "bytes": 132,
+      "bytes_equal": true,
+      "n95_sha256": "7156850693399C9E97FD1FF4DCC26325069DF373A25AB96281BEB6BB2B53D63A",
+      "e90_sha256": "7156850693399C9E97FD1FF4DCC26325069DF373A25AB96281BEB6BB2B53D63A"
+    },
+    "free_unloads_loaded_phase_libraries": {
+      "n95_start": "801A2118",
+      "e90_start": "803E6758",
+      "bytes": 176,
+      "bytes_equal": true,
+      "n95_sha256": "0EB60DB445E8566E912D30EA87BE271384CE3554B177992E034636E4EB0465DE",
+      "e90_sha256": "0EB60DB445E8566E912D30EA87BE271384CE3554B177992E034636E4EB0465DE"
+    },
+    "completion_negative_rms_status_maps_to_minus2": {
+      "n95_start": "801A27A4",
+      "e90_start": "803E6DE4",
+      "bytes": 12,
+      "bytes_equal": true,
+      "n95_sha256": "FE8163C3F3B39ED44978A1172BDEB4F834AB10C93AF2A954F663C3E5F75C3F5C",
+      "e90_sha256": "FE8163C3F3B39ED44978A1172BDEB4F834AB10C93AF2A954F663C3E5F75C3F5C"
+    },
+    "create_success_checks_status_and_environment": {
+      "n95_start": "801A27E4",
+      "e90_start": "803E6E24",
+      "bytes": 16,
+      "bytes_equal": true,
+      "n95_sha256": "A94012C3928348930F36950546531B2DA210AA6F5948544D35BFE2E8AE9A869A",
+      "e90_sha256": "A94012C3928348930F36950546531B2DA210AA6F5948544D35BFE2E8AE9A869A"
+    },
+    "create_success_sets_created_state1": {
+      "n95_start": "801A283C",
+      "e90_start": "803E6E7C",
+      "bytes": 16,
+      "bytes_equal": true,
+      "n95_sha256": "E924B7F505C813C7AEBFDA953D63C8D1222555E0F3B5F405135188AD2154C75E",
+      "e90_sha256": "E924B7F505C813C7AEBFDA953D63C8D1222555E0F3B5F405135188AD2154C75E"
+    }
+  },
+  "rms": {
+    "node_create_return_ac0_to_reply": {
+      "start": "24B225",
+      "end_exclusive": "24B238",
+      "bytes": 19,
+      "bytes_equal": true,
+      "sha256": "5385E2CF7382926E5D5196562B681D3A76A020DED196FF91E224F84A29359AEC"
+    },
+    "reply_copies_status_to_first_long": {
+      "start": "24E684",
+      "end_exclusive": "24E6D9",
+      "bytes": 85,
+      "bytes_equal": true,
+      "sha256": "1456B5E50C05BA1C5BD330AF882F78F7C0F553F4528D62E2ADB46F257EFF3785"
+    }
+  },
+  "sem": {
+    "SEM_create": {
+      "start": "25BF18",
+      "bytes": 100,
+      "bytes_equal": true,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "E003FFFA917C6558741154021FBAC5D92FD8E984BF1C5F308C9498AB6D57A90F",
+      "e90_sha256": "E003FFFA917C6558741154021FBAC5D92FD8E984BF1C5F308C9498AB6D57A90F"
+    },
+    "SEM_delete": {
+      "start": "25C4AC",
+      "bytes": 16,
+      "bytes_equal": true,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "26B8463708B5378398F978587EF3A2382FFCCF4DD2BD7D7ED547CCC0C03020B3",
+      "e90_sha256": "26B8463708B5378398F978587EF3A2382FFCCF4DD2BD7D7ED547CCC0C03020B3"
+    },
+    "SEM_pend": {
+      "start": "25D473",
+      "bytes": 78,
+      "bytes_equal": false,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "34415306C2EEE6E7851BB241C6A60344664E2B4DC373375016304727F519BD65",
+      "e90_sha256": "0431940B9591FC424E9A6381F02E1B6EFB20862439C388531EECC4E5D41A590F"
+    },
+    "SEM_post": {
+      "start": "25D1B7",
+      "bytes": 95,
+      "bytes_equal": false,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "E2CD07423DBB7E74C2D2CC7EC1B950D0F90A1F732315F26A3A47D67DDD7BBAE0",
+      "e90_sha256": "11B4FCB21CD02CCE9B7793358D68F552A41B9B8FE7EFFE43EA435357F79EC737"
+    },
+    "pend_sets_blocked_mode2": {
+      "start": "25AC1C",
+      "bytes": 5,
+      "bytes_equal": true,
+      "equal_except_verified_data_addresses": true,
+      "n95_sha256": "57492C67513A1E29528987BCD41DE421E27479B9754CCCDF9F1365E5AD57BCDA",
+      "e90_sha256": "57492C67513A1E29528987BCD41DE421E27479B9754CCCDF9F1365E5AD57BCDA"
+    }
+  },
+  "sem_data_references": [
+    {
+      "instruction": "25D496",
+      "symbol": "_SWI_D_lock",
+      "n95_word_address": "01319A",
+      "e90_word_address": "0131AA"
+    },
+    {
+      "instruction": "25D4A0",
+      "symbol": "_SWI_D_curmask",
+      "n95_word_address": "013198",
+      "e90_word_address": "0131A8"
+    },
+    {
+      "instruction": "25D4AB",
+      "symbol": "_SWI_D_curmask",
+      "n95_word_address": "013198",
+      "e90_word_address": "0131A8"
+    },
+    {
+      "instruction": "25D1B7",
+      "symbol": "TRC_R_mask",
+      "n95_word_address": "013A16",
+      "e90_word_address": "013A14"
+    },
+    {
+      "instruction": "25D1C7",
+      "symbol": "_SWI_D_lock",
+      "n95_word_address": "01319A",
+      "e90_word_address": "0131AA"
+    },
+    {
+      "instruction": "25D1D3",
+      "symbol": "_SWI_D_curmask",
+      "n95_word_address": "013198",
+      "e90_word_address": "0131A8"
+    },
+    {
+      "instruction": "25D208",
+      "symbol": "_SWI_D_curmask",
+      "n95_word_address": "013198",
+      "e90_word_address": "0131A8"
+    }
+  ],
+  "sem_symbols_byte_addresses": {
+    "_SEM_create": "25BF18",
+    "_SEM_delete": "25C4AC",
+    "_SEM_pend": "25D473",
+    "_SEM_post": "25D1B7",
+    "_SEM_ATTRS": "255B94"
+  },
+  "vtable": {
+    "n95": "801B3DE8",
+    "e90": "803F8424",
+    "slots": {
+      "allocate": {
+        "offset": 8,
+        "n95": "801A0264",
+        "e90": "803E48A4"
+      },
+      "create": {
+        "offset": 12,
+        "n95": "801A1038",
+        "e90": "803E5678"
+      },
+      "run": {
+        "offset": 32,
+        "n95": "801A1404",
+        "e90": "803E5A44"
+      },
+      "free": {
+        "offset": 88,
+        "n95": "801A2118",
+        "e90": "803E6758"
+      },
+      "delete": {
+        "offset": 92,
+        "n95": "801A25C4",
+        "e90": "803E6C04"
+      }
+    }
+  },
+  "node_offsets": {
+    "state": 40,
+    "load_type": 184,
+    "phase_split": 208,
+    "library_heads": [
+      196,
+      200,
+      204
+    ],
+    "loaded_flags": [
+      212,
+      216,
+      220
+    ]
+  },
+  "interpretation": [
+    "Library type2 is selected if create type3 lookup returns -6; no separate phase lists.",
+    "Dynamic create code remains loaded while node is CREATED, including with split phases.",
+    "Created-state delete does not unload create; final node free unloads loaded libraries.",
+    "Split phase loading can create a different data/code instance; static retention alone does not prove identity.",
+    "Negative node create/delete RMS return becomes host -2; arbitrary positive returns can map to host success.",
+    "SEM_create: count T0, optional attrs XAR0; SEM_pend: handle XAR0, timeout T0, result T0.",
+    "SEM_pend timeout is in BIOS ticks, not automatically milliseconds; positive blocking sets task mode2."
+  ]
+}

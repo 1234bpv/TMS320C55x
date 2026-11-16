@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-01T00:00:19.491646+00:00",
+  "device": "n95",
+  "machine_uid": "20002D84",
+  "scope": "Static ROM contract; no reservation or phone call performed",
+  "driver_sha256": "F8B08E651C96BE180A3C0464E93F820DEC68FF99142C825CC72C51684E10A96B",
+  "ranges": [
+    {
+      "address": "80148410",
+      "words": 6,
+      "fnv32_words": "75736A35",
+      "sha256": "C57E9E80942AABF371C1880843E8DD7114B3DE91C51F8743F0D668BF3852BDF4",
+      "purpose": "stock percent getter"
+    },
+    {
+      "address": "80148460",
+      "words": 56,
+      "fnv32_words": "8C9DEAC3",
+      "sha256": "8CB2EC897246508F95652B60F1849A680A4F088FAE13782F439E6E44BD9FC927",
+      "purpose": "reserve/release and request completion"
+    },
+    {
+      "address": "80148638",
+      "words": 24,
+      "fnv32_words": "4C360A14",
+      "sha256": "DDD3D88261CE4225E7CA10BDEB6DAB9AB25C333A200E98BD8DB1CEC0411A7118",
+      "purpose": "request0 argument dispatch"
+    },
+    {
+      "address": "80148334",
+      "words": 28,
+      "fnv32_words": "4584A74D",
+      "sha256": "49251FAC8832AFE9B6FCB9634E8D19A43D2E82E65728CA7E405D453F2EDB4BFD",
+      "purpose": "channel destructor and client removal"
+    }
+  ],
+  "request": {
+    "number": 0,
+    "decision_argument": "a2",
+    "reserve_value": 100,
+    "release_value": 0,
+    "threshold": 50,
+    "resource": 66,
+    "status_completed_by": "native call80148840 with result0; native method returns wait result"
+  },
+  "getter": {
+    "control": 1,
+    "clock_domain": "MPU",
+    "divisor": 3300000,
+    "unit": "integer percent of nominal MPU frequency"
+  },
+  "lifecycle": "client count increments/decrements; destructor removes remaining client reservation",
+  "limits": [
+    "No arbitrary frequency or PRCM write is exposed by this API.",
+    "MPU percent alone does not measure every DSP/bus clock.",
+    "E90 must not use these N95 addresses or this channel."
+  ]
+}

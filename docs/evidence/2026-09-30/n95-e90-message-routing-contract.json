@@ -1,0 +1,113 @@
+{
+  "utc": "2026-09-30T10:52:07.132838+00:00",
+  "scope": "Static decoded firmware comparison; no E90 v8 hardware message test",
+  "dsp_functions": {
+    "MSG_toDSP_SWI": {
+      "start": "0x24d498",
+      "end_exclusive": "0x24d5a4",
+      "bytes": 268,
+      "bytes_equal": true,
+      "n95_sha256": "DF35AEEFE52744599CBA110BCD818B7209F0053928720FF8082E20EDFEFD63FE",
+      "e90_sha256": "DF35AEEFE52744599CBA110BCD818B7209F0053928720FF8082E20EDFEFD63FE"
+    },
+    "MSG_notify": {
+      "start": "0x24e758",
+      "end_exclusive": "0x24e7bc",
+      "bytes": 100,
+      "bytes_equal": true,
+      "n95_sha256": "698574F9AF2334505C51EA2DFBBE61414529F447FAFA2D35B9D06F57E0250FCA",
+      "e90_sha256": "698574F9AF2334505C51EA2DFBBE61414529F447FAFA2D35B9D06F57E0250FCA"
+    },
+    "NODE_putMsg": {
+      "start": "0x24dd5c",
+      "end_exclusive": "0x24de1c",
+      "bytes": 192,
+      "bytes_equal": true,
+      "n95_sha256": "F2E3BB0B72087620B83C796C8DFB13EB96612536F9880C1E0E93453159E12EC8",
+      "e90_sha256": "F2E3BB0B72087620B83C796C8DFB13EB96612536F9880C1E0E93453159E12EC8"
+    }
+  },
+  "ldd_functions": {
+    "put_get_message": {
+      "n95_start": "0x801b44f0",
+      "e90_start": "0x803f8b30",
+      "bytes": 160,
+      "bytes_equal": true,
+      "n95_sha256": "9C5F6E825514BEC855A24F3E6BD7A3023BD7D3809103EDA0E5823BA752767307",
+      "e90_sha256": "9C5F6E825514BEC855A24F3E6BD7A3023BD7D3809103EDA0E5823BA752767307"
+    },
+    "get_info_copy": {
+      "n95_start": "0x801b4a98",
+      "e90_start": "0x803f90d8",
+      "bytes": 100,
+      "bytes_equal": true,
+      "n95_sha256": "8B798B242B67E7A3EBAB94E6C373C996F97BECCCA20933C9E56C6A20EEE2AF2C",
+      "e90_sha256": "8B798B242B67E7A3EBAB94E6C373C996F97BECCCA20933C9E56C6A20EEE2AF2C"
+    },
+    "get_info_constructor": {
+      "n95_start": "0x801b56dc",
+      "e90_start": "0x803f9d1c",
+      "bytes": 44,
+      "bytes_equal": true,
+      "n95_sha256": "E87319401868DBFED27F7A70AC07D0F676C76FEB0F4C4D00B8ACF21D83DC8354",
+      "e90_sha256": "E87319401868DBFED27F7A70AC07D0F676C76FEB0F4C4D00B8ACF21D83DC8354"
+    },
+    "task_dispatch": {
+      "n95_start": "0x801b4afc",
+      "e90_start": "0x803f913c",
+      "bytes": 584,
+      "bytes_equal": true,
+      "n95_sha256": "425C76576C709459D20A2C0B159436989C2B85DD3D03BA286CC9F03BDCB67FA0",
+      "e90_sha256": "425C76576C709459D20A2C0B159436989C2B85DD3D03BA286CC9F03BDCB67FA0"
+    }
+  },
+  "rom_sha256": {
+    "n95_ldd": "34EE45B4F1C0F394C1C06B4141709E025FA8205860E0FAAC83510EF8577ECD3A",
+    "e90_ldd": "07731D17142D8D45EF29229F00D7856135CE59D2F51935DB1DF96AD742E9A70D",
+    "n95_pdd": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF"
+  },
+  "contract": {
+    "task2": {
+      "raw_record_bytes": 112,
+      "header": "30000068",
+      "maximum": 104,
+      "node_env_payload_offset": 64
+    },
+    "task20_21": {
+      "pointer_pair_bytes": 8,
+      "raw_record_bytes": 24,
+      "header": "3000000C",
+      "maximum": 12,
+      "payload": "cmd, arg1, arg2",
+      "padding": "last DWORD is not interpreted",
+      "put_ldd": "801B44F0",
+      "get_ldd": "801B4540",
+      "put_pdd": "801A1D58",
+      "get_pdd": "801A1E50",
+      "queued_get_copy": "801AF284",
+      "pending_get_copy": "8019B048",
+      "explicit_cancel22_23": false
+    },
+    "destination": {
+      "put_queue_field": 16,
+      "queue_setter": "801AF45C",
+      "create_ack_assigns_env": "801A27F4-801A2800",
+      "dsp_shared_packet_words": 8,
+      "dsp_frame_message_word_offsets": [
+        4,
+        6,
+        8
+      ],
+      "dsp_frame_source_word_offset": 10,
+      "shared_record_word_offsets": {
+        "cmd": 0,
+        "arg1": 2,
+        "arg2": 4,
+        "destination": 6
+      },
+      "shared_record_arm_bytes": 16,
+      "pdd_shared_record_writer": "8019AF44-8019AFAC"
+    },
+    "native_exit_ack": "RMS_task_wrapper 24E6F0 sends {40000000, execute_status, 0} automatically"
+  }
+}

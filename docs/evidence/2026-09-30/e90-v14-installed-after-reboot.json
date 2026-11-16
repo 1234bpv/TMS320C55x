@@ -1,0 +1,55 @@
+{
+  "tag": "stream-v14-installed-after-reboot-01",
+  "utc": "2026-09-30T15:52:25.933867+00:00",
+  "device": "e90",
+  "ip": "192.168.3.21",
+  "complete": true,
+  "files": [
+    {
+      "remote": "C:\\sys\\bin\\c55stream.exe",
+      "local": "work\\evidence\\e90\\stream-v14-installed-after-reboot-01.exe",
+      "bytes": 22408,
+      "sha256": "5F1C77CF7914312818F63D77AA950DED5B1208F454E986CF55C68EAD9E47274A"
+    },
+    {
+      "remote": "E:\\c55stream.log",
+      "local": "work\\evidence\\e90\\stream-v14-installed-after-reboot-01.log",
+      "bytes": 2010,
+      "sha256": "5C995F53C76032DB6507B6A2A946562B7E511A6834C5CCB9652D6AB1D8A4EFF0"
+    },
+    {
+      "remote": "E:\\c55stream.dll55l",
+      "local": "work\\evidence\\e90\\stream-v14-installed-after-reboot-01.dll55l",
+      "bytes": 3668,
+      "sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1"
+    }
+  ],
+  "user_report": "E90 automatically restarted; v14 installed",
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 77627392",
+    "tick 4162657 startTick 47653 boot 1 by t",
+    "ap Huawei",
+    "drive C freekb 55892",
+    "drive E freekb 1470648",
+    "script IDLE"
+  ],
+  "processes": [
+    "OK ps 0"
+  ],
+  "expected_host_sha256": "5F1C77CF7914312818F63D77AA950DED5B1208F454E986CF55C68EAD9E47274A",
+  "host_readback_equal": true,
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 77627392",
+    "tick 4162921 startTick 47653 boot 1 by t",
+    "ap Huawei",
+    "drive C freekb 55892",
+    "drive E freekb 1470648",
+    "script IDLE"
+  ]
+}

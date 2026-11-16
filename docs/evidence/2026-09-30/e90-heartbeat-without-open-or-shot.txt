@@ -1,0 +1,113 @@
+C0 control characters in FG are escaped; original is preserved in work/evidence.
+2026-09-30T01:15:44.030988+00:00 CONNECT e90 192.168.3.21
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80658432
+< tick 444665 startTick 32551 boot 1 by t
+< ap Huawei
+< drive C freekb 55932
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:15:46.417250+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80658432
+< tick 446775 startTick 32551 boot 1 by t
+< ap Huawei
+< drive C freekb 55932
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:15:48.518355+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80658432
+< tick 448926 startTick 32551 boot 1 by t
+< ap Huawei
+< drive C freekb 55932
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:15:50.702574+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80658432
+< tick 451074 startTick 32551 boot 1 by t
+< ap Huawei
+< drive C freekb 55932
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:15:52.828752+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80658432
+< tick 453223 startTick 32551 boot 1 by t
+< ap Huawei
+< drive C freekb 55932
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:15:54.980509+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80658432
+< tick 455373 startTick 32551 boot 1 by t
+< ap Huawei
+< drive C freekb 55932
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:15:57.130805+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80658432
+< tick 457523 startTick 32551 boot 1 by t
+< ap Huawei
+< drive C freekb 55932
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:15:59.295319+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80658432
+< tick 459673 startTick 32551 boot 1 by t
+< ap Huawei
+< drive C freekb 55932
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:16:01.440441+00:00 HEARTBEAT
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80658432
+< tick 461822 startTick 32551 boot 1 by t
+< ap Huawei
+< drive C freekb 55932
+< drive E freekb 1470692
+< script IDLE
+2026-09-30T01:16:01.620211+00:00 OP {"get": ["E:\\c55stream_sha1.sis", "work/evidence/e90/stream-sis-live-v7.sis"]}
+> GET E:\c55stream_sha1.sis
+< OK 10192 -> work\evidence\e90\stream-sis-live-v7.sis
+2026-09-30T01:16:01.835928+00:00 OP {"get": ["E:\\ps1_daemon.log", "work/evidence/e90/daemon-before-small-shot-03.log"]}
+> GET E:\ps1_daemon.log
+< OK 217070 -> work\evidence\e90\daemon-before-small-shot-03.log
+2026-09-30T01:16:02.234106+00:00 OP {"cmd": "FG"}
+> FG
+< OK fg 15 41\u0000101fd64c\u0000\u0001\u0001\u0001.\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0001\u0000
+2026-09-30T01:16:04.258022+00:00 HEARTBEAT
+> INFO
+2026-09-30T01:16:23.544470+00:00 FAILED ConnectionResetError: [WinError 10054] Удаленный хост принудительно разорвал существующее подключение
+2026-09-30T01:16:23.544470+00:00 CLOSED

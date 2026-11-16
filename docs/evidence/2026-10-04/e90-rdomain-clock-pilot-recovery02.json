@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-04T00:57:47.441922+00:00",
+  "ip": "192.168.3.21",
+  "device": "e90",
+  "action": "recover-journal",
+  "host_version_expected": 46,
+  "complete": true,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 80523264",
+    "tick 712158 startTick 35467 boot 1 by t",
+    "ap Huawei",
+    "drive C freekb 55712",
+    "drive E freekb 1446792",
+    "script IDLE"
+  ],
+  "wake_before": [
+    "OK wake"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "journal": "rdomain-clock-pilot-recovery02.log",
+  "journal_sha256": "4067BD9C8CD0F4FF14307D8FDC8D03428C5CD3BBFB72EB5AD5D59B8B0C48FBFB",
+  "dsp_sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 800x352",
+    "ramfree 80515072",
+    "tick 712244 startTick 35467 boot 1 by t",
+    "ap Huawei",
+    "drive C freekb 55712",
+    "drive E freekb 1446792",
+    "script IDLE"
+  ]
+}

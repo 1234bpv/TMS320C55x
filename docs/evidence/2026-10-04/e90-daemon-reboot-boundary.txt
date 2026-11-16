@@ -1,0 +1,6 @@
+[807473] client connected
+[814907] GET 844854 bytes rc=0
+[814919] client done
+[94415] === daemon start (tick=93682 boot=0 by=n) ===
+[94463] killed 1 stale instance(s)
+[350794] client connected

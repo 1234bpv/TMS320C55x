@@ -1,0 +1,214 @@
+{
+  "scope": "N95 research acceptance against original D0-D2 assignment; no emulator implementation or new DSP RUN; E90 deferred",
+  "overall_goal_status": "in_progress",
+  "requirements_source": {
+    "path": "work/CODEX_TASK_2026-10-01.md",
+    "sha256": "D61FB6EF0FF05996896A2E36E99EC5315753B515A900A50129D7F66786A10A22"
+  },
+  "d0": {
+    "summary": {
+      "path": "docs/evidence/2026-10-03/d0-attach-success.json",
+      "sha256": "4E110B1164477B65B93E6629C199554B4B66FF527D274A9F6E5EC2A041E3BB46"
+    },
+    "artifact_proof": {
+      "path": "docs/evidence/2026-10-03/d0-attach-base-v47-artifacts.json",
+      "sha256": "5D6D14C3CB7CECE5E1D651460FC7010CED165622E47570B5CD40262F9CF5F45A"
+    },
+    "sequence": {
+      "path": "docs/evidence/2026-10-04/n95-d0-acceptance-sequence.json",
+      "sha256": "246F8AEE4F6EAE20550355A2261BD538D0F43F018249641883B18D39FFAC0FAE",
+      "wire_sha256": "13F102ABEAB72C0B5A7071417D1F73976AC5F40D28482D267053D6E2CCCCB931"
+    },
+    "steps": [
+      {
+        "label": "inspect",
+        "command": "inspect",
+        "journal": {
+          "path": "docs/evidence/2026-10-04/n95-d0-inspect.txt",
+          "sha256": "ECEA71C4D4626BDEEECCE221CBE37B760101E052693D7D84C34F25B99E53FEC5",
+          "wire_sha256": "DAC68D1998DFF2EFD017B57D5779A502DFBF1C1B1BC970B9DE59B04BB2619DED"
+        }
+      },
+      {
+        "label": "create",
+        "command": "create",
+        "journal": {
+          "path": "docs/evidence/2026-10-04/n95-d0-create.txt",
+          "sha256": "0CF1CCCEC1D882B92CFB6D9F003475AC49B3028631284873FA07AA3A941C22C3",
+          "wire_sha256": "FC14677C972B1E139F39952271E5B5A64E8A48C3F463919E7502114C1AC21854"
+        }
+      },
+      {
+        "label": "run1",
+        "command": "run-transfer reps=0 bytes=512 frames=8",
+        "journal": {
+          "path": "docs/evidence/2026-10-04/n95-d0-run1.txt",
+          "sha256": "656AB08F6BEF5C2FF5F03DD7DF3109FCBDC66944C3B1F0F5D459E077F15ACD57",
+          "wire_sha256": "A83EC61E7351AC635E43507C762EA3D0C0B5590DBF7F92604999597BD2C81EA6"
+        }
+      },
+      {
+        "label": "run2",
+        "command": "run-transfer reps=0 bytes=512 frames=8",
+        "journal": {
+          "path": "docs/evidence/2026-10-04/n95-d0-run2.txt",
+          "sha256": "5D45B16FC9C0955F17396C202F3F50E4BCD71528A52C8D969C4C7F881ACEF6C6",
+          "wire_sha256": "2713FA619BE262C39E2D50E22080C7D24EF5F7AC185C2F8BE9665A4C808EDF25"
+        }
+      },
+      {
+        "label": "run3",
+        "command": "run-transfer reps=0 bytes=512 frames=8",
+        "journal": {
+          "path": "docs/evidence/2026-10-04/n95-d0-run3.txt",
+          "sha256": "AE02E888E805FD304EAA94AD01088FFD5E304D0DE22E4FD94C6183CD44189347",
+          "wire_sha256": "575B6B4D41212C2119472BDA2A25FDACF2F29046CEA1A4FF346FDE3FC8DB0726"
+        }
+      }
+    ],
+    "clocks": [
+      {
+        "path": "docs/evidence/2026-10-04/n95-d0-engine-clock.txt",
+        "sha256": "A5839BF8B71FB78043320251F803FAEBE90F7F2C2A6E7668E3FB2A2BDA55C4DF",
+        "wire_sha256": "A283C4C7FB3FC48B87B7A79CCB09A3BEB1F5674749A212B8B132C23D18FC2B95"
+      },
+      {
+        "path": "docs/evidence/2026-10-04/n95-d0-dsp-clock.txt",
+        "sha256": "EB4C46B61885E4797ED5FE4371ABD09ED2B8D57CA9237960894F73C1C60F50CC",
+        "wire_sha256": "50E4382C6060B1C04C9FAED0902589F698F28B2EF7A1843B985558EA60026E8F"
+      }
+    ]
+  },
+  "final_state": {
+    "verification": {
+      "path": "docs/evidence/2026-10-04/n95-acceptance-final-verify.json",
+      "sha256": "E73012A619DB682206890D3254411C7856EF28B7181CAB77CCE55DC88F9F3C9B",
+      "wire_sha256": "23221579EB2A3870C0D141540C71F9064E774C3F79372929288E1964F9F46468"
+    },
+    "transport": {
+      "path": "docs/evidence/2026-10-04/n95-acceptance-final-transport.txt",
+      "sha256": "F2737AEDD916377A49AD3680B8DAF05E90A1DA42EAF55FE1B0ED7D42932DECB5",
+      "wire_sha256": "75C464744EBAF8EC3454A96DC030D71A02C31C14C2935D214A209241BE4A4D2F"
+    },
+    "originals": [
+      {
+        "remote": "E:\\c55stream.dll55l",
+        "bytes": 3668,
+        "sha256": "5B6BE15B20E73D8D318FDF9C5E5050C16AA28994BC422C891C2B0132EA4AB9F9"
+      },
+      {
+        "remote": "E:\\c55stream.log",
+        "bytes": 23054,
+        "sha256": "51201B91D6F2632262C522225CAC096D4D865C0D2D10B777829EF5101E4146CC"
+      },
+      {
+        "remote": "E:\\ocprobe.log",
+        "bytes": 1259,
+        "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+      },
+      {
+        "remote": "E:\\sys\\bin\\c55stream.exe",
+        "bytes": 34196,
+        "sha256": "CBB91873639FC226B6DD2E40C6A75CC40E5C01C645C513A9DFA5E8A940890946"
+      },
+      {
+        "remote": "C:\\sys\\hash\\c55stream.exe",
+        "bytes": 20,
+        "sha256": "B3AB7C72332FF3EF42B059BC24C391D4CD7C1002518EF500BA6E9971EF965614"
+      }
+    ]
+  },
+  "inputs": {
+    "native61": {
+      "path": "docs/evidence/2026-10-04/d1-n95-native-ring-results.json",
+      "sha256": "1BC792E5CE502221205DF8B70FB937EE016177B6AFCECC8263A5DA596D7A6C58"
+    },
+    "CPU64": {
+      "path": "docs/evidence/2026-10-04/n95-ring-cpu64-results.json",
+      "sha256": "C71F4C7DACD094DF45F44347D122DF0A1D680362FBB17E1C180946FF71A5F10C"
+    },
+    "MDEC66": {
+      "path": "docs/evidence/2026-10-04/n95-mdec66-results.json",
+      "sha256": "BB5C4D40195CAAB654A95D65FAD14BCB08813A3EBDD9D1C20C2C835B7762D9F4"
+    },
+    "SPU67": {
+      "path": "docs/evidence/2026-10-04/n95-spu67-results.json",
+      "sha256": "407873D41A1A2A6F9CEACF0266C3C9AFBAAE5270BF0338A87189EBE334E129C3"
+    },
+    "WSOLA68": {
+      "path": "docs/evidence/2026-10-04/n95-wsola68-results.json",
+      "sha256": "B530B05AAAC21703D17B26F3B50C14F0304EA31AE0CB8EBAEF785FEDDB7F8BCE"
+    },
+    "dependencies": {
+      "path": "docs/evidence/2026-10-04/n95-offload-dependency-audit.json",
+      "sha256": "A549AE1F2A942B42336D3D7B50046C005A2C35BBBF960EEEE1FE69885BFCE687"
+    },
+    "ARM_cache": {
+      "path": "docs/evidence/2026-10-04/n95-arm-cache-path-audit.json",
+      "sha256": "CD16B92C62C43C4C340E68FE141F5D00A2AD8C34842B84DD784E48197CA10E9D"
+    },
+    "DSP_compiler_order": {
+      "path": "docs/evidence/2026-10-04/n95-kernel-publish-audit.json",
+      "sha256": "3A163494F41CFBCDF427C2A28884F6251D90806552283163DD42F3EEA52B9007"
+    }
+  },
+  "requirements": [
+    {
+      "id": "D0_normal_cycles",
+      "status": "proven_N95",
+      "criterion": "three consecutive create/RUN/checked packets/delete cycles with EXIT/FINAL0 and responding phone",
+      "evidence": "d0.steps + sequence + fresh final_state",
+      "limit": "Positive-cycle acceptance; not a claim of universal safe cancel or reboot-free failure handling."
+    },
+    {
+      "id": "D0_error_timeout_cancel_audit",
+      "status": "documented_with_limits",
+      "criterion": "audit native loader/host error,timeout,cancel paths",
+      "evidence": "docs/LIFECYCLE_DMM_2026-10-01.md; src/c55stream.cpp timeout/cancel/quarantine paths; no automatic KILL",
+      "limit": "Unconfirmed pending/delete ownership retains live process/resources; hardware fault injection and universal safe ARM fallback not accepted."
+    },
+    {
+      "id": "D1_mapping_and_repeated_measurements",
+      "status": "demonstrated_N95",
+      "criterion": "16KiB TOTAL shared mapping; repeated latency/bandwidth/page identity/ownership/teardown",
+      "evidence": "inputs.native61:3series/12runs/9360packets; inputs.CPU64 separate settled CPU cohort",
+      "limit": "Payload shared mapping; notification buffers still use native transport. Separate cohorts cannot be pooled."
+    },
+    {
+      "id": "D1_memory_contract",
+      "status": "unproven",
+      "criterion": "establish memory publication order for a reusable channel",
+      "evidence": "inputs.ARM_cache + read-only WPE0 cohorts + compiler/native notification audits",
+      "limit": "DSP external writes reaching SDRAM before mailbox notification not independently established. Successful packets are measured evidence, not a general fence contract."
+    },
+    {
+      "id": "D2_measured_verdict",
+      "status": "delivered_N95_measured_jobs",
+      "criterion": "calculate MDEC/SPU/WSOLA with max(H+D,W)+S/N<A+W and record packet scope/verdict/missing evidence",
+      "evidence": "inputs.MDEC66,SPU67,WSOLA68,dependencies; docs/PS1_CANDIDATES_2026-10-01.md",
+      "limit": "Current blocking kernels remain ARM; async useful W/resident/full-state benefits unknown. Full gameplay/PCM/callback integration belongs to a later task."
+    },
+    {
+      "id": "originals_restoration",
+      "status": "proven_N95_at_timestamp",
+      "criterion": "restore changed originals with GET/SHA256 verification",
+      "evidence": "final_state verification:5files equal_original,PS0,read-only INFO/PS/GET",
+      "limit": "Snapshot at the recorded UTC timestamp, not continuous phone monitoring."
+    },
+    {
+      "id": "E90_followup",
+      "status": "deferred_by_user",
+      "criterion": "resume E90 restoration and frequency qualification tomorrow",
+      "evidence": "user instruction2026-10-04; docs/E90_DAEMON_REBOOT_2026-10-04.md",
+      "limit": "No E90 commands in this checkpoint; overall goal not complete."
+    }
+  ],
+  "next_steps": [
+    "Resolve DSP endpoint publication and caller/context cache completion without assuming volatile/readback or ARM DSB is an OMAP fence.",
+    "After user-deferred E90 date: recover current journal/state before changes, restore own originals, qualify compatible RDomain clock probe; do not replay failed runs unchanged."
+  ],
+  "outside_current_implementation_scope": [
+    "Editing PS1Emulator to add async/resident DSP.",
+    "Full-game/audio integration acceptance is future work; unknown outcomes must remain explicit in research verdict."
+  ]
+}

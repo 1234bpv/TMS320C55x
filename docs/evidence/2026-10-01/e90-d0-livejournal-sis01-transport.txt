@@ -1,0 +1,40 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80023552
+< tick 496830 startTick 60875 boot 0 by n
+< ap Huawei
+< drive C freekb 55840
+< drive E freekb 1447776
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80023552
+< tick 496906 startTick 60875 boot 0 by n
+< ap Huawei
+< drive C freekb 55840
+< drive E freekb 1447776
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> PS ocprobe*
+< OK ps 0
+> STAT E:\c55stream-livejournal-v22.sis
+< ERR stat -1
+> PUT E:\c55stream-livejournal-v22.sis 20416
+< OK 20416
+> GET E:\c55stream-livejournal-v22.sis
+< OK 20416 -> H:\VsCodeProjects\SymbianProjects\TMS320C55x test\work\evidence\e90\d0-20261001\livejournal-sis01-sis-readback.sis
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 80023552
+< tick 497615 startTick 60875 boot 0 by n
+< ap Huawei
+< drive C freekb 55840
+< drive E freekb 1447756
+< script IDLE

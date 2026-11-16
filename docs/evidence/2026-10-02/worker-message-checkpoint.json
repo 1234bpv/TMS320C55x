@@ -1,0 +1,418 @@
+{
+  "utc": "2026-10-02T18:42:06.185800+00:00",
+  "attempts": [
+    {
+      "device": "e90",
+      "tag": "laptop-worker-msg01",
+      "host_version": 26,
+      "receive_timing": "before input",
+      "DSP_NODE_putMsg_result": 1,
+      "STRM_snapshot_received": true,
+      "ARM_receive": -33,
+      "ARM_record_observed_empty": null,
+      "created_delete_free_close_clean": true,
+      "FINAL_EXIT0": false,
+      "official_RUN_calls": 0,
+      "proof": {
+        "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-worker-message.txt",
+        "sha256": "1A0CA1F6CEFE88A9B2903CA98F8801D8590F1D5351B84B9820D573B553CA1499"
+      }
+    },
+    {
+      "device": "e90",
+      "tag": "laptop-worker-queued01",
+      "host_version": 27,
+      "receive_timing": "after output",
+      "DSP_NODE_putMsg_result": 1,
+      "STRM_snapshot_received": true,
+      "ARM_receive": -33,
+      "ARM_record_observed_empty": true,
+      "created_delete_free_close_clean": true,
+      "FINAL_EXIT0": false,
+      "official_RUN_calls": 0,
+      "proof": {
+        "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-worker-message-queued.txt",
+        "sha256": "FD075EE43D3666A09FC5FFC09314E04D22FA403EB69B2F6471DEC0FB82402854"
+      }
+    },
+    {
+      "device": "e90",
+      "tag": "laptop-worker-prearmed27",
+      "host_version": 27,
+      "receive_timing": "before input",
+      "DSP_NODE_putMsg_result": 1,
+      "STRM_snapshot_received": true,
+      "ARM_receive": -33,
+      "ARM_record_observed_empty": true,
+      "created_delete_free_close_clean": true,
+      "FINAL_EXIT0": false,
+      "official_RUN_calls": 0,
+      "proof": {
+        "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-worker-message.txt",
+        "sha256": "E94AC469AF7F92D717D48F013B44E33338A030D448E9AB3DCFB77FDFFB82133D"
+      }
+    },
+    {
+      "device": "n95",
+      "tag": "worker-msg02",
+      "host_version": 28,
+      "receive_timing": "before input",
+      "DSP_NODE_putMsg_result": 1,
+      "STRM_snapshot_received": true,
+      "ARM_receive": -33,
+      "ARM_record_observed_empty": true,
+      "created_delete_free_close_clean": true,
+      "FINAL_EXIT0": false,
+      "official_RUN_calls": 0,
+      "proof": {
+        "path": "docs/evidence/2026-10-02/n95-worker-msg02-worker-message.txt",
+        "sha256": "BC0B3B917763315985D8907DDE2F1D062C20A1F777A4856E7E94F5DEFB821CD7"
+      }
+    }
+  ],
+  "current_devices": {
+    "e90": {
+      "utc": "2026-10-02T18:42:06.159873+00:00",
+      "daemon_startTick": 61087,
+      "all_five_files_GET_equal": true,
+      "processes": {
+        "c55stream": 0,
+        "ocprobe": 0
+      },
+      "proof": {
+        "path": "docs/evidence/2026-10-02/e90-laptop-final-verify01.json",
+        "sha256": "5AE3A92F02B7DB9BAE3983BB1043ADA8F84CFFD11BF1330BC6A15010683F069A"
+      }
+    },
+    "n95": {
+      "utc": "2026-10-02T18:42:06.185800+00:00",
+      "daemon_startTick": 22918156,
+      "all_five_files_GET_equal": true,
+      "processes": {
+        "c55stream": 0,
+        "ocprobe": 0
+      },
+      "proof": {
+        "path": "docs/evidence/2026-10-02/n95-final-verify01.json",
+        "sha256": "908531114B6993AF276E56E3C267E8AC2D0C22A694AF434D181211F208C5B57D"
+      }
+    }
+  },
+  "proofs": {
+    "e90/laptop-final-verify01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-final-verify01-transport.txt",
+      "sha256": "00298D61D251C5AEC58CF9B440DD8A161AC3E8BDB650B92FE8B5F1A60607D86D"
+    },
+    "e90/laptop-final-verify01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-final-verify01.json",
+      "sha256": "5AE3A92F02B7DB9BAE3983BB1043ADA8F84CFFD11BF1330BC6A15010683F069A"
+    },
+    "e90/laptop-host-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-host-restore01-transport.txt",
+      "sha256": "D205624273258DA4D88E6C8D930BAE359B0DB928F42DED2AE7520D01D1834AED"
+    },
+    "e90/laptop-host-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-host-restore01.json",
+      "sha256": "471D96C103E53688EF5CD941DC6584BB7DD4F4231220D262C0AF3433238FF40E"
+    },
+    "e90/laptop-host27-deploy01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-host27-deploy01-transport.txt",
+      "sha256": "5EA6B8C5862F3C802CD5D5E815F1CB0BD8642C33F9C187530C223C0E9E03889C"
+    },
+    "e90/laptop-host27-deploy01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-host27-deploy01.json",
+      "sha256": "C707FC0D0F47EC77C2BED04B1EA0AF81C47000B057B649AAB72F2A38644376CD"
+    },
+    "e90/laptop-msg-recovery01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-recovery01-transport.txt",
+      "sha256": "CD44767EB9F8139624CA7068DFB46EB719743C39766B2818236281AA4FFE44AF"
+    },
+    "e90/laptop-msg-recovery01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-recovery01.json",
+      "sha256": "BEAC20C281A4D4FBE58E39D468640324BD78F91F727E17ECB6FB263A8762D1C8"
+    },
+    "e90/laptop-msg-recovery01.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-recovery01.txt",
+      "sha256": "1A0CA1F6CEFE88A9B2903CA98F8801D8590F1D5351B84B9820D573B553CA1499"
+    },
+    "e90/laptop-msg-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-restore01-transport.txt",
+      "sha256": "BBB102B32D24AF99DF586CDFDB8033D18AB99A4111572AB8242DF600AD441591"
+    },
+    "e90/laptop-msg-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-msg-restore01.json",
+      "sha256": "AAF1BC0F097DFCF207AC8AEBBB4EF22F980031FC31F738CFECA0186BF4D3CFB2"
+    },
+    "e90/laptop-prearmed-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-prearmed-restore01-transport.txt",
+      "sha256": "0753B0083B3018097D57B6F88A83FC10B074AE8917D8453C93AC743BA4408365"
+    },
+    "e90/laptop-prearmed-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-prearmed-restore01.json",
+      "sha256": "11CAC438DBF689DEDDF942BEFD3A4732B33CDAB262531174D4981111A20C4A4A"
+    },
+    "e90/laptop-queued-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-queued-restore01-transport.txt",
+      "sha256": "AB95D4FC61FC068467222483CC00DDB7C96F6AA8988F5545741CDBF0D7A8F251"
+    },
+    "e90/laptop-queued-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-queued-restore01.json",
+      "sha256": "085EEA88E696C43C1586B725A574FA6ED315A8DFA00CD2D8970F3E1F768FFB90"
+    },
+    "e90/laptop-recovery01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-recovery01-transport.txt",
+      "sha256": "E80A198C4914A42D7C4B3E1A7E7D78956DD157B8B2C807EA89AD050AF051A6BB"
+    },
+    "e90/laptop-recovery01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-recovery01.json",
+      "sha256": "927F07B719599386917A258BF2FAA56F0DA328945A745FB56005F8337B9B6E41"
+    },
+    "e90/laptop-recovery01.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-recovery01.txt",
+      "sha256": "B9B4E282CF099D986E8B1AC08B25F32BFF73E546294316379563613DB084EA92"
+    },
+    "e90/laptop-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-restore01-transport.txt",
+      "sha256": "AB058FC7A591336AF5FF4272CF34681B25CF655E28CFF4F9FA014115052C9965"
+    },
+    "e90/laptop-restore01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-restore01.json",
+      "sha256": "F5423FD280C69630F4E3FCAC0214B56EA40F313F0382421F4C79015C86596114"
+    },
+    "e90/laptop-worker-msg01-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-clock-before.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-msg01-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-clock-restored.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-msg01-dsp.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-dsp.txt",
+      "sha256": "ECB0FD57C5105D6CD09AB7D896EF55D32D5B4545C8D0E3D8372BCDDDC5300867"
+    },
+    "e90/laptop-worker-msg01-engine.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-engine.txt",
+      "sha256": "AE515DE458795416C781370A38213CB53AAD56D2270B33B20F87C1D44B25BDAF"
+    },
+    "e90/laptop-worker-msg01-inspect.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-inspect.txt",
+      "sha256": "DA8A2552E5381F1D7F76CDDA32DF869BC26601C4BC2D68AE40FA1939AF610799"
+    },
+    "e90/laptop-worker-msg01-log-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-log-before.txt",
+      "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D"
+    },
+    "e90/laptop-worker-msg01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-transport.txt",
+      "sha256": "EF83C167A970EE50D3642CB225EFC7BF413E44315085682069F3AD0F25745F04"
+    },
+    "e90/laptop-worker-msg01-worker-message.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01-worker-message.txt",
+      "sha256": "1A0CA1F6CEFE88A9B2903CA98F8801D8590F1D5351B84B9820D573B553CA1499"
+    },
+    "e90/laptop-worker-msg01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-msg01.json",
+      "sha256": "B073139E968037A9C408EB17E7316B27FD2607F7AAA51A0C410253A64C0D5CFD"
+    },
+    "e90/laptop-worker-prearmed27-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-clock-before.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-prearmed27-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-clock-restored.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-prearmed27-dsp.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-dsp.txt",
+      "sha256": "8AF72E7118F1D2AB339CC34E5FE070E12F195A0DC509D3152E8F2FF0D696C0D6"
+    },
+    "e90/laptop-worker-prearmed27-engine.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-engine.txt",
+      "sha256": "69E612DF18263119658306444AC946E98C648842F01E0CC35F68DA1D7F57EF77"
+    },
+    "e90/laptop-worker-prearmed27-inspect.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-inspect.txt",
+      "sha256": "CE5E7D2F28C7A9383EA00B900577BFCDE971B14909261EFFBDD96570ED023D80"
+    },
+    "e90/laptop-worker-prearmed27-log-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-log-before.txt",
+      "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D"
+    },
+    "e90/laptop-worker-prearmed27-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-transport.txt",
+      "sha256": "5E58F054DC2B68507DDCFC41CA0A9509FBB775448CF955DFF8D55800182CAEB2"
+    },
+    "e90/laptop-worker-prearmed27-worker-message.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27-worker-message.txt",
+      "sha256": "E94AC469AF7F92D717D48F013B44E33338A030D448E9AB3DCFB77FDFFB82133D"
+    },
+    "e90/laptop-worker-prearmed27.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-prearmed27.json",
+      "sha256": "984D23ABAE0DD6A98241A1AD099A86229CE8E93E385299BF1C87940F372BA931"
+    },
+    "e90/laptop-worker-queued01-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-clock-before.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-queued01-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-clock-restored.txt",
+      "sha256": "BE58F5EF185A2632375DA107D9EE6ADABA2B76911FAC7A94BB108AB06A65B93A"
+    },
+    "e90/laptop-worker-queued01-dsp.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-dsp.txt",
+      "sha256": "1EBB0512CD449C5D2F76CA1B881A77460C191870F0207F5E60729483643F8E84"
+    },
+    "e90/laptop-worker-queued01-engine.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-engine.txt",
+      "sha256": "E40EEC48DB515452E11A5ACD2CF621FEF69D7E7DA215CAE205653C262BA839F5"
+    },
+    "e90/laptop-worker-queued01-inspect.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-inspect.txt",
+      "sha256": "CE5E7D2F28C7A9383EA00B900577BFCDE971B14909261EFFBDD96570ED023D80"
+    },
+    "e90/laptop-worker-queued01-log-before.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-log-before.txt",
+      "sha256": "CFE4DF8B73AB8C0AC02DAA10DC2596DE6386E6ACB56E94A5C4150D3CE35B139D"
+    },
+    "e90/laptop-worker-queued01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-transport.txt",
+      "sha256": "0C3DCE2E6D33FA5FB3C258289C1FEFA1E380D5282A98D9EF24444AF58A1547E0"
+    },
+    "e90/laptop-worker-queued01-worker-message-queued.log": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01-worker-message-queued.txt",
+      "sha256": "FD075EE43D3666A09FC5FFC09314E04D22FA403EB69B2F6471DEC0FB82402854"
+    },
+    "e90/laptop-worker-queued01.json": {
+      "path": "docs/evidence/2026-10-02/e90-laptop-worker-queued01.json",
+      "sha256": "62E9A131ED87473CD4471C58F5CBBCA05CAE45C4EFEED98AC105E35BD2CA6C8E"
+    },
+    "n95/final-verify01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-final-verify01-transport.txt",
+      "sha256": "24ECFED563E058FD9B8BB3470546E0E6148D5CEF09D6EE2982B6AB6F137F8A8A"
+    },
+    "n95/final-verify01.json": {
+      "path": "docs/evidence/2026-10-02/n95-final-verify01.json",
+      "sha256": "908531114B6993AF276E56E3C267E8AC2D0C22A694AF434D181211F208C5B57D"
+    },
+    "n95/host-restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-host-restore01-transport.txt",
+      "sha256": "B250FC88F47143855237DF9778DFA0F46AD4633B917BF86192D66ED664D09E6C"
+    },
+    "n95/host-restore01.json": {
+      "path": "docs/evidence/2026-10-02/n95-host-restore01.json",
+      "sha256": "B61F89EF89B28112680B68F311B005BE778FCC8CF59BCF7863F1E1E3435D7454"
+    },
+    "n95/host28-deploy01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-host28-deploy01-transport.txt",
+      "sha256": "8A9A7898D8A4237998951224EFD8280CA9E2C3A1135266C8FB42269AF534172F"
+    },
+    "n95/host28-deploy01.json": {
+      "path": "docs/evidence/2026-10-02/n95-host28-deploy01.json",
+      "sha256": "D5CF9B827D3C69BC801ABD38980B013A31CBC01B7B26D72C71662DCF9783FA88"
+    },
+    "n95/originals.json": {
+      "path": "docs/evidence/2026-10-02/n95-originals.json",
+      "sha256": "163C5EE3E7D1782D284E3873E2A6BC6D7025DCCCBB582EE9E96665FFC80403DE"
+    },
+    "n95/restore01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-restore01-transport.txt",
+      "sha256": "447AB6B137C344389705705DCD9E8DCE3461A79A6915A84E078CAFEECCD2D57D"
+    },
+    "n95/restore01.json": {
+      "path": "docs/evidence/2026-10-02/n95-restore01.json",
+      "sha256": "4DA7B2794DA59D2DB931AB7CBC57D58C4CEA7C09848CBADE84A6C23AEB882252"
+    },
+    "n95/snapshot01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-snapshot01-transport.txt",
+      "sha256": "1F25957843A965848981EFA7D629A587FA083CC05C09851F0C4CDA16D5334CFB"
+    },
+    "n95/snapshot01.json": {
+      "path": "docs/evidence/2026-10-02/n95-snapshot01.json",
+      "sha256": "163C5EE3E7D1782D284E3873E2A6BC6D7025DCCCBB582EE9E96665FFC80403DE"
+    },
+    "n95/worker-msg01-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-clock-before.txt",
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    "n95/worker-msg01-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-clock-restored.txt",
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    "n95/worker-msg01-dsp.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-dsp.txt",
+      "sha256": "B7F10B08D8DCBE0B45E72B1AC8557E256CB9E27AD159AC06BBB4DB7D7E4468A8"
+    },
+    "n95/worker-msg01-engine.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-engine.txt",
+      "sha256": "07E21814C8D6BAE1E3E8F8EA28F06BF3D60DD9EE0D7867468A47DDD839408BF9"
+    },
+    "n95/worker-msg01-log-before.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-log-before.txt",
+      "sha256": "51201B91D6F2632262C522225CAC096D4D865C0D2D10B777829EF5101E4146CC"
+    },
+    "n95/worker-msg01-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01-transport.txt",
+      "sha256": "4949F30A7560CB864002DC1A38848BD750FED4B890ED1CB1568ACBFE333CF187"
+    },
+    "n95/worker-msg01.json": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg01.json",
+      "sha256": "D1763851D50A83FBAD9CE8223131D5F370B281EB217693195E0F849AD9DEE86D"
+    },
+    "n95/worker-msg02-clock-before.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-clock-before.txt",
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    "n95/worker-msg02-clock-restored.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-clock-restored.txt",
+      "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF"
+    },
+    "n95/worker-msg02-dsp.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-dsp.txt",
+      "sha256": "D4F786CF3F5139E9DD63FB9A79221FCEF0C83615799D062C79A5CE36C5F27830"
+    },
+    "n95/worker-msg02-engine.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-engine.txt",
+      "sha256": "90B632CE3CBEB2A0AC55FF373BB8C09D1AF1FDD945C24BAAB3195A2916B8DEBD"
+    },
+    "n95/worker-msg02-inspect.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-inspect.txt",
+      "sha256": "B3F8CE3711444AD485D6D3943D15A1D11432BD78758A96B579BCF48B8B971437"
+    },
+    "n95/worker-msg02-log-before.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-log-before.txt",
+      "sha256": "51201B91D6F2632262C522225CAC096D4D865C0D2D10B777829EF5101E4146CC"
+    },
+    "n95/worker-msg02-transport.txt": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-transport.txt",
+      "sha256": "3C3612AA2589958C8AC8B167AAC7BAB04E588BBC05B13223BAD121C3AB1C2F30"
+    },
+    "n95/worker-msg02-worker-message.log": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02-worker-message.txt",
+      "sha256": "BC0B3B917763315985D8907DDE2F1D062C20A1F777A4856E7E94F5DEFB821CD7"
+    },
+    "n95/worker-msg02.json": {
+      "path": "docs/evidence/2026-10-02/n95-worker-msg02.json",
+      "sha256": "78C94209C65B9058E18E39A6B7E1975B0571F2243F332E1490E428E7C8EABD69"
+    }
+  },
+  "new_official_RUN_calls": 0,
+  "phone_process_KILL_calls": 0,
+  "PRCM_writes": false,
+  "accepted_D0_cycles": 0,
+  "D1_mapping_or_ring_tests": 0,
+  "clock_kHz_from_registers": {
+    "e90": {
+      "ARM": 330240,
+      "bus": 110080,
+      "DSP": 220160
+    },
+    "n95": {
+      "ARM": 426240,
+      "bus": 213120,
+      "DSP": 284160
+    }
+  },
+  "conclusion": "Finite CREATED worker cleanup succeeds on both devices, while prearmed ARM MSG receive times out. E90 queued receive also times out. ARM record is empty in host27/28 observations. Exact ARM consumer execution, runtime reader flag, mapping and queue source remain unmeasured.",
+  "next": "Audit a bounded read-only native snapshot of ARM window, reader flag and queue routing before another MSG/RUN experiment. Shared header changes alone do not establish the failing boundary."
+}

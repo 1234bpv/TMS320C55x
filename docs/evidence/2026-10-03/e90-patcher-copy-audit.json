@@ -1,0 +1,16 @@
+{
+  "scope": "saved E90 installed driver; offline control105 contract, not boot-change root cause proof",
+  "driver_sha256": "423E4FF1405C10C3CED21BD8445D7179A69CACBEF0AA51AA8AB43B679A7F4D23",
+  "decompressed_code_sha256": "C492761D89300145AD4AFEC117306ED91639245471C2CEF78009937C095F13BA",
+  "checked_words": 22,
+  "imports": {
+    "639": "_ZNK6TDesC83PtrEv",
+    "725": "memcpy",
+    "401": "_ZN5NKern13ThreadEnterCSEv",
+    "402": "_ZN5NKern13ThreadLeaveCSEv"
+  },
+  "control105": "destination = *a1; source = a2 TDesC8::Ptr(); length = descriptor low28 bits",
+  "user_destination_copy": "ThreadEnterCS -> raw memcpy(destination,source,length) -> ThreadLeaveCS; no fixed256B copy limit",
+  "ROM_destination_copy": "different ROM patch branch splits memcpy into32B segments; it is not the user destination branch",
+  "limit": "No independent user destination pin/fault-safe-copy primitive in this path. Pre-touching user pages is a corrective hypothesis, not proof of why E90 rebooted. Source-object lifetime remains the caller's responsibility."
+}

@@ -1,0 +1,90 @@
+{
+  "utc": "2026-10-02T18:40:59.026976+00:00",
+  "ip": "192.168.3.22",
+  "device": "n95",
+  "action": "d0-worker-message",
+  "host_version_expected": 28,
+  "complete": false,
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 87994368",
+    "tick 24536146 startTick 22918156 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65848",
+    "drive E freekb 1066048",
+    "script IDLE"
+  ],
+  "c55stream_processes": [
+    "OK ps 0"
+  ],
+  "ocprobe_processes": [
+    "OK ps 0"
+  ],
+  "host_sha256": "B26270402306AA09E30AF7184443C47336FA582322EF832965CD3BF3C303AB80",
+  "clock_probes": [
+    {
+      "path": "worker-msg02-engine.log",
+      "sha256": "90B632CE3CBEB2A0AC55FF373BB8C09D1AF1FDD945C24BAAB3195A2916B8DEBD"
+    },
+    {
+      "path": "worker-msg02-dsp.log",
+      "sha256": "D4F786CF3F5139E9DD63FB9A79221FCEF0C83615799D062C79A5CE36C5F27830"
+    }
+  ],
+  "clock_exit": [
+    "EXIT 0 Kill"
+  ],
+  "clock_profile": "existing n95-m111; no PRCM writes",
+  "clock_kHz_from_registers": {
+    "ARM": 426240,
+    "bus": 213120,
+    "DSP": 284160
+  },
+  "clock_restored": {
+    "remote": "E:\\ocprobe.log",
+    "bytes": 1259,
+    "sha256": "1ABC807333C186B50922EDB7835429601B809D3D96C7F5D13BF03972AA60BCCF",
+    "equal": true
+  },
+  "steps": [
+    {
+      "label": "inspect",
+      "command": "inspect",
+      "complete": true,
+      "exit": [
+        "EXIT 0 Kill"
+      ],
+      "journal": "worker-msg02-inspect.log",
+      "sha256": "B3F8CE3711444AD485D6D3943D15A1D11432BD78758A96B579BCF48B8B971437",
+      "info_after": [
+        "OK info",
+        "protocol 2",
+        "screen 320x240",
+        "ramfree 87994368",
+        "tick 24539808 startTick 22918156 boot 0 by n",
+        "ap Huawei",
+        "drive C freekb 65844",
+        "drive E freekb 1066064",
+        "script IDLE"
+      ]
+    },
+    {
+      "label": "worker-message",
+      "command": "worker-message",
+      "complete": false,
+      "run_error": "RuntimeError: process exit: ['EXIT -33 Kill']",
+      "journal": "worker-msg02-worker-message.log",
+      "sha256": "BC0B3B917763315985D8907DDE2F1D062C20A1F777A4856E7E94F5DEFB821CD7"
+    }
+  ],
+  "deployed": {
+    "remote": "E:\\c55stream.dll55l",
+    "bytes": 5616,
+    "sha256": "71B4D893956BEBD2575D0CF6A50706D75FC71AFD69F0D74B8EFBCD78ED0BC265",
+    "equal": true
+  },
+  "create_only_preflight_skipped": true,
+  "error": "RuntimeError: process exit: ['EXIT -33 Kill']"
+}

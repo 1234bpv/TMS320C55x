@@ -1,0 +1,145 @@
+;
+; ======== bench_dcd.s55 ========
+;
+; DCD (DSP/BIOS Configuration Database) registration record for the benchmark
+; node. This is what makes the node discoverable by UUID: bridgeapi.dll parses
+; ".dcd_register" while loading the DOFF, then reads the per-object section
+; named after the UUID and registers the node properties.
+;
+; Normally these sections are emitted by the TI node build from a .cdb through
+; tconf (see doffbuild/tconf/asmgen.tcf, which generates exactly this kind of
+; ".sect + .string" file). We have no .cdb, so the record is written by hand -
+; the format below is decoded byte-for-byte from the nodes shipped in this
+; phone's ROM (docs/findings.md 15).
+;
+; NOTE ON ".string": the TI assembler stores one character per 16-bit word on
+; C55x and does NOT append a terminator (that is .cstring). This matches the
+; ROM nodes exactly: pcmdll's ".dcd_register" is 0x4e bytes = 39 chars, no NUL.
+;
+; ASCII only, on purpose.
+;
+
+;
+; ---------------------------------------------------------------------------
+; Object index. "<uuid>:<type>," per object; type 0 = node, 1 = processor/RMS.
+; (baseimage.dof registers three objects this way; a plain node registers one.)
+; ---------------------------------------------------------------------------
+;
+;
+; Крім самого вузла (тип 0) оголошуємо ще ТРИ записи бібліотек фаз під тим
+; самим UUID: типи 3/4/5 = CREATELIB/EXECUTELIB/DELETELIB.
+;
+; Чому. На апараті виміряно: у нашого вузла props[292] = 1, тобто "динамічний",
+; і `ord6` для таких іде в гілку 0x80A5E6DC, яка шукає саме ці три записи. Без
+; них вона повертає -6, хоча сам вузол у DCD уже є (перевірено enum+getdef).
+; Жоден вузол у ROM їх не оголошує - там вони синтезуються під час штатної
+; реєстрації через ord26. Ми ж ord26 обходимо (він кладе ядро на будь-якому
+; вузлі), тому оголошуємо явно. Усі три вказують на ту саму секцію опису: наш
+; вузол не розділений на фази, всі три - в одній бібліотеці.
+;
+        .sect ".dcd_register"
+        .string "967CBF11_B90E_4B54_A4D3_3C84249EE1DA:0,"
+        .string "967CBF11_B90E_4B54_A4D3_3C84249EE1DA:3,"
+        .string "967CBF11_B90E_4B54_A4D3_3C84249EE1DA:4,"
+        .string "967CBF11_B90E_4B54_A4D3_3C84249EE1DA:5,"
+
+;
+; ---------------------------------------------------------------------------
+; The node object itself. 31 comma-separated fields, order fixed by the
+; dspbridge DCD parser. Values and their provenance:
+;
+;   1  1024        sizeof(dsp_ndbprops)   - same in every ROM node
+;   2  UUID        our node id, generated v4, verified not to collide with any
+;                  of the 28 objects registered on this device
+;   3  BENCH_DSP   node name
+;   4  01H         node type: 1 = task node (2 = DAIS socket)
+;   5  00H         cache_on_gpp
+;   6  1024        sizeof(dsp_resourcereqmts) - same in every ROM node
+;   7  0200H       static data size    ) resource hints; every ROM node on this
+;   8  080H        global data size    ) device carries this identical block,
+;   9  0c00H       program memory      ) so we copy it verbatim (our .text is
+;   10 05H         wc execution time   ) ~0x2f0 words, well inside 0c00H)
+;   11 03H         wc period
+;   12 03e8H       wc deadline
+;   13 064H        avg execution time
+;   14 0aH         minimum period
+;   15 05H         priority. Legal range is 1..15 - taken from the RMS object
+;                  in baseimage.dof (node_min_priority 01H, node_max 0fH).
+;                  05H is what the Nokia codec nodes (AAC/G711/G729/ILBC) use;
+;                  deliberately BELOW the 0aH-0eH of the audio path nodes, so
+;                  a long benchmark run cannot starve audio. Preemption can
+;                  only slow us down, and the ARM side takes best-of-N.
+;   16 0200H       stack size (words)
+;   17 0100H       system stack size
+;   18 00H         stack segment
+;   19 03H         message depth - the value used by nearly every ROM node
+;   20 00H         input streams  ) message-only node, like pingdyn: we move
+;   21 00H         output streams ) data through DMM buffers, not STRM
+;   22 0ffffffffH  timeout: infinite. Our kernels are looped `reps` times on
+;                  purpose so compute >> IPC; a finite node timeout would be a
+;                  landmine. Dominant value among the ROM nodes anyway.
+;   23 create fn   ) names WITHOUT the leading underscore; the loader adds it
+;   24 execute fn  ) when resolving against the DOFF symbol table
+;   25 delete fn   )
+;   26 00H         constant in all 28 ROM objects; semantics unverified
+;   27 08000H      likewise constant (equals the RMS success code the phase
+;                  functions return, which may or may not be a coincidence)
+;   28 iAlgName    DAIS algorithm name placeholder, as in every non-DAIS node
+;   29 1           load type: 1 = dynamic (0 = static, linked into the base)
+;   30 0ff3f3f00H  data memory segment mask  ) the pair used by every Nokia
+;   31 0ff3f3f02H  code memory segment mask  ) node built against THIS base
+;                  image (Aug 2007). The TI samples pingdyn/scaledyn use
+;                  ...01H instead; we follow the device-native majority.
+; ---------------------------------------------------------------------------
+;
+        .sect ".967CBF11_B90E_4B54_A4D3_3C84249EE1DA"
+        .string "1024,"
+        .string "967CBF11_B90E_4B54_A4D3_3C84249EE1DA,"
+        .string "BENCH_DSP,"
+        .string "01H,00H,"
+;
+; Поля 7-9 (static data / global data / program memory) лишаються такими, як у
+; вузлах ROM.
+;
+; Історія, важлива для інструкції. Коли .bss виріс (усі три масиви під
+; int32/fp32 одночасно), створення вузла почало давати -2 без жодної
+; діагностики, і я вирішив, що вперся саме в ці поля. Пробував їх підняти -
+; НЕ ДОПОМОГЛО, тому підвищення відкочено. Полагодило інше: масиви оголошено
+; умовно, під кожне навантаження свій (bench_node.c), тож .bss лишається
+; малим. Отже 0200H/080H/0c00H - не той важіль; реальна межа десь у розподілі
+; пам'яті вузла, і єдиний надійний засіб - тримати .bss мінімальним.
+;
+        .string "1024,0200H,080H,0c00H,05H,03H,03e8H,064H,0aH,"
+        .string "05H,"
+        .string "0200H,0100H,00H,"
+        .string "03H,00H,00H,"
+        .string "0ffffffffH,"
+        .string "BENCH_DSP_create,"
+        .string "BENCH_DSP_execute,"
+        .string "BENCH_DSP_delete,"
+        .string "00H,08000H,"
+        .string "iAlgName,"
+        .string "1,"
+        .string "0ff3f3f00H,0ff3f3f02H,"
+
+;
+; ---------------------------------------------------------------------------
+; Boilerplate symbol list. Every node in this ROM carries an identical copy of
+; the base-image entry-point list with its own three phase names appended -
+; including symbols the node never references (pcmdll lists the whole _RMS_*
+; set and imports none of it). So it is descriptive, not a resolution list,
+; and reproducing it costs nothing while keeping our DOFF structurally
+; identical to a known-good node.
+; ---------------------------------------------------------------------------
+;
+        .sect ".dspbridge_symbols"
+        .string "_RMS_queryServer,_RMS_configureServer,_RMS_createNode,"
+        .string "_RMS_executeNode,_RMS_deleteNode,_RMS_changeNodePriority,"
+        .string "_RMS_readMemory,_RMS_writeMemory,_RMS_copy,_STRM_ATTRS,"
+        .string "_SHM_BEG,_SHM_END,_SHM0_RSVDSTRT,_SHM0_BEG,_SHM0_END,"
+        .string "TIOMAP1510SHM_maxMessages,_MSG_BEG,_MSG_END,_EXT_BEG,"
+        .string "_EXT_END,_DYNEXT_BEG,_DYNEXT_END,_SRAM_BEG,_SRAM_END,"
+        .string "_SYS_PUTCBEG,_SYS_PUTCEND,"
+        .string "BENCH_DSP_create,BENCH_DSP_execute,BENCH_DSP_delete,"
+
+        .end

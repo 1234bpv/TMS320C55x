@@ -1,0 +1,22 @@
+2026-09-29T23:44:44.104656+00:00 INFO
+OK info
+protocol 2
+screen 320x240
+ramfree 90308608
+tick 4658848 startTick 116726 boot 0 by n
+ap Huawei
+drive C freekb 66016
+drive E freekb 1070208
+script IDLE
+2026-09-29T23:44:44.286952+00:00 PS c55stream*
+OK ps 0
+2026-09-29T23:44:44.359488+00:00 START E:\sys\bin\c55stream.exe serial reps=0
+OK proc 6
+2026-09-29T23:44:44.454439+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-29T23:44:45.035995+00:00 PS c55stream*
+OK ps 1
+1 c55stream.exe[e0001021]0001
+2026-09-29T23:44:45.685478+00:00 PS c55stream*
+REQUEST FAILED timed out

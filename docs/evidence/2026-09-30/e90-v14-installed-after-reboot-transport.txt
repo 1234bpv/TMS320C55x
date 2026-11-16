@@ -1,0 +1,38 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 77627392
+< tick 4162582 startTick 47653 boot 1 by t
+< ap Huawei
+< drive C freekb 55892
+< drive E freekb 1470648
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 77627392
+< tick 4162657 startTick 47653 boot 1 by t
+< ap Huawei
+< drive C freekb 55892
+< drive E freekb 1470648
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> GET C:\sys\bin\c55stream.exe
+< OK 22408 -> work\evidence\e90\stream-v14-installed-after-reboot-01.exe
+> GET E:\c55stream.log
+< OK 2010 -> work\evidence\e90\stream-v14-installed-after-reboot-01.log
+> GET E:\c55stream.dll55l
+< OK 3668 -> work\evidence\e90\stream-v14-installed-after-reboot-01.dll55l
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 77627392
+< tick 4162921 startTick 47653 boot 1 by t
+< ap Huawei
+< drive C freekb 55892
+< drive E freekb 1470648
+< script IDLE

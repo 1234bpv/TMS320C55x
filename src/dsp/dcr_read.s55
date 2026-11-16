@@ -1,0 +1,9 @@
+; OMAP2420 DCR read only. TI BIOS GBL reference identifies I/O port 0200h.
+; Unsigned short result is returned in T0 under the C55x C calling convention.
+        .mmregs
+        .sect ".text:dcr_read"
+        .global _ring_read_dcr
+_ring_read_dcr:
+        MOV port(#0200h), T0
+        RET
+        .end

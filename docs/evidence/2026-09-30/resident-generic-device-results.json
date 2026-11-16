@@ -1,0 +1,46 @@
+{
+  "utc": "2026-09-30T22:33:01.261225+00:00",
+  "devices": {
+    "n95": {
+      "host_version": 15,
+      "create_us": 9307,
+      "created_state": 1,
+      "delete": 0,
+      "free_task": 0,
+      "final": 0,
+      "exit": "EXIT 0 Kill",
+      "official_node_run": false,
+      "stock_clock_guard": true,
+      "clock_log_restored": true,
+      "dsp_restored": true,
+      "restored_sha256": "5B6BE15B20E73D8D318FDF9C5E5050C16AA28994BC422C891C2B0132EA4AB9F9",
+      "restore_equal": true,
+      "active_c55stream_processes": 0,
+      "daemon_start_tick_unchanged": true,
+      "journal_sha256": "9A88163EA4F5C007DD788396B700C3A2205CEB0BC66554C6A942DB9CF2A0A729",
+      "proof_method": "conditional checks in hashed DSP artifact and native RMS negative-status relay; internal task/stat fields are not independently logged by ARM"
+    },
+    "e90": {
+      "host_version": 14,
+      "create_us": 9735,
+      "created_state": 1,
+      "delete": 0,
+      "free_task": 0,
+      "final": 0,
+      "exit": "EXIT 0 Kill",
+      "official_node_run": false,
+      "stock_clock_guard": true,
+      "clock_log_restored": true,
+      "dsp_restored": true,
+      "restored_sha256": "E039E983AA042EF1397368151E671FEB8D29BA0828A576139223367CF6FEF5C1",
+      "restore_equal": true,
+      "active_c55stream_processes": 0,
+      "daemon_start_tick_unchanged": true,
+      "journal_sha256": "202874011CFE7A24D4A2FA904A7BAE83CC6772DFC76D3E86334317CD93D16C7A",
+      "proof_method": "conditional checks in hashed DSP artifact and native RMS negative-status relay; internal task/stat fields are not independently logged by ARM"
+    }
+  },
+  "scope": "Data stamp C55DC0DE and create-saved delete address retained across create/delete",
+  "version": 1,
+  "limitation": "V1 delete returned success for null context, bypassing probe assertions; v2 closes this gap and has separate device evidence."
+}

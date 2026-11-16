@@ -1,0 +1,207 @@
+{
+  "scope": "offline saved firmware ABI audit; candidate54 hardware results are separately recorded in d1-ring-results.json",
+  "reference": {
+    "url": "https://raw.githubusercontent.com/SymbianSource/oss.FCL.sf.os.kernelhwsrv/master/kernel/eka/eabi/ekernu.def",
+    "sha256": "D059659694A5C607C124D2377C208C66611E98F08687FAD890D82490FB815215",
+    "matched_ordinals": {
+      "245": "_ZN4Epoc16LinearToPhysicalEm",
+      "376": "_ZN5Cache23SyncMemoryBeforeDmaReadEmj",
+      "378": "_ZN5Cache24SyncMemoryBeforeDmaWriteEmj",
+      "719": "kumemget32",
+      "60": "_ZN12DPlatChunkHw3NewERPS_mij",
+      "241": "_ZN4Epoc15FreePhysicalRamEmi",
+      "242": "_ZN4Epoc16AllocPhysicalRamEiRmi"
+    }
+  },
+  "n95": {
+    "module_sha256": {
+      "utility": "54C7B093D847C29843EA2B12B746AD815E137CBBB7ABCDDCD67A97CEB85EFB5D",
+      "kernel": "11F1383F534AA1774B6AB222E2436B5B64D931292EF580FB5926253838CD9455",
+      "bridge": "69F6AD946DA3F6538B9DC47C0E02E7B0AA9DDEEDE368BCEBC4FBADB5FFCD0CBB"
+    },
+    "checked_util_instructions": 19,
+    "checked_map_halfwords": 13,
+    "calls": {
+      "cache_first": {
+        "ordinal": 378,
+        "target": "8007343C"
+      },
+      "cache_second": {
+        "ordinal": 376,
+        "target": "8007344C"
+      },
+      "page_translate": {
+        "ordinal": 245,
+        "target": "80078718"
+      },
+      "page_input_copy": {
+        "ordinal": 719,
+        "target": "8006DB24"
+      },
+      "page_output_pointer_copy": {
+        "ordinal": 719,
+        "target": "8006DB24"
+      }
+    },
+    "utility_dispatch_sha256": "A7CDB238F8EB1F9C5A6CA25C7A663EEF6576D56A6BBE54536B9E77F4CDC65D8B",
+    "map_wrapper_sha256": "6EF43363CEFD4895A38D10C16B66D0C1927D8B49E562990CB9B538742897000A"
+  },
+  "e90": {
+    "module_sha256": {
+      "utility": "53CE32C5D87D5CBE3140D214DC000C36D15AADEADB80FD755B76C97085E70711",
+      "kernel": "CC81644DD40C19ABFD72FA7B643B409C668C9B3A632C881CC70E07974D76091B",
+      "bridge": "003D47B0778D1E6687BDEEB456E4E02BFE64D8763E4178CFAECFDDBA994C6FE2"
+    },
+    "checked_util_instructions": 19,
+    "checked_map_halfwords": 13,
+    "calls": {
+      "cache_first": {
+        "ordinal": 378,
+        "target": "8001C934"
+      },
+      "cache_second": {
+        "ordinal": 376,
+        "target": "8001C95C"
+      },
+      "page_translate": {
+        "ordinal": 245,
+        "target": "8002214C"
+      },
+      "page_input_copy": {
+        "ordinal": 719,
+        "target": "800168D8"
+      },
+      "page_output_pointer_copy": {
+        "ordinal": 719,
+        "target": "800168D8"
+      }
+    },
+    "utility_dispatch_sha256": "A7CDB238F8EB1F9C5A6CA25C7A663EEF6576D56A6BBE54536B9E77F4CDC65D8B",
+    "map_wrapper_sha256": "6EF43363CEFD4895A38D10C16B66D0C1927D8B49E562990CB9B538742897000A"
+  },
+  "physical_pools": {
+    "n95": {
+      "pdd_sha256": "D511008761AB4FC3EA0A77AA3EBC54FF4C53466AA8BC80BB80151BB4DA1E13CF",
+      "checked_instructions": 23,
+      "calls": [
+        {
+          "address": "801AAFE4",
+          "kernel_ordinal": 242
+        },
+        {
+          "address": "801AB008",
+          "kernel_ordinal": 60
+        },
+        {
+          "address": "801AB070",
+          "kernel_ordinal": 242
+        },
+        {
+          "address": "801AB098",
+          "kernel_ordinal": 60
+        },
+        {
+          "address": "801AB184",
+          "kernel_ordinal": 241
+        },
+        {
+          "address": "801AB1D0",
+          "kernel_ordinal": 241
+        }
+      ],
+      "owner_record_offset": 244,
+      "hardware_chunk_attributes_raw": "00001044",
+      "record_offsets": {
+        "physical1": 0,
+        "linear1": 4,
+        "bytes1": 8,
+        "physical2": 12,
+        "linear2": 16,
+        "bytes2": 20,
+        "hardware_chunk1": 32,
+        "hardware_chunk2": 36
+      },
+      "limit": "these owner-scoped physical pools are not yet linked to the candidate ARM native buffer; this is not ring pinning/lifetime proof"
+    },
+    "e90": {
+      "pdd_sha256": "D2818CC222051D3C1B2C61ACB17E14D72B964AB173EDC04A493C31A4CC6CFAB4",
+      "checked_instructions": 23,
+      "calls": [
+        {
+          "address": "803EF624",
+          "kernel_ordinal": 242
+        },
+        {
+          "address": "803EF648",
+          "kernel_ordinal": 60
+        },
+        {
+          "address": "803EF6B0",
+          "kernel_ordinal": 242
+        },
+        {
+          "address": "803EF6D8",
+          "kernel_ordinal": 60
+        },
+        {
+          "address": "803EF7C4",
+          "kernel_ordinal": 241
+        },
+        {
+          "address": "803EF810",
+          "kernel_ordinal": 241
+        }
+      ],
+      "owner_record_offset": 244,
+      "hardware_chunk_attributes_raw": "00001044",
+      "record_offsets": {
+        "physical1": 0,
+        "linear1": 4,
+        "bytes1": 8,
+        "physical2": 12,
+        "linear2": 16,
+        "bytes2": 20,
+        "hardware_chunk1": 32,
+        "hardware_chunk2": 36
+      },
+      "limit": "these owner-scoped physical pools are not yet linked to the candidate ARM native buffer; this is not ring pinning/lifetime proof"
+    }
+  },
+  "mapping_flags": {
+    "n95": {
+      "checked_instructions": 11,
+      "checked_lookup_calls": 2,
+      "bit0_set": "use copied page list: match ARM linearPage, load physicalPage at +4",
+      "bit0_clear": "pass supplied ARM address directly to MMU as physical address; page list ignored",
+      "virtual_arm_buffer_flags": 17,
+      "limit": "Nokia native bit0 behavior differs from the archived TI userspace flag names; do not transplant their semantics."
+    },
+    "e90": {
+      "checked_instructions": 11,
+      "checked_lookup_calls": 2,
+      "bit0_set": "use copied page list: match ARM linearPage, load physicalPage at +4",
+      "bit0_clear": "pass supplied ARM address directly to MMU as physical address; page list ignored",
+      "virtual_arm_buffer_flags": 17,
+      "limit": "Nokia native bit0 behavior differs from the archived TI userspace flag names; do not transplant their semantics."
+    }
+  },
+  "page_list_record": [
+    "32-bit ARM linear page base",
+    "32-bit physical page base"
+  ],
+  "page_bytes": 4096,
+  "page_record_bytes": 8,
+  "map_signature": "TInt map(processor*, armAddress, byteCount, reservedDspAddress, mappedDspAddressOut*, flags)",
+  "cache_control": "BridgeUtil DoControl(2, &linearAddress, &byteCount)",
+  "cache_order": [
+    "SyncMemoryBeforeDmaWrite: clean",
+    "SyncMemoryBeforeDmaRead: invalidate/prepare"
+  ],
+  "ownership_inference": "helper cleans before invalidating; ARM dirty data in a DSP-owned line must be prevented, including adjacent control fields",
+  "pinning": "fn1 translates pages but contains no pin/unpin call; another lifetime mechanism must be established",
+  "unverified_by_this_static_audit": [
+    "native allocation chunk attributes and immutable page lifetime",
+    "DSP cache and publish ordering",
+    "runtime correctness and timing; see separate hardware evidence"
+  ]
+}

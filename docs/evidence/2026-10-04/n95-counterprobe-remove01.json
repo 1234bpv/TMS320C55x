@@ -1,0 +1,40 @@
+{
+  "action": "remove",
+  "utc": "2026-10-04T07:11:51.247045+00:00",
+  "complete": true,
+  "files": [
+    {
+      "remote": "E:\\sys\\bin\\counterprobe.exe",
+      "sha256": "AD161D9C7EB73D53B97EAE1C79DB6122EAF5B6781F63AC12CC1AFEAEBA810F07",
+      "equal": true
+    },
+    {
+      "remote": "C:\\sys\\hash\\counterprobe.exe",
+      "sha256": "4C55E2D4382B0DC62B7D3C70ECA0B0B51790A2A57C05FC44FD6CFAA32D12783E",
+      "equal": true
+    }
+  ],
+  "info_before": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 89821184",
+    "tick 49532844 startTick 62209 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65804",
+    "drive E freekb 1065984",
+    "script IDLE"
+  ],
+  "absent_after": true,
+  "info_after": [
+    "OK info",
+    "protocol 2",
+    "screen 320x240",
+    "ramfree 89829376",
+    "tick 49533411 startTick 62209 boot 0 by n",
+    "ap Huawei",
+    "drive C freekb 65808",
+    "drive E freekb 1066016",
+    "script IDLE"
+  ]
+}

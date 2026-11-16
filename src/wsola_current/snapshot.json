@@ -1,0 +1,8 @@
+{
+  "source": "PS1Emulator/src/symbian/snd_symbian.cpp",
+  "source_sha256": "FAD06BA9F9916E5AE57C648A736511DC820CD571D809A34BB45285081D2B2946",
+  "original_block_LF_sha256": "A3BE33EF5FDD86D3B763E26C8486D0893C8D694030B138412081E08C85B5D94A",
+  "snapshot_sha256": "0C44EF6D1636F7F7E87ED769A90B8302758B75B2398659341068C0A8E90A2B10",
+  "adaptation": "static WsolaBestOffset entry exported/renamed WsolaBestOffsetCurrent; all packing, SMLAD, traversal, tie and assertion code unchanged",
+  "scope": "isolated current packed SMLAD ARM search; shell compiler CSL343 ARMv6/O2 matches stage1; no emulator writes"
+}

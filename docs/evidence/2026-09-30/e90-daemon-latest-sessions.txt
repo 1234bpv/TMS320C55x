@@ -1,0 +1,58 @@
+[534924] client connected
+[543236] GET 844854 bytes rc=0
+[543451] client done
+[172463] === daemon start (tick=171539 boot=0 by=n) ===
+[172525] killed 1 stale instance(s)
+[173052] socket server ok
+[173075] bt spp listening, channel 1
+[173094] connection opened, starting...
+[173135] iap 'Huawei' id=47, connecting...
+[176355] conn pending 3s, fg='40.10281ef2.aknnfysrv.aknnfysrv'
+[179393] no answer file; lsk on foreign fg '40.10281ef2.aknnfysrv.aknnfysrv'
+[181879] connected
+[181913] connection up
+[181949] IP 192.168.3.21 port 2323
+[182126] reuseaddr set r=0
+[182136] listening. STOP to quit.
+[207058] client connected
+[207455] GET 1083 bytes rc=0
+[207529] client done
+[454668] client connected
+[455110] GET 1083 bytes rc=0
+[455982] GET 1083 bytes rc=0
+[456127] client done
+[491926] client connected
+[500008] GET 844854 bytes rc=0
+[500102] client done
+[180189] === daemon start (tick=35892 boot=1 by=t) ===
+[180237] socket server ok
+[180248] bt spp listening, channel 1
+[180257] connection opened, starting...
+[180280] iap 'Huawei' id=47, connecting...
+[183309] conn pending 3s, fg='40.10281ef2.aknnfysrv.aknnfysrv'
+[186336] no answer file; lsk on foreign fg '40.10281ef2.aknnfysrv.aknnfysrv'
+[188614] connected
+[188626] connection up
+[188648] IP 192.168.3.21 port 2323
+[188789] reuseaddr set r=0
+[188800] listening. STOP to quit.
+[290183] client connected
+[290494] client done
+[318657] client connected
+[319285] GET 215668 bytes rc=0
+[338201] GET 844854 bytes rc=0
+[180185] === daemon start (tick=35269 boot=1 by=t) ===
+[180250] socket server ok
+[180286] bt spp listening, channel 1
+[180317] connection opened, starting...
+[180365] iap 'Huawei' id=47, connecting...
+[183418] conn pending 3s, fg='40.10281ef2.aknnfysrv.aknnfysrv'
+[186461] no answer file; lsk on foreign fg '40.10281ef2.aknnfysrv.aknnfysrv'
+[188818] connected
+[188840] connection up
+[188862] IP 192.168.3.21 port 2323
+[188994] reuseaddr set r=0
+[189003] listening. STOP to quit.
+[273923] client connected
+[274180] client done
+[302889] client connected

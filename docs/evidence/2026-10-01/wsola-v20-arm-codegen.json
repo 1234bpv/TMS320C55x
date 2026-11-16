@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-01T11:12:40.053323+00:00",
+  "compiler": "CSL GCCE3.4.3",
+  "harness": "SDK GCCE UREL -O2 -fno-unit-at-a-time plus -march=armv6 -mtune=arm1136j-s -fomit-frame-pointer",
+  "comparison": "same pure-function ARMv6 source/flags as wsola-v19-arm-codegen.json",
+  "harness_function_bytes": 244,
+  "armv6_function_bytes": 244,
+  "opcode_sha256": "E270A54D82231215EDD213226BAF23A6D57CEB58B9220BB2510AC26CC0AC6DD6",
+  "opcodes_identical": true,
+  "host_mmp_sha256": "34B79FF0C08EA0EE2C2D37C6D14C864ABE8561575F26A8F69EAFE6B874835C2C",
+  "notes": [
+    "Initial MMP edit left the old reference.o cached; cleared and rebuilt before any v20 device deployment.",
+    "build.cmd now clears both research objects before compiling.",
+    "Matches current scalar stage1 compiler options; no new SIMD/hand ARM optimization is inferred."
+  ]
+}

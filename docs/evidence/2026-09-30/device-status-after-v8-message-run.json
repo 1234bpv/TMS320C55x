@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-30T11:04:57.484581+00:00",
+  "n95": {
+    "ip": "192.168.3.22",
+    "last_messages_start_utc": "2026-09-30T11:00:20.230963+00:00",
+    "daemon_process_id": 5,
+    "last_ps_live_utc": "2026-09-30T11:00:23.721953+00:00",
+    "last_ps_request_utc": "2026-09-30T11:00:24.320353+00:00",
+    "failure": "PS response timeout; subsequent connect timeout",
+    "journal_recovered": false,
+    "hello_echo_exit_receipt": "unknown until journal recovered",
+    "final_or_exit": "not observed",
+    "phone_reboot": "unconfirmed",
+    "current_uploaded_dsp_sha256": "5A06007E641F241CC0C6FFACCFABE3973B53FDE1E3ECBF5AC12E5A0A656A445A",
+    "clock_journal_restored_before_run": true,
+    "normal_dsp_restore": "pending network recovery"
+  },
+  "e90": {
+    "ip": "192.168.3.21",
+    "info": "available",
+    "screen": "800x352",
+    "tick": 835466,
+    "startTick": 42746,
+    "boot": "1 by t",
+    "c55stream_active": false,
+    "host_last_verified": 7,
+    "new_dsp_run": false
+  },
+  "scope": "Transport observations only; do not infer an exact DSP failure point or a reboot without recovered journal/user evidence"
+}

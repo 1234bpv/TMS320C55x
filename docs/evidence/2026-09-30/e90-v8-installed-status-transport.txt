@@ -1,0 +1,24 @@
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 75874304
+< tick 8918661 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55888
+< drive E freekb 1470668
+< script IDLE
+> INFO
+< OK info
+< protocol 2
+< screen 800x352
+< ramfree 75874304
+< tick 8918738 startTick 8770239 boot 0 by n
+< ap Huawei
+< drive C freekb 55888
+< drive E freekb 1470668
+< script IDLE
+> PS c55stream*
+< OK ps 0
+> GET C:\sys\bin\c55stream.exe
+< OK 18668 -> work\evidence\e90\stream-v8-sis-status-05.exe
