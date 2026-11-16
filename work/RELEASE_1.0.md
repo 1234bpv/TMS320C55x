@@ -66,6 +66,21 @@ Branch: `release-1.0`.
   `dc749fe` (2026-10-01), all 13 commits of `snd_symbian.cpp` by the author;
   no such code in pcsx_rearmed. Licence of this repository applies.
 
+## Published, 2026-11-17
+
+- Public repository https://github.com/1234bpv/TMS320C55x, one commit
+  `08b7a06`, tag and GitHub release `v1.0.0`; GitHub detects GPL-2.0.
+- The previous private repository was renamed to `1234bpv/TMS320C55x-history`
+  (still private, with branches `main` and `release-1.0`); locally it is the
+  remote `history` and the branch `history-main`. Full backup:
+  `../TMS320C55x-history-2026-11-17.bundle` (verified).
+- Snapshot checked before publication: no PDFs, listings, binaries, e-mail or
+  private profile paths; 43 of 44 unit tests pass (the 44th needs the local
+  ROM); `verify_n95_acceptance.py` PASS.
+- Open, not done in this release: SPDX headers in own source files; the
+  generated agy roles (`view_file` + `read_file` conflict); SymbianDeployDaemon
+  is not published, so device runs are not reproducible from this repository.
+
 ## Noticed in the sources (not changed)
 
 - `docs/CLAUDE_PS1_HANDOFF_2026-10-04` gives the N95 stock bus as 110.08 MHz;
